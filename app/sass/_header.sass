@@ -1,0 +1,212 @@
+@import "vars"
+
+header
+  background: #fff
+  .form-search
+    margin: 0 auto
+  .phone
+    margin: 0 0 4px
+
+.header-top
+  padding: 10px 0
+
+
+.logo
+  display: flex
+  align-items: center
+  justify-content: center
+  max-width: 173px
+  width: 100%
+  img
+    width: 100%
+
+
+.form-search
+  width: 100%
+  position: relative
+  max-width: 452px
+  label
+    margin: 0
+  input
+    border: 1px solid #B0B0B0
+      radius: 6px
+    background: #fff
+    height: 40px
+    padding: 0 110px 0 43px
+    font-size: 16px
+    color: $text
+    &::placeholder
+      color: #303030
+  button
+    position: absolute
+    right: 0
+    top: 0
+    height: 40px
+    max-width: 110px
+    width: 100%
+
+.input-icon-search
+  position: absolute
+  width: 15px
+  height: 15px
+  left: 20px
+  top: 12px
+  fill: #848484
+
+.dropdown-language
+  margin: 0 auto 0 0
+
+.schedule-box
+  display: flex
+  align-items: center
+  font-size: 14px
+  &__icon
+    @include d-flex
+    width: 16px
+    height: 16px
+    fill: $accent
+    margin: 0 10px 0 0
+  &__text
+    max-width: 112px
+
+
+.phone, .mail
+  color: #2A2D28
+  display: flex
+  align-items: center
+  &-icon
+    @include d-flex
+    width: 20px
+    height: 20px
+    margin: 0 10px 0 0
+    fill: $accent
+  &:hover
+    color: $accent
+
+.mail
+  font-size: 14px
+
+.header-box
+  margin: 0 0 0 40px
+
+.list-language
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 14px
+  li
+    margin: 0 10px 0 0
+    &:last-child
+      margin: 0
+    a
+      color: #2A2D28
+      padding: 3px 10px
+      position: relative
+      width: 54px
+      height: 30px
+      display: flex
+      align-items: center
+      justify-content: center
+      border: 1px solid #E0E0E0
+        radius: 3px
+
+      &:hover
+        color: #2A2D28
+        border-color: #8FBA44
+    .active
+      color: #2A2D28
+      border-color: #8FBA44
+
+
+.header-bottom
+  width: 100%
+  border-top: 1px solid #E0E0E0
+
+.nav-menu
+  width: 100%
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  .logo, .header-box, .schedule-box
+    display: none
+    font-size: 16px
+  .mail
+    font-size: 16px
+  .schedule-box__text
+    max-width: none
+  &__close
+    display: none
+    align-items: center
+    justify-content: center
+    width: 22px
+    height: 22px
+    position: absolute
+    top: 5px
+    right: 5px
+    cursor: pointer
+    &:before, &:after
+      content: ''
+      position: absolute
+      background: #848484
+      width: 1px
+      height: 100%
+    &:before
+      transform: rotate(45deg)
+    &:after
+      transform: rotate(135deg)
+
+.language-box
+  display: none
+  align-items: center
+  font-size: 14px
+  p
+    margin: 0 10px 0 0
+
+
+.menu
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  color: #303030
+  width: 100%
+  justify-content: space-between
+  letter-spacing: 0.02em
+  font-size: 16px
+  li
+    >a
+      color: #303030
+      position: relative
+      padding: 15px 0
+      &:hover
+        color: $accent
+
+
+.overlay-mobile
+  z-index: 4
+  width: 100%
+  background: rgba(42, 45, 40, 0.4)
+  height: 100%
+  display: none
+  left: 0
+  bottom: 0
+  position: fixed
+
+.btn-burger
+  display: none
+  align-items: flex-end
+  justify-content: space-between
+  flex-direction: column
+  position: relative
+  width: 26px
+  height: 16px
+  cursor: pointer
+  margin: 0 0 0 22px
+  span
+    width: 100%
+    height: 3px
+    background: $accent
+    border-radius: 3px
+    display: block
+    &:last-child
+      width: 80%
+
