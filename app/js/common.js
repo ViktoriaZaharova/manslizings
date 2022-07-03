@@ -10,6 +10,32 @@ $('.nav-menu__close, .overlay-mobile').on('click', function (e) {
     $('.overlay-mobile').fadeOut();
 });
 
+$(function () {
+    $("#filter__range").slider({
+        min: 0,
+        max: 10000,
+        values: [1000, 7892],
+        range: true,
+        stop: function (event, ui) {
+            $('.price-range-min.value').html('€' + $("#filter__range").slider("values", 0));
+            $('.price-range-max.value').html('€' + $("#filter__range").slider("values", 1));
+        },
+        slide: function (event, ui) {
+            $('.price-range-min.value').html('€' + $("#filter__range").slider("values", 0));
+            $('.price-range-max.value').html('€' + $("#filter__range").slider("values", 1));
+        }
+    });
+
+    $('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + '€' + $('#filter__range').slider('values', 0) + '</span>');
+    $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + '€' + $('#filter__range').slider('values', 1) + '</span>');
+});
+
+
+$('.reviews-slider').slick({
+    slidesToShow: 3,
+    arrows: false,
+    dots: true,
+});
 
 
 
@@ -42,95 +68,76 @@ $(".label-select").on('click', function () {
     }
 });
 
-$('.slider-range1').slider({
-    range: true,
-    min: 0,
-    max: 25000,
-    values: [1800, 18000],
-    classes: {
-        "ui-slider-handle": "ui-corner-all"
-    },
-    slide: function (event, ui) {
-        //Поле минимального значения
-        $(".dec1").val(ui.values[0] + ' ' + '€');
-        //Поле максимального значения
-        $(".dec2").val(ui.values[1] + ' ' + '€');
-    }
-});
+
+// $('.slider-range2').slider({
+//     range: true,
+//     min: 2000,
+//     max: 2021,
+//     values: [0, 2018],
+//     classes: {
+//         "ui-slider-handle": "ui-corner-all"
+//     },
+//     slide: function (event, ui) {
+//         //Поле минимального значения
+//         $(".dec3").val(ui.values[0]);
+//         //Поле максимального значения
+//         $(".dec4").val(ui.values[1]);
+//     }
+// });
 
 
-$(".dec1").val($(".slider-range1").slider("values", 0) + ' ' + '€');
-$(".dec2").val($(".slider-range1").slider("values", 1) + ' ' + '€');
-
-$('.slider-range2').slider({
-    range: true,
-    min: 2000,
-    max: 2021,
-    values: [0, 2018],
-    classes: {
-        "ui-slider-handle": "ui-corner-all"
-    },
-    slide: function (event, ui) {
-        //Поле минимального значения
-        $(".dec3").val(ui.values[0]);
-        //Поле максимального значения
-        $(".dec4").val(ui.values[1]);
-    }
-});
-
-
-$(".dec3").val($(".slider-range2").slider("values", 0));
-$(".dec4").val($(".slider-range2").slider("values", 1));
-
-$('.slider-range3').slider({
-    range: true,
-    min: 0,
-    max: 25000,
-    values: [1800, 18000],
-    classes: {
-        "ui-slider-handle": "ui-corner-all"
-    },
-    slide: function (event, ui) {
-        //Поле минимального значения
-        $(".dec5").val(ui.values[0]);
-        //Поле максимального значения
-        $(".dec6").val(ui.values[1]);
-    }
-});
-
-
-$(".dec5").val($(".slider-range3").slider("values", 0));
-$(".dec6").val($(".slider-range3").slider("values", 1));
-
-$('.slider-range4').slider({
-    range: "min",
-    min: 0,
-    max: 50000,
-    value: 11800,
-    classes: {
-        "ui-slider-handle": "ui-corner-all"
-    },
-    slide: function (event, ui) {
-        //Поле минимального значения
-        $(".dec7").val(ui.value + ' ' + '€');
-    }
-});
-$(".dec7").val($(".slider-range4").slider("value") + ' ' + '€');
-
-$('.slider-range5').slider({
-    range: "min",
-    min: 0,
-    max: 112,
-    value: 84,
-    classes: {
-        "ui-slider-handle": "ui-corner-all"
-    },
-    slide: function (event, ui) {
-        //Поле минимального значения
-        $(".dec8").val(ui.value + ' ' + 'мес.');
-    }
-});
-$(".dec8").val($(".slider-range5").slider("value") + ' ' + 'мес.');
+// $(".dec3").val($(".slider-range2").slider("values", 0));
+// $(".dec4").val($(".slider-range2").slider("values", 1));
+//
+// $('.slider-range3').slider({
+//     range: true,
+//     min: 0,
+//     max: 25000,
+//     values: [1800, 18000],
+//     classes: {
+//         "ui-slider-handle": "ui-corner-all"
+//     },
+//     slide: function (event, ui) {
+//         //Поле минимального значения
+//         $(".dec5").val(ui.values[0]);
+//         //Поле максимального значения
+//         $(".dec6").val(ui.values[1]);
+//     }
+// });
+//
+//
+// $(".dec5").val($(".slider-range3").slider("values", 0));
+// $(".dec6").val($(".slider-range3").slider("values", 1));
+//
+// $('.slider-range4').slider({
+//     range: "min",
+//     min: 0,
+//     max: 50000,
+//     value: 11800,
+//     classes: {
+//         "ui-slider-handle": "ui-corner-all"
+//     },
+//     slide: function (event, ui) {
+//         //Поле минимального значения
+//         $(".dec7").val(ui.value + ' ' + '€');
+//     }
+// });
+// $(".dec7").val($(".slider-range4").slider("value") + ' ' + '€');
+//
+// $('.slider-range5').slider({
+//     range: "min",
+//     min: 0,
+//     max: 112,
+//     value: 84,
+//     classes: {
+//         "ui-slider-handle": "ui-corner-all"
+//     },
+//     slide: function (event, ui) {
+//         //Поле минимального значения
+//         $(".dec8").val(ui.value + ' ' + 'мес.');
+//     }
+// });
+// $(".dec8").val($(".slider-range5").slider("value") + ' ' + 'мес.');
 
 // accordeon
 function accordeon() {
@@ -188,7 +195,6 @@ $(function () {
     });
 });
 //end
-
 
 
 $('.btn-search').on('click', function () {
@@ -256,7 +262,7 @@ $('.main-slider').slick({
 var $pagingInfo = $('.counter-slide');
 var $teamSlider = $('.page-article-slider');
 
-$teamSlider.on('init reInit afterChange', function(event, slick, currentSlide, nextSlide){
+$teamSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
     var i = (currentSlide ? currentSlide : 0) + 1;
     var prefix = i < 10 ? '0' : '';
     var prefixAll = slick.slideCount < 10 ? '0' : '';
@@ -282,7 +288,7 @@ $('.btn-filter').on('click', function () {
 });
 
 $('.btn-sorting').on('click', function () {
-   $('.mobile-sorting').fadeToggle();
+    $('.mobile-sorting').fadeToggle();
 });
 
 if ($(".page-product-information__head").length) {
@@ -311,15 +317,15 @@ $(document).ready(function ($) {
 // tabs end
 
 
-$(window).on('load resize', function() {
+$(window).on('load resize', function () {
     if ($(window).width() < 576) {
         var header = $('header'),
             scrollPrev = 0;
 
-        $(window).scroll(function() {
+        $(window).scroll(function () {
             var scrolled = $(window).scrollTop();
 
-            if ( scrolled > 100 && scrolled > scrollPrev ) {
+            if (scrolled > 100 && scrolled > scrollPrev) {
                 $('.mobile-vehicle-chat-sms').css('bottom', '0');
             } else {
                 $('.mobile-vehicle-chat-sms').css('bottom', '-100%');
@@ -347,97 +353,14 @@ $('.btn-close-cookie').on('click', function (e) {
     $('.cookie').fadeOut();
 });
 
-Fancybox.bind('[data-fancybox="gallery"]', {
-    dragToClose: false,
+// Fancybox.bind('[data-fancybox="gallery"]', {
+//     dragToClose: false,
+//
+//     Toolbar: false,
+//     closeButton: "top",
+//
+//     Image: {
+//         zoom: false,
+//     }
+// });
 
-    Toolbar: false,
-    closeButton: "top",
-
-    Image: {
-        zoom: false,
-    }
-});
-
-// maps
-function init() {
-
-    //Центрирование и выбор масштаба карты
-    var myMap = new ymaps.Map('map', {
-        center: [56.949461, 24.139861],
-        zoom: 12
-    });
-
-    // Создание своей метки
-    var myPlacemark = new ymaps.Placemark(
-        // Координаты метки
-        [56.949461, 24.139861], {
-            // Свойства метки
-            hintContent: '', //Подсказка при наведении на маркер
-            iconContent: '',
-
-        }, {
-            iconImageHref: 'img/marker.svg',  // картинка иконки
-            iconImageSize: [31, 47],                                      // размеры картинки
-
-        });
-
-    // Добавление метки на карту
-    myMap.geoObjects.add(myPlacemark);
-
-    //Элементы управления
-    myMap.controls
-    // Кнопка изменения масштаба
-        .add('zoomControl')
-        // Список типов карты
-        .add('typeSelector')
-        // Кнопка изменения масштаба - справа
-        .add('smallZoomControl', {right: 5, top: 75})
-        // Стандартный набор кнопок
-        .add('mapTools')
-        //Линейка масштаба
-        .add(new ymaps.control.ScaleLine());
-}
-
-ymaps.ready(init);
-
-
-function init2() {
-
-    //Центрирование и выбор масштаба карты
-    var myMap = new ymaps.Map('contacts-map', {
-        center: [56.949461, 24.139861],
-        zoom: 14
-    });
-
-    // Создание своей метки
-    var myPlacemark = new ymaps.Placemark(
-        // Координаты метки
-        [56.949461, 24.139861], {
-            // Свойства метки
-            hintContent: '', //Подсказка при наведении на маркер
-            iconContent: '',
-
-        }, {
-            iconImageHref: 'img/marker2.png',  // картинка иконки
-            iconImageSize: [40, 44],                                      // размеры картинки
-
-        });
-
-    // Добавление метки на карту
-    myMap.geoObjects.add(myPlacemark);
-
-    //Элементы управления
-    myMap.controls
-    // Кнопка изменения масштаба
-        .add('zoomControl')
-        // Список типов карты
-        .add('typeSelector')
-        // Кнопка изменения масштаба - справа
-        .add('smallZoomControl', {right: 5, top: 75})
-        // Стандартный набор кнопок
-        .add('mapTools')
-        //Линейка масштаба
-        .add(new ymaps.control.ScaleLine());
-}
-
-ymaps.ready(init2);
