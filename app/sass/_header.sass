@@ -4,8 +4,8 @@ header
   background: #fff
   .form-search
     margin: 0 auto
-  .phone
-    margin: 0 0 4px
+  .mail
+    margin: 4px 0 0
 
 .header-top
   padding: 10px 0
@@ -78,6 +78,7 @@ header
     @include d-flex
     width: 20px
     height: 20px
+    min-width: 20px
     margin: 0 10px 0 0
     fill: $accent
   &:hover
@@ -133,7 +134,11 @@ header
   .mail
     font-size: 16px
   .schedule-box__text
+    white-space: nowrap
     max-width: none
+  .schedule-box__icon
+    width: 20px
+    height: 20px
   &__close
     display: none
     align-items: center

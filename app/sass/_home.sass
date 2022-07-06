@@ -146,6 +146,23 @@
     width: 100%
     margin: 0 0 30px
 
+.btn-close__filter
+  width: 22px
+  height: 22px
+  display: none
+  align-items: center
+  justify-content: center
+  stroke: #848484
+  margin: 0 10px 20px auto
+
+.btn-filter-wrapper
+  background: #fff
+  padding: 30px 0
+  margin: 0 auto
+
+.btn-toggle-filter
+  max-width: 330px
+  margin: 0 auto
 
 .form-filter
   width: 100%
@@ -256,7 +273,7 @@
     align-items: center
     justify-content: center
     text-align: center
-    margin: 0 10px 2px 0
+    margin: 0 3px 2px 0
     padding: 2px 6px
     height: 18px
     border-radius: 3px
@@ -362,6 +379,14 @@
 .country-flag
   max-width: 34px
   min-width: 34px
+  height: 22px
+  border-radius: 3px
+  overflow: hidden
+  @include d-flex
+  img
+    width: 100px
+    height: 100%
+    object-fit: cover
 
 .price-wrapper
   width: 100%
@@ -377,9 +402,11 @@
   background: #196250
   color: #fff
   z-index: 1
+
   h2
     color: #fff
     margin: 0 0 10px
+
   .container
     padding: 50px 15px
     position: relative
@@ -388,6 +415,7 @@
   position: relative
   z-index: 1
   overflow: hidden
+
   &:before
     content: ''
     position: absolute
@@ -432,6 +460,7 @@
       left: auto
       transform: none
       right: 259px
+
   .callback-image
     max-width: 534px
     top: 25px
@@ -440,6 +469,7 @@
 //marks
 .marks
   margin: 80px 0 60px
+
   h2
     margin: 0 0 20px
 
@@ -448,9 +478,11 @@
   display: flex
   align-items: flex-start
   flex-wrap: wrap
+
   li
     margin: 0 0 19px
     width: 14.2%
+
     a
       padding: 0 8px
       @include d-flex
@@ -472,10 +504,12 @@
   padding: 40px 46px 40px 40px
   line-height: 145%
   color: #303030
+
   &__icon
     width: 80px
     min-width: 80px
     @include d-flex
+
   &__body
     width: calc(100% - 80px)
     padding: 0 0 0 30px
@@ -485,16 +519,19 @@
   background: #196250
   position: relative
   overflow: hidden
+
   h2
     margin: 0 auto 43px
+
   .container
     position: relative
     z-index: 1
+
     &:before
       content: ''
       left: 12px
       top: 50%
-      transform: translate(0,-50%)
+      transform: translate(0, -50%)
       filter: blur(390px)
       width: 344px
       height: 344px
@@ -509,6 +546,7 @@
   border-radius: 6px
   padding: 20px 0
   color: #303030
+
   &__head
     width: 100%
     display: flex
@@ -516,11 +554,14 @@
     justify-content: space-between
     padding: 0 20px 0 30px
     cursor: pointer
+
     h4
       font-weight: 600
+
   &__body
     padding: 10px 30px 0
     line-height: 145%
+
     p
       max-width: 458px
 
@@ -533,6 +574,7 @@
   height: 21px
   min-width: 21px
   position: relative
+
   &:before, &:after
     content: ''
     position: absolute
@@ -540,11 +582,13 @@
     border-radius: 3px
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     transition: .3s ease
+
   &:before
     width: 3px
     height: 0
+
   &:after
     height: 3px
     width: 100%
@@ -560,9 +604,11 @@
   .slick-track
     display: flex
     align-items: stretch
+
   .slide
     padding: 25px 10px 30px
     height: auto
+
   .slick-list
     margin: 0 -10px
 
@@ -577,20 +623,25 @@
   border: 1px solid #E1E4E8
     radius: 20px
   padding: 40px 30px
+
   &__body
     width: 100%
     margin: 0 0 auto
+
     h4
       margin: 0 0 10px
       font-weight: 700
       font-size: 18px
+
     p
       line-height: 145%
+
   &__footer
     width: 100%
     margin: 18px 0 0
     display: flex
     align-items: center
+
   &__photo
     @include d-flex
     width: 60px
@@ -600,12 +651,15 @@
     color: #C7D7D3
     font-size: 34px
     font-weight: bold
+
   &__user
     padding: 0 0 0 15px
     width: calc(100% - 60px)
     font-size: 18px
+
   .name
     font-weight: bold
+
   .city
     margin: 10px 0 0
     color: #848484
@@ -685,45 +739,137 @@
 //      size: contain
 //    opacity: .3
 
-.list-social-subscribe
-  display: flex
-  align-items: flex-start
-  flex-wrap: wrap
 
-  li
-    margin: 0 140px 0 0
+//contacts
+.contacts
+  z-index: 1
+  position: relative
 
-    &:last-child
-      margin: 0
+  .container
+    position: relative
 
-    a
-      display: flex
-      flex-direction: column
-      align-items: center
-      text-align: center
-      color: #ffffff
-      font-size: 12px
-      font-weight: bold
-      text-transform: uppercase
+.contacts-box
+  background: #fff
+  max-width: 379px
+  width: 100%
+  filter: drop-shadow(0px 4px 30px rgba(0, 64, 122, 0.12))
+  padding: 30px
+  border: 1px solid #E1E4E8
+    radius: 6px
+  position: relative
+  z-index: 1
 
-.social-icon
-  fill: #fff
-  margin: 0 auto 20px
+.map
+  width: 100%
+  height: 100%
+  position: absolute
+  left: 0
+  top: 0
+
+  iframe
+    width: 100%
+    height: 100%
+
+.list-contacts-item
   display: flex
   align-items: center
-  justify-content: center
+  margin: 0 0 10px
+  color: #292929
 
-.social-icon-fb
-  width: 25px
-  height: 49px
+  &__icon
+    @include d-flex
+    border-radius: 50%
+    width: 30px
+    height: 30px
+    background: $accent
+    fill: #fff
+    padding: 7px
+  &__text
+    width: calc(100% - 30px)
+    padding: 0 0 0 10px
+  .whatsapp-icon
+    background: #29A71A
+  .telegram-icon
+    background: #1C8ADB
 
-.social-icon-inst
-  width: 49px
-  height: 49px
+a.list-contacts-item
+  &:hover
+    color: $accent
 
-.social-icon-tg
-  width: 44px
-  height: 49px
+.list-maps
+  padding: 0 0 0 40px
+  li
+    margin: 0 0 10px
+
+.list-maps-links
+  display: flex
+  align-items: center
+  color: $accent
+  font-feature-settings: 'pnum' on, 'lnum' on
+  &__icon
+    @include d-flex
+    width: 30px
+    height: 30px
+    border-radius: 50%
+    padding: 5px
+    img
+      max-height: 100%
+  &__text
+    width: calc(100% - 30px)
+    padding: 0 0 0 10px
+  &:hover
+    color: $black
+
+.waze-link
+  .list-maps-links__icon
+    background: #33CCFF
+
+.google-link
+  .list-maps-links__icon
+    background: #EFF2F9
+
+
+
+
+//.list-social-subscribe
+//  display: flex
+//  align-items: flex-start
+//  flex-wrap: wrap
+//
+//  li
+//    margin: 0 140px 0 0
+//
+//    &:last-child
+//      margin: 0
+//
+//    a
+//      display: flex
+//      flex-direction: column
+//      align-items: center
+//      text-align: center
+//      color: #ffffff
+//      font-size: 12px
+//      font-weight: bold
+//      text-transform: uppercase
+//
+//.social-icon
+//  fill: #fff
+//  margin: 0 auto 20px
+//  display: flex
+//  align-items: center
+//  justify-content: center
+//
+//.social-icon-fb
+//  width: 25px
+//  height: 49px
+//
+//.social-icon-inst
+//  width: 49px
+//  height: 49px
+//
+//.social-icon-tg
+//  width: 44px
+//  height: 49px
 
 //.professional
 //.professional

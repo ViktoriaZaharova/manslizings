@@ -13,7 +13,7 @@
 
 .modal__div
   position: fixed
-  max-width: 425px
+  max-width: 600px
   width: 100%
   height: 100%
   top: 45%
@@ -26,25 +26,15 @@
   flex-direction: column
   display: none
   opacity: 0
-  .form
-    margin: 26px 0 0
-    label
-      max-width: none
-      margin: 0 0 9px
-    .checkbox-custom
-      margin: 0 14px 0 0
-    .checkbox
-      font-size: 12px
-      margin: 20px 0 0
 
 
 .modal__close
   position: absolute
-  right: 13px
-  top: 11px
+  right: 20px
+  top: 20px
   cursor: pointer
-  width: 11px
-  height: 11px
+  width: 18px
+  height: 18px
   fill: #B0B0B0
 
 .modal__wrapper
@@ -52,39 +42,20 @@
   height: auto
   overflow: auto
   margin: 50px auto
-  padding: 45px 52px 40px
+  padding: 70px 43px 50px
   box-sizing: border-box
   position: relative
-  color: #fff
-  background: #2C333D
-  &:before
-    content: ''
-    position: absolute
-    width: 100%
-    height: 100%
-    background: linear-gradient(290.74deg, rgba(36, 45, 57, 0.3) 42.74%, rgba(42, 176, 81, 0) 98.96%), linear-gradient(270.4deg, #2C333D 37.57%, rgba(44, 51, 61, 0.870628) 53.04%, rgba(44, 51, 61, 0) 99.69%), url("../img/bg5.png") no-repeat -120px center
-      size: cover
-    opacity: .25
-    left: 0
-    top: 0
-  >*:not(.modal__close)
-    position: relative
-    z-index: 1
-  h2
-    text-transform: uppercase
-    margin: 0 auto 4px
-    font-size: 26px
-    font-weight: 800
-    color: #ffffff
-    text-align: center
-  p
-    text-align: center
-    margin: 0 auto
-    width: 100%
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25)
+  background: #fff
+  border: 1px solid #DCE0E7
+    radius: 5px
 
-.modal-thanks
-  max-width: 525px
   h2
-    margin: 0 auto 14px
-  .modal__wrapper
-    padding: 65px 60px 76px
+    margin: 0 auto 15px
+    text-align: center
+  .box-text
+    text-align: center
+  .btn
+    margin: 30px auto 0
+    max-width: 240px
+    width: 100%
