@@ -69,6 +69,8 @@ $('.btn-close__filter, .overlay-mobile').on('click', function (e) {
 
 
 
+
+
 // input focus
 $("input,textarea").focus(function () {
     $(this).parent().addClass("focus");

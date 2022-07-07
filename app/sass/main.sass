@@ -47,7 +47,7 @@ table
 
 body
   font-size: 16px
-  min-width: 360px
+  min-width: 320px
   position: relative
   line-height: normal
   font-family: $default-font
@@ -205,111 +205,112 @@ strong
 
 
 
-.btn-border
-  border: 2px solid #2AB051
-  text-transform: uppercase
-  color: #2A2D28
-  font-size: 16px
-  font-weight: 600
-  padding: 0 25px 0 34px
 
-  .btn-arrow
-    margin: 0 0 0 53px
+//.btn-border
+//  border: 2px solid #2AB051
+//  text-transform: uppercase
+//  color: #2A2D28
+//  font-size: 16px
+//  font-weight: 600
+//  padding: 0 25px 0 34px
+//
+//  .btn-arrow
+//    margin: 0 0 0 53px
+//
+//  &:hover
+//    background: #2AB051
+//    color: #fff
+//
+//    .btn-arrow
+//      fill: #fff
 
-  &:hover
-    background: #2AB051
-    color: #fff
+//.btn-border-grey
+//  border: 1px solid #DDE0DC
+//  height: 52px
+//  width: 100%
+//  justify-content: center
+//  align-items: center
+//  color: #656871
+//  font-size: 16px
+//  font-weight: 500
+//
+//  &:hover
+//    background: #DDE0DC
+//    color: #8FBA44
+//
+//.btn-border-green
+//  border: 1px solid $accent
+//  color: $accent
+//
+//  &:hover
+//    background: $accent
+//    color: #fff
+//
+//.btn-green
+//  background: #8FBA44
+//  color: #fff
+//  font-weight: 600
+//  font-size: 16px
+//
+//  .btn-arrow
+//    fill: #fff
+//    margin-left: 47px
+//    width: 20px
+//    height: 14px
+//    display: flex
+//    align-items: center
+//    justify-content: center
+//
+//  &:hover
+//    background: $green
+//    color: #fff
+//
+//    .btn-arrow
+//      fill: #fff
 
-    .btn-arrow
-      fill: #fff
+//.btn-red
+//  background: #BA4444
+//  color: #fff
+//  font-size: 16px
+//  font-weight: 500
+//  height: 40px
+//  padding: 0 25px
+//
+//  &:hover
+//    background: #8FBA44
+//
+//.btn-brown
+//  background: #BAAA44
+//  color: #fff
+//  font-size: 16px
+//  font-weight: 500
+//  height: 40px
+//  padding: 0 25px
+//
+//  &:hover
+//    background: #8FBA44
 
-.btn-border-grey
-  border: 1px solid #DDE0DC
-  height: 52px
-  width: 100%
-  justify-content: center
-  align-items: center
-  color: #656871
-  font-size: 16px
-  font-weight: 500
-
-  &:hover
-    background: #DDE0DC
-    color: #8FBA44
-
-.btn-border-green
-  border: 1px solid $accent
-  color: $accent
-
-  &:hover
-    background: $accent
-    color: #fff
-
-.btn-green
-  background: #8FBA44
-  color: #fff
-  font-weight: 600
-  font-size: 16px
-
-  .btn-arrow
-    fill: #fff
-    margin-left: 47px
-    width: 20px
-    height: 14px
-    display: flex
-    align-items: center
-    justify-content: center
-
-  &:hover
-    background: $green
-    color: #fff
-
-    .btn-arrow
-      fill: #fff
-
-.btn-red
-  background: #BA4444
-  color: #fff
-  font-size: 16px
-  font-weight: 500
-  height: 40px
-  padding: 0 25px
-
-  &:hover
-    background: #8FBA44
-
-.btn-brown
-  background: #BAAA44
-  color: #fff
-  font-size: 16px
-  font-weight: 500
-  height: 40px
-  padding: 0 25px
-
-  &:hover
-    background: #8FBA44
-
-.btn-grey
-  border: 1px solid #DDE0DC
-  background: #F5F5F5
-  color: #2A2D28
-  font-size: 16px
-  height: 40px
-  padding: 0 40px
-
-  &:hover
-    background: #8FBA44
-    color: #ffffff
+//.btn-grey
+//  border: 1px solid #DDE0DC
+//  background: #F5F5F5
+//  color: #2A2D28
+//  font-size: 16px
+//  height: 40px
+//  padding: 0 40px
+//
+//  &:hover
+//    background: #8FBA44
+//    color: #ffffff
 
 
-.links-active
-  border-bottom: 2px dotted #8FBA44
-  color: #8FBA44
-  font-weight: 600
-
-  &:hover
-    color: #B0B0B0
-    border-color: #B0B0B0
+//.links-active
+//  border-bottom: 2px dotted #8FBA44
+//  color: #8FBA44
+//  font-weight: 600
+//
+//  &:hover
+//    color: #B0B0B0
+//    border-color: #B0B0B0
 
 h1
   width: 100%
@@ -430,6 +431,55 @@ h2
     width: 12px
     height: 12px
 
+.title-line
+  width: 100%
+  position: relative
+  overflow: hidden
+  padding: 15px 0 16px
+  background: #196250
+  color: #fff
+  .container
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      background: #80FF00
+      width: 324px
+      height: 324px
+      top: 6px
+      left: 36px
+      filter: blur(240px)
+      mix-blend-mode: screen
+
+.h1
+  font-size: 34px
+  font-weight: 900
+  line-height: 1
+  margin: 0
+
+.breadcrumbs
+  display: flex
+  align-items: center
+  flex-wrap: wrap
+  font-size: 16px
+  line-height: 20px
+  color: #2A2D28
+  margin: 20px 0 40px
+  li
+    a
+      color: #2A2D28
+      display: flex
+      align-items: center
+
+      &:after
+        content: '>'
+        display: inline-block
+        margin: 0 5px
+      &:hover
+        color: $accent
+    span
+      display: inline-block
+      color: #848484
 
 
 //.list-social
@@ -1007,11 +1057,11 @@ h2
       padding: 0 28px 0 14px
 
 
-.page h1
-  width: 100%
-  margin: 0 0 34px
-  font-weight: 600
-
+//.page h1
+//  width: 100%
+//  margin: 0 0 34px
+//  font-weight: 600
+//
 
 //
 //.callback
@@ -1026,7 +1076,6 @@ h2
 //    bottom: 150px
 //    width: 1759px
 //    height: 872px
-//    background: linear-gradient(338.37deg, #FFFFFF 16.84%, rgba(255, 255, 255, 0) 80.01%), linear-gradient(180.36deg, #FFFFFF 0.33%, rgba(255, 255, 255, 0) 97.17%), linear-gradient(89.48deg, #FFFFFF 1.8%, rgba(255, 255, 255, 0) 69.36%), url("../img/bg3.png") no-repeat center
 //    background-size: contain
 //    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0)
 //    transform: matrix(-1, 0, 0, 1, 0, 0)
@@ -1116,7 +1165,6 @@ h2
 //    -webkit-transform: matrix(-1, 0, 0, 1, 0, 0)
 //    transform: matrix(-1, 0, 0, 1, 0, 0)
 //    mix-blend-mode: multiply
-//    background: url("../img/bg4.png") no-repeat center
 //    background-size: contain
 //    opacity: .3
 
@@ -1350,7 +1398,6 @@ h2
 //    top: 0
 //    mix-blend-mode: normal
 //    background-blend-mode: overlay, normal, normal, normal
-//    background: radial-gradient(102.73% 102.73% at 76.87% -71.29%, #FFFFFF 0%, rgba(214, 141, 31, 0) 98.36%), linear-gradient(358.37deg, rgba(44, 51, 61, 0.928261) -8.4%, rgba(44, 51, 61, 0.828262) -8.4%, #2C333D -8.4%, rgba(44, 51, 61, 0) 96.12%), linear-gradient(85.85deg, #2C333D 38.42%, rgba(44, 51, 61, 0.928261) 42.73%, rgba(44, 51, 61, 0.828262) 51.21%, rgba(44, 51, 61, 0) 97.33%), url("../img/bg1.png") no-repeat 700px center
 //    background-size: cover
 //    width: 100%
 //    height: 100%
@@ -2213,36 +2260,7 @@ h2
     font-size: 21px
     font-weight: 600
 
-.breadcrumbs
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -ms-flex-wrap: wrap
-  flex-wrap: wrap
-  font-weight: 600
-  color: #656871
 
-  li
-    a
-      color: #B0B0B0
-      display: -webkit-box
-      display: -ms-flexbox
-      display: flex
-      -webkit-box-align: center
-      -ms-flex-align: center
-      align-items: center
-
-      &:after
-        content: '—'
-        display: inline-block
-        margin: 0 5px
-
-    span
-      display: inline-block
-      color: #656871
 
 .clear-filter
   width: 100%
@@ -3536,361 +3554,299 @@ h2
 .fancybox__thumbs
   padding: 0 0 20px
 
-.page-thanks
-  padding: 100px 0 170px
 
-.page-thanks__item
-  width: 100%
-  text-align: center
 
-  h1
-    text-align: center
-    color: #2AB051
-
-  .thanks-icon
-    background: #FAFAFA
-    width: 140px
-    height: 140px
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-align: center
-    -ms-flex-align: center
-    align-items: center
-    -webkit-box-pack: center
-    -ms-flex-pack: center
-    justify-content: center
-    border-radius: 50%
-    margin: 0 auto 40px
-    padding: 48px
-
-    .svg-icon
-      fill: #2AB051
-
-  .box-text
-    font-size: 21px
-    font-weight: 500
-    line-height: 140%
-
-  .btn
-    margin: 80px auto 0
-    max-width: 264px
-
-.phone-item
-  display: inline-block
-  font-weight: 600
-  font-size: 30px
-  color: #2A2D28
-  margin: 0 0 0 10px
-
-  .svg-icon
-    width: 21px
-    height: 21px
-    fill: #2AB051
-    margin: 0 10px 0 0
-
-.page-checkout
-  padding: 75px 0 150px
-
-  h1
-    margin: 0 auto 10px
-    text-align: center
-    color: $accent
-    font-weight: 500
-
-  .box-text
-    text-align: center
-    font-size: 21px
-    font-weight: 500
-
-.btn-step
-  max-width: 264px
-  margin: 0 0 0 auto
-
-.checkout-form
-  width: 100%
-  max-width: none
-  border: 1px solid #DDE0DC
-  background: #FAFAFA
-  margin: 26px 0 0
-
-  label
-    position: relative
-    width: 100%
-    max-width: none
-    margin: 0 0 30px
-
-  input
-    border: 1px solid #DDE0DC
-    background: transparent
-    height: 55px
-    color: #2A2D28
-
-  .input-text
-    color: #656871
-    font-weight: 300
-
-  .list-checkbox
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-align: center
-    -ms-flex-align: center
-    align-items: center
-    -ms-flex-wrap: wrap
-    flex-wrap: wrap
-
-    li
-      width: auto
-      margin: 0 50px 10px 0
-
-      &:last-child
-        margin-right: 0
-
-  .focus
-    .label-wrapper
-      display: block
-      top: -10px
-      -webkit-transform: none
-      transform: none
-      left: 0
-
-    .input-text
-      padding: 3px
-      background: #FAFAFA
-      width: -moz-fit-content
-      width: fit-content
-
-      &:before
-        display: none
-
-    input, select, textarea
-      border: 1px solid #B0B0B0
-
-  h3
-    margin: 0 0 15px
-    color: #2A2D28
-    font-size: 21px
-    letter-spacing: 0.02em
-
-.checkout-head
-  background: #2D343E
-  width: 100%
-  padding: 27px 60px
-
-  .btn
-    -webkit-box-pack: end
-    -ms-flex-pack: end
-    justify-content: flex-end
-    margin: 0 0 0 auto
-    font-size: 24px
-    text-transform: uppercase
-    font-weight: bold
-    height: auto
-
-    .svg-icon
-      fill: #fff
-
-  .btn-arrow
-    margin: 0 0 0 30px
-    width: 26px
-    height: 18px
-
-.btn-white
-  color: #fff
-
-.page-checkout-wrapper
-  width: 100%
-
-.checkout-body
-  padding: 30px 80px 40px
-  width: 100%
-
-.checkout-stages
-  margin: 0 auto 35px
-  color: #656871
-  font-weight: 500
-  text-align: center
-
-.checkout-stages-lines
-  margin: 12px 0 0
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -webkit-box-pack: center
-  -ms-flex-pack: center
-  justify-content: center
-  -ms-flex-wrap: wrap
-  flex-wrap: wrap
-
-.checkout-stages-box
-  margin: 0 15px 0 0
-  background: #DDE0DC
-  width: 120px
-  height: 3px
-
-  &:last-child
-    margin: 0
-
-.step-ready
-  background: $accent
-
-.checkout-footer
-  width: 100%
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -webkit-box-pack: justify
-  -ms-flex-pack: justify
-  justify-content: space-between
-  -ms-flex-wrap: wrap
-  flex-wrap: wrap
-  margin: 10px 0 0
-
-.select-checkout
-  width: 100%
-  height: 55px
-  border: 1px solid #B0B0B0
-  background: transparent url("../img/arrow-bottom.svg") no-repeat calc(100% - 25px) center
-  background-size: 8px
-  padding: 0 25px 0 22px
-  font-size: 16px
-  font-weight: 300
-  color: #2A2D28
-  cursor: pointer
-  display: none
-
-.label-select
-  height: 55px
-  border: 1px solid #DDE0DC
-  cursor: pointer
-
-  &:after
-    content: ''
-    background: url("../img/arrow-bottom.svg") no-repeat right center
-    background-size: 100%
-    top: 50%
-    -webkit-transform: translate(0, -50%)
-    transform: translate(0, -50%)
-    right: 25px
-    width: 8px
-    height: 8px
-    position: absolute
-
-  &.focus
-    border: none
-
-    &:after
-      display: none
-
-    .select-checkout
-      display: block
-
-.input-luck
-  border: none
-
-  &:after
-    display: none
-
-  .select-checkout
-    display: block
-
-  .input-text
-    color: $accent
-    background: #FAFAFA
-    padding: 3px
-
-    &:before
-      display: none
-
-  input, select
-    border-color: $accent
-
-  .label-wrapper
-    padding: 0 17px
-    top: -10px
-    left: 0
-    -webkit-transform: none
-    transform: none
-
-.input-description
-  width: 100%
-  position: absolute
-  left: 0
-  top: 100%
-  padding: 4px 22px 0
-  font-size: 12px
-  font-weight: 300
-
-.input-error
-  .input-description, .input-text
-    color: #BA4444
-
-  input, select
-    border-color: #BA4444
-
-.links-prev
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  color: #8FBA44
-  font-size: 16px
-  font-weight: 600
-
-  &:hover
-    color: #2AB051
-
-.links-prev-icon
-  margin: 0 15px 0 0
-  width: 17px
-  height: 11px
-  fill: #8FBA44
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -webkit-box-pack: center
-  -ms-flex-pack: center
-  justify-content: center
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-
-.form-description
-  font-size: 16px
-  font-weight: 300
-  margin: 0 0 20px
-
-.label-file
-  width: 100%
-  cursor: pointer
-  border: 1px dashed #DDE0DC
-  height: 100px
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -webkit-box-pack: center
-  -ms-flex-pack: center
-  justify-content: center
-  background: #FFFFFF
-
-.input-file
-  display: none
-
-.input-file-icon
-  width: 29px
-  height: 26px
+//
+//
+//
+//.btn-step
+//  max-width: 264px
+//  margin: 0 0 0 auto
+//
+//.checkout-form
+//  width: 100%
+//  max-width: none
+//  border: 1px solid #DDE0DC
+//  background: #FAFAFA
+//  margin: 26px 0 0
+//
+//  label
+//    position: relative
+//    width: 100%
+//    max-width: none
+//    margin: 0 0 30px
+//
+//  input
+//    border: 1px solid #DDE0DC
+//    background: transparent
+//    height: 55px
+//    color: #2A2D28
+//
+//  .input-text
+//    color: #656871
+//    font-weight: 300
+//
+//  .list-checkbox
+//    display: -webkit-box
+//    display: -ms-flexbox
+//    display: flex
+//    -webkit-box-align: center
+//    -ms-flex-align: center
+//    align-items: center
+//    -ms-flex-wrap: wrap
+//    flex-wrap: wrap
+//
+//    li
+//      width: auto
+//      margin: 0 50px 10px 0
+//
+//      &:last-child
+//        margin-right: 0
+//
+//  .focus
+//    .label-wrapper
+//      display: block
+//      top: -10px
+//      -webkit-transform: none
+//      transform: none
+//      left: 0
+//
+//    .input-text
+//      padding: 3px
+//      background: #FAFAFA
+//      width: -moz-fit-content
+//      width: fit-content
+//
+//      &:before
+//        display: none
+//
+//    input, select, textarea
+//      border: 1px solid #B0B0B0
+//
+//  h3
+//    margin: 0 0 15px
+//    color: #2A2D28
+//    font-size: 21px
+//    letter-spacing: 0.02em
+//
+//.checkout-head
+//  background: #2D343E
+//  width: 100%
+//  padding: 27px 60px
+//
+//  .btn
+//    -webkit-box-pack: end
+//    -ms-flex-pack: end
+//    justify-content: flex-end
+//    margin: 0 0 0 auto
+//    font-size: 24px
+//    text-transform: uppercase
+//    font-weight: bold
+//    height: auto
+//
+//    .svg-icon
+//      fill: #fff
+//
+//  .btn-arrow
+//    margin: 0 0 0 30px
+//    width: 26px
+//    height: 18px
+//
+//.btn-white
+//  color: #fff
+//
+//.page-checkout-wrapper
+//  width: 100%
+//
+//.checkout-body
+//  padding: 30px 80px 40px
+//  width: 100%
+//
+//.checkout-stages
+//  margin: 0 auto 35px
+//  color: #656871
+//  font-weight: 500
+//  text-align: center
+//
+//.checkout-stages-lines
+//  margin: 12px 0 0
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  -webkit-box-pack: center
+//  -ms-flex-pack: center
+//  justify-content: center
+//  -ms-flex-wrap: wrap
+//  flex-wrap: wrap
+//
+//.checkout-stages-box
+//  margin: 0 15px 0 0
+//  background: #DDE0DC
+//  width: 120px
+//  height: 3px
+//
+//  &:last-child
+//    margin: 0
+//
+//.step-ready
+//  background: $accent
+//
+//.checkout-footer
+//  width: 100%
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  -webkit-box-pack: justify
+//  -ms-flex-pack: justify
+//  justify-content: space-between
+//  -ms-flex-wrap: wrap
+//  flex-wrap: wrap
+//  margin: 10px 0 0
+//
+//.select-checkout
+//  width: 100%
+//  height: 55px
+//  border: 1px solid #B0B0B0
+//  background: transparent url("../img/arrow-bottom.svg") no-repeat calc(100% - 25px) center
+//  background-size: 8px
+//  padding: 0 25px 0 22px
+//  font-size: 16px
+//  font-weight: 300
+//  color: #2A2D28
+//  cursor: pointer
+//  display: none
+//
+//.label-select
+//  height: 55px
+//  border: 1px solid #DDE0DC
+//  cursor: pointer
+//
+//  &:after
+//    content: ''
+//    background: url("../img/arrow-bottom.svg") no-repeat right center
+//    background-size: 100%
+//    top: 50%
+//    -webkit-transform: translate(0, -50%)
+//    transform: translate(0, -50%)
+//    right: 25px
+//    width: 8px
+//    height: 8px
+//    position: absolute
+//
+//  &.focus
+//    border: none
+//
+//    &:after
+//      display: none
+//
+//    .select-checkout
+//      display: block
+//
+//.input-luck
+//  border: none
+//
+//  &:after
+//    display: none
+//
+//  .select-checkout
+//    display: block
+//
+//  .input-text
+//    color: $accent
+//    background: #FAFAFA
+//    padding: 3px
+//
+//    &:before
+//      display: none
+//
+//  input, select
+//    border-color: $accent
+//
+//  .label-wrapper
+//    padding: 0 17px
+//    top: -10px
+//    left: 0
+//    -webkit-transform: none
+//    transform: none
+//
+//.input-description
+//  width: 100%
+//  position: absolute
+//  left: 0
+//  top: 100%
+//  padding: 4px 22px 0
+//  font-size: 12px
+//  font-weight: 300
+//
+//.input-error
+//  .input-description, .input-text
+//    color: #BA4444
+//
+//  input, select
+//    border-color: #BA4444
+//
+//.links-prev
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  color: #8FBA44
+//  font-size: 16px
+//  font-weight: 600
+//
+//  &:hover
+//    color: #2AB051
+//
+//.links-prev-icon
+//  margin: 0 15px 0 0
+//  width: 17px
+//  height: 11px
+//  fill: #8FBA44
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  -webkit-box-pack: center
+//  -ms-flex-pack: center
+//  justify-content: center
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//
+//.form-description
+//  font-size: 16px
+//  font-weight: 300
+//  margin: 0 0 20px
+//
+//.label-file
+//  width: 100%
+//  cursor: pointer
+//  border: 1px dashed #DDE0DC
+//  height: 100px
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  -webkit-box-pack: center
+//  -ms-flex-pack: center
+//  justify-content: center
+//  background: #FFFFFF
+//
+//.input-file
+//  display: none
+//
+//.input-file-icon
+//  width: 29px
+//  height: 26px
 
 .form-subscribe label
   max-width: none
@@ -3905,154 +3861,154 @@ h2
     left: -338px
     bottom: 0
 
-.page-news-wrapper
-  margin: 48px 0 0
-  width: 100%
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: start
-  -ms-flex-align: start
-  align-items: flex-start
-  -webkit-box-pack: justify
-  -ms-flex-pack: justify
-  justify-content: space-between
-  -ms-flex-wrap: wrap
-  flex-wrap: wrap
+//.page-news-wrapper
+//  margin: 48px 0 0
+//  width: 100%
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: start
+//  -ms-flex-align: start
+//  align-items: flex-start
+//  -webkit-box-pack: justify
+//  -ms-flex-pack: justify
+//  justify-content: space-between
+//  -ms-flex-wrap: wrap
+//  flex-wrap: wrap
 
-.page-news
-  position: relative
-  z-index: 1
-
-  &:before
-    content: 'via'
-    position: absolute
-    -webkit-transform: rotate(-90deg)
-    transform: rotate(-90deg)
-    color: #F4F6F4
-    font-size: 186px
-    font-weight: 900
-    text-transform: uppercase
-    line-height: 223px
-    top: 289px
-    left: -50px
-    z-index: -1
-
-  &:after
-    content: 'Auto'
-    position: absolute
-    -webkit-transform: rotate(90deg)
-    transform: rotate(90deg)
-    font-size: 220px
-    font-weight: 900
-    color: #F4F6F4
-    text-transform: uppercase
-    line-height: 263px
-    top: 430px
-    right: -200px
-    z-index: -1
-
-.news-column
-  width: 47%
-
-.news-img
-  position: relative
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -webkit-box-pack: center
-  -ms-flex-pack: center
-  justify-content: center
-  margin: 0 0 43px
-  height: 257px
-  width: 100%
-
-  img
-    height: 100%
-    width: 100%
-    -o-object-fit: cover
-    object-fit: cover
-
-.news-item__img
-  width: 100%
-  height: 177px
-  overflow: hidden
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -webkit-box-pack: center
-  -ms-flex-pack: center
-  justify-content: center
-  margin: 23px 0 0
-
-  img
-    width: 100%
-    height: 100%
-    -o-object-fit: cover
-    object-fit: cover
-
-.news-img-decor:before
-  content: ''
-  position: absolute
-  width: 340px
-  height: 50px
-  left: -340px
-  top: 50px
-  background: #2AB051
-
-.news-item
-  width: 100%
-  position: relative
-  border-bottom: 1px solid #DDE0DC
-  color: #2A2D28
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-orient: vertical
-  -webkit-box-direction: normal
-  -ms-flex-direction: column
-  flex-direction: column
-  -webkit-box-align: start
-  -ms-flex-align: start
-  align-items: flex-start
-  text-transform: uppercase
-  font-size: 16px
-
-  .svg-icon
-    position: absolute
-    right: 0
-    top: 50%
-    -webkit-transform: translate(0, -50%)
-    transform: translate(0, -50%)
-    width: 23px
-    height: 15px
-    fill: #8FBA44
-
-  &:hover
-    color: #8FBA44
-
-.news-item__body
-  position: relative
-  width: 100%
-  padding: 17px 23px 24px 0
-
-.news-item__date
-  font-size: 18px
-  font-weight: 300
-  color: #656871
-  line-height: 170%
-
-.news-item__name
-  font-weight: 600
-  margin: 6px 0 0
-  display: block
-  line-height: 140%
+//.page-news
+//  position: relative
+//  z-index: 1
+//
+//  &:before
+//    content: 'via'
+//    position: absolute
+//    -webkit-transform: rotate(-90deg)
+//    transform: rotate(-90deg)
+//    color: #F4F6F4
+//    font-size: 186px
+//    font-weight: 900
+//    text-transform: uppercase
+//    line-height: 223px
+//    top: 289px
+//    left: -50px
+//    z-index: -1
+//
+//  &:after
+//    content: 'Auto'
+//    position: absolute
+//    -webkit-transform: rotate(90deg)
+//    transform: rotate(90deg)
+//    font-size: 220px
+//    font-weight: 900
+//    color: #F4F6F4
+//    text-transform: uppercase
+//    line-height: 263px
+//    top: 430px
+//    right: -200px
+//    z-index: -1
+//
+//.news-column
+//  width: 47%
+//
+//.news-img
+//  position: relative
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  -webkit-box-pack: center
+//  -ms-flex-pack: center
+//  justify-content: center
+//  margin: 0 0 43px
+//  height: 257px
+//  width: 100%
+//
+//  img
+//    height: 100%
+//    width: 100%
+//    -o-object-fit: cover
+//    object-fit: cover
+//
+//.news-item__img
+//  width: 100%
+//  height: 177px
+//  overflow: hidden
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  -webkit-box-pack: center
+//  -ms-flex-pack: center
+//  justify-content: center
+//  margin: 23px 0 0
+//
+//  img
+//    width: 100%
+//    height: 100%
+//    -o-object-fit: cover
+//    object-fit: cover
+//
+//.news-img-decor:before
+//  content: ''
+//  position: absolute
+//  width: 340px
+//  height: 50px
+//  left: -340px
+//  top: 50px
+//  background: #2AB051
+//
+//.news-item
+//  width: 100%
+//  position: relative
+//  border-bottom: 1px solid #DDE0DC
+//  color: #2A2D28
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-orient: vertical
+//  -webkit-box-direction: normal
+//  -ms-flex-direction: column
+//  flex-direction: column
+//  -webkit-box-align: start
+//  -ms-flex-align: start
+//  align-items: flex-start
+//  text-transform: uppercase
+//  font-size: 16px
+//
+//  .svg-icon
+//    position: absolute
+//    right: 0
+//    top: 50%
+//    -webkit-transform: translate(0, -50%)
+//    transform: translate(0, -50%)
+//    width: 23px
+//    height: 15px
+//    fill: #8FBA44
+//
+//  &:hover
+//    color: #8FBA44
+//
+//.news-item__body
+//  position: relative
+//  width: 100%
+//  padding: 17px 23px 24px 0
+//
+//.news-item__date
+//  font-size: 18px
+//  font-weight: 300
+//  color: #656871
+//  line-height: 170%
+//
+//.news-item__name
+//  font-weight: 600
+//  margin: 6px 0 0
+//  display: block
+//  line-height: 140%
 
 .btn-load
   margin: 30px auto 0
@@ -4331,4 +4287,5 @@ h2
 @import "header"
 @import "footer"
 @import "home"
+@import "checkout"
 @import "media"
