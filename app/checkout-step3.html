@@ -17,8 +17,11 @@
   <!-- iOS Safari -->
   <meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+  <link rel="stylesheet" href="css/fileup.min.css">
   <link rel="stylesheet" href="css/main.css">
 
 </head>
@@ -27,597 +30,356 @@
 
 <div class="overlay-mobile"></div>
 
-<div class="mobile-filter mobile-wrapper">
-  <form method="post" class="form-search">
-    <label><input type="text" placeholder="Поиск..." name="search"></label>
-    <button type="submit">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#search"></use>
-      </svg>
-    </button>
-  </form>
-
-  <form method="post" class="form-filter">
-    <label>
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Город">Город</option>
-        <option value="Город">Город</option>
-        <option value="Город">Город</option>
-      </select>
-    </label>
-    <label>
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Марка">Марка</option>
-        <option value="Марка">Марка</option>
-        <option value="Марка">Марка</option>
-        <option value="Марка">Марка</option>
-      </select>
-    </label>
-    <label>
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Модель">Модель</option>
-        <option value="Модель">Модель</option>
-        <option value="Модель">Модель</option>
-        <option value="Модель">Модель</option>
-      </select>
-    </label>
-    <label class="w-50">
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Год, от">Год, от</option>
-      </select>
-    </label>
-    <label class="w-50">
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Год, до">Год, до</option>
-      </select>
-    </label>
-    <label>
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Топливо">Топливо</option>
-      </select>
-    </label>
-    <label>
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Трансмиссия">Трансмиссия</option>
-      </select>
-    </label>
-    <label>
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Тип кузова">Тип кузова</option>
-      </select>
-    </label>
-
-    <div class="range_val">
-      <div class="inp-group">
-        <label class="inp-group-item">
-          <span class="input-text-range">цена,  от</span>
-          <input type="text" name="dec" class="dec1">
-        </label>
-        <label class="inp-group-item">
-          <span class="input-text-range">цена,  до</span>
-          <input type="text" name="dec" class="dec2">
-        </label>
-      </div>
-      <div class="slider-range slider-range1"></div>
-    </div>
-
-    <button type="submit" class="btn btn-accent">
-      <span class="btn-text">найти авто</span>
-      <span class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
-    </button>
-  </form>
-</div>
-
-<div class="mobile-sorting mobile-wrapper">
-  <form method="post" class="form-search">
-    <label><input type="text" placeholder="Поиск..." name="search"></label>
-    <button type="submit">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#search"></use>
-      </svg>
-    </button>
-  </form>
-
-  <form method="post" class="form-filter">
-    <label>
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Город">Город</option>
-        <option value="Город">Город</option>
-        <option value="Город">Город</option>
-      </select>
-    </label>
-    <label>
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Марка">Марка</option>
-        <option value="Марка">Марка</option>
-        <option value="Марка">Марка</option>
-        <option value="Марка">Марка</option>
-      </select>
-    </label>
-    <label>
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Модель">Модель</option>
-        <option value="Модель">Модель</option>
-        <option value="Модель">Модель</option>
-        <option value="Модель">Модель</option>
-      </select>
-    </label>
-    <label class="w-50">
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Год, от">Год, от</option>
-      </select>
-    </label>
-    <label class="w-50">
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Год, до">Год, до</option>
-      </select>
-    </label>
-    <label>
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Топливо">Топливо</option>
-      </select>
-    </label>
-    <label>
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Трансмиссия">Трансмиссия</option>
-      </select>
-    </label>
-    <label>
-          <span class="select-arrow"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-select"></use></svg></span>
-      <select name="select" class="select">
-        <option value="Тип кузова">Тип кузова</option>
-      </select>
-    </label>
-
-    <div class="range_val">
-      <div class="inp-group">
-        <label class="inp-group-item">
-          <span class="input-text-range">цена,  от</span>
-          <input type="text" name="dec" class="dec1">
-        </label>
-        <label class="inp-group-item">
-          <span class="input-text-range">цена,  до</span>
-          <input type="text" name="dec" class="dec2">
-        </label>
-      </div>
-      <div class="slider-range slider-range1"></div>
-    </div>
-
-    <button type="submit" class="btn btn-accent">
-      <span class="btn-text">найти авто</span>
-      <span class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#search"></use></svg></span>
-    </button>
-  </form>
-</div>
-
-<div class="mobile-menu mobile-wrapper">
-  <div class="mobile-box">
-    <ul class="menu">
-      <li><a href="#">автолизинг</a></li>
-      <li><a href="#">автокредит</a></li>
-      <li><a href="#">авто партнеров</a></li>
-      <li><a href="#" class="active">Выкуп авто</a></li>
-      <li><a href="#">о нас</a></li>
-      <li><a href="news.html">новости </a></li>
-      <li><a href="contacts.html">Контакты</a></li>
-    </ul>
-  </div>
-
-  <div class="mobile-box">
-    <div class="phone-wrapper__body">
-      <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
-
-      <a href="#modal__callback" class="links-active open_modal">
-        Подать заявку на лизинг</a>
-    </div>
-    <div class="contacts-item">
-      <span>Режим работы:</span> 9:00 - 22:00
-    </div>
-    <a href="mailto:info@manslizings.lv" class="contacts-item">
-      <span>E-mail:</span>info@manslizings.lv
-    </a>
-
-  </div>
-
-  <div class="mobile-box">
-    <ul class="list-language">
-      <li><a href="#">LAT</a></li>
-      <li><a href="#" class="active">РУС</a></li>
-      <li><a href="#">ENG</a></li>
-    </ul>
-
-    <ul class="list-social">
-      <li><a href="#">
-        <svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#telegram"></use>
-        </svg>
-      </a></li>
-      <li><a href="#">
-        <svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#vk"></use>
-        </svg>
-      </a></li>
-      <li><a href="#">
-        <svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#whatsapp"></use>
-        </svg>
-      </a></li>
-      <li><a href="#">
-        <svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#fb"></use>
-        </svg>
-      </a></li>
-      <li><a href="#">
-        <svg class="svg-icon">
-          <use xlink:href="img/sprite.svg#instagram"></use>
-        </svg>
-      </a></li>
-    </ul>
-  </div>
-</div>
-
 <header>
-  <div class="container">
-    <a href="index.html" class="logo"><img src="img/logo.png" alt=""></a>
-    <a href="tel:26-777-987" class="phone-wrapper__mobile">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#phone"></use>
-      </svg>
-    </a>
-    <div class="btn-search">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#search"></use>
-      </svg>
-    </div>
-    <div class="header-row">
-      <div class="header-top">
-        <a href="mailto:info@manslizings.lv" class="contacts-item">
-          <span>E-mail:</span>info@manslizings.lv
-        </a>
-        <div class="contacts-item">
-          <span>Режим работы:</span> 9:00 - 22:00
-        </div>
+  <div class="header-top">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center">
+          <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
 
-        <ul class="list-language">
-          <li><a href="#">LAT</a></li>
-          <li><a href="#" class="active">РУС</a></li>
-          <li><a href="#">ENG</a></li>
-        </ul>
+          <form method="post" class="form-search">
+            <label>
+          <span class="input-icon-search"><svg class="svg-icon">
+            <use xlink:href="img/sprite.svg#search"></use>
+          </svg></span>
+              <input type="text" placeholder="Поиск..." name="search">
+            </label>
+            <button type="submit" class="btn btn-accent btn-sm">Найти</button>
+          </form>
 
-        <div class="phone-wrapper">
-          <div class="phone-wrapper__body">
-            <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
-
-            <a href="#modal__callback" class="links-active open_modal">
-              Подать заявку на лизинг</a>
+          <div class="dropdown dropdown-language">
+            <a href="#" class="dropdown-toggle">Рyc</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Рyc</a>
+              <a href="#" class="dropdown-item">Lat</a>
+              <a href="#" class="dropdown-item">Eng</a>
+            </div>
           </div>
 
-          <a href="#modal__callback" class="btn-phone open_modal">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#phone"></use>
-            </svg>
-          </a>
+          <div class="schedule-box">
+            <div class="schedule-box__icon">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#clock"></use>
+              </svg>
+            </div>
+            <div class="schedule-box__text">
+              Время работы:
+              9:00 - 22:00
+            </div>
+          </div>
+
+          <div class="header-box">
+            <a href="tel:+37126612612" class="phone">
+              <span class="phone-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
+              <span class="phone-text">+371 26-612-612</span>
+            </a>
+            <a href="mailto:info@manslizings.lv" class="mail">
+              <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
+              <span class="mail-text">info@manslizings.lv</span>
+            </a>
+          </div>
+
+          <div class="btn-burger">
+            <span></span>
+            <span></span>
+            <span></span>
+          </div>
         </div>
       </div>
-      <div class="header-bottom">
-        <ul class="menu">
-          <li><a href="#">автолизинг</a></li>
-          <li><a href="#">автокредит</a></li>
-          <li><a href="#">авто партнеров</a></li>
-          <li><a href="#" class="active">Выкуп авто</a></li>
-          <li><a href="#">о нас</a></li>
-          <li><a href="#">новости </a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-      </div>
-    </div>
-
-    <div class="btn-burger">
-      <svg class="svg-icon">
-        <use xlink:href="img/sprite.svg#burger"></use>
-      </svg>
     </div>
   </div>
 
+  <div class="header-bottom">
+    <div class="container">
+      <div class="row">
+        <div class="col-12 d-flex align-items-center flex-wrap">
+          <nav class="nav-menu">
+            <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+
+            <a href="#" class="nav-menu__close"></a>
+
+            <ul class="menu ul-my">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Автолизинг</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">menu1</a>
+                  <a href="#" class="dropdown-item">menu1</a>
+                  <a href="#" class="dropdown-item">menu1</a>
+                </div>
+              </li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle">Автокредит</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">menu2</a>
+                  <a href="#" class="dropdown-item">menu2</a>
+                  <a href="#" class="dropdown-item">menu2</a>
+                </div>
+              </li>
+              <li><a href="#">Авто партнеров</a></li>
+              <li><a href="#">Выкуп авто</a></li>
+              <li><a href="#">О нас</a></li>
+              <li><a href="#">Новости </a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+
+            <div class="header-box">
+              <a href="tel:+37126612612" class="phone">
+                <span class="phone-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#phone"></use></svg></span>
+                <span class="phone-text">+371 26-612-612</span>
+              </a>
+              <a href="mailto:info@manslizings.lv" class="mail">
+                <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
+                <span class="mail-text">info@manslizings.lv</span>
+              </a>
+            </div>
+            <div class="schedule-box">
+              <div class="schedule-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <div class="schedule-box__text">
+                Время работы:
+                9:00 - 22:00
+              </div>
+            </div>
+
+            <div class="language-box">
+              <p>Язык:</p>
+              <ul class="list-language ul-my">
+                <li><a href="#" class="active">Рyc</a></li>
+                <li><a href="#">Lat</a></li>
+                <li><a href="#">Eng</a></li>
+              </ul>
+            </div>
+          </nav>
+        </div>
+      </div>
+    </div>
+  </div>
 </header>
 
+<div class="title-line">
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <div class="h1">Работа и финансы</div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <section class="page page-checkout">
   <div class="container">
 
-    <div class="page-checkout-wrapper">
-      <h1>Спасибо! Ваша заявка принята.</h1>
-      <div class="box-text">
-        <p>Чтобы ускорить её рассмотрение, просим Вас заполните расширенную заявку ниже.</p>
+    <div class="row">
+      <div class="col-12">
+        <ul class="breadcrumbs ul-my">
+          <li><a href="index.html">Главная</a></li>
+          <li><a href="#">Новые поступления</a></li>
+          <li><span>Hyundai Santa Fe</span></li>
+        </ul>
       </div>
 
-
-      <form method="post" class="checkout-form form">
-        <div class="checkout-head">
-          <a href="#" class="btn btn-white">
-            <span class="btn-text">Работа и финансы</span>
-            <span class="btn-arrow"><svg
-                class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
-          </a>
-        </div>
-
-        <div class="checkout-body">
-          <div class="checkout-stages">
-            <p>Остался последний шаг</p>
-            <div class="checkout-stages-lines">
-              <div class="checkout-stages-box step-ready"></div>
-              <div class="checkout-stages-box step-ready"></div>
-              <div class="checkout-stages-box step-ready"></div>
-            </div>
+      <div class="col-12">
+        <div class="page-checkout-wrapper">
+          <h1>Спасибо! Ваша заявка принята.</h1>
+          <div class="box-text">
+            <p>Чтобы ускорить её рассмотрение, просим Вас заполните расширенную заявку ниже.</p>
           </div>
 
-          <div class="w-100">
-            <div class="form-checkout-row row">
+          <form method="post" class="checkout-form form">
+
+            <div class="row">
               <div class="col-12">
-                <h3>Работа</h3>
-              </div>
-              <div class="col-3">
-                <label class="label-input">
-                <span class="label-wrapper">
-                  <span class="input-text">Работодатель*</span>
-                </span>
-                  <input type="text" name="address">
-                </label>
-              </div>
-              <div class="col-3">
-                <label class="label-input">
-                <span class="label-wrapper">
-                  <span class="input-text">Должность*</span>
-                </span>
-                  <input type="text" name="address">
-                </label>
-              </div>
-              <div class="col-3">
-                <label class="label-input">
-                <span class="label-wrapper">
-                  <span class="input-text">Опыт работы (мес.)*</span>
-                </span>
-                  <input type="text" name="address">
-                </label>
-              </div>
-              <div class="col-3">
-                <label class="label-input">
-                <span class="label-wrapper">
-                  <span class="input-text">Вид доходов (зарп. и т.д.) *</span>
-                </span>
-                  <input type="text" name="address">
-                </label>
-              </div>
-              <div class="col-3">
-                <label class="label-input">
-                <span class="label-wrapper">
-                  <span class="input-text">Доходы, мес*</span>
-                </span>
-                  <input type="text" name="address">
-                </label>
-              </div>
-            </div>
-            <div class="form-checkout-row align-items-center row">
-              <div class="col-6">
-                <h3>Выписка со счёта</h3>
-                <div class="form-description">
-                  <p>Выписка необходима, чтобы подготовить для Вас наилучшее предложение. Загрузите выписку со счета с <strong>31.12.21 по 31.12.22</strong></p>
+                <div class="checkout-stages">
+                  <p>Шаг 3 из 3</p>
+                  <div class="checkout-stages-lines">
+                    <div class="checkout-stages-box step-ready"></div>
+                    <div class="checkout-stages-box step-ready"></div>
+                    <div class="checkout-stages-box step-ready"></div>
+                  </div>
                 </div>
               </div>
-              <div class="col-6">
-                <label class="label-file">
-                  <input type="file" name="file" class="input-file">
-                  <span class="input-file-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#camera"></use></svg></span>
+            </div>
+
+            <div class="row">
+              <div class="col-12 col-sm-6 col-lg-4">
+                <label>
+                  <input type="text" name="employer" placeholder="Работодатель">
+                </label>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4">
+                <label>
+                  <select name="select" class="select-my">
+                    <option value="Должность">Должность</option>
+                    <option value="Должность">Должность</option>
+                    <option value="Должность">Должность</option>
+                  </select>
+                </label>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4">
+                <label>
+                  <select name="select" class="select-my">
+                    <option value="Опыт работы (мес)">Опыт работы (мес)</option>
+                    <option value="Опыт работы (мес)">Опыт работы (мес)</option>
+                    <option value="Опыт работы (мес)">Опыт работы (мес)</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                <label>
+                  <input type="text" name="type_sum" placeholder="Вид доходов (зарплата и т.д)">
+                </label>
+              </div>
+
+              <div class="col-12 col-sm-6 col-lg-4">
+                <label>
+                  <input type="text" name="income" placeholder="Доходы/мес">
                 </label>
               </div>
 
             </div>
-          </div>
 
-          <div class="checkout-footer">
-            <a href="#" class="links-prev">
-              <span class="links-prev-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
-              <span class="links-prev-text">Вернуться назад</span>
-            </a>
+            <div class="row align-items-center checkout-files">
+              <div class="col-12 col-lg-7 order-lg-1">
+                <div class="form-description">
+                  <h3>Выписка со счёта</h3>
+                  <div class="box-text">
+                    <p>Выписка необходима, чтобы подготовить для Вас наилучшее предложение. Загрузите выписку со счета с
+                      <strong>31.12.21 по 31.12.22</strong></p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-lg-5">
+                <label class="label-file">
+                  <input type="file" name="file" class="input-file" id="upload-demo" multiple>
+                  <span class="input-file-icon"><svg class="svg-icon"><use
+                      xlink:href="img/sprite.svg#camera"></use></svg></span>
+                </label>
+              </div>
 
-            <button type="submit" class="btn btn-accent btn-step"><span class="btn-text">готово</span><span class="btn-arrow"><svg
-                class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span></button>
-          </div>
+              <div class="col-12 order-1">
+                <div class="label-file-result queue" id="upload-demo-queue"></div>
+              </div>
+            </div>
+
+            <div class="row align-items-center checkout-footer">
+              <div class="col-12 col-sm-6 col-lg-4 order-sm-1">
+                <a href="thanks.html" class="btn btn-accent btn-step"><span class="btn-text">Подать заявку</span></a>
+              </div>
+              <div class="col-12 col-sm-6 col-lg-4">
+                <a href="checkout-step2.html" class="links-prev">
+                    <span class="links-prev-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
+                  <span class="links-prev-text">Вернуться назад</span>
+                </a>
+              </div>
+            </div>
+          </form>
+
         </div>
-      </form>
-
-
+      </div>
     </div>
+
   </div>
 </section>
-
 
 <footer>
   <div class="footer-top">
     <div class="container">
-      <div class="phone-wrapper">
-        <a href="#modal__callback" class="btn-phone open_modal">
-          <svg class="svg-icon">
-            <use xlink:href="img/sprite.svg#phone"></use>
-          </svg>
-        </a>
-        <div class="phone-wrapper__body">
-          <a href="tel:+37126612612" class="phone">+371 26-612-612</a>
+      <div class="row">
+        <div class="col-12 col-lg-3">
+          <a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
+          <div class="description-company">
+            <p>Компания «Manslizing» работает на рынке автоуслуг Латвии с 2002 года! Купите автомобиль на выгодных
+              условиях.</p>
+          </div>
+        </div>
+        <div class="col-12 col-lg-9 d-flex flex-wrap">
+          <ul class="footer-menu ul-my">
+            <li><a href="#">Автолизинг</a></li>
+            <li><a href="#">Автокредит</a></li>
+            <li><a href="#">Авто партнеров</a></li>
+            <li><a href="#">Выкуп авто</a></li>
+          </ul>
+          <ul class="footer-menu ul-my">
+            <li><a href="#">О нас</a></li>
+            <li><a href="#">Новости </a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+
+          <div class="footer-box">
+            <a href="tel:+37126612612" class="phone">
+              <span class="phone-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
+              <span class="phone-text">+371 26-612-612</span>
+            </a>
+            <a href="mailto:info@manslizings.lv" class="mail">
+              <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
+              <span class="mail-text">info@manslizings.lv</span>
+            </a>
+            <div class="schedule-box">
+              <div class="schedule-box__icon">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#clock"></use>
+                </svg>
+              </div>
+              <div class="schedule-box__text">
+                Время работы:
+                9:00 - 22:00
+              </div>
+            </div>
+          </div>
+
+          <div class="footer-box">
+            <div class="address">
+              <span class="phone-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#location"></use></svg></span>
+              <span class="phone-text">Riga - Maskavas iela 418, LV-1063</span>
+            </div>
+            <ul class="list-maps ul-my">
+              <li>
+                <a href="#" target="_blank" class="list-maps-links waze-link">
+                  <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
+                  <span class="list-maps-links__text">Проложить маршрут в Waze</span>
+                </a>
+              </li>
+              <li>
+                <a href="#" target="_blank" class="list-maps-links google-link">
+                  <span class="list-maps-links__icon"><img src="img/googole.svg" alt=""></span>
+                  <span class="list-maps-links__text">Показать на карте</span>
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
-
-      <!--      <a href="mailto:info@manslizings.lv" class="contacts-item">-->
-      <!--        <span>E-mail:</span>info@manslizings.lv-->
-      <!--      </a>-->
-      <div class="contacts-item">
-        <span>Режим работы:</span> 9:00 - 22:00
-      </div>
-
-      <a href="#" class="btn btn-subscribe">
-        <span class="btn-text">Подписаться на новости</span>
-        <span class="btn-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
-      </a>
-    </div>
-  </div>
-  <div class="footer-center">
-    <div class="container">
-      <div class="footer-box">
-        <h3>Больше на сайте</h3>
-        <ul class="footer-menu">
-          <li><a href="#">Автолизинг</a></li>
-          <li><a href="#">Выкуп авто</a></li>
-          <li><a href="#">Авто партнеров</a></li>
-          <li><a href="#">О нас</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-box">
-        <h3>Безопасность</h3>
-        <ul class="footer-menu">
-          <li><a href="#">Правила пользования</a></li>
-          <li><a href="#">Политика безопасности</a></li>
-        </ul>
-      </div>
-
-      <div class="footer-box">
-        <h3>Предприятие</h3>
-        <ul class="footer-menu">
-          <li><p>SIA 'RP motors' 44103127443</p></li>
-          <li><p>Valmiera - Rīgas iela 62, LV-4201</p></li>
-        </ul>
-      </div>
-
-      <div class="map" id="map"></div>
-
     </div>
   </div>
 
   <div class="footer-bottom">
     <div class="container">
-      <a href="http://autovia.lv" class="links-web">autovia.lv</a>
-      <div class="copyright"> © 2021.Все права защищены</div>
+      <div class="row">
+        <div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
+          <div class="registration-number">SIA ZEVA AUTO Reg. nr. 40103942814</div>
+          <div class="copyright">© 2021 Все права защищены</div>
+        </div>
+      </div>
     </div>
   </div>
 </footer>
 
-<ul class="list-social">
-  <li><a href="#">
-    <svg class="svg-icon">
-      <use xlink:href="img/sprite.svg#telegram"></use>
-    </svg>
-  </a></li>
-  <li><a href="#">
-    <svg class="svg-icon">
-      <use xlink:href="img/sprite.svg#vk"></use>
-    </svg>
-  </a></li>
-  <li><a href="#">
-    <svg class="svg-icon">
-      <use xlink:href="img/sprite.svg#whatsapp"></use>
-    </svg>
-  </a></li>
-  <li><a href="#">
-    <svg class="svg-icon">
-      <use xlink:href="img/sprite.svg#fb"></use>
-    </svg>
-  </a></li>
-  <li><a href="#">
-    <svg class="svg-icon">
-      <use xlink:href="img/sprite.svg#instagram"></use>
-    </svg>
-  </a></li>
-</ul>
-
-<!--modal-->
-<div class="modal__div" id="modal__callback">
-  <div class="modal__wrapper">
-    <span class="modal__close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></span>
-    <h2>Оставить заявку</h2>
-    <p>Мы свяжемся с вами в ближайшее время</p>
-
-    <form method="post" class="form">
-      <label>
-        <input type="text" name="name">
-          <span class="label-wrapper">
-            <span class="input-text">Ваше Имя</span>
-          </span>
-      </label>
-
-      <label>
-        <input type="text" name="phone" required>
-          <span class="label-wrapper">
-            <span class="input-text">Телефон</span>
-            <span class="necessarily">обязательно</span>
-          </span>
-      </label>
-
-      <button type="submit" class="btn btn-accent">
-        <span class="btn-text">отправить</span>
-        <span class="btn-arrow"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
-      </button>
-
-      <label class="checkbox">
-        <input class="checkbox-inp" type="checkbox" name="checkbox" checked>
-        <span class="checkbox-custom"></span>
-        <span class="label">Я согласен с <a href="#">политикой безопасности</a> и <a href="#">правилами использования персональных даных</a></span>
-      </label>
-      <label class="checkbox">
-        <input class="checkbox-inp" type="checkbox" name="checkbox" checked>
-        <span class="checkbox-custom"></span>
-        <span class="label">Я хочу получать маркетинговые предложения</span>
-      </label>
-    </form>
-  </div>
-</div>
-
-<div class="modal__div modal-thanks" id="modal__thanks">
-  <div class="modal__wrapper">
-    <span class="modal__close"><svg class="svg-icon"><use xlink:href="img/sprite.svg#close"></use></svg></span>
-    <h2>Заявка отправлена!</h2>
-    <p>Благодарим вас! Наш специалист свяжется с вами по телефону в ближайшее время для уточнение деталей.</p>
-  </div>
-</div>
-<!-- Пoдлoжкa -->
-<div class="overlay"></div>
-
-<a href="#modal__thanks" class="btn btn-accent open_modal">Заявка отправлена!</a>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+        crossorigin="anonymous"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-<script src="https://api-maps.yandex.ru/2.0/?load=package.standard,package.geoObjects&lang=ru-RU"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="js/fileup.js"></script>
 <script src="js/common.js"></script>
 
 </body>
