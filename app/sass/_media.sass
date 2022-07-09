@@ -203,30 +203,24 @@
 
 
 
-  .btn-subscribe
-    position: relative
-    clip-path: none
-    width: calc(100% + 30px)
-    margin: 0 -15px
-    height: 60px
-    padding: 0
-    top: 0
-    bottom: 0
-    right: 0
-    -webkit-box-pack: center
-    -ms-flex-pack: center
-    justify-content: center
+  //.btn-subscribe
+  //  position: relative
+  //  clip-path: none
+  //  width: calc(100% + 30px)
+  //  margin: 0 -15px
+  //  height: 60px
+  //  padding: 0
+  //  top: 0
+  //  bottom: 0
+  //  right: 0
+  //  -webkit-box-pack: center
+  //  -ms-flex-pack: center
+  //  justify-content: center
+  //
+  //  .btn-text
+  //    margin: 0 12px 0 0
+  //    font-size: 17px
 
-    .btn-text
-      margin: 0 12px 0 0
-      font-size: 17px
-
-
-  .range_val, .inp-group
-    width: 100%
-
-  //footer .contacts-item
-  //  margin: 0 0 0 auto
 
 
 @media only screen and (max-width: 992px)
@@ -300,6 +294,49 @@
     margin: 0 0 20px
     h3
       margin: 0 0 10px
+
+  .sidebar
+    display: none
+    position: fixed
+    left: 0
+    top: 0
+    z-index: 3
+    padding: 20px
+    background: #fff
+    overflow-y: auto
+    height: 100%
+    border: none
+      radius: 0
+
+
+  .btn-filter, .sidebar-close
+    display: flex
+
+  .catalog-mobile-nav
+    display: flex
+
+  .sorting-box
+    display: none
+
+  .nav-tabs
+    margin: 0 0 0 auto
+    padding: 6.5px 0 6.5px 19px
+    order: 1
+    border-left: 1px solid #E1E4E8
+    justify-content: flex-end
+    .nav-link
+      width: 22px
+      height: 22px
+
+  .total-val-result
+    width: calc(100% - 80px)
+    text-align: left
+    padding: 9px 0
+
+
+  .catalog-top
+    padding: 5px 15px
+    margin: 0 0 20px
 
 
   //.footer-bottom
@@ -388,10 +425,10 @@
   .price-wrapper
     margin: 14px 0 0
 
-  .btn-details
-    padding: 0 23px 0 28px
-    height: 40px
-    font-size: 16px
+  //.btn-details
+  //  padding: 0 23px 0 28px
+  //  height: 40px
+  //  font-size: 16px
 
   .btn-border-grey
     font-size: 14px
@@ -403,11 +440,6 @@
     height: 41px
 
 
-  .sorting-line
-    padding: 10px
-
-  .sorting-box
-    font-size: 14px
 
   .list-requisites
     padding: 20px 15px
@@ -892,60 +924,44 @@
   //  font-size: 21px
   //  margin: 0 0 12px
 
-  .sidebar
-    display: none
-    position: fixed
-    left: 0
-    top: 0
-    z-index: 3
-    padding: 20px
-    background: #fff
-    overflow-y: auto
-    height: 100%
 
-  .btn-filter, .sidebar-close
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
 
-  .catalog-content
-    width: 100%
-    padding: 0
+  //.catalog-content
+  //  width: 100%
+  //  padding: 0
 
-  .sorting-line
-    display: none
 
-  .page-catalog-wrapper
-    margin: 0 0 60px
+  //.page-catalog-wrapper
+  //  margin: 0 0 60px
 
-  .sidebar-title
-    padding: 15px 20px
+  //.sidebar-title
+  //  padding: 15px 20px
 
-  .sidebar-box .inp-group-item
-    font-size: 13px
+  //.sidebar-box .inp-group-item
+  //  font-size: 13px
+  //
+  //  input
+  //    width: calc(100% - 25px)
+  //
+  //  width: 49%
 
-    input
-      width: calc(100% - 25px)
-
-    width: 49%
-
-  .brands-slider__group
-    -webkit-box-orient: vertical
-    -webkit-box-direction: normal
-    -ms-flex-direction: column
-    flex-direction: column
-    align-self: flex-start
-
-  .brands-slider__box
-    width: 160px
-    height: 100px
-    margin: 0 20px 20px 0
-
-    &:last-child
-      margin-bottom: 0
-
-  .brands-slider
-    margin: 50px 0 0
+  //.brands-slider__group
+  //  -webkit-box-orient: vertical
+  //  -webkit-box-direction: normal
+  //  -ms-flex-direction: column
+  //  flex-direction: column
+  //  align-self: flex-start
+  //
+  //.brands-slider__box
+  //  width: 160px
+  //  height: 100px
+  //  margin: 0 20px 20px 0
+  //
+  //  &:last-child
+  //    margin-bottom: 0
+  //
+  //.brands-slider
+  //  margin: 50px 0 0
 
   .page-contacts-box
     width: 50%
@@ -1019,20 +1035,9 @@
   //.news-img
   //  height: 170px
 
-  .catalog-mobile-nav
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
 
-  .mobile-vehicle-chat-sms
-    .btn-arrow
-      margin: 0
 
-    &:after
-      width: 100px
 
-  .catalog-mobile-line
-    display: flex
 
 /* Extra Small Devices, Phones
 @media only screen and (max-width: 650px)
@@ -1041,6 +1046,7 @@
       display: none
     .logo
       margin: 0 auto 0 0
+
 
 
 
@@ -1296,6 +1302,24 @@
     height: 60px
     margin: 0 auto 20px
 
+  .total-val-result
+    font-size: 13px
+
+  .card-banner
+    min-height: 247px
+    h3
+      font-size: 16px
+    .btn
+      height: 40px
+      font-size: 14px
+
+  .pagination
+    font-size: 14px
+    .page-item
+      margin: 0 2px 0 0
+    .page-link
+      width: 30px
+      height: 36px
 
   //.footer-box
   //  width: 100%
@@ -1357,20 +1381,20 @@
       margin: 2px 0 0
 
 
-  .page-top .links-next
-    display: none
+  //.page-top .links-next
+  //  display: none
 
 
   .catalog-content h3
     font-size: 18px
 
-  .brands-slider__box
-    width: 130px
-    height: 86px
-    margin: 0 10px 20px
-
-    &:last-child
-      margin-bottom: 0
+  //.brands-slider__box
+  //  width: 130px
+  //  height: 86px
+  //  margin: 0 10px 20px
+  //
+  //  &:last-child
+  //    margin-bottom: 0
 
   .page-contacts-box
     width: 100%

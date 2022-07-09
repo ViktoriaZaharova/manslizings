@@ -26,9 +26,29 @@ $(function () {
         }
     });
 
-    $('.ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + '€' + $('#filter__range').slider('values', 0) + '</span>');
-    $('.ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + '€' + $('#filter__range').slider('values', 1) + '</span>');
+    $('#filter__range .ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + '€' + $('#filter__range').slider('values', 0) + '</span>');
+    $('#filter__range .ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + '€' + $('#filter__range').slider('values', 1) + '</span>');
 });
+
+
+$('.slider-range1').slider({
+    range: true,
+    min: 0,
+    max: 10000,
+    values: [1000, 7895],
+    classes: {
+        "ui-slider-handle": "ui-corner-all"
+    },
+    slide: function (event, ui) {
+        //Поле минимального значения
+        $(".dec1").val('€' + ' ' + ui.values[0]);
+        //Поле максимального значения
+        $(".dec2").val('€' + ' ' + ui.values[1]);
+    }
+});
+
+$(".dec1").val('€' + ' ' + $(".slider-range1").slider("values", 0));
+$(".dec2").val('€' + ' ' + $(".slider-range1").slider("values", 1));
 
 
 $('.reviews-slider').slick({
@@ -76,6 +96,19 @@ $('.main-slider').slick({
         '</svg>\n</button>',
 });
 
+$('.sidebar-close').on('click', function () {
+    $('.sidebar').fadeOut();
+    $('.mobile-sorting').fadeOut();
+});
+
+$('.btn-filter').on('click', function () {
+    $('.sidebar').fadeToggle();
+});
+
+$('.btn-sorting').on('click', function () {
+    $('.mobile-sorting').fadeToggle();
+});
+
 
 // this is your selector
 $.fileup({
@@ -92,6 +125,7 @@ $.fileup({
     timeout: null,
     autostart: false,
 });
+
 
 
 
@@ -126,25 +160,7 @@ $.fileup({
 // });
 
 
-// $('.slider-range2').slider({
-//     range: true,
-//     min: 2000,
-//     max: 2021,
-//     values: [0, 2018],
-//     classes: {
-//         "ui-slider-handle": "ui-corner-all"
-//     },
-//     slide: function (event, ui) {
-//         //Поле минимального значения
-//         $(".dec3").val(ui.values[0]);
-//         //Поле максимального значения
-//         $(".dec4").val(ui.values[1]);
-//     }
-// });
 
-
-// $(".dec3").val($(".slider-range2").slider("values", 0));
-// $(".dec4").val($(".slider-range2").slider("values", 1));
 //
 // $('.slider-range3').slider({
 //     range: true,
@@ -254,18 +270,18 @@ $.fileup({
 //end
 
 
-$('.btn-search').on('click', function () {
-    $(this).toggleClass('open');
-    $('.overlay-mobile').fadeToggle();
-    $('.mobile-filter').fadeToggle();
-});
+// $('.btn-search').on('click', function () {
+//     $(this).toggleClass('open');
+//     $('.overlay-mobile').fadeToggle();
+//     $('.mobile-filter').fadeToggle();
+// });
 
-$('.brands-slider').slick({
-    slidesToShow: 2,
-    arrows: false,
-    dots: true,
-    variableWidth: true
-});
+// $('.brands-slider').slick({
+//     slidesToShow: 2,
+//     arrows: false,
+//     dots: true,
+//     variableWidth: true
+// });
 
 $('.product-gallery').slick({
     slidesToShow: 1,
@@ -324,18 +340,7 @@ $('.page-article-slider').slick({
 });
 
 
-$('.sidebar-close').on('click', function () {
-    $('.sidebar').fadeOut();
-    $('.mobile-sorting').fadeOut();
-});
 
-$('.btn-filter').on('click', function () {
-    $('.sidebar').fadeToggle();
-});
-
-$('.btn-sorting').on('click', function () {
-    $('.mobile-sorting').fadeToggle();
-});
 
 if ($(".page-product-information__head").length) {
     $('.page-product-information__head').clone().appendTo('.title-mobile');

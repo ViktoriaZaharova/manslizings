@@ -76,6 +76,7 @@ a
   transition: .3s ease
   outline: none
   width: fit-content
+
   &:hover, &:focus
     text-decoration: none
 
@@ -143,6 +144,7 @@ strong
   font-weight: 600
   font-family: $default-font
   padding: 0 20px
+
   &:hover, &:focus
     outline: none
     box-shadow: none
@@ -197,13 +199,12 @@ strong
     border-radius: 50%
     background: #fff
     @include d-flex
+
     svg
       fill: none
       stroke: #8FBA44
       width: 10px
       height: 7px
-
-
 
 
 //.btn-border
@@ -316,6 +317,7 @@ h1
   width: 100%
   font-size: 39px
   font-weight: 900
+
   strong
     font-weight: 900
 
@@ -337,10 +339,13 @@ h2
 
 .box-text
   line-height: 145%
+
   p
     margin: 0 0 30px
+
     &:last-child
       margin: 0
+
   ul
     margin: 0 0 30px
 
@@ -414,6 +419,7 @@ h2
   bottom: 0
   list-style: none
   padding: 0
+
   li
     cursor: pointer
     transition: .3s ease
@@ -422,10 +428,13 @@ h2
     border: 1px solid #196250
       radius: 50%
     margin: 0 8px 0 0
+
     &:last-child
       margin: 0
+
     button
       display: none
+
   .slick-active
     background: #196250
     width: 12px
@@ -438,8 +447,10 @@ h2
   padding: 15px 0 16px
   background: #196250
   color: #fff
+
   .container
     position: relative
+
     &:before
       content: ''
       position: absolute
@@ -465,6 +476,7 @@ h2
   line-height: 20px
   color: #2A2D28
   margin: 20px 0 40px
+
   li
     a
       color: #2A2D28
@@ -475,11 +487,54 @@ h2
         content: '>'
         display: inline-block
         margin: 0 5px
+
       &:hover
         color: $accent
+
     span
       display: inline-block
       color: #848484
+
+.pagination
+  width: 100%
+  display: flex
+  align-items: center
+  justify-content: center
+  flex-wrap: wrap
+  margin: 10px auto 0
+
+  .page-item
+    margin: 0 5px 0 0
+    &:last-child
+      margin: 0
+  .page-link
+    padding: 2px
+    width: 36px
+    height: 44px
+    border: 1px solid #E1E4E8
+      radius: 4px
+    background: #fff
+    color: #2A2D28
+    @include d-flex
+    &:hover
+      background: #2F5048
+      color: #fff
+      outline: none
+      box-shadow: none
+    &:focus
+      box-shadow: none
+  .page-link-arrow
+    letter-spacing: -0.2em
+  .active
+
+    .page-link
+      background: #2F5048
+      border: 1px solid #E1E4E8
+      color: #fff
+
+
+.page-item:first-child .page-link, .page-item:last-child .page-link
+  border-radius: 4px
 
 
 //.list-social
@@ -1019,42 +1074,42 @@ h2
         width: 60px
 
 
-.mobile-filter
-  left: 0
-  padding: 11px 11px 29px
-  max-width: 268px
-
-  .form-filter
-    label
-      margin: 0 0 5px
-      max-width: none
-
-    .w-50
-      max-width: 49%
-
-    button
-      height: 50px
-      font-size: 14px
-
-      .btn-arrow
-        margin: 0 0 0 30px
-
-      &:after
-        width: 98px
-
-    .inp-group-item
-      height: 50px
-      padding: 6px 13px
-      font-size: 10px
-      margin: 0
-
-    input
-      font-size: 16px
-
-    select
-      height: 40px
-      font-size: 16px
-      padding: 0 28px 0 14px
+//.mobile-filter
+//  left: 0
+//  padding: 11px 11px 29px
+//  max-width: 268px
+//
+//  .form-filter
+//    label
+//      margin: 0 0 5px
+//      max-width: none
+//
+//    .w-50
+//      max-width: 49%
+//
+//    button
+//      height: 50px
+//      font-size: 14px
+//
+//      .btn-arrow
+//        margin: 0 0 0 30px
+//
+//      &:after
+//        width: 98px
+//
+//    .inp-group-item
+//      height: 50px
+//      padding: 6px 13px
+//      font-size: 10px
+//      margin: 0
+//
+//    input
+//      font-size: 16px
+//
+//    select
+//      height: 40px
+//      font-size: 16px
+//      padding: 0 28px 0 14px
 
 
 //.page h1
@@ -2176,423 +2231,423 @@ h2
 //  .modal__wrapper
 //    padding: 65px 60px 76px
 
-.page-top
-  width: 100%
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -webkit-box-pack: justify
-  -ms-flex-pack: justify
-  justify-content: space-between
-  padding: 20px 0
-
-.links-next
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  color: #8FBA44
-  font-weight: 600
-
-  .svg-icon
-    fill: #8FBA44
-
-  &:hover
-    color: #656871
-
-    .svg-icon
-      fill: #656871
-
-.links-next__icon
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -webkit-box-pack: center
-  -ms-flex-pack: center
-  justify-content: center
-  margin: 0 15px 0 0
-  width: 17px
-  height: 11px
-
-.page-catalog-wrapper
-  margin: 37px 0 60px
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: start
-  -ms-flex-align: start
-  align-items: flex-start
-  -ms-flex-wrap: wrap
-  flex-wrap: wrap
-
-.sidebar
-  max-width: 270px
-  width: 100%
-
-  h3
-    font-size: 21px
-    font-weight: 600
-    color: #2A2D28
-
-  h4
-    padding: 0 0 8px 8px
-    width: 100%
-    color: #2A2D28
-    font-size: 13px
-    font-weight: bold
-    text-transform: uppercase
-
-.catalog-content
-  width: calc(100% - 270px)
-  padding: 0 0 0 30px
-
-  h3
-    width: 100%
-    margin: 0 0 12px
-    font-size: 21px
-    font-weight: 600
-
-
-
-.clear-filter
-  width: 100%
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -webkit-box-pack: center
-  -ms-flex-pack: center
-  justify-content: center
-  color: #2AB051
-  margin: 15px auto 0
-  font-weight: 500
-
-  &:hover
-    color: #656871
-
-    .svg-icon
-      fill: #656871
-
-.clear-filter__icon
-  fill: #2AB051
-  width: 8px
-  height: 8px
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -webkit-box-pack: center
-  -ms-flex-pack: center
-  justify-content: center
-  margin: 0 6px 0 0
-
-.sidebar-box
-  width: 100%
-  margin: 0 0 -1px 0
-  border: 1px solid #DDE0DC
-  background: #fff
-  padding: 17px 11px 12px
-
-  label
-    position: relative
-
-  .select
-    height: 35px
-    color: #656871
-    font-size: 16px
-    font-weight: 500
-    padding: 0 21px 0 17px
-
-  .select-arrow
-    width: 8px
-    height: 8px
-    fill: #656871
-
-  .inp-group
-    -webkit-box-pack: justify
-    -ms-flex-pack: justify
-    justify-content: space-between
-
-  .inp-group-item
-    padding: 9px 11px 7px
-    height: 35px
-    color: #B0B0B0
-    font-size: 15px
-    font-weight: 500
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-align: center
-    -ms-flex-align: center
-    align-items: center
-    -webkit-box-pack: justify
-    -ms-flex-pack: justify
-    justify-content: space-between
-    width: 48%
-
-    input
-      width: calc(100% - 30px)
-      font-size: 16px
-      font-weight: 500
-      text-align: right
-      padding: 0
-      color: #656871
-
-      &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder
-        color: #656871
-
-  .ui-widget.ui-widget-content
-    background: #DDE0DC
-    margin: 18px auto 0
-    height: 3px
-
-  .ui-slider .ui-slider-range
-    height: 3px
-
-  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button
-    width: 20px
-    height: 20px
-    top: -8px
-    border-width: 4px
-
-  html .ui-button.ui-state-disabled
-    &:hover, &:active
-      width: 20px
-      height: 20px
-      top: -8px
-      border-width: 4px
-
-.sidebar-title
-  background: #FAFAFA
-  padding: 19px 20px 11px
-
-.list-checkbox
-  width: 100%
-
-  li
-    margin: 0 0 10px
-    width: 100%
-
-  .checkbox
-    width: 100%
-    margin: 0
-    color: #656871
-    font-size: 16px
-    font-weight: 500
-
-  .checkbox-custom
-    width: 20px
-    height: 20px
-    min-width: 20px
-    margin: 0 9px 0 0
-    background: #F5F5F5
-    border: 1px solid #DDE0DC
-
-  .checkbox-inp:checked + .checkbox-custom
-    background: $accent
-    border-color: $accent
-
-.links-all
-  color: #2AB051
-  width: -moz-fit-content
-  width: fit-content
-  margin: 10px 0 0 29px
-  font-size: 15px
-  font-weight: 500
-  border-bottom: 1px dotted #2AB051
-
-  &:hover
-    color: #8FBA44
-
-.panel-heading
-  width: 100%
-
-  h4
-    padding: 0
-
-  .block_title
-    padding: 0 0 0 10px
-    position: relative
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-align: center
-    -ms-flex-align: center
-    align-items: center
-    -webkit-box-pack: justify
-    -ms-flex-pack: justify
-    justify-content: space-between
-
-    .select-arrow
-      position: relative
-      right: 0
-      top: 0
-      -webkit-transform: none
-      transform: none
-
-.block_hover
-  display: none
-  padding: 10px 0 0
-
-.in .block_title .select-arrow
-  -webkit-transform: rotate(180deg)
-  transform: rotate(180deg)
-
-.sorting-line
-  width: 100%
-  margin: 0 0 28px
-  border: 1px solid #DDE0DC
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -ms-flex-wrap: wrap
-  flex-wrap: wrap
-  background: #FAFAFA
-  padding: 12px 40px 12px 42px
-
-.sorting-box
-  color: #B0B0B0
-  font-weight: 500
-  font-size: 16px
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-
-  p
-    margin: 0 10px 0 0
-
-  .select
-    padding: 0
-    border: none
-    background: transparent
-    height: auto
-    color: #656871
-    font-size: 16px
-    font-weight: 500
-
-.label-select
-  position: relative
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-
-  .select-arrow
-    position: relative
-    top: 0
-    right: 0
-    -webkit-transform: none
-    transform: none
-    margin: 0 0 0 15px
-    fill: #656871
-
-.list-tabs
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: stretch
-  -ms-flex-align: stretch
-  align-items: stretch
-  -ms-flex-wrap: wrap
-  flex-wrap: wrap
-  margin: 0 0 0 auto
-
-  li
-    margin: 0 10px 0 0
-
-    &:last-child
-      margin: 0
-
-.tabs-view-card
-  -webkit-transition: .3s ease
-  transition: .3s ease
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -webkit-box-pack: center
-  -ms-flex-pack: center
-  justify-content: center
-  width: 35px
-  height: 35px
-  border: 1px solid #DDE0DC
-  background: #FAFAFA
-  padding: 9px
-  fill: #656871
-
-  &.active
-    fill: #2AB051
-    border-color: #2AB051
-
-
-.brands-slider
-  margin: 74px 0 0
-
-.brands-slider__box
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  -webkit-box-pack: center
-  -ms-flex-pack: center
-  justify-content: center
-  border: 1px solid #DDE0DC
-  height: 140px
-  max-width: 210px
-  margin: 0 30px 0 0
-  width: 100%
-  padding: 25px
-  -webkit-transition: .3s ease
-  transition: .3s ease
-  cursor: pointer
-
-  img
-    -webkit-transition: .3s ease
-    transition: .3s ease
-    opacity: .2
-    -webkit-filter: grayscale(1)
-    filter: grayscale(1)
-
-  &:hover
-    border: 1px solid #8FBA44
-
-    img
-      -webkit-filter: grayscale(0)
-      filter: grayscale(0)
-      opacity: 1
+//.page-top
+//  width: 100%
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  -webkit-box-pack: justify
+//  -ms-flex-pack: justify
+//  justify-content: space-between
+//  padding: 20px 0
+//
+//.links-next
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  color: #8FBA44
+//  font-weight: 600
+//
+//  .svg-icon
+//    fill: #8FBA44
+//
+//  &:hover
+//    color: #656871
+//
+//    .svg-icon
+//      fill: #656871
+//
+//.links-next__icon
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  -webkit-box-pack: center
+//  -ms-flex-pack: center
+//  justify-content: center
+//  margin: 0 15px 0 0
+//  width: 17px
+//  height: 11px
+//
+//.page-catalog-wrapper
+//  margin: 37px 0 60px
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: start
+//  -ms-flex-align: start
+//  align-items: flex-start
+//  -ms-flex-wrap: wrap
+//  flex-wrap: wrap
+//
+//.sidebar
+//  max-width: 270px
+//  width: 100%
+//
+//  h3
+//    font-size: 21px
+//    font-weight: 600
+//    color: #2A2D28
+//
+//  h4
+//    padding: 0 0 8px 8px
+//    width: 100%
+//    color: #2A2D28
+//    font-size: 13px
+//    font-weight: bold
+//    text-transform: uppercase
+//
+//.catalog-content
+//  width: calc(100% - 270px)
+//  padding: 0 0 0 30px
+//
+//  h3
+//    width: 100%
+//    margin: 0 0 12px
+//    font-size: 21px
+//    font-weight: 600
+//
+//
+//
+//.clear-filter
+//  width: 100%
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  -webkit-box-pack: center
+//  -ms-flex-pack: center
+//  justify-content: center
+//  color: #2AB051
+//  margin: 15px auto 0
+//  font-weight: 500
+//
+//  &:hover
+//    color: #656871
+//
+//    .svg-icon
+//      fill: #656871
+//
+//.clear-filter__icon
+//  fill: #2AB051
+//  width: 8px
+//  height: 8px
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  -webkit-box-pack: center
+//  -ms-flex-pack: center
+//  justify-content: center
+//  margin: 0 6px 0 0
+//
+//.sidebar-box
+//  width: 100%
+//  margin: 0 0 -1px 0
+//  border: 1px solid #DDE0DC
+//  background: #fff
+//  padding: 17px 11px 12px
+//
+//  label
+//    position: relative
+//
+//  .select
+//    height: 35px
+//    color: #656871
+//    font-size: 16px
+//    font-weight: 500
+//    padding: 0 21px 0 17px
+//
+//  .select-arrow
+//    width: 8px
+//    height: 8px
+//    fill: #656871
+//
+//  .inp-group
+//    -webkit-box-pack: justify
+//    -ms-flex-pack: justify
+//    justify-content: space-between
+//
+//  .inp-group-item
+//    padding: 9px 11px 7px
+//    height: 35px
+//    color: #B0B0B0
+//    font-size: 15px
+//    font-weight: 500
+//    display: -webkit-box
+//    display: -ms-flexbox
+//    display: flex
+//    -webkit-box-align: center
+//    -ms-flex-align: center
+//    align-items: center
+//    -webkit-box-pack: justify
+//    -ms-flex-pack: justify
+//    justify-content: space-between
+//    width: 48%
+//
+//    input
+//      width: calc(100% - 30px)
+//      font-size: 16px
+//      font-weight: 500
+//      text-align: right
+//      padding: 0
+//      color: #656871
+//
+//      &::-webkit-input-placeholder, &::-moz-placeholder, &::-ms-input-placeholder, &::placeholder
+//        color: #656871
+//
+//  .ui-widget.ui-widget-content
+//    background: #DDE0DC
+//    margin: 18px auto 0
+//    height: 3px
+//
+//  .ui-slider .ui-slider-range
+//    height: 3px
+//
+//  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button
+//    width: 20px
+//    height: 20px
+//    top: -8px
+//    border-width: 4px
+//
+//  html .ui-button.ui-state-disabled
+//    &:hover, &:active
+//      width: 20px
+//      height: 20px
+//      top: -8px
+//      border-width: 4px
+//
+//.sidebar-title
+//  background: #FAFAFA
+//  padding: 19px 20px 11px
+//
+//.list-checkbox
+//  width: 100%
+//
+//  li
+//    margin: 0 0 10px
+//    width: 100%
+//
+//  .checkbox
+//    width: 100%
+//    margin: 0
+//    color: #656871
+//    font-size: 16px
+//    font-weight: 500
+//
+//  .checkbox-custom
+//    width: 20px
+//    height: 20px
+//    min-width: 20px
+//    margin: 0 9px 0 0
+//    background: #F5F5F5
+//    border: 1px solid #DDE0DC
+//
+//  .checkbox-inp:checked + .checkbox-custom
+//    background: $accent
+//    border-color: $accent
+//
+//.links-all
+//  color: #2AB051
+//  width: -moz-fit-content
+//  width: fit-content
+//  margin: 10px 0 0 29px
+//  font-size: 15px
+//  font-weight: 500
+//  border-bottom: 1px dotted #2AB051
+//
+//  &:hover
+//    color: #8FBA44
+//
+//.panel-heading
+//  width: 100%
+//
+//  h4
+//    padding: 0
+//
+//  .block_title
+//    padding: 0 0 0 10px
+//    position: relative
+//    display: -webkit-box
+//    display: -ms-flexbox
+//    display: flex
+//    -webkit-box-align: center
+//    -ms-flex-align: center
+//    align-items: center
+//    -webkit-box-pack: justify
+//    -ms-flex-pack: justify
+//    justify-content: space-between
+//
+//    .select-arrow
+//      position: relative
+//      right: 0
+//      top: 0
+//      -webkit-transform: none
+//      transform: none
+//
+//.block_hover
+//  display: none
+//  padding: 10px 0 0
+//
+//.in .block_title .select-arrow
+//  -webkit-transform: rotate(180deg)
+//  transform: rotate(180deg)
+//
+//.sorting-line
+//  width: 100%
+//  margin: 0 0 28px
+//  border: 1px solid #DDE0DC
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  -ms-flex-wrap: wrap
+//  flex-wrap: wrap
+//  background: #FAFAFA
+//  padding: 12px 40px 12px 42px
+//
+//.sorting-box
+//  color: #B0B0B0
+//  font-weight: 500
+//  font-size: 16px
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//
+//  p
+//    margin: 0 10px 0 0
+//
+//  .select
+//    padding: 0
+//    border: none
+//    background: transparent
+//    height: auto
+//    color: #656871
+//    font-size: 16px
+//    font-weight: 500
+//
+//.label-select
+//  position: relative
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//
+//  .select-arrow
+//    position: relative
+//    top: 0
+//    right: 0
+//    -webkit-transform: none
+//    transform: none
+//    margin: 0 0 0 15px
+//    fill: #656871
+//
+//.list-tabs
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: stretch
+//  -ms-flex-align: stretch
+//  align-items: stretch
+//  -ms-flex-wrap: wrap
+//  flex-wrap: wrap
+//  margin: 0 0 0 auto
+//
+//  li
+//    margin: 0 10px 0 0
+//
+//    &:last-child
+//      margin: 0
+//
+//.tabs-view-card
+//  -webkit-transition: .3s ease
+//  transition: .3s ease
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  -webkit-box-pack: center
+//  -ms-flex-pack: center
+//  justify-content: center
+//  width: 35px
+//  height: 35px
+//  border: 1px solid #DDE0DC
+//  background: #FAFAFA
+//  padding: 9px
+//  fill: #656871
+//
+//  &.active
+//    fill: #2AB051
+//    border-color: #2AB051
 
 
-.brands-slider__group
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: stretch
-  -ms-flex-align: stretch
-  align-items: stretch
+//.brands-slider
+//  margin: 74px 0 0
+//
+//.brands-slider__box
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: center
+//  -ms-flex-align: center
+//  align-items: center
+//  -webkit-box-pack: center
+//  -ms-flex-pack: center
+//  justify-content: center
+//  border: 1px solid #DDE0DC
+//  height: 140px
+//  max-width: 210px
+//  margin: 0 30px 0 0
+//  width: 100%
+//  padding: 25px
+//  -webkit-transition: .3s ease
+//  transition: .3s ease
+//  cursor: pointer
+//
+//  img
+//    -webkit-transition: .3s ease
+//    transition: .3s ease
+//    opacity: .2
+//    -webkit-filter: grayscale(1)
+//    filter: grayscale(1)
+//
+//  &:hover
+//    border: 1px solid #8FBA44
+//
+//    img
+//      -webkit-filter: grayscale(0)
+//      filter: grayscale(0)
+//      opacity: 1
+//
+//
+//.brands-slider__group
+//  display: -webkit-box
+//  display: -ms-flexbox
+//  display: flex
+//  -webkit-box-align: stretch
+//  -ms-flex-align: stretch
+//  align-items: stretch
 
 .catalog-mobile-nav
   width: 100%
@@ -2623,43 +2678,21 @@ h2
     &:last-child
       margin: 0
 
-.mobile-sorting
-  left: 0
-  top: 0
-  padding: 20px
-  background: #fff
-  overflow-y: auto
-  height: 100%
-  max-width: 270px
+//.mobile-sorting
+//  left: 0
+//  top: 0
+//  padding: 20px
+//  background: #fff
+//  overflow-y: auto
+//  height: 100%
+//  max-width: 270px
+//
+//  .sidebar-title h3
+//    font-size: 21px
+//    font-weight: 600
+//    color: #2A2D28
 
-  .sidebar-title h3
-    font-size: 21px
-    font-weight: 600
-    color: #2A2D28
 
-.sorting-links
-  color: #656871
-  padding: 5px 0
-  position: relative
-  display: -webkit-box
-  display: -ms-flexbox
-  display: flex
-  -webkit-box-align: center
-  -ms-flex-align: center
-  align-items: center
-  font-weight: 500
-
-  &:hover
-    color: #8FBA44
-
-  &.active:after
-    content: ''
-    margin: 0 0 0 auto
-    width: 20px
-    height: 20px
-    background: url("../img/checkbox-accent.svg") no-repeat center
-    background-size: contain
-    min-width: 20px
 
 .btn-catalog-mobile
   width: 50%
@@ -3404,74 +3437,74 @@ h2
   -moz-column-count: 4
   column-count: 4
 
-.calculate-box
-  width: 100%
-  margin: 0 0 22px
-  border: 1px solid #DDE0DC
-  background: #FAFAFA
-  padding: 22px 21px
-
-  h3
-    font-size: 21px
-    font-weight: 600
-    margin: 0 0 22px
-
-  .range_val
-    padding: 0
-    margin: 0 0 13px
-    border: none
-
-  .inp-group
-    width: 100%
-    padding: 0 0 0 5px
-
-  .inp-group-item
-    display: -webkit-box
-    display: -ms-flexbox
-    display: flex
-    -webkit-box-align: center
-    -ms-flex-align: center
-    align-items: center
-    -webkit-box-pack: justify
-    -ms-flex-pack: justify
-    justify-content: space-between
-    white-space: nowrap
-    padding: 0
-    border: none
-    width: 100%
-    height: auto
-    max-width: none
-    background: transparent
-
-    input
-      width: 120px
-      color: #2AB051
-      font-size: 24px
-      font-weight: 500
-      text-align: right
-
-  .slider-range
-    margin: 10px 0 0
-
-  .ui-widget.ui-widget-content
-    height: 3px
-    background: #DDE0DC
-
-  .ui-slider .ui-slider-range
-    height: 3px
-
-  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button
-    width: 20px
-    height: 20px
-    border-width: 4px
-    top: -8px
-
-  html .ui-button.ui-state-disabled
-    &:hover, &:active
-      width: 20px
-      height: 20px
-      border-width: 4px
-      top: -8px
+//.calculate-box
+//  width: 100%
+//  margin: 0 0 22px
+//  border: 1px solid #DDE0DC
+//  background: #FAFAFA
+//  padding: 22px 21px
+//
+//  h3
+//    font-size: 21px
+//    font-weight: 600
+//    margin: 0 0 22px
+//
+//  .range_val
+//    padding: 0
+//    margin: 0 0 13px
+//    border: none
+//
+//  .inp-group
+//    width: 100%
+//    padding: 0 0 0 5px
+//
+//  .inp-group-item
+//    display: -webkit-box
+//    display: -ms-flexbox
+//    display: flex
+//    -webkit-box-align: center
+//    -ms-flex-align: center
+//    align-items: center
+//    -webkit-box-pack: justify
+//    -ms-flex-pack: justify
+//    justify-content: space-between
+//    white-space: nowrap
+//    padding: 0
+//    border: none
+//    width: 100%
+//    height: auto
+//    max-width: none
+//    background: transparent
+//
+//    input
+//      width: 120px
+//      color: #2AB051
+//      font-size: 24px
+//      font-weight: 500
+//      text-align: right
+//
+//  .slider-range
+//    margin: 10px 0 0
+//
+//  .ui-widget.ui-widget-content
+//    height: 3px
+//    background: #DDE0DC
+//
+//  .ui-slider .ui-slider-range
+//    height: 3px
+//
+//  .ui-state-default, .ui-widget-content .ui-state-default, .ui-widget-header .ui-state-default, .ui-button
+//    width: 20px
+//    height: 20px
+//    border-width: 4px
+//    top: -8px
+//
+//  html .ui-button.ui-state-disabled
+//    &:hover, &:active
+//      width: 20px
+//      height: 20px
+//      border-width: 4px
+//      top: -8px
 
 .payment-month
   width: 100%
@@ -3553,7 +3586,6 @@ h2
 
 .fancybox__thumbs
   padding: 0 0 20px
-
 
 
 //
@@ -4288,4 +4320,5 @@ h2
 @import "footer"
 @import "home"
 @import "checkout"
+@import "catalog"
 @import "media"
