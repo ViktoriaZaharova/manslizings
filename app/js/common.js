@@ -50,6 +50,42 @@ $('.slider-range1').slider({
 $(".dec1").val('€' + ' ' + $(".slider-range1").slider("values", 0));
 $(".dec2").val('€' + ' ' + $(".slider-range1").slider("values", 1));
 
+$('.slider-range4').slider({
+    range: "min",
+    min: 0,
+    max: 50000,
+    value: 12950,
+    classes: {
+        "ui-slider-handle": "ui-corner-all"
+    },
+    slide: function (event, ui) {
+        //Поле минимального значения
+        $(".dec3").val('€' + ' ' + ui.value);
+    }
+});
+$(".dec3").val('€' + ' ' + $(".slider-range4").slider("value"));
+
+$('.slider-range5').slider({
+    range: "min",
+    min: 0,
+    max: 112,
+    value: 64,
+    classes: {
+        "ui-slider-handle": "ui-corner-all"
+    },
+    slide: function (event, ui) {
+        //Поле минимального значения
+        $(".dec4").val(ui.value + ' ' + 'мес.');
+    }
+});
+$(".dec4").val($(".slider-range5").slider("value") + ' ' + 'мес.');
+
+$('.main-slider').slick({
+    slidesToShow: 1,
+    fade: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+});
 
 $('.reviews-slider').slick({
     slidesToShow: 3,
@@ -71,6 +107,43 @@ $('.reviews-slider').slick({
     ]
 });
 
+$('.product-gallery').slick({
+    slidesToShow: 1,
+    fade: true,
+    arrows: false,
+    asNavFor: '.product-gallery-preview'
+});
+
+$('.product-gallery-preview').slick({
+    slidesToShow: 6,
+    arrows: true,
+    asNavFor: '.product-gallery',
+    focusOnSelect: true,
+    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+    responsive: [
+        {
+            breakpoint: 1200,
+            settings: {
+                slidesToShow: 4,
+            }
+        },
+        {
+            breakpoint: 768,
+            settings: {
+                slidesToShow: 5,
+            }
+        },
+        {
+            breakpoint: 576,
+            settings: {
+                slidesToShow: 3,
+            }
+        }
+    ]
+});
+
+
 $('.btn-toggle-filter').on('click', function (e) {
     e.preventDefault();
     $('.overlay-mobile').fadeIn();
@@ -83,18 +156,7 @@ $('.btn-close__filter, .overlay-mobile').on('click', function (e) {
     $('.overlay-mobile').fadeOut();
 });
 
-$('.main-slider').slick({
-    slidesToShow: 1,
-    fade: true,
-    prevArrow: '<button type="button" class="slick-prev"><svg width="17" height="54" viewBox="0 0 17 54" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
-        '<path d="M11.6216 0H16.1855L4.74944 27H0.185547L11.6216 0Z"/>\n' +
-        '<path d="M4.74944 27H0.185547L11.6217 54H16.1855L4.74944 27Z"/>\n' +
-        '</svg>\n</button>',
-    nextArrow: '<button type="button" class="slick-next"><svg width="16" height="54" viewBox="0 0 16 54" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
-        '<path d="M4.5639 0H0L11.4361 27H16L4.5639 0Z"/>\n' +
-        '<path d="M11.4361 27H16L4.5639 54H0L11.4361 27Z"/>\n' +
-        '</svg>\n</button>',
-});
+
 
 $('.sidebar-close').on('click', function () {
     $('.sidebar').fadeOut();
@@ -108,6 +170,7 @@ $('.btn-filter').on('click', function () {
 $('.btn-sorting').on('click', function () {
     $('.mobile-sorting').fadeToggle();
 });
+
 
 
 // this is your selector
@@ -125,7 +188,6 @@ $.fileup({
     timeout: null,
     autostart: false,
 });
-
 
 
 
@@ -182,35 +244,7 @@ $.fileup({
 // $(".dec5").val($(".slider-range3").slider("values", 0));
 // $(".dec6").val($(".slider-range3").slider("values", 1));
 //
-// $('.slider-range4').slider({
-//     range: "min",
-//     min: 0,
-//     max: 50000,
-//     value: 11800,
-//     classes: {
-//         "ui-slider-handle": "ui-corner-all"
-//     },
-//     slide: function (event, ui) {
-//         //Поле минимального значения
-//         $(".dec7").val(ui.value + ' ' + '€');
-//     }
-// });
-// $(".dec7").val($(".slider-range4").slider("value") + ' ' + '€');
-//
-// $('.slider-range5').slider({
-//     range: "min",
-//     min: 0,
-//     max: 112,
-//     value: 84,
-//     classes: {
-//         "ui-slider-handle": "ui-corner-all"
-//     },
-//     slide: function (event, ui) {
-//         //Поле минимального значения
-//         $(".dec8").val(ui.value + ' ' + 'мес.');
-//     }
-// });
-// $(".dec8").val($(".slider-range5").slider("value") + ' ' + 'мес.');
+
 
 // accordeon
 // function accordeon() {
@@ -283,72 +317,38 @@ $.fileup({
 //     variableWidth: true
 // });
 
-$('.product-gallery').slick({
-    slidesToShow: 1,
-    fade: true,
-    arrows: false,
-    asNavFor: '.product-gallery-preview'
-});
-
-$('.product-gallery-preview').slick({
-    slidesToShow: 5,
-    arrows: true,
-    asNavFor: '.product-gallery',
-    focusOnSelect: true,
-    prevArrow: '<button type="button" class="slick-prev"><svg width="17" height="54" viewBox="0 0 17 54" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
-        '<path d="M11.6216 0H16.1855L4.74944 27H0.185547L11.6216 0Z" fill="#DDE0DC"/>\n' +
-        '<path d="M4.74944 27H0.185547L11.6217 54H16.1855L4.74944 27Z" fill="#DDE0DC"/>\n' +
-        '</svg>\n</button>',
-    nextArrow: '<button type="button" class="slick-next"><svg width="16" height="54" viewBox="0 0 16 54" fill="none" xmlns="http://www.w3.org/2000/svg">\n' +
-        '<path d="M4.5639 0H0L11.4361 27H16L4.5639 0Z" fill="#DDE0DC"/>\n' +
-        '<path d="M11.4361 27H16L4.5639 54H0L11.4361 27Z" fill="#DDE0DC"/>\n' +
-        '</svg>\n</button>',
-    responsive: [
-        {
-            breakpoint: 1200,
-            settings: {
-                slidesToShow: 4,
-            }
-        },
-        {
-            breakpoint: 768,
-            settings: {
-                slidesToShow: 3,
-            }
-        }
-    ]
-});
-
-
-
-var $pagingInfo = $('.counter-slide');
-var $teamSlider = $('.page-article-slider');
-
-$teamSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
-    var i = (currentSlide ? currentSlide : 0) + 1;
-    var prefix = i < 10 ? '0' : '';
-    var prefixAll = slick.slideCount < 10 ? '0' : '';
-    $pagingInfo.html('<span class="current">' + prefix + i + '</span>' + '' + '<span class="total">' + prefixAll + slick.slideCount + '</span>');
-});
-
-$('.page-article-slider').slick({
-    slidesToShow: 1,
-    // fade: true,
-    appendArrows: '.page-article-slider__nav',
-    prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
-    nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
-});
 
 
 
 
-if ($(".page-product-information__head").length) {
-    $('.page-product-information__head').clone().appendTo('.title-mobile');
-}
+// var $pagingInfo = $('.counter-slide');
+// var $teamSlider = $('.page-article-slider');
+//
+// $teamSlider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
+//     var i = (currentSlide ? currentSlide : 0) + 1;
+//     var prefix = i < 10 ? '0' : '';
+//     var prefixAll = slick.slideCount < 10 ? '0' : '';
+//     $pagingInfo.html('<span class="current">' + prefix + i + '</span>' + '' + '<span class="total">' + prefixAll + slick.slideCount + '</span>');
+// });
+//
+// $('.page-article-slider').slick({
+//     slidesToShow: 1,
+//     // fade: true,
+//     appendArrows: '.page-article-slider__nav',
+//     prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-left"></use></svg></button>',
+//     nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></button>',
+// });
 
-$('.characteristics-item h5').on('click', function () {
-    $(this).toggleClass('click').siblings('ul').slideToggle();
-});
+
+
+
+// if ($(".page-product-information__head").length) {
+//     $('.page-product-information__head').clone().appendTo('.title-mobile');
+// }
+
+// $('.characteristics-item h5').on('click', function () {
+//     $(this).toggleClass('click').siblings('ul').slideToggle();
+// });
 
 // tabs
 // $(document).ready(function ($) {
@@ -368,41 +368,41 @@ $('.characteristics-item h5').on('click', function () {
 // tabs end
 
 
-$(window).on('load resize', function () {
-    if ($(window).width() < 576) {
-        var header = $('header'),
-            scrollPrev = 0;
+// $(window).on('load resize', function () {
+//     if ($(window).width() < 576) {
+//         var header = $('header'),
+//             scrollPrev = 0;
+//
+//         $(window).scroll(function () {
+//             var scrolled = $(window).scrollTop();
+//
+//             if (scrolled > 100 && scrolled > scrollPrev) {
+//                 $('.mobile-vehicle-chat-sms').css('bottom', '0');
+//             } else {
+//                 $('.mobile-vehicle-chat-sms').css('bottom', '-100%');
+//             }
+//             scrollPrev = scrolled;
+//         });
+//
+//     }
+// });
 
-        $(window).scroll(function () {
-            var scrolled = $(window).scrollTop();
-
-            if (scrolled > 100 && scrolled > scrollPrev) {
-                $('.mobile-vehicle-chat-sms').css('bottom', '0');
-            } else {
-                $('.mobile-vehicle-chat-sms').css('bottom', '-100%');
-            }
-            scrollPrev = scrolled;
-        });
-
-    }
-});
-
-$('.mobile-vehicle-chat-sms').on('click', function (e) {
-    e.preventDefault();
-    $('.overlay').fadeIn();
-    $('.welcome-popup').css('bottom', '0');
-});
-
-$('.welcome-popup__close, .overlay').on('click', function (e) {
-    e.preventDefault();
-    $('.welcome-popup').css('bottom', '-100%');
-    $('.overlay').fadeOut();
-});
-
-$('.btn-close-cookie').on('click', function (e) {
-    e.preventDefault();
-    $('.cookie').fadeOut();
-});
+// $('.mobile-vehicle-chat-sms').on('click', function (e) {
+//     e.preventDefault();
+//     $('.overlay').fadeIn();
+//     $('.welcome-popup').css('bottom', '0');
+// });
+//
+// $('.welcome-popup__close, .overlay').on('click', function (e) {
+//     e.preventDefault();
+//     $('.welcome-popup').css('bottom', '-100%');
+//     $('.overlay').fadeOut();
+// });
+//
+// $('.btn-close-cookie').on('click', function (e) {
+//     e.preventDefault();
+//     $('.cookie').fadeOut();
+// });
 
 // Fancybox.bind('[data-fancybox="gallery"]', {
 //     dragToClose: false,
