@@ -68,6 +68,11 @@
   .page-checkout-wrapper
     padding: 40px
 
+  .home-manslizing .main-slider__item-img
+    max-width: 500px
+    width: 100%
+
+
 
 
   //.footer-row
@@ -323,6 +328,86 @@
   .product-gallery-preview
     margin: 0 0 20px
 
+  .home-manslizing .main-slider__item-img
+    max-width: 400px
+    bottom: 0
+    right: 200px
+
+  .subtitle
+    font-size: 20px
+
+  .home-manslizing .main-content
+    max-width: 450px
+
+  .documents
+    padding: 60px 0 35px
+    h2
+      margin: 0 0 20px
+
+    .box-text
+      max-width: none
+
+  .documents-image
+    float: none
+    margin: 30px auto 0
+    min-width: auto
+    max-width: 500px
+
+  .documents-content
+    padding: 0
+
+  .about-content
+    margin: 0 0 30px
+
+  .about
+    .container
+      &:before
+        display: none
+
+  .category-cars
+    padding: 60px 0
+    h2
+      margin: 0
+
+  .category-cars-slider
+    margin: 0 -15px
+    width: calc(100% + 30px)
+
+    .col-12
+      width: 270px
+      height: 300px
+      margin: 30px 10px 30px 0
+
+  .category-cars-box
+    width: 270px
+    height: 300px
+
+  .progress
+    margin: 0 auto
+    width: 100%
+    max-width: 214px
+    height: 2px
+    position: relative
+    background: #DBDBDB
+
+  .progress-bg
+    height: 4px
+    background: #8FBA44
+    position: absolute
+    left: 0
+    top: 50%
+    transform: translate(0,-50%)
+    transition: .3s ease
+
+  .category-cars-box
+    filter: drop-shadow(0px 4px 20px rgba(0, 64, 122, 0.12))
+
+  .seo-section
+    .box-text p
+      margin: 0 0 20px
+      &:last-child
+        margin: 0 0 20px
+
 
   //.footer-bottom
   //  font-size: 14px
@@ -534,6 +619,17 @@
     a
       font-size: 14px
 
+  .callback-v3
+    .callback-wrapper
+      padding: 60px 0
+      &:before
+        width: 302px
+        height: 302px
+        top: -245px
+        right: auto
+        left: 50%
+        transform: translate(-50%,0)
+
 
 /* Small Devices, Tablets
 @media only screen and (max-width: 870px)
@@ -651,7 +747,26 @@
     .img-mobile
       display: block
 
+  .home-manslizing
+    .container
+      &:before, &:after
+        top: 50%
+        transform: translate(-50%,-50%)
+    .main-slider__item-img
+      max-width: none
+      right: 0
+    .main-content
+      max-width: none
+      width: 100%
+      ul
+        column-count: 1
+        max-width: 350px
+        margin: 0 auto
+        font-weight: normal
 
+  .subtitle
+    margin: 0 auto 20px
+    font-size: 18px
 
 
 
@@ -863,6 +978,52 @@
   .conditions-wrapper
     border-radius: 0
     padding: 60px 15px 150px
+
+
+  .benefit
+    padding: 60px 0 20px
+    h2
+      text-align: left
+      margin: 0 auto 10px
+    .logo-company
+      max-width: 120px
+
+  .priority-box
+    padding: 13px 5px
+    max-width: 170px
+
+  .benefit-table-row
+    padding: 50px 0 0
+
+  .benefit-table-list
+    font-size: 14px
+    >li
+      &:nth-child(3)
+        min-height: 60px
+
+  .benefit-table-col
+    h3
+      font-size: 14px
+    &__head
+      min-height: 26px
+
+
+  .no-priority-box
+    max-width: 160px
+    padding: 13px 5px
+
+  .list-star li
+    width: 18px
+    height: 18px
+    margin: 0 4px 0 0
+    &:last-child
+      margin: 0
+
+  .callback-v3 .form-callback label
+    max-width: none
+
+  .callback-v3 .form-callback
+    justify-content: space-between
 
   //.social-content
   //  padding: 35px 20px 28px
@@ -1162,6 +1323,8 @@
     padding: 60px 0
 
 
+  .benefit-table-list > li
+    padding: 6px 10px
 
 @media only screen and (max-width: 576px)
   .header-box
@@ -1190,6 +1353,7 @@
       &:before
         width: 7px
         height: 7px
+        min-width: 7px
         margin: 0 6px 0 0
 
   .card-img
@@ -1374,6 +1538,66 @@
   .product-gallery-item
     height: 350px
 
+
+  .home-manslizing
+    h1
+      max-width: 304px
+    .main-content
+      ul
+        max-width: 260px
+
+
+  .subtitle
+    max-width: 220px
+
+  .stages-work
+    padding: 60px 0 40px
+    .mb-20
+      margin-bottom: 20px
+
+  .stages-work-box
+    .box-text
+      max-width: none
+
+  .documents
+    .box-text
+      ul
+        margin: 0 0 20px
+
+  .list-checkbox li:before
+    margin: 0 10px 0 0
+
+  .documents-image
+    &:before
+      width: 436px
+      height: 436px
+    &:after
+      width: 233px
+      height: 233px
+      filter: blur(200px)
+
+  .priority-box
+    max-width: 109px
+    .logo-company
+      max-width: 99px
+
+  .benefit-table-col
+    h3
+      font-size: 11px
+
+  .benefit-table-list
+    line-height: 17px
+
+  .no-priority-box
+    max-width: 125px
+
+  .about-box
+    display: flex
+    align-items: center
+    &__icon
+      margin: 0 20px 0 0
+      width: 50px
+      min-width: 50px
 
 
 
@@ -1787,6 +2011,15 @@
     height: 218px
 
 
+@media (max-width: 380px)
+  .benefit-table-list
+    font-size: 11px
+    line-height: normal
+
+  .benefit-table-col h3
+    font-size: 10px
+
+
 @media (max-width: 350px)
   .home
     h1
@@ -1808,3 +2041,7 @@
   .product-gallery-preview
     .slide
       padding: 0 2px
+
+  .home-manslizing
+    h1
+      max-width: 240px

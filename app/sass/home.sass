@@ -38,16 +38,18 @@
   max-width: 677px
   width: 100%
   position: relative
-  z-index: 1
+  z-index: 2
   padding: 14px 0 0
   margin: 0 auto 0 0
 
   .box-text
     font-size: 20px
+    ul
+      margin: 0
 
   h1
     margin: 0 0 36px
-    font-size: 51px
+    font-size: 50px
     text-transform: uppercase
 
     strong
@@ -57,6 +59,7 @@
   background: #15473C
   max-width: 360px
   width: 100%
+  height: fit-content
   border-radius: 10px
   position: relative
   z-index: 1
@@ -243,6 +246,7 @@
   flex-direction: column
   overflow: hidden
   transition: .3s ease
+
   &:hover
     border: 1px solid #8FBA44
 
@@ -392,6 +396,7 @@
   border-radius: 3px
   overflow: hidden
   @include d-flex
+
   img
     width: 100px
     height: 100%
@@ -408,6 +413,7 @@
   z-index: 1
   color: #fff
   position: relative
+
   &:before
     content: ''
     position: absolute
@@ -418,8 +424,9 @@
     //mix-blend-mode: screen
     top: -116px
     left: 50%
-    transform: translate(-50%,0)
+    transform: translate(-50%, 0)
     z-index: 1
+
   &:after
     content: ''
     position: absolute
@@ -428,12 +435,14 @@
     width: 100%
     height: 100%
     background: rgba(25, 98, 80, 0.8)
+
   &__bg
     position: absolute
     width: 100%
     height: 100%
     object-fit: cover
     z-index: -1
+
   &__content
     width: 100%
     height: 100%
@@ -444,10 +453,12 @@
     padding: 20px
     position: relative
     z-index: 1
+
   h3
     margin: 0 auto 20px
     font-size: 22px
     font-weight: 900
+
   .btn
     max-width: 220px
     width: 100%
@@ -766,11 +777,14 @@
     background: $accent
     fill: #fff
     padding: 7px
+
   &__text
     width: calc(100% - 30px)
     padding: 0 0 0 10px
+
   .whatsapp-icon
     background: #29A71A
+
   .telegram-icon
     background: #1C8ADB
 
@@ -780,6 +794,7 @@ a.list-contacts-item
 
 .list-maps
   padding: 0 0 0 40px
+
   li
     margin: 0 0 10px
 
@@ -789,17 +804,21 @@ a.list-contacts-item
   color: $accent
   width: 100%
   font-feature-settings: 'pnum' on, 'lnum' on
+
   &__icon
     @include d-flex
     width: 30px
     height: 30px
     border-radius: 50%
     padding: 5px
+
     img
       max-height: 100%
+
   &__text
     width: calc(100% - 30px)
     padding: 0 0 0 10px
+
   &:hover
     color: $black
 
@@ -812,9 +831,290 @@ a.list-contacts-item
     background: #EFF2F9
 
 
+//manlsizing lp
+.home-manslizing
+  .container
+    padding: 50px 15px
+  .main-slider__item-img
+    max-width: 620px
+    bottom: -50px
+    right: 236px
+    top: auto
+  .main-content
+    max-width: 590px
+  h1
+    margin: 0 0 12px
+  .box-text
+    margin: 45px 0 0
+    font-weight: 500
+    font-size: 16px
+
+.subtitle
+  font-size: 24px
+  font-weight: bold
+
+.stages-work
+  padding: 80px 0 60px
+
+.stages-work-box
+  &__icon
+    display: flex
+    align-items: center
+  .icon
+    @include d-flex
+    width: 50px
+    height: 50px
+    margin: 0 10px 0 0
+  h4
+    color: rgba(47, 80, 72, 0.1)
+    line-height: 145%
+    font-size: 60px
+    font-weight: 900
+  h3
+    margin: 0 0 10px
+    color: #2A2D28
+    font-weight: bold
+  .box-text
+    color: #626262
+    max-width: 245px
+
+.documents
+  position: relative
+  overflow: hidden
+  background: #196250
+  h2
+    margin: 0 0 40px
+
+
+.documents-image
+  position: relative
+  z-index: 1
+  max-width: 650px
+  min-width: 650px
+  float: right
+  margin: 0 -38px 0 0
+  @include d-flex
+  &:before, &:after
+    content: ''
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    z-index: -1
+  &:before
+    width: 707px
+    height: 707px
+    background: url("../img/decor-circle.svg") no-repeat center
+      size: 100%
+  &:after
+    background: #80FF00
+    width: 444px
+    height: 444px
+    filter: blur(310px)
+    mix-blend-mode: screen
+
+.documents-content
+  padding: 0 0 0 39px
+  position: relative
+  z-index: 2
+  .box-text
+    max-width: 485px
+
+
+.list-checkbox
+  li
+    display: flex
+    align-items: center
+    margin: 0 0 10px
+    &:last-child
+      margin: 0
+    &:before
+      content: ''
+      @include d-flex
+      width: 30px
+      height: 30px
+      min-width: 30px
+      margin: 0 20px 0 0
+      background: url("../img/checked.svg") no-repeat center
+        size: 100%
+
+//benefit
+.benefit
+  padding: 80px 0 40px
+  h2
+    margin: 0 auto 38px
+
+.benefit-table
+  position: relative
+  overflow: hidden
+  display: flex
+  align-items: flex-start
+  padding: 0 0 40px
+
+.benefit-table-row
+  flex: 1
+  padding: 72px 0 0
+
+.benefit-table-col
+  flex: 1
+  text-align: center
+  ul
+    li
+      justify-content: center
+  .logo-company
+    max-width: 173px
+    margin: 0 auto
+  &__head
+    margin: 0 auto 10px
+    min-height: 34px
+  h3
+    color: #2F5048
+    font-size: 20px
+    font-weight: 900
+    text-align: center
+  .benefit-table-list
+    li
+      &:before
+        display: none
+
+.benefit-table-list
+  line-height: 20px
+  >li
+    padding: 10px 20px
+    border-radius: 6px
+    position: relative
+    z-index: 1
+    min-height: 46px
+    display: flex
+    align-items: center
+    flex-wrap: wrap
+
+    &:before
+      content: ''
+      position: absolute
+      left: 0
+      top: 0
+      height: 100%
+      width: 100%
+      min-width: 2000px
+      border-radius: 6px
+      z-index: -1
+    &:nth-child(odd)
+      &:before
+        background: #F4F7FB
+
+
+.priority-box
+  padding: 28px 39px 35px
+  background: rgba(255, 255, 255, 0.01)
+  max-width: 250px
+  width: 100%
+  margin: 0 auto
+  box-shadow: 0px 4px 30px rgba(0, 64, 122, 0.12)
+  border: 1px solid #DFE3E8
+    radius: 6px
+  position: relative
+  z-index: 1
+  overflow: hidden
+
+.no-priority-box
+  padding: 28px 39px 35px
+  max-width: 250px
+  width: 100%
+  margin: 0 auto
 
 
 
+.list-star
+  display: flex
+  justify-content: center
+  align-items: flex-start
+  margin: 0 auto
+  li
+    margin: 0 8px 0 0
+    @include d-flex
+    width: 26px
+    height: 26px
+    img
+      width: 100%
+    &:last-child
+      margin: 0
+
+//about
+.about
+  position: relative
+  overflow: hidden
+  z-index: 1
+  h2
+    margin: 0 0 20px
+  .box-text
+    color: #000
+  .container
+    position: relative
+    &:before
+      content: ''
+      position: absolute
+      width: 707px
+      height: 707px
+      top: 50%
+      transform: translate(0,-50%)
+      right: -217px
+      background: url("../img/decor-circle-grey.svg") no-repeat center
+        size: 100%
+      z-index: -1
+
+.about-box
+  background: #fff
+  width: 100%
+  height: 100%
+  box-shadow: 0px 4px 30px rgba(0, 64, 122, 0.12)
+  border: 1px solid #DFE3E8
+    radius: 6px
+  padding: 20px 25px
+  line-height: 145%
+  &__icon
+    display: flex
+    align-items: center
+    margin: 0 auto 8px
+
+.about-advantages
+  .col-12
+    padding: 0 5px
+
+.callback-v3
+  .form-callback
+    justify-content: center
+    label
+      max-width: 250px
 
 
+//category-cars
+.category-cars
+  padding: 80px 0 60px
+  h2
+    margin: 0 0 40px
 
+.category-cars-box
+  width: 100%
+  height: 300px
+  position: relative
+  overflow: hidden
+  color: #2A2D28
+  font-size: 18px
+  z-index: 1
+  filter: drop-shadow(0px 4px 30px rgba(0, 64, 122, 0.12))
+  border: 1px solid #DFE3E8
+    radius: 6px
+  background: #fff
+  padding: 40px 30px
+  &:hover
+    background: #8FBA44
+    color: #2A2D28
+  &__img
+    position: absolute
+    bottom: 0
+    right: 0
+    z-index: -1
+  &__text
+    max-width: 180px
+    display: block

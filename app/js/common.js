@@ -144,6 +144,43 @@ $('.product-gallery-preview').slick({
 });
 
 
+// slick active
+$(window).on('load resize', function() {
+    if ($(window).width() < 992) {
+        $('.category-cars-slider:not(.slick-initialized)').slick({
+            dots: false,
+            slidesToShow: 1,
+            arrows: false,
+            variableWidth: true,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
+    } else {
+        $(".category-cars-slider.slick-initialized").slick("unslick");
+    }
+});
+// slick active
+
+//progressbar
+function setProgress(index) {
+    const calc = ((index + 1) / ($slider.slick('getSlick').slideCount)) * 100;
+
+    $progressBar
+        .css('width', calc + '%')
+        .attr('aria-valuenow', calc);
+
+}
+
+const $slider = $('.category-cars-slider');
+const $progressBar = $('.progress-bg');
+
+$slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
+    setProgress(nextSlide);
+
+});
+
+
+
 $('.btn-toggle-filter').on('click', function (e) {
     e.preventDefault();
     $('.overlay-mobile').fadeIn();
@@ -404,14 +441,4 @@ $.fileup({
 //     $('.cookie').fadeOut();
 // });
 
-// Fancybox.bind('[data-fancybox="gallery"]', {
-//     dragToClose: false,
-//
-//     Toolbar: false,
-//     closeButton: "top",
-//
-//     Image: {
-//         zoom: false,
-//     }
-// });
 
