@@ -290,6 +290,12 @@ strong {
 .color-white {
   color: #fff; }
 
+.color-black {
+  color: #000; }
+
+a.color-black:hover {
+  color: #8FBA44; }
+
 .bg-light-blue {
   background: #F4F7FB; }
 
@@ -1241,26 +1247,6 @@ h2 {
       width: 45%; }
     .list-requisites:last-child li span {
       width: 55%; }
-
-.product-gallery-item {
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  align-items: center;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  overflow: hidden;
-  height: 533px; }
-  .product-gallery-item img {
-    max-height: 100%;
-    width: 100%;
-    height: 100%;
-    -o-object-fit: cover;
-    object-fit: cover; }
 
 .seller-item-location {
   margin: 0 auto 0 11px;

@@ -167,7 +167,7 @@
   margin: 10px auto 0; }
 
 .fileup-file {
-  margin: 0 4px 8px 0;
+  margin: 0 5px 5px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -185,8 +185,8 @@
   max-width: none; }
 
 .fileup-file.fileup-image .fileup-preview {
-  width: 87px;
-  height: 57px;
+  width: 67px;
+  height: 50px;
   border: 1px solid #C4C4C4;
     border-radius: 5px;
   display: -webkit-box;
@@ -225,8 +225,8 @@
   top: 4px; }
 
 .label-file-result__delete, .fileup-file .fileup-controls .fileup-remove {
-  width: 15px;
-  height: 15px;
+  width: 10px;
+  height: 10px;
   position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -240,11 +240,13 @@
   z-index: 1;
   background: transparent;
   right: 0;
-  top: 0; }
+  top: 0;
+  -webkit-filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.45));
+          filter: drop-shadow(0px 0px 4px rgba(0, 0, 0, 0.45)); }
   .label-file-result__delete:before, .label-file-result__delete:after, .fileup-file .fileup-controls .fileup-remove:before, .fileup-file .fileup-controls .fileup-remove:after {
     content: '';
     position: absolute;
-    background: red;
+    background: #fff;
     width: 1px;
     height: 100%; }
   .label-file-result__delete:before, .fileup-file .fileup-controls .fileup-remove:before {
@@ -256,15 +258,6 @@
 
 .fileup-file .fileup-controls .fileup-upload, .fileup-file .fileup-controls .fileup-abort, .fileup-file .fileup-clear, .fileup-progress, .fileup-result, .fileup-description {
   display: none; }
-
-.form-success-file {
-  width: 100%; }
-  .form-success-file .box-text {
-    margin: 0 auto 20px;
-    text-align: center; }
-  .form-success-file .label-file {
-    max-width: 380px;
-    margin: 0 auto; }
 
 .page-thanks__item {
   width: 100%;
@@ -300,3 +293,214 @@
           justify-content: center;
   border-radius: 50%;
   margin: 0 auto 30px; }
+
+.page-success h1 {
+  margin: 0 0 20px;
+  color: #2F5048; }
+
+.page-success__content {
+  max-width: 780px;
+  width: 100%;
+  position: relative;
+  z-index: 1; }
+
+.page-success__img {
+  max-width: 443px;
+  position: absolute;
+  bottom: -80px;
+  right: -70px;
+  z-index: -1; }
+  .page-success__img:before {
+    content: '';
+    position: absolute;
+    background: url("../img/decor-circle-grey.svg") no-repeat center;
+      background-size: 100%;
+    z-index: -1;
+    width: 707px;
+    height: 707px;
+    top: 49%;
+    left: 62%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%); }
+
+.inp-file {
+  display: none; }
+
+.label-file__icon {
+  width: 29px;
+  height: 26px;
+  margin: 0 11px 0 0; }
+
+.form-success h3 {
+  margin: 0 0 15px;
+  font-weight: bold; }
+
+.form-success .form-group {
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap; }
+  .form-success .form-group label {
+    max-width: 190px;
+    width: 100%;
+    margin: 0 10px 10px 0; }
+    .form-success .form-group label:last-child {
+      margin-right: 0; }
+  .form-success .form-group .radio-mail {
+    max-width: 380px; }
+    .form-success .form-group .radio-mail input {
+      padding: 0 20px; }
+  .form-success .form-group input {
+    text-align: left; }
+
+.form-success button {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 10px 0 0;
+  padding: 0 44px; }
+
+.form-success__consultation {
+  margin: 40px 0 0; }
+
+.form-success-file {
+  width: 100%;
+  margin: 0 0 30px; }
+  .form-success-file .box-text {
+    margin: 0 auto 20px; }
+  .form-success-file .label-file {
+    max-width: 380px;
+    margin: 0 0; }
+  .form-success-file .label-file {
+    color: #8FBA44;
+    font-size: 16px;
+    font-weight: 600;
+    border: 2px dashed #8FBA44;
+    height: 60px; }
+
+.radio {
+  width: 100%;
+  max-width: none;
+  position: relative;
+  padding: 16px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  cursor: pointer; }
+  .radio .inp-radio {
+    padding: 0; }
+
+.inp-radio {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  background: transparent;
+  z-index: -1; }
+
+.radio-custom {
+  border: 1px solid #C4C4C4;
+    border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  min-width: 20px;
+  margin: 0 8px 0 0;
+  padding: 0;
+  position: relative; }
+  .radio-custom:before {
+    content: '';
+    position: absolute;
+    background: #fff;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+            transform: translate(-50%, -50%);
+    display: none; }
+
+.inp-radio:checked + .radio-custom {
+  border-color: #8FBA44;
+  background: #8FBA44; }
+  .inp-radio:checked + .radio-custom:before {
+    display: block; }
+
+.radio-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: left;
+  width: 100%; }
+  .radio-text span {
+    display: inline-block; }
+  .radio-text input {
+    width: 100%;
+    height: 40px;
+    padding: 0 20px;
+    margin: 0; }
+
+.radio-text__content {
+  text-align: left;
+  margin: 0 0 0 auto;
+  max-width: 220px;
+  width: 100%; }
+  .radio-text__content input {
+    width: 100%;
+    margin: 0; }
+
+.radio-mail {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 5px 5px 5px 16px; }
+
+.messengers-box {
+  margin: 10px 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+
+.list-messengers {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 0 0 0 5px; }
+  .list-messengers li {
+    margin: 0 10px 0 0; }
+    .list-messengers li:last-child {
+      margin: 0; }
+    .list-messengers li a {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      width: 30px;
+      height: 30px; }
+      .list-messengers li a img {
+        width: 100%; }

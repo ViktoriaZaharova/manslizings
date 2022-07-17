@@ -593,6 +593,29 @@
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between; }
+  .form-success .form-group {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+    .form-success .form-group label {
+      width: 100%;
+      max-width: none;
+      margin: 0 0 10px; }
+    .form-success .form-group .radio-mail {
+      max-width: none; }
+  .radio-text__content {
+    margin: 0 0 0 8px; }
+  .modal-content {
+    padding: 40px 30px; }
+  .modal-title {
+    line-height: 32px;
+    font-size: 26px; }
+  .modal-header {
+    margin: 0 0 10px; }
+  .modal-body .box-text {
+    margin: 0 auto 20px; }
+  .fileup-file.fileup-image .fileup-preview {
+    width: 62px;
+    height: 46px; }
   .btn-accent {
     font-size: 15px; }
     .btn-accent .btn-arrow {
@@ -902,6 +925,47 @@
       margin: 0 20px 0 0;
       width: 50px;
       min-width: 50px; }
+  .page-success {
+    padding: 40px 0; }
+  .form-success-file {
+    margin: 0 0 20px; }
+    .form-success-file .box-text {
+      margin: 0 0 15px; }
+    .form-success-file .label-file {
+      max-width: none; }
+  .form-success button {
+    max-width: none;
+    width: 100%; }
+  .radio-text {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap; }
+  .radio-mail {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 16px; }
+  .radio-text__content {
+    max-width: 100%;
+    margin: 15px 0 0; }
+    .radio-text__content input {
+      height: 44px; }
+  .form-success__consultation {
+    margin: 30px 0 0; }
+  .messengers-box {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+  .list-messengers {
+    margin: 10px 0 0; }
+    .list-messengers li {
+      margin: 0 20px 0 0; }
+      .list-messengers li a {
+        width: 44px;
+        height: 44px; }
   .inp-group-item {
     height: 55px;
     padding: 6px 9px;

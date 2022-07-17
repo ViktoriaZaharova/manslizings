@@ -1,61 +1,51 @@
 @import "vars"
 
-.overlay
-  z-index: 100
-  position: fixed
-  background: rgba(64, 74, 89, 0.4)
-  width: 100%
-  height: 100%
-  top: 0
-  left: 0
-  cursor: pointer
-  display: none
+.modal-backdrop.show
+  opacity: .2
 
-.modal__div
-  position: fixed
+.modal-dialog
   max-width: 600px
-  width: 100%
-  height: 100%
-  top: 45%
-  left: 50%
-  transform: translate(-50%, -50%)
-  z-index: 101
-  overflow: auto
-  justify-content: center
-  align-items: center
-  flex-direction: column
-  display: none
-  opacity: 0
 
-
-.modal__close
-  position: absolute
-  right: 20px
-  top: 20px
-  cursor: pointer
-  width: 18px
-  height: 18px
-  fill: #B0B0B0
-
-.modal__wrapper
-  width: 100%
-  height: auto
-  overflow: auto
-  margin: 50px auto
-  padding: 70px 43px 50px
-  box-sizing: border-box
-  position: relative
-  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25)
-  background: #fff
+.modal-content
   border: 1px solid #DCE0E7
     radius: 5px
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.25)
+  padding: 70px 40px 50px
 
-  h2
-    margin: 0 auto 15px
-    text-align: center
+.modal-header
+  padding: 0
+  border: none
+  margin: 0 auto 15px
+  text-align: center
+  flex-wrap: wrap
+  .close
+    width: 18px
+    height: 18px
+    padding: 0
+    cursor: pointer
+    opacity: 1
+    z-index: 1
+    border: none
+      radius: 0
+    stroke: #C4C4C4
+    margin: 0
+    position: absolute
+    right: 20px
+    top: 20px
+
+.modal-title
+  text-align: center
+  color: #2F5048
+  font-size: 39px
+  font-weight: 900
+  width: 100%
+
+.modal-body
+  padding: 0
+  width: 100%
   .box-text
     text-align: center
+    margin: 0 auto 30px
   .btn
-    margin: 30px auto 0
     max-width: 240px
-    width: 100%
+    margin: 0 auto
