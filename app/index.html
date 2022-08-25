@@ -114,17 +114,79 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle">Автолизинг</a>
                 <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">menu1</a>
-                  <a href="#" class="dropdown-item">menu1</a>
-                  <a href="#" class="dropdown-item">menu1</a>
+                  <div class="dropdown-menu__wrapper">
+                    <div class="dropdown-box">
+                      <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                      <ul class="list-dots dropdown-menu-list">
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown-box">
+                      <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                      <ul class="list-dots dropdown-menu-list">
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="check-possibilities">
+                      <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
+                      <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо сейчас</div>
+
+                      <a href="#" class="btn btn-orange">Проверить</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle">Автокредит</a>
                 <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">menu2</a>
-                  <a href="#" class="dropdown-item">menu2</a>
-                  <a href="#" class="dropdown-item">menu2</a>
+                  <div class="dropdown-menu__wrapper">
+                    <div class="dropdown-box">
+                      <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                      <ul class="list-dots dropdown-menu-list">
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown-box">
+                      <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                      <ul class="list-dots dropdown-menu-list">
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="check-possibilities">
+                      <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
+                      <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо сейчас</div>
+
+                      <a href="#" class="btn btn-orange">Проверить</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li><a href="#">Авто партнеров</a></li>
@@ -218,19 +280,7 @@
   </div>
 </main>
 
-<div class="btn-filter-wrapper d-flex d-sm-none">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <a href="#" class="btn btn-accent btn-toggle-filter">
-          <span class="btn-text">Подобрать автомобиль</span>
-          <span class="btn-icon"><svg class="svg-icon"><use
-              xlink:href="img/sprite.svg#arrow-bottom-filter"></use></svg></span>
-        </a>
-      </div>
-    </div>
-  </div>
-</div>
+
 
 <section class="catalog-car bg-light-blue">
 
@@ -238,88 +288,98 @@
     <div class="row">
 
       <div class="col-12">
-        <div class="filter-wrapper">
-          <a href="#" class="btn-close__filter">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#close"></use>
-            </svg>
-          </a>
+        <div class="filter-wrapper-container">
+          <div class="btn-filter-wrapper d-flex d-sm-none">
+            <a href="#" class="btn btn-accent btn-toggle-filter">
+              <span class="btn-text">Подобрать автомобиль</span>
+              <span class="btn-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#arrow-bottom-filter"></use></svg></span>
+            </a>
+          </div>
 
-          <h2>Подобрать авто</h2>
+          <div class="filter-wrapper">
+            <a href="#" class="btn-close__filter">
+              <svg class="svg-icon">
+                <use xlink:href="img/sprite.svg#close"></use>
+              </svg>
+            </a>
 
-          <form method="post" class="form-filter">
-            <div class="row">
-              <div class="col-12 col-md-3">
-                <label>
-                  <select name="select" class="select-my">
-                    <option value="Mersedes">Mersedes</option>
-                    <option value="Mersedes">Mersedes</option>
-                    <option value="Mersedes">Mersedes</option>
-                  </select>
-                </label>
-                <label>
-                  <select name="select" class="select-my">
-                    <option value="Модель">Модель</option>
-                    <option value="Модель">Модель</option>
-                    <option value="Модель">Модель</option>
-                  </select>
-                </label>
-              </div>
+            <h2>Подобрать авто</h2>
 
-              <div class="col-12 col-md-6">
-                <div class="row">
-                  <div class="col-12 col-sm-6">
-                    <label>
-                      <select name="select" class="select-my">
-                        <option value="Топливо">Топливо</option>
-                        <option value="Топливо">Топливо</option>
-                        <option value="Топливо">Топливо</option>
-                      </select>
-                    </label>
+            <form method="post" class="form-filter">
+              <div class="row">
+                <div class="col-12 col-md-3">
+                  <label>
+                    <select name="select" class="select-my">
+                      <option value="Mersedes">Mersedes</option>
+                      <option value="Mersedes">Mersedes</option>
+                      <option value="Mersedes">Mersedes</option>
+                    </select>
+                  </label>
+                  <label>
+                    <select name="select" class="select-my">
+                      <option value="Модель">Модель</option>
+                      <option value="Модель">Модель</option>
+                      <option value="Модель">Модель</option>
+                    </select>
+                  </label>
+                </div>
+
+                <div class="col-12 col-md-6">
+                  <div class="row">
+                    <div class="col-12 col-sm-6">
+                      <label>
+                        <select name="select" class="select-my">
+                          <option value="Топливо">Топливо</option>
+                          <option value="Топливо">Топливо</option>
+                          <option value="Топливо">Топливо</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="col-12 col-sm-6">
+                      <label>
+                        <select name="select" class="select-my">
+                          <option value="Транмиссия">Транмиссия</option>
+                          <option value="Транмиссия">Транмиссия</option>
+                          <option value="Транмиссия">Транмиссия</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="col-6">
+                      <label>
+                        <select name="select" class="select-my">
+                          <option value="Год от">Год от</option>
+                          <option value="Год от">Год от</option>
+                          <option value="Год от">Год от</option>
+                        </select>
+                      </label>
+                    </div>
+                    <div class="col-6">
+                      <label>
+                        <select name="select" class="select-my">
+                          <option value="Год до">Год до</option>
+                          <option value="Год до">Год до</option>
+                          <option value="Год до">Год до</option>
+                        </select>
+                      </label>
+                    </div>
                   </div>
-                  <div class="col-12 col-sm-6">
-                    <label>
-                      <select name="select" class="select-my">
-                        <option value="Транмиссия">Транмиссия</option>
-                        <option value="Транмиссия">Транмиссия</option>
-                        <option value="Транмиссия">Транмиссия</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div class="col-6">
-                    <label>
-                      <select name="select" class="select-my">
-                        <option value="Год от">Год от</option>
-                        <option value="Год от">Год от</option>
-                        <option value="Год от">Год от</option>
-                      </select>
-                    </label>
-                  </div>
-                  <div class="col-6">
-                    <label>
-                      <select name="select" class="select-my">
-                        <option value="Год до">Год до</option>
-                        <option value="Год до">Год до</option>
-                        <option value="Год до">Год до</option>
-                      </select>
-                    </label>
-                  </div>
+                </div>
+
+                <div class="col-12 col-md-3">
+                  <label class="label-range">
+                    <span class="filter-range" id="filter__range"></span>
+                  </label>
+
+                  <button type="submit" class="btn btn-sm btn-accent">
+                    <span class="btn-text">Подобрать авто</span>
+                  </button>
                 </div>
               </div>
 
-              <div class="col-12 col-md-3">
-                <label class="label-range">
-                  <span class="filter-range" id="filter__range"></span>
-                </label>
+            </form>
 
-                <button type="submit" class="btn btn-sm btn-accent">
-                  <span class="btn-text">Подобрать авто</span>
-                </button>
-              </div>
-            </div>
-
-          </form>
-
+          </div>
         </div>
       </div>
     </div>

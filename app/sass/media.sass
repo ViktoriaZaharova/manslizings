@@ -73,6 +73,13 @@
     width: 100%
 
 
+  .menu .dropdown-menu
+    padding: 20px
+
+  .check-possibilities
+    max-width: 260px
+    padding: 25px 15px
+
 
 
   //.footer-row
@@ -407,6 +414,60 @@
       margin: 0 0 20px
       &:last-child
         margin: 0 0 20px
+
+  .dropdown-menu__wrapper
+    flex-wrap: wrap
+
+  .dropdown-box
+    margin: 0 0 30px
+    width: 100%
+
+  .page-product-box
+    &__head
+      padding: 0 0 15px
+      display: flex
+      align-items: center
+      h3
+        width: auto
+      &:after
+        content: ''
+        display: flex
+        align-items: center
+        justify-content: center
+        margin-left: auto
+        width: 12px
+        height: 6px
+        background: url("../img/arrow-bottom.svg") no-repeat center
+          size: 100%
+        transform: rotate(180deg)
+      &.collapsed
+        &:after
+          transform: rotate(0)
+    &__body
+      padding: 15px 0 0
+      .collapse
+        margin: 0 0 20px
+
+
+  .page-product-box__subtitle
+    display: flex
+    align-items: center
+    &:after
+      content: ''
+      display: flex
+      align-items: center
+      justify-content: center
+      margin-left: auto
+      width: 12px
+      height: 6px
+      background: url("../img/arrow-bottom.svg") no-repeat center
+        size: 100%
+      transform: rotate(180deg)
+    &.collapsed
+      &:after
+        transform: rotate(0)
+
+
 
 
   //.footer-bottom
@@ -941,6 +1002,15 @@
       margin: 0 0 20px
       &:last-child
         margin: 0 0 20px
+    .mail
+      margin: 0 0 20px
+    .footer-box
+      .list-maps
+        margin: 0
+        li
+          margin: 0
+    .waze-link
+      margin: 0 0 20px
 
   .product-gallery-preview
     padding: 0 35px
@@ -1055,6 +1125,9 @@
   .fileup-file.fileup-image .fileup-preview
     width: 62px
     height: 46px
+
+
+
 
 
   //.social-content
@@ -1399,14 +1472,15 @@
 
   .filter-wrapper
     display: none
-    position: fixed
+    position: absolute
     z-index: 5
-    width: calc(100% - 30px)
+    width: 100%
     left: 50%
-    top: 50%
-    transform: translate(-50%,-50%)
+    top: 0
+    transform: translate(-50%,0)
     margin: auto
     padding: 30px 20px 40px
+    border-radius: 6px
     h2
       display: none
 
@@ -1418,7 +1492,7 @@
     text-align: left
 
   .catalog-car
-    padding: 60px 0
+    padding: 30px 0 60px
 
   .row
     margin: 0 -5px

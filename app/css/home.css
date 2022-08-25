@@ -144,6 +144,9 @@
     width: 100%;
     margin: 0 0 30px; }
 
+.filter-wrapper-container {
+  position: relative; }
+
 .btn-close__filter {
   width: 22px;
   height: 22px;
@@ -158,9 +161,7 @@
   margin: 0 10px 20px auto; }
 
 .btn-filter-wrapper {
-  background: #fff;
-  padding: 30px 0;
-  margin: 0 auto; }
+  margin: 0 auto 30px; }
 
 .btn-toggle-filter {
   max-width: 330px;

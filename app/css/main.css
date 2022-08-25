@@ -385,13 +385,14 @@ h2 {
   width: 100%;
   background: #fff;
   z-index: 3;
-  border-radius: 6px;
+  border: none;
+    border-radius: 10px;
   font-size: 14px;
   min-width: 200px;
   overflow: hidden;
   display: none;
-  -webkit-box-shadow: 0 0 10px rgba(21, 71, 60, 0.4);
-          box-shadow: 0 0 10px rgba(21, 71, 60, 0.4);
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 49, 95, 0.11);
+          box-shadow: 0px 4px 30px rgba(0, 49, 95, 0.11);
   margin: 0; }
 
 .dropdown-item {
@@ -480,24 +481,44 @@ h2 {
   font-size: 16px;
   line-height: 20px;
   color: #2A2D28;
-  margin: 20px 0 40px; }
-  .breadcrumbs li a {
-    color: #2A2D28;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center; }
-    .breadcrumbs li a:after {
-      content: '>';
-      display: inline-block;
-      margin: 0 5px; }
-    .breadcrumbs li a:hover {
-      color: #8FBA44; }
-  .breadcrumbs li span {
-    display: inline-block;
-    color: #848484; }
+  margin: 20px 0 36px; }
+  .breadcrumbs li {
+    margin: 0 5px 3px 0; }
+    .breadcrumbs li:last-child {
+      margin: 0 0 3px; }
+    .breadcrumbs li a {
+      color: #2A2D28;
+      height: 30px;
+      padding: 0 14px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      border: 1px solid #E1E4E8;
+        border-radius: 4px;
+      background: #fff; }
+      .breadcrumbs li a:after {
+        display: none; }
+      .breadcrumbs li a:hover {
+        color: #8FBA44; }
+    .breadcrumbs li span {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+          -ms-flex-align: center;
+              align-items: center;
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center;
+      padding: 0 14px;
+      color: #848484;
+      border: 1px solid #E1E4E8;
+        border-radius: 4px;
+      background: #fff;
+      height: 30px; }
 
 .pagination {
   width: 100%;

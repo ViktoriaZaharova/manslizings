@@ -155,8 +155,11 @@ $(window).on('load resize', function() {
             autoplay: true,
             autoplaySpeed: 2000,
         });
+
+        $('.product-characteristics .collapse').collapse('toggle');
     } else {
         $(".category-cars-slider.slick-initialized").slick("unslick");
+        $('.product-characteristics .collapse').collapse('dispose');
     }
 });
 // slick active
@@ -183,14 +186,14 @@ $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 
 $('.btn-toggle-filter').on('click', function (e) {
     e.preventDefault();
-    $('.overlay-mobile').fadeIn();
+    // $('.overlay-mobile').fadeIn();
     $('.filter-wrapper').fadeIn();
 });
 
 $('.btn-close__filter, .overlay-mobile').on('click', function (e) {
     e.preventDefault();
     $('.filter-wrapper').fadeOut();
-    $('.overlay-mobile').fadeOut();
+    // $('.overlay-mobile').fadeOut();
 });
 
 
