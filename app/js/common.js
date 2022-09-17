@@ -109,7 +109,7 @@ $('.reviews-slider').slick({
 
 $('.product-gallery').slick({
     slidesToShow: 1,
-    fade: true,
+    // fade: true,
     arrows: false,
     asNavFor: '.product-gallery-preview'
 });
@@ -214,21 +214,79 @@ $('.btn-sorting').on('click', function () {
 
 
 // this is your selector
-$.fileup({
-    url: window.location.pathname + window.location.search,
-    inputID: 'upload-demo',
-    queueID: 'upload-demo-queue',
-    dropzoneID: '',
-    files: [],
-    fieldName: 'filedata',
-    extraFields: {},
-    sizeLimit: 0,
-    filesLimit: 0,
-    method: 'post',
-    timeout: null,
-    autostart: false,
+// $.fileup({
+//     url: window.location.pathname + window.location.search,
+//     inputID: 'upload-demo',
+//     queueID: 'upload-demo-queue',
+//     dropzoneID: '',
+//     files: [],
+//     fieldName: 'filedata',
+//     extraFields: {},
+//     sizeLimit: 0,
+//     filesLimit: 0,
+//     method: 'post',
+//     timeout: null,
+//     autostart: false,
+// });
+
+
+// invoke plugin
+$('.inp-file').MultiFile({
+    onFileChange: function(){
+        console.log(this, arguments);
+    }
 });
 
+$(document).ready(function () {
+    var input = document.querySelector(".phone-input1");
+    window.intlTelInput(input, {
+        separateDialCode: true,
+        defaultCountry: 'auto',
+        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
+            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
+            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
+            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
+    });
+
+    var input2 = document.querySelector(".phone-input2");
+    window.intlTelInput(input2, {
+        separateDialCode: true,
+        defaultCountry: 'auto',
+        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
+            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
+            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
+            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
+    });
+
+    var input3 = document.querySelector(".phone-input3");
+    window.intlTelInput(input3, {
+        separateDialCode: true,
+        defaultCountry: 'auto',
+        onlyCountries: ["al", "ad", "at", "by", "be", "ba", "bg", "hr", "cz", "dk",
+            "ee", "fo", "fi", "fr", "de", "gi", "gr", "va", "hu", "is", "ie", "it", "lv",
+            "li", "lt", "lu", "mk", "mt", "md", "mc", "me", "nl", "no", "pl", "pt", "ro",
+            "ru", "sm", "rs", "sk", "si", "es", "se", "ch", "ua", "gb"],
+    });
+    //
+    // var input4 = document.querySelector(".phone-input4");
+    // window.intlTelInput(input4, {
+    //     separateDialCode: true,
+    //     defaultCountry: 'auto'
+    // });
+    //
+    // var input5 = document.querySelector(".phone-input5");
+    // window.intlTelInput(input5, {
+    //     separateDialCode: true,
+    //     defaultCountry: 'auto'
+    // });
+    //
+    // var input6 = document.querySelector(".phone-input6");
+    // window.intlTelInput(input6, {
+    //     separateDialCode: true,
+    //     defaultCountry: 'auto'
+    // });
+
+});
 
 
 

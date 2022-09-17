@@ -28,7 +28,8 @@
   .checkout-form label {
     position: relative;
     width: 100%;
-    max-width: none; }
+    max-width: none;
+    margin: 0 0 15px; }
   .checkout-form input {
     border: 1px solid #B0B0B0;
       border-radius: 6px;
@@ -43,6 +44,8 @@
       color: #848484; }
   .checkout-form .col-12 {
     padding: 0 5px; }
+  .checkout-form .error-label input {
+    border: 1px solid #D71717; }
 
 .checkout-stages {
   margin: 0 auto 30px;

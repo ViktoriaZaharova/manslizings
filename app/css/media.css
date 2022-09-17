@@ -92,16 +92,15 @@
     left: 50%;
     -webkit-transform: translate(-50%, 0);
             transform: translate(-50%, 0); }
-  .callback-wrapper {
-    padding: 60px 0 150px; }
-    .callback-wrapper:before {
-      width: 302px;
-      height: 302px;
-      top: auto;
-      bottom: -151px;
-      -webkit-filter: blur(200px);
-              filter: blur(200px); }
+  .callback-wrapper:before {
+    width: 302px;
+    height: 302px;
+    top: auto;
+    bottom: -151px;
+    -webkit-filter: blur(200px);
+            filter: blur(200px); }
   .callback {
+    padding: 60px 0 150px;
     text-align: center; }
     .callback .container {
       padding: 0 15px; }
@@ -303,27 +302,13 @@
     .page-product-box__subtitle.collapsed:after {
       -webkit-transform: rotate(0);
               transform: rotate(0); }
-  .page-article-item {
-    margin: 30px 0 0; }
-    .page-article-item h3 {
-      font-size: 18px; }
-  .page-article-slider {
-    margin: 30px 0 0; }
-  .schedule {
-    width: 100%;
-    margin: 0 0 20px; }
-  .page-article-footer {
-    padding: 20px 0;
-    margin: 0; }
-  .recommended-news {
-    padding: 60px 0 90px; }
   .list-tags li {
     margin: 0 10px 10px 0; }
     .list-tags li:last-child {
       margin: 0 0 10px; }
     .list-tags li a {
       font-size: 14px; }
-  .callback-v3 .callback-wrapper {
+  .callback-v3 {
     padding: 60px 0; }
     .callback-v3 .callback-wrapper:before {
       width: 302px;
@@ -483,23 +468,7 @@
   .name-company {
     font-size: 18px; }
   h1 {
-    font-size: 26px; }
-  .news-img {
-    height: 200px; }
-  .news-column {
-    width: 48%; }
-  .btn-load {
-    margin: 20px auto 0; }
-  .news-item__img {
-    height: 120px; }
-  .page-article-slider__item .image {
-    height: auto; }
-  .date-article {
-    font-size: 15px; }
-  .blockquote {
-    padding: 30px;
-    margin: 30px 0 0;
-    font-size: 16px; } }
+    font-size: 26px; } }
 
 @media only screen and (max-width: 768px) {
   .catalog-car {
@@ -763,37 +732,6 @@
       margin: 0 0 5px 0; }
       .button-group .btn:last-child {
         margin: 0 0 5px; }
-  .requisites-body {
-    padding: 30px 16px; }
-  .list-requisites {
-    width: 100%;
-    border: none;
-    font-size: 12px;
-    line-height: 100%;
-    padding: 0;
-    margin: 0 0 11px; }
-    .list-requisites:last-child {
-      margin: 0; }
-    .list-requisites:first-child {
-      border: none;
-      width: 100%; }
-    .list-requisites:last-child {
-      width: 100%; }
-    .list-requisites:first-child li, .list-requisites:last-child li {
-      margin: 0 0 10px; }
-    .list-requisites:first-child li span, .list-requisites:last-child li span {
-      width: 55%;
-      font-size: 11px; }
-    .list-requisites:first-child li p, .list-requisites:last-child li p {
-      width: 45%; }
-  .requisites-body {
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap; }
-  .requisites-head {
-    padding: 15px;
-    text-align: center; }
-    .requisites-head h4 {
-      font-size: 16px; }
   .callback-two {
     padding: 60px 0; }
   .benefit-table-list > li {
@@ -1049,6 +987,32 @@
       .list-messengers li a {
         width: 44px;
         height: 44px; }
+  .page-news {
+    padding: 0 0 50px; }
+  .recommended-news {
+    padding: 60px 0 40px; }
+    .recommended-news h2 {
+      font-size: 26px;
+      margin: 0 0 30px; }
+    .recommended-news .mb-20 {
+      margin-bottom: 20px; }
+  .page-article h1 {
+    margin: 0 0 20px; }
+  .page-article-item {
+    margin: 0 0 30px; }
+    .page-article-item:last-child {
+      margin: 0; }
+    .page-article-item__body {
+      padding: 30px 0 0; }
+  .brand-item {
+    font-size: 14px; }
+    .brand-item__img {
+      height: 70px;
+      padding: 12px 10px; }
+  .page-brands {
+    padding: 0 0 65px; }
+    .page-brands .mb-20 {
+      margin-bottom: 15px; }
   .inp-group-item {
     height: 55px;
     padding: 6px 9px;
@@ -1065,25 +1029,7 @@
         margin: 0 13.5px 0 0; }
   .page-contacts-box__body {
     padding: 0 0 0 20px;
-    max-width: none; }
-  .page-article-slider__nav {
-    padding: 15px; }
-  .counter-slide .current:after {
-    width: 60px; }
-  .blockquote {
-    padding: 20px;
-    font-size: 15px; }
-  .recommended-news {
-    padding: 50px 0; }
-    .recommended-news h2 {
-      font-size: 24px; }
-  .list-schedule {
-    margin: 10px 0 0;
-    width: 100%; }
-    .list-schedule li {
-      margin: 0 0 0 10px; }
-      .list-schedule li:first-child {
-        margin: 0; } }
+    max-width: none; } }
 
 @media (max-width: 420px) {
   .header-top .phone-icon {

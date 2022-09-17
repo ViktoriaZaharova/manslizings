@@ -3,7 +3,7 @@
 
 <head>
   <meta charset="utf-8">
-  <title>Autovia</title>
+  <title>Manslizing</title>
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
-  <link rel="stylesheet" href="css/fileup.min.css">
+  <link rel="stylesheet" href="css/intlTelInput.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="css/catalog.css">
   <link rel="stylesheet" href="css/product.css">
   <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/news.css">
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/media.css">
 
@@ -114,24 +115,90 @@
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle">Автолизинг</a>
                 <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">menu1</a>
-                  <a href="#" class="dropdown-item">menu1</a>
-                  <a href="#" class="dropdown-item">menu1</a>
+                  <div class="dropdown-menu__wrapper">
+                    <div class="dropdown-box">
+                      <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                      <ul class="list-dots dropdown-menu-list">
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown-box">
+                      <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                      <ul class="list-dots dropdown-menu-list">
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="check-possibilities">
+                      <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
+                      <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо
+                        сейчас
+                      </div>
+
+                      <a href="#" class="btn btn-orange">Проверить</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li class="dropdown">
                 <a href="#" class="dropdown-toggle">Автокредит</a>
                 <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">menu2</a>
-                  <a href="#" class="dropdown-item">menu2</a>
-                  <a href="#" class="dropdown-item">menu2</a>
+                  <div class="dropdown-menu__wrapper">
+                    <div class="dropdown-box">
+                      <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                      <ul class="list-dots dropdown-menu-list">
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="dropdown-box">
+                      <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                      <ul class="list-dots dropdown-menu-list">
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                        <li><a href="#">Лизинг без первого взноса</a></li>
+                        <li><a href="#">Лизинг без официального места работы</a></li>
+                      </ul>
+                    </div>
+
+                    <div class="check-possibilities">
+                      <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
+                      <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо
+                        сейчас
+                      </div>
+
+                      <a href="#" class="btn btn-orange">Проверить</a>
+                    </div>
+                  </div>
                 </div>
               </li>
               <li><a href="#">Авто партнеров</a></li>
               <li><a href="#">Выкуп авто</a></li>
               <li><a href="#">О нас</a></li>
-              <li><a href="#">Новости </a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
             </ul>
 
             <div class="header-box">
@@ -218,39 +285,54 @@
 
             <div class="row">
               <div class="col-12 col-sm-6 col-lg-4">
-                <label>
-                  <input type="text" name="employer" placeholder="Работодатель">
-                </label>
+                <div class="label-input">
+                  <span class="input-text">Работодатель</span>
+                  <label>
+                    <input type="text" name="employer" placeholder="">
+                  </label>
+                </div>
               </div>
               <div class="col-12 col-sm-6 col-lg-4">
-                <label>
-                  <select name="select" class="select-my">
-                    <option value="Должность">Должность</option>
-                    <option value="Должность">Должность</option>
-                    <option value="Должность">Должность</option>
-                  </select>
-                </label>
+                <div class="label-input">
+                  <span class="input-text">Должность</span>
+                  <label>
+                    <select name="select" class="select-my">
+                      <option value="---">---</option>
+                      <option value="Должность">Должность</option>
+                      <option value="Должность">Должность</option>
+                    </select>
+                  </label>
+                </div>
               </div>
               <div class="col-12 col-sm-6 col-lg-4">
-                <label>
-                  <select name="select" class="select-my">
-                    <option value="Опыт работы (мес)">Опыт работы (мес)</option>
-                    <option value="Опыт работы (мес)">Опыт работы (мес)</option>
-                    <option value="Опыт работы (мес)">Опыт работы (мес)</option>
-                  </select>
-                </label>
+                <div class="label-input">
+                  <span class="input-text">Опыт работы (мес)</span>
+                  <label>
+                    <select name="select" class="select-my">
+                      <option value="---">---</option>
+                      <option value="Опыт работы (мес)">Опыт работы (мес)</option>
+                      <option value="Опыт работы (мес)">Опыт работы (мес)</option>
+                    </select>
+                  </label>
+                </div>
               </div>
 
               <div class="col-12 col-sm-6 col-lg-4">
-                <label>
-                  <input type="text" name="type_sum" placeholder="Вид доходов (зарплата и т.д)">
-                </label>
+                <div class="label-input">
+                  <span class="input-text">Вид доходов (зарплата и т.д)</span>
+                  <label>
+                    <input type="text" name="type_sum" placeholder="">
+                  </label>
+                </div>
               </div>
 
               <div class="col-12 col-sm-6 col-lg-4">
-                <label>
-                  <input type="text" name="income" placeholder="Доходы/мес">
-                </label>
+                <div class="label-input">
+                  <span class="input-text">Доходы/мес</span>
+                  <label>
+                    <input type="text" name="income" placeholder="">
+                  </label>
+                </div>
               </div>
 
             </div>
@@ -267,7 +349,7 @@
               </div>
               <div class="col-12 col-lg-5">
                 <label class="label-file">
-                  <input type="file" name="file" class="input-file" id="upload-demo" multiple>
+                  <input type="file" name="files[]" class="inp-file" id="upload-demo" multiple>
                   <span class="input-file-icon"><svg class="svg-icon"><use
                       xlink:href="img/sprite.svg#camera"></use></svg></span>
                 </label>
@@ -319,8 +401,8 @@
           </ul>
           <ul class="footer-menu ul-my">
             <li><a href="#">О нас</a></li>
-            <li><a href="#">Новости </a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
           </ul>
 
           <div class="footer-box">
@@ -392,7 +474,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<script src="js/fileup.js"></script>
+<script src="js/jquery.MultiFile.min.js"></script>
+<script src="js/intlTelInput.js"></script>
 <script src="js/common.js"></script>
 
 </body>

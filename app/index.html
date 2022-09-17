@@ -25,7 +25,7 @@
   <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
-  <link rel="stylesheet" href="css/fileup.min.css">
+  <link rel="stylesheet" href="css/intlTelInput.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -33,6 +33,7 @@
   <link rel="stylesheet" href="css/catalog.css">
   <link rel="stylesheet" href="css/product.css">
   <link rel="stylesheet" href="css/checkout.css">
+  <link rel="stylesheet" href="css/news.css">
   <link rel="stylesheet" href="css/modal.css">
   <link rel="stylesheet" href="css/media.css">
 
@@ -192,8 +193,8 @@
               <li><a href="#">Авто партнеров</a></li>
               <li><a href="#">Выкуп авто</a></li>
               <li><a href="#">О нас</a></li>
-              <li><a href="#">Новости </a></li>
-              <li><a href="#">Контакты</a></li>
+              <li><a href="news.html">Новости</a></li>
+              <li><a href="contacts.html">Контакты</a></li>
             </ul>
 
             <div class="header-box">
@@ -263,8 +264,9 @@
                   <label>
                     <input type="text" placeholder="Имя и фамилия" name="name">
                   </label>
-                  <label>
-                    <input type="text" placeholder="Телефон" name="phone">
+                  <label class="error-label">
+                    <input type="text" class="phone-input1" placeholder="Телефон" name="phone">
+                    <span class="error-form">! Необходимо указать телефон</span>
                   </label>
                   <label>
                     <input type="text" placeholder="Эл.почта" name="mail">
@@ -714,7 +716,7 @@
 </section>
 
 <section class="callback">
-  <div class="callback-wrapper">
+  <div class="callback-wrapper"></div>
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-10">
@@ -725,13 +727,13 @@
 
           <form method="post" class="form-callback">
             <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
-            <label><input type="text" placeholder="Телефон" name="phone"></label>
+            <label><input type="text" placeholder="Телефон" class="phone-input2" name="phone"></label>
             <button type="submit" class="btn btn-sm btn-orange">Проверить</button>
           </form>
         </div>
       </div>
     </div>
-  </div>
+
   <div class="callback-image"><img src="img/car2.png" alt=""></div>
 </section>
 
@@ -1390,7 +1392,7 @@
 </section>
 
 <section class="callback callback-v2">
-  <div class="callback-wrapper">
+  <div class="callback-wrapper"></div>
     <div class="container">
       <div class="row">
         <div class="col-12 col-lg-10">
@@ -1401,13 +1403,12 @@
 
           <form method="post" class="form-callback">
             <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
-            <label><input type="text" placeholder="Телефон" name="phone"></label>
+            <label><input type="text" placeholder="Телефон" class="phone-input3" name="phone"></label>
             <button type="submit" class="btn btn-sm btn-orange">Отправить заявку</button>
           </form>
         </div>
       </div>
     </div>
-  </div>
   <div class="callback-image"><img src="img/car3.png" alt=""></div>
 </section>
 
@@ -1543,8 +1544,8 @@
           </ul>
           <ul class="footer-menu ul-my">
             <li><a href="#">О нас</a></li>
-            <li><a href="#">Новости </a></li>
-            <li><a href="#">Контакты</a></li>
+            <li><a href="news.html">Новости</a></li>
+            <li><a href="contacts.html">Контакты</a></li>
           </ul>
 
           <div class="footer-box">
@@ -1616,7 +1617,8 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<script src="js/fileup.js"></script>
+<script src="js/jquery.MultiFile.min.js"></script>
+<script src="js/intlTelInput.js"></script>
 <script src="js/common.js"></script>
 
 </body>
