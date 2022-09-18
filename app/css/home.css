@@ -79,6 +79,41 @@
     z-index: -1; }
   .main-form .form button {
     width: 100%; }
+  .main-form .form .range_val {
+    margin: 0 0 25px;
+    position: relative;
+    width: 100%; }
+    .main-form .form .range_val input {
+      position: absolute;
+      right: 0;
+      background: transparent;
+      padding: 0;
+      height: auto;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      border: none;
+        border-radius: 0;
+      color: #8FBA44;
+      font-size: 16px;
+      font-weight: 700;
+      text-align: right; }
+  .main-form .form .payment-month {
+    color: #fff;
+    margin: 0 0 25px; }
+    .main-form .form .payment-month__val {
+      background: transparent;
+      padding: 0;
+      margin: 0 10px;
+      color: #8FBA44;
+      font-size: 32px;
+      font-weight: bold;
+      border: none;
+        border-radius: 0;
+      width: -webkit-fit-content;
+      width: -moz-fit-content;
+      width: fit-content;
+      height: auto; }
 
 .main-slider__item-img {
   max-width: 923px;
@@ -956,16 +991,16 @@ a.list-contacts-item:hover {
   background: #EFF2F9; }
 
 .home-manslizing .container {
-  padding: 50px 15px; }
+  padding: 80px 15px; }
 
 .home-manslizing .main-slider__item-img {
-  max-width: 620px;
-  bottom: -50px;
-  right: 236px;
+  max-width: 637px;
+  bottom: -80px;
+  right: 240px;
   top: auto; }
 
 .home-manslizing .main-content {
-  max-width: 590px; }
+  max-width: 740px; }
 
 .home-manslizing h1 {
   margin: 0 0 12px; }
@@ -1303,3 +1338,240 @@ a.list-contacts-item:hover {
   .category-cars-box__text {
     max-width: 180px;
     display: block; }
+
+.advantages-box-leasing {
+  padding: 23px 30px; }
+  .advantages-box-leasing .advantages-box__icon {
+    width: 60px;
+    height: 60px;
+    min-width: 60px; }
+  .advantages-box-leasing .advantages-box__body {
+    width: calc(100% - 60px);
+    padding: 0 0 0 20px; }
+
+.interested h2 {
+  margin: 0 auto 30px; }
+
+.interested-card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  color: #fff;
+  background: #196250;
+  border-radius: 10px;
+  z-index: 1;
+  padding: 50px 18px 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center; }
+  .interested-card__icon {
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+  .interested-card h3 {
+    text-align: center;
+    font-size: 28px;
+    font-weight: 900;
+    margin: 30px auto 0; }
+  .interested-card .box-text {
+    margin: 10px auto auto; }
+  .interested-card .btn {
+    max-width: 178px;
+    width: 100%;
+    margin: 36px auto 0; }
+  .interested-card:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    bottom: -119px;
+    left: 50%;
+    -webkit-transform: translate(-50%, 0);
+            transform: translate(-50%, 0);
+    mix-blend-mode: screen;
+    -webkit-filter: blur(135px);
+            filter: blur(135px);
+    background: #80FF00;
+    width: 288px;
+    height: 288px; }
+
+.blog {
+  padding: 0 0 60px; }
+  .blog h2 {
+    margin: 0 0 30px; }
+
+.list-rating {
+  margin: 0 0 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .list-rating li {
+    margin: 0 4px 0 0;
+    width: 20px; }
+
+.reviews-box-clients {
+  padding: 30px;
+  font-size: 16px; }
+  .reviews-box-clients .reviews-box__footer {
+    margin: 30px 0 0; }
+  .reviews-box-clients h4 {
+    font-size: 16px; }
+  .reviews-box-clients .reviews-box__user {
+    padding: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    color: #848484;
+    font-size: 16px; }
+    .reviews-box-clients .reviews-box__user .name {
+      font-weight: normal; }
+
+.about-leasing {
+  padding: 90px 0 0; }
+  .about-leasing__image {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    border-radius: 10px;
+    min-width: 850px;
+    overflow: hidden; }
+  .about-leasing__content {
+    width: 100%;
+    background: #fff;
+    position: relative;
+    z-index: 1;
+    -webkit-box-shadow: 0 4px 30px rgba(0, 49, 95, 0.11);
+            box-shadow: 0 4px 30px rgba(0, 49, 95, 0.11);
+    border: 1px solid #E1E4E8;
+      border-radius: 10px;
+    padding: 50px 40px 50px 60px; }
+  .about-leasing h2 {
+    font-size: 34px;
+    margin: 0 0 20px; }
+  .about-leasing .box-text p {
+    margin: 0 0 20px; }
+
+.steps-work h2 {
+  margin: 0 auto 20px; }
+
+.steps-work .subtitle {
+  font-weight: normal;
+  font-size: 18px;
+  margin: 0 auto 47px; }
+
+.steps-work-images {
+  margin: 0 auto;
+  max-width: 348px;
+  width: 100%; }
+  .steps-work-images .slick-arrow {
+    background: transparent;
+    width: 17px;
+    height: 34px;
+    border: none;
+      border-radius: 0;
+    padding: 0; }
+    .steps-work-images .slick-arrow svg {
+      stroke: #8FBA44;
+      width: 100%;
+      height: 100%; }
+    .steps-work-images .slick-arrow:hover {
+      background: transparent; }
+
+.steps-work-images__item {
+  margin: 0 auto;
+  display: none; }
+  .steps-work-images__item.active {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+
+.steps-work-slider {
+  max-width: 677px;
+  width: 100%; }
+
+.steps-work-item {
+  background: #fff;
+  width: 100%;
+  margin: 0 0 9px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-box-shadow: 0px 4px 30px rgba(0, 49, 95, 0.11);
+          box-shadow: 0px 4px 30px rgba(0, 49, 95, 0.11);
+  border: 1px solid #E1E4E8;
+    border-radius: 9px;
+  cursor: pointer;
+  padding: 0 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center; }
+  .steps-work-item__number {
+    color: rgba(25, 98, 80, 0.1);
+    font-size: 110px;
+    font-weight: 800;
+    line-height: 145%;
+    min-width: 80px;
+    margin: 0 7px 0 0; }
+  .steps-work-item h3 {
+    margin: 0 0 10px;
+    color: #2F5048;
+    font-size: 18px;
+    font-weight: 700; }
+  .steps-work-item:hover {
+    border: 2px solid #8FBA44; }
+
+.home-leasing .container {
+  padding: 40px 15px; }
+
+.home-leasing .main-slider__item-img {
+  max-width: 762px;
+  bottom: -40px;
+  right: 92px; }
+
+.home-leasing .main-content {
+  padding: 0; }
+
+.home-loan .main-slider__item-img {
+  max-width: 516px;
+  right: 305px; }

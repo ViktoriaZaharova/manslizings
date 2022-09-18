@@ -49,3 +49,52 @@
   .btn
     max-width: 240px
     margin: 0 auto
+
+.modal-product
+  .modal-dialog
+    max-width: 367px
+  .modal-content
+    background: #196250
+    border: none
+      radius: 6px
+    color: #fff
+    padding: 50px 30px
+    z-index: 1
+    position: relative
+
+  .modal-title
+    color: #fff
+    font-size: 26px
+  .modal-header
+    margin: 0 auto 20px
+  .form
+    button
+      width: 100%
+      max-width: none
+
+#thanksModal
+  .btn
+    max-width: 173px
+    width: 100%
+
+.modal-content-decor
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  overflow: hidden
+  z-index: -1
+  &:before
+    content: ''
+    position: absolute
+    bottom: -134px
+    left: 50%
+    transform: translate(-50%,0)
+    background: #80FF00
+    width: 270px
+    height: 270px
+    mix-blend-mode: screen
+    filter: blur(125px)
+    z-index: -1
+

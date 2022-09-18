@@ -44,6 +44,7 @@
 
   .box-text
     font-size: 20px
+
     ul
       margin: 0
 
@@ -87,6 +88,39 @@
     button
       width: 100%
 
+    .range_val
+      margin: 0 0 25px
+      position: relative
+      width: 100%
+
+      input
+        position: absolute
+        right: 0
+        background: transparent
+        padding: 0
+        height: auto
+        width: fit-content
+        border: none
+          radius: 0
+        color: #8FBA44
+        font-size: 16px
+        font-weight: 700
+        text-align: right
+
+    .payment-month
+      color: #fff
+      margin: 0 0 25px
+      &__val
+        background: transparent
+        padding: 0
+        margin: 0 10px
+        color: #8FBA44
+        font-size: 32px
+        font-weight: bold
+        border: none
+          radius: 0
+        width: fit-content
+        height: auto
 
 .main-slider__item-img
   max-width: 923px
@@ -841,16 +875,20 @@ a.list-contacts-item
 //manlsizing lp
 .home-manslizing
   .container
-    padding: 50px 15px
+    padding: 80px 15px
+
   .main-slider__item-img
-    max-width: 620px
-    bottom: -50px
-    right: 236px
+    max-width: 637px
+    bottom: -80px
+    right: 240px
     top: auto
+
   .main-content
-    max-width: 590px
+    max-width: 740px
+
   h1
     margin: 0 0 12px
+
   .box-text
     margin: 45px 0 0
     font-weight: 500
@@ -867,20 +905,24 @@ a.list-contacts-item
   &__icon
     display: flex
     align-items: center
+
   .icon
     @include d-flex
     width: 50px
     height: 50px
     margin: 0 10px 0 0
+
   h4
     color: rgba(47, 80, 72, 0.1)
     line-height: 145%
     font-size: 60px
     font-weight: 900
+
   h3
     margin: 0 0 10px
     color: #2A2D28
     font-weight: bold
+
   .box-text
     color: #626262
     max-width: 245px
@@ -889,6 +931,7 @@ a.list-contacts-item
   position: relative
   overflow: hidden
   background: #196250
+
   h2
     margin: 0 0 40px
 
@@ -901,18 +944,21 @@ a.list-contacts-item
   float: right
   margin: 0 -38px 0 0
   @include d-flex
+
   &:before, &:after
     content: ''
     position: absolute
     left: 50%
     top: 50%
-    transform: translate(-50%,-50%)
+    transform: translate(-50%, -50%)
     z-index: -1
+
   &:before
     width: 707px
     height: 707px
     background: url("../img/decor-circle.svg") no-repeat center
       size: 100%
+
   &:after
     background: #80FF00
     width: 444px
@@ -924,6 +970,7 @@ a.list-contacts-item
   padding: 0 0 0 39px
   position: relative
   z-index: 2
+
   .box-text
     max-width: 485px
 
@@ -933,8 +980,10 @@ a.list-contacts-item
     display: flex
     align-items: center
     margin: 0 0 10px
+
     &:last-child
       margin: 0
+
     &:before
       content: ''
       @include d-flex
@@ -948,6 +997,7 @@ a.list-contacts-item
 //benefit
 .benefit
   padding: 80px 0 40px
+
   h2
     margin: 0 auto 38px
 
@@ -965,20 +1015,25 @@ a.list-contacts-item
 .benefit-table-col
   flex: 1
   text-align: center
+
   ul
     li
       justify-content: center
+
   .logo-company
     max-width: 173px
     margin: 0 auto
+
   &__head
     margin: 0 auto 10px
     min-height: 34px
+
   h3
     color: #2F5048
     font-size: 20px
     font-weight: 900
     text-align: center
+
   .benefit-table-list
     li
       &:before
@@ -986,7 +1041,8 @@ a.list-contacts-item
 
 .benefit-table-list
   line-height: 20px
-  >li
+
+  > li
     padding: 10px 20px
     border-radius: 6px
     position: relative
@@ -1006,6 +1062,7 @@ a.list-contacts-item
       min-width: 2000px
       border-radius: 6px
       z-index: -1
+
     &:nth-child(odd)
       &:before
         background: #F4F7FB
@@ -1031,19 +1088,21 @@ a.list-contacts-item
   margin: 0 auto
 
 
-
 .list-star
   display: flex
   justify-content: center
   align-items: flex-start
   margin: 0 auto
+
   li
     margin: 0 8px 0 0
     @include d-flex
     width: 26px
     height: 26px
+
     img
       width: 100%
+
     &:last-child
       margin: 0
 
@@ -1052,19 +1111,23 @@ a.list-contacts-item
   position: relative
   overflow: hidden
   z-index: 1
+
   h2
     margin: 0 0 20px
+
   .box-text
     color: #000
+
   .container
     position: relative
+
     &:before
       content: ''
       position: absolute
       width: 707px
       height: 707px
       top: 50%
-      transform: translate(0,-50%)
+      transform: translate(0, -50%)
       right: -217px
       background: url("../img/decor-circle-grey.svg") no-repeat center
         size: 100%
@@ -1079,6 +1142,7 @@ a.list-contacts-item
     radius: 6px
   padding: 20px 25px
   line-height: 145%
+
   &__icon
     display: flex
     align-items: center
@@ -1091,6 +1155,7 @@ a.list-contacts-item
 .callback-v3
   .form-callback
     justify-content: center
+
     label
       max-width: 250px
 
@@ -1098,6 +1163,7 @@ a.list-contacts-item
 //category-cars
 .category-cars
   padding: 80px 0 60px
+
   h2
     margin: 0 0 40px
 
@@ -1114,14 +1180,236 @@ a.list-contacts-item
     radius: 6px
   background: #fff
   padding: 40px 30px
+
   &:hover
     background: #8FBA44
     color: #2A2D28
+
   &__img
     position: absolute
     bottom: 0
     right: 0
     z-index: -1
+
   &__text
     max-width: 180px
     display: block
+
+
+//car-leasing
+.advantages-box-leasing
+  padding: 23px 30px
+
+  .advantages-box__icon
+    width: 60px
+    height: 60px
+    min-width: 60px
+
+  .advantages-box__body
+    width: calc(100% - 60px)
+    padding: 0 0 0 20px
+
+
+.interested
+  h2
+    margin: 0 auto 30px
+
+.interested-card
+  width: 100%
+  height: 100%
+  position: relative
+  overflow: hidden
+  color: #fff
+  background: #196250
+  border-radius: 10px
+  z-index: 1
+  padding: 50px 18px 40px
+  display: flex
+  flex-direction: column
+  text-align: center
+
+  &__icon
+    margin: 0 auto
+    @include d-flex
+
+  h3
+    text-align: center
+    font-size: 28px
+    font-weight: 900
+    margin: 30px auto 0
+
+  .box-text
+    margin: 10px auto auto
+
+  .btn
+    max-width: 178px
+    width: 100%
+    margin: 36px auto 0
+
+  &:before
+    content: ''
+    position: absolute
+    z-index: -1
+    bottom: -119px
+    left: 50%
+    transform: translate(-50%, 0)
+    mix-blend-mode: screen
+    filter: blur(135px)
+    background: #80FF00
+    width: 288px
+    height: 288px
+
+.blog
+  padding: 0 0 60px
+
+  h2
+    margin: 0 0 30px
+
+.list-rating
+  margin: 0 0 20px
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+  li
+    margin: 0 4px 0 0
+    width: 20px
+
+.reviews-box-clients
+  padding: 30px
+  font-size: 16px
+
+  .reviews-box__footer
+    margin: 30px 0 0
+
+  h4
+    font-size: 16px
+
+  .reviews-box__user
+    padding: 0
+    width: 100%
+    display: flex
+    align-items: center
+    justify-content: space-between
+    flex-wrap: wrap
+    color: #848484
+    font-size: 16px
+
+    .name
+      font-weight: normal
+
+
+.about-leasing
+  padding: 90px 0 0
+
+  &__image
+    @include d-flex
+    border-radius: 10px
+    min-width: 850px
+    overflow: hidden
+
+  &__content
+    width: 100%
+    background: #fff
+    position: relative
+    z-index: 1
+    box-shadow: 0 4px 30px rgba(0, 49, 95, 0.11)
+    border: 1px solid #E1E4E8
+      radius: 10px
+    padding: 50px 40px 50px 60px
+
+  h2
+    font-size: 34px
+    margin: 0 0 20px
+
+  .box-text
+    p
+      margin: 0 0 20px
+
+.steps-work
+  h2
+    margin: 0 auto 20px
+
+  .subtitle
+    font-weight: normal
+    font-size: 18px
+    margin: 0 auto 47px
+
+.steps-work-images
+  margin: 0 auto
+  max-width: 348px
+  width: 100%
+  .slick-arrow
+    background: transparent
+    width: 17px
+    height: 34px
+    border: none
+      radius: 0
+    padding: 0
+    svg
+      stroke: $accent
+      width: 100%
+      height: 100%
+    &:hover
+      background: transparent
+
+
+.steps-work-images__item
+  margin: 0 auto
+  display: none
+
+  &.active
+    @include d-flex
+
+.steps-work-slider
+  max-width: 677px
+  width: 100%
+
+.steps-work-item
+  background: #fff
+  width: 100%
+  margin: 0 0 9px
+  transition: .3s ease
+  box-shadow: 0px 4px 30px rgba(0, 49, 95, 0.11)
+  border: 1px solid #E1E4E8
+    radius: 9px
+  cursor: pointer
+  padding: 0 30px
+  display: flex
+  align-items: center
+
+  &__number
+    color: rgba(25, 98, 80, 0.1)
+    font-size: 110px
+    font-weight: 800
+    line-height: 145%
+    min-width: 80px
+    margin: 0 7px 0 0
+
+  h3
+    margin: 0 0 10px
+    color: #2F5048
+    font-size: 18px
+    font-weight: 700
+
+  &:hover
+    border: 2px solid #8FBA44
+
+
+.home-leasing
+  .container
+    padding: 40px 15px
+  .main-slider__item-img
+    max-width: 762px
+    bottom: -40px
+    right: 92px
+  .main-content
+    padding: 0
+
+
+//car loan
+.home-loan
+  .main-slider__item-img
+    max-width: 516px
+    right: 305px

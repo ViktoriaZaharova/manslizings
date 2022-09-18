@@ -149,6 +149,7 @@
   letter-spacing: 0.02em
   padding: 0 0 0 10px
   color: #2A2D28
+  margin: 10px 0 0
   h3
     font-weight: 900
     color: #2F5048
@@ -161,6 +162,8 @@
     strong
       font-weight: 600
 
+.MultiFile-remove
+  color: red
 
 .label-file
   width: 100%
@@ -467,3 +470,31 @@
       height: 30px
       img
         width: 100%
+
+//page error
+.page-error
+  overflow: hidden
+.page-error-wrapper
+  width: 100%
+  display: flex
+  align-items: flex-start
+  flex-wrap: wrap
+
+.page-error__content
+  width: calc(100% - 256px)
+  padding: 50px 0 0
+  h1
+    color: #2F5048
+  .box-text
+    margin: 20px 0 40px
+    max-width: 394px
+    width: 100%
+  .btn
+    max-width: 256px
+
+.page-error__image
+  max-width: 256px
+  width: 100%
+  @include d-flex
+
+

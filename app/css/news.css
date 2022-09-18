@@ -171,67 +171,37 @@
     .list-models li:last-child {
       margin: 0; }
 
-.form-callback label {
-  margin: 0 0 20px; }
+.page-contacts {
+  padding: 0 0 60px; }
 
-.callback-two {
-  background: transparent;
-  padding: 67px 0 80px; }
-  .callback-two:before {
-    display: none; }
-
-.page-contacts-wrapper {
+.contacts-map {
+  border: 1px solid #DCDDE0;
+    border-radius: 20px;
   width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap; }
+  height: 400px;
+  overflow: hidden; }
+  .contacts-map iframe {
+    width: 100%;
+    height: 100%; }
 
-.page-contacts-box {
-  margin: 0 0 20px; }
-  .page-contacts-box h3 {
-    margin: 0 0 13px;
-    font-size: 18px;
-    font-weight: 600; }
-    .page-contacts-box h3:before {
-      content: '';
-      display: inline-block;
-      width: 8px;
-      height: 14px;
-      margin: 0 15px 0 0;
-      background: #8FBA44;
-      -webkit-clip-path: polygon(55% 0%, 100% 0%, 45% 100%, 0% 100%);
-              clip-path: polygon(55% 0%, 100% 0%, 45% 100%, 0% 100%); }
+.page-contacts-content .list-maps {
+  padding: 0;
+  margin: 0 0 40px; }
 
-.page-contacts-box__body {
-  padding: 0 0 0 23px;
-  line-height: 130%;
-  letter-spacing: 0.02em;
-  color: #656871;
-  max-width: 300px; }
-  .page-contacts-box__body .phone {
-    font-size: 21px;
-    color: #656871;
-    font-weight: normal; }
-  .page-contacts-box__body .mail {
-    color: #656871;
-    font-size: 18px; }
+.page-contacts-content .list-contacts-item {
+  margin: 0 0 12px; }
+  .page-contacts-content .list-contacts-item:last-child {
+    margin: 0; }
 
 .requisites-section h2 {
   margin: 0 0 40px; }
 
 .list-requisites {
   font-size: 14px;
-  color: #656871;
+  color: #303030;
   line-height: 170%;
-  width: 100%; }
+  width: 100%;
+  font-family: 'Mulish', sans-serif; }
   .list-requisites li {
     margin: 0 0 7px;
     width: 100%;
@@ -242,11 +212,11 @@
         -ms-flex-align: start;
             align-items: flex-start; }
     .list-requisites li span {
-      width: 60%;
+      width: 61%;
       font-weight: 500;
       padding-left: 20px; }
     .list-requisites li p {
-      width: 40%;
+      width: 39%;
       font-weight: 300; }
     .list-requisites li:last-child {
       margin: 0; }

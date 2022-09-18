@@ -144,6 +144,8 @@ $('.product-gallery-preview').slick({
 });
 
 
+
+
 // slick active
 $(window).on('load resize', function() {
     if ($(window).width() < 992) {
@@ -156,13 +158,64 @@ $(window).on('load resize', function() {
             autoplaySpeed: 2000,
         });
 
+        $('.steps-work-images').slick({
+            slidesToShow: 1,
+            arrows: true,
+            prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+            nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+            asNavFor: '.steps-work-slider',
+        });
+
+        $('.steps-work-slider').slick({
+            slidesToShow: 1,
+            arrows: false,
+            focusOnSelect: true,
+            asNavFor: '.steps-work-images',
+        });
+
+        $('.interested-slider').slick({
+            slidesToShow: 2,
+            arrows: false,
+            dots: true,
+            responsive: [
+                {
+                    breakpoint: 870,
+                    settings: {
+                        slidesToShow: 1,
+                    }
+                },
+                {
+                    breakpoint: 576,
+                    settings: {
+                        slidesToShow: 1,
+                        adaptiveHeight: true,
+                    }
+                }
+            ]
+        });
+
         $('.product-characteristics .collapse').collapse('toggle');
     } else {
         $(".category-cars-slider.slick-initialized").slick("unslick");
+        $(".steps-work-images.slick-initialized").slick("unslick");
+        $(".steps-work-slider.slick-initialized").slick("unslick");
+        $(".interested-slider.slick-initialized").slick("unslick");
         $('.product-characteristics .collapse').collapse('dispose');
     }
 });
 // slick active
+
+$(".js-tab-trigger").hover(function () {
+    var id = $(this).attr('data-tab'),
+        content = $('.js-tab-content[data-tab="'+ id +'"]');
+
+    // $('.mega-menu__route.active').removeClass('active'); // 1
+    // $(this).addClass('active'); // 2
+
+    $('.js-tab-content.active').removeClass('active'); // 3
+    content.addClass('active'); // 4
+});
+
 
 //progressbar
 function setProgress(index) {
@@ -232,9 +285,7 @@ $('.btn-sorting').on('click', function () {
 
 // invoke plugin
 $('.inp-file').MultiFile({
-    onFileChange: function(){
-        console.log(this, arguments);
-    }
+    list: '.files-list'
 });
 
 $(document).ready(function () {
