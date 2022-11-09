@@ -219,8 +219,8 @@
                 </svg>
               </div>
               <div class="schedule-box__text">
-                Время работы:
-                9:00 - 22:00
+                <p>Время работы:</p>
+                <p>9:00 - 22:00</p>
               </div>
             </div>
 
@@ -320,7 +320,7 @@
 
             <form method="post" class="form-filter">
               <div class="row">
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-md-5 col-lg-3">
                   <label>
                     <select name="select" class="select-my">
                       <option value="Mersedes">Mersedes</option>
@@ -337,7 +337,7 @@
                   </label>
                 </div>
 
-                <div class="col-12 col-md-6">
+                <div class="col-12 col-md-7 col-lg-6">
                   <div class="row">
                     <div class="col-12 col-sm-6">
                       <label>
@@ -378,9 +378,22 @@
                   </div>
                 </div>
 
-                <div class="col-12 col-md-3">
+                <div class="col-12 col-lg-3">
                   <label class="label-range">
-                    <span class="filter-range" id="filter__range"></span>
+                    <div class="range_val">
+                      <div class="form-group">
+                        <label>
+                          <span>от</span>
+                          <input type="text" name="dec" class="dec1">
+                        </label>
+                        <label>
+                          <span>до</span>
+                          <input type="text" name="dec" class="dec2">
+                        </label>
+                      </div>
+                      <div class="slider-range slider-range1"></div>
+                    </div>
+<!--                    <span class="filter-range" id="filter__range"></span>-->
                   </label>
 
                   <button type="submit" class="btn btn-sm btn-accent">
@@ -1255,7 +1268,7 @@
 
       <div class="col-12 col-lg-6">
         <div class="question-box">
-          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse1">
+          <div class="question-box__head" data-toggle="collapse" data-target="#collapse1">
             <h4>Как купить автомобиль максимально выгодно?</h4>
             <span class="collapse-icon"></span>
           </div>

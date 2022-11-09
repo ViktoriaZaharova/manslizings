@@ -193,7 +193,9 @@
       -ms-flex-pack: center;
           justify-content: center;
   stroke: #848484;
-  margin: 0 10px 20px auto; }
+  position: absolute;
+  right: 25px;
+  top: 35px; }
 
 .btn-filter-wrapper {
   margin: 0 auto 30px; }
@@ -211,6 +213,12 @@
     width: 100%;
     position: relative;
     margin: 0 0 10px; }
+  .form-filter .label-range {
+    margin: 0 0 8px; }
+    .form-filter .label-range .form-group label {
+      margin: 0 0 10px; }
+  .form-filter .range_val {
+    width: 100%; }
 
 .filter-range.ui-widget.ui-widget-content {
   border: none;
@@ -231,6 +239,17 @@
       -ms-flex-pack: start;
           justify-content: flex-start;
   padding: 0 0 10px; }
+  .label-range label span {
+    position: absolute;
+    left: 10px;
+    top: 50%;
+    -webkit-transform: translate(0, -50%);
+            transform: translate(0, -50%);
+    color: #848484;
+    font-size: 12px; }
+  .label-range label input {
+    height: 30px;
+    font-size: 14px; }
 
 .ui-widget.ui-widget-content {
   height: 2px;
@@ -735,7 +754,8 @@
     padding: 0 0 0 30px; }
 
 .question {
-  background: #196250;
+  background: #196250 url("../img/question-circle.svg") no-repeat 0 center;
+    background-size: 1112px;
   position: relative;
   overflow: hidden; }
   .question h2 {
@@ -743,19 +763,6 @@
   .question .container {
     position: relative;
     z-index: 1; }
-    .question .container:before {
-      content: '';
-      left: 12px;
-      top: 50%;
-      -webkit-transform: translate(0, -50%);
-              transform: translate(0, -50%);
-      -webkit-filter: blur(390px);
-              filter: blur(390px);
-      width: 344px;
-      height: 344px;
-      background: #80FF00;
-      z-index: -1;
-      position: absolute; }
 
 .question-box {
   width: 100%;
@@ -1374,7 +1381,8 @@ a.list-contacts-item:hover {
   position: relative;
   overflow: hidden;
   color: #fff;
-  background: #196250;
+  background: #196250 url("../img/interested-circle.svg") no-repeat center bottom;
+    background-size: 100%;
   border-radius: 10px;
   z-index: 1;
   padding: 50px 18px 40px;
@@ -1408,20 +1416,6 @@ a.list-contacts-item:hover {
     max-width: 178px;
     width: 100%;
     margin: 36px auto 0; }
-  .interested-card:before {
-    content: '';
-    position: absolute;
-    z-index: -1;
-    bottom: -119px;
-    left: 50%;
-    -webkit-transform: translate(-50%, 0);
-            transform: translate(-50%, 0);
-    mix-blend-mode: screen;
-    -webkit-filter: blur(135px);
-            filter: blur(135px);
-    background: #80FF00;
-    width: 288px;
-    height: 288px; }
 
 .blog {
   padding: 0 0 60px; }

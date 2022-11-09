@@ -416,6 +416,27 @@
         left: 50%
         transform: translate(-50%,0)
 
+  .question-box
+    &:last-child
+      margin: 0 0 10px
+    &__body
+      p
+        max-width: none
+
+  .label-range
+    label
+      width: calc(50% - 10px)
+      input
+        height: 40px
+        font-size: 16px
+
+  .characteristics-wrap
+    column-count: 1
+
+
+  .page-product-box__item
+    &:last-child
+      margin: 0
 
 /* Small Devices, Tablets
 @media only screen and (max-width: 870px)
@@ -576,6 +597,8 @@
 
   h1
     font-size: 26px
+
+
 
 
 @media only screen and (max-width: 768px)
@@ -869,7 +892,8 @@
     margin: 0 auto 30px
 
 
-
+  .form-success-file .label-file
+    max-width: 280px
 
 
 
@@ -925,6 +949,8 @@
   .benefit-table-list > li
     padding: 6px 10px
 
+
+
 @media only screen and (max-width: 576px)
   .header-box
     margin: 0
@@ -976,7 +1002,9 @@
     padding: 30px 20px 40px
     border-radius: 6px
     h2
-      display: none
+      font-size: 24px
+      font-weight: 600
+      margin: 0 0 20px
 
   .btn-close__filter
     display: flex
@@ -1034,14 +1062,16 @@
 
   .question
     padding: 60px 0 50px
-    .container
-      &:before
-        filter: blur(320px)
-        left: -100px
-        top: 0
-        width: 230px
-        height: 230px
-        transform: none
+    background: #196250 url("../img/question-circle.svg") no-repeat 0 center
+      size: 240px
+    //.container
+    //  &:before
+    //    filter: blur(320px)
+    //    left: -100px
+    //    top: 0
+    //    width: 230px
+    //    height: 230px
+    //    transform: none
     h2
       margin: 0 0 20px
       text-align: left
@@ -1054,7 +1084,7 @@
     &__head
       padding: 0 12px 0 14px
     &__body
-      padding: 10px 0 16px 15px
+      padding: 10px 15px 16px
       font-size: 14px
       color: #6F766B
 
@@ -1359,6 +1389,15 @@
     h2
       margin: 0 auto 20px
 
+  .label-range label
+    width: calc(50% - 5px)
+
+  .label-price
+    max-width: none
+    margin: 10px 0 0
+    width: 100%
+    order: 1
+
 @media (max-width: 420px)
   .header-top
     .phone-icon
@@ -1448,6 +1487,12 @@
       &:before
         top: 42%
 
+  .page-catalog
+    .tab-pane
+      .col-12
+        .card-img
+          height: 200px
+
 @media (max-width: 380px)
   .benefit-table-list
     font-size: 11px
@@ -1484,7 +1529,7 @@
       max-width: 240px
 
 @media (min-width: 768px)
-  .product-gallery
+  .product-gallery-wrapper
     position: sticky
     top: 0
 

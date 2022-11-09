@@ -362,7 +362,22 @@
       right: auto;
       left: 50%;
       -webkit-transform: translate(-50%, 0);
-              transform: translate(-50%, 0); } }
+              transform: translate(-50%, 0); }
+  .question-box:last-child {
+    margin: 0 0 10px; }
+  .question-box__body p {
+    max-width: none; }
+  .label-range label {
+    width: calc(50% - 10px); }
+    .label-range label input {
+      height: 40px;
+      font-size: 16px; }
+  .characteristics-wrap {
+    -webkit-column-count: 1;
+       -moz-column-count: 1;
+            column-count: 1; }
+  .page-product-box__item:last-child {
+    margin: 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 870px) {
@@ -754,7 +769,9 @@
   .btn-all {
     margin: 5px auto 0; }
   .btn-sales {
-    margin: 0 auto 30px; } }
+    margin: 0 auto 30px; }
+  .form-success-file .label-file {
+    max-width: 280px; } }
 
 /* Extra Small Devices, Phones */
 @media only screen and (max-width: 650px) {
@@ -837,7 +854,9 @@
     padding: 30px 20px 40px;
     border-radius: 6px; }
     .filter-wrapper h2 {
-      display: none; }
+      font-size: 24px;
+      font-weight: 600;
+      margin: 0 0 20px; }
   .btn-close__filter {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -882,16 +901,9 @@
   .advantages h2 {
     margin: 0 0 30px; }
   .question {
-    padding: 60px 0 50px; }
-    .question .container:before {
-      -webkit-filter: blur(320px);
-              filter: blur(320px);
-      left: -100px;
-      top: 0;
-      width: 230px;
-      height: 230px;
-      -webkit-transform: none;
-              transform: none; }
+    padding: 60px 0 50px;
+    background: #196250 url("../img/question-circle.svg") no-repeat 0 center;
+      background-size: 240px; }
     .question h2 {
       margin: 0 0 20px;
       text-align: left; }
@@ -903,7 +915,7 @@
     .question-box__head {
       padding: 0 12px 0 14px; }
     .question-box__body {
-      padding: 10px 0 16px 15px;
+      padding: 10px 15px 16px;
       font-size: 14px;
       color: #6F766B; }
   .mb-30 {
@@ -1144,7 +1156,16 @@
   .home-loan .main-slider__item-img {
     max-width: 500px; }
   .blog h2 {
-    margin: 0 auto 20px; } }
+    margin: 0 auto 20px; }
+  .label-range label {
+    width: calc(50% - 5px); }
+  .label-price {
+    max-width: none;
+    margin: 10px 0 0;
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1; } }
 
 @media (max-width: 420px) {
   .header-top .phone-icon {
@@ -1223,7 +1244,9 @@
     min-width: auto;
     margin: 0 auto; }
   .home-loan .container:before {
-    top: 42%; } }
+    top: 42%; }
+  .page-catalog .tab-pane .col-12 .card-img {
+    height: 200px; } }
 
 @media (max-width: 380px) {
   .benefit-table-list {
@@ -1249,6 +1272,6 @@
     max-width: 240px; } }
 
 @media (min-width: 768px) {
-  .product-gallery {
+  .product-gallery-wrapper {
     position: sticky;
     top: 0; } }

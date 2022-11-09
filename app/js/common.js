@@ -10,25 +10,25 @@ $('.nav-menu__close, .overlay-mobile').on('click', function (e) {
     $('.overlay-mobile').fadeOut();
 });
 
-$(function () {
-    $("#filter__range").slider({
-        min: 0,
-        max: 10000,
-        values: [1000, 7892],
-        range: true,
-        stop: function (event, ui) {
-            $('.price-range-min.value').html('€' + $("#filter__range").slider("values", 0));
-            $('.price-range-max.value').html('€' + $("#filter__range").slider("values", 1));
-        },
-        slide: function (event, ui) {
-            $('.price-range-min.value').html('€' + $("#filter__range").slider("values", 0));
-            $('.price-range-max.value').html('€' + $("#filter__range").slider("values", 1));
-        }
-    });
-
-    $('#filter__range .ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + '€' + $('#filter__range').slider('values', 0) + '</span>');
-    $('#filter__range .ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + '€' + $('#filter__range').slider('values', 1) + '</span>');
-});
+// $(function () {
+//     $("#filter__range").slider({
+//         min: 0,
+//         max: 10000,
+//         values: [1000, 7892],
+//         range: true,
+//         stop: function (event, ui) {
+//             $('.price-range-min.value').html('€' + $("#filter__range").slider("values", 0));
+//             $('.price-range-max.value').html('€' + $("#filter__range").slider("values", 1));
+//         },
+//         slide: function (event, ui) {
+//             $('.price-range-min.value').html('€' + $("#filter__range").slider("values", 0));
+//             $('.price-range-max.value').html('€' + $("#filter__range").slider("values", 1));
+//         }
+//     });
+//
+//     $('#filter__range .ui-slider-handle:eq(0)').append('<span class="price-range-min value">' + '€' + $('#filter__range').slider('values', 0) + '</span>');
+//     $('#filter__range .ui-slider-handle:eq(1)').append('<span class="price-range-max value">' + '€' + $('#filter__range').slider('values', 1) + '</span>');
+// });
 
 
 $('.slider-range1').slider({
@@ -216,6 +216,7 @@ $(".js-tab-trigger").hover(function () {
     $('.js-tab-content.active').removeClass('active'); // 3
     content.addClass('active'); // 4
 });
+
 
 
 //progressbar

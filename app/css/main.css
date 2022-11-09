@@ -510,6 +510,8 @@ h2 {
       border: 1px solid #E1E4E8;
         border-radius: 4px;
       background: #fff; }
+      .breadcrumbs li a img {
+        max-width: 18px; }
       .breadcrumbs li a:after {
         display: none; }
       .breadcrumbs li a:hover {
