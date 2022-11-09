@@ -144,7 +144,9 @@
 
                     <div class="check-possibilities">
                       <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
-                      <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо сейчас</div>
+                      <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо
+                        сейчас
+                      </div>
 
                       <a href="#" class="btn btn-orange">Проверить</a>
                     </div>
@@ -183,7 +185,9 @@
 
                     <div class="check-possibilities">
                       <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
-                      <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо сейчас</div>
+                      <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо
+                        сейчас
+                      </div>
 
                       <a href="#" class="btn btn-orange">Проверить</a>
                     </div>
@@ -271,6 +275,13 @@
                   <label>
                     <input type="text" placeholder="Эл.почта" name="mail">
                   </label>
+                  <label class="checkbox">
+                    <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+                    <span class="checkbox-custom"></span>
+                    <span class="checkbox-text">Я согласен с <a href="#" class="d-inline color-white text-decoration">политикой безопасности</a> и <a
+                        href="#"
+                        class="d-inline text-decoration color-white">правилами использования персональных даных</a></span>
+                  </label>
                   <button type="submit" class="btn btn-orange">Отправить заявку</button>
                 </form>
               </div>
@@ -281,7 +292,6 @@
     </div>
   </div>
 </main>
-
 
 
 <section class="catalog-car bg-light-blue">
@@ -717,22 +727,32 @@
 
 <section class="callback">
   <div class="callback-wrapper"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-10">
-          <h2>Проверьте свои лизинговые возможности</h2>
-          <div class="box-text">
-            <p>Это вас ни к чему не обязывает!</p>
-          </div>
-
-          <form method="post" class="form-callback">
-            <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
-            <label><input type="text" placeholder="Телефон" class="phone-input2" name="phone"></label>
-            <button type="submit" class="btn btn-sm btn-orange">Проверить</button>
-          </form>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10">
+        <h2>Проверьте свои лизинговые возможности</h2>
+        <div class="box-text">
+          <p>Это вас ни к чему не обязывает!</p>
         </div>
+
+        <form method="post" class="form-callback">
+          <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
+          <label><input type="text" placeholder="Телефон" class="phone-input2" name="phone"></label>
+          <label class="checkbox">
+            <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+            <span class="checkbox-custom"></span>
+            <span class="checkbox-text">Я согласен с <a href="#" class="d-inline color-white text-decoration">политикой безопасности</a> и <a
+                href="#"
+                class="d-inline text-decoration color-white">правилами использования персональных даных</a></span>
+          </label>
+          <div class="w-100 order-md-1">
+            <span class="error-form">Вам нужно согласиться с политикой конфиденциальности</span>
+          </div>
+          <button type="submit" class="btn btn-sm btn-orange">Проверить</button>
+        </form>
       </div>
     </div>
+  </div>
 
   <div class="callback-image"><img src="img/car2.png" alt=""></div>
 </section>
@@ -1132,7 +1152,7 @@
 <section class="interested">
   <div class="container">
     <div class="row">
-      <div class="col-12 d-none d-md-block text-center">
+      <div class="col-12 text-center">
         <h2>Вас может заинтересовать</h2>
       </div>
     </div>
@@ -1239,9 +1259,11 @@
             <h4>Как купить автомобиль максимально выгодно?</h4>
             <span class="collapse-icon"></span>
           </div>
-          <div class="question-box__body collapse" id="collapse1">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          <div class="collapse" id="collapse1">
+            <div class="question-box__body">
+              <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
+                таких как его текущее состояние, способность заводиться или двигаться. </p>
+            </div>
           </div>
         </div>
         <div class="question-box">
@@ -1249,9 +1271,11 @@
             <h4>Как купить автомобиль максимально выгодно?</h4>
             <span class="collapse-icon"></span>
           </div>
-          <div class="question-box__body collapse show" id="collapse2">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          <div class="collapse show" id="collapse2">
+            <div class="question-box__body">
+              <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
+                таких как его текущее состояние, способность заводиться или двигаться. </p>
+            </div>
           </div>
         </div>
         <div class="question-box">
@@ -1259,9 +1283,11 @@
             <h4>Как купить автомобиль максимально выгодно?</h4>
             <span class="collapse-icon"></span>
           </div>
-          <div class="question-box__body collapse" id="collapse3">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          <div class="collapse" id="collapse3">
+            <div class="question-box__body">
+              <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
+                таких как его текущее состояние, способность заводиться или двигаться. </p>
+            </div>
           </div>
         </div>
         <div class="question-box">
@@ -1269,9 +1295,11 @@
             <h4>Как купить автомобиль максимально выгодно?</h4>
             <span class="collapse-icon"></span>
           </div>
-          <div class="question-box__body collapse" id="collapse4">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          <div class="collapse" id="collapse4">
+            <div class="question-box__body">
+              <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
+                таких как его текущее состояние, способность заводиться или двигаться. </p>
+            </div>
           </div>
         </div>
         <div class="question-box">
@@ -1279,9 +1307,11 @@
             <h4>Как купить автомобиль максимально выгодно?</h4>
             <span class="collapse-icon"></span>
           </div>
-          <div class="question-box__body collapse" id="collapse5">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          <div class="collapse" id="collapse5">
+            <div class="question-box__body">
+              <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
+                таких как его текущее состояние, способность заводиться или двигаться. </p>
+            </div>
           </div>
         </div>
       </div>
@@ -1291,9 +1321,11 @@
             <h4>Как купить автомобиль максимально выгодно?</h4>
             <span class="collapse-icon"></span>
           </div>
-          <div class="question-box__body collapse" id="collapse6">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          <div class="collapse" id="collapse6">
+            <div class="question-box__body">
+              <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
+                таких как его текущее состояние, способность заводиться или двигаться. </p>
+            </div>
           </div>
         </div>
         <div class="question-box">
@@ -1301,9 +1333,11 @@
             <h4>Как купить автомобиль максимально выгодно?</h4>
             <span class="collapse-icon"></span>
           </div>
-          <div class="question-box__body collapse" id="collapse7">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          <div class="collapse" id="collapse7">
+            <div class="question-box__body">
+              <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
+                таких как его текущее состояние, способность заводиться или двигаться. </p>
+            </div>
           </div>
         </div>
         <div class="question-box">
@@ -1311,9 +1345,11 @@
             <h4>Как купить автомобиль максимально выгодно?</h4>
             <span class="collapse-icon"></span>
           </div>
-          <div class="question-box__body collapse" id="collapse8">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          <div class="collapse" id="collapse8">
+            <div class="question-box__body">
+              <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
+                таких как его текущее состояние, способность заводиться или двигаться. </p>
+            </div>
           </div>
         </div>
         <div class="question-box">
@@ -1321,9 +1357,11 @@
             <h4>Как купить автомобиль максимально выгодно?</h4>
             <span class="collapse-icon"></span>
           </div>
-          <div class="question-box__body collapse" id="collapse9">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          <div class="collapse" id="collapse9">
+            <div class="question-box__body">
+              <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
+                таких как его текущее состояние, способность заводиться или двигаться. </p>
+            </div>
           </div>
         </div>
         <div class="question-box">
@@ -1331,9 +1369,11 @@
             <h4>Как купить автомобиль максимально выгодно?</h4>
             <span class="collapse-icon"></span>
           </div>
-          <div class="question-box__body collapse" id="collapse10">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
+          <div class="collapse" id="collapse10">
+            <div class="question-box__body">
+              <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
+                таких как его текущее состояние, способность заводиться или двигаться. </p>
+            </div>
           </div>
         </div>
       </div>
@@ -1440,22 +1480,22 @@
 
 <section class="callback callback-v2">
   <div class="callback-wrapper"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-10">
-          <h2>Возникли вопросы? Давайте созвонимся!</h2>
-          <div class="box-text">
-            <p>Заполните форму и в ближайшее время наш менеджер свяжется с вами</p>
-          </div>
-
-          <form method="post" class="form-callback">
-            <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
-            <label><input type="text" placeholder="Телефон" class="phone-input3" name="phone"></label>
-            <button type="submit" class="btn btn-sm btn-orange">Отправить заявку</button>
-          </form>
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-lg-10">
+        <h2>Возникли вопросы? Давайте созвонимся!</h2>
+        <div class="box-text">
+          <p>Заполните форму и в ближайшее время наш менеджер свяжется с вами</p>
         </div>
+
+        <form method="post" class="form-callback">
+          <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
+          <label><input type="text" placeholder="Телефон" class="phone-input3" name="phone"></label>
+          <button type="submit" class="btn btn-sm btn-orange">Отправить заявку</button>
+        </form>
       </div>
     </div>
+  </div>
   <div class="callback-image"><img src="img/car3.png" alt=""></div>
 </section>
 

@@ -124,6 +124,10 @@
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center; }
+    .form-callback .checkbox {
+      -webkit-box-pack: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
   .list-marks {
     margin: 40px 0 0; }
   .description-company {
@@ -185,7 +189,7 @@
   .product-gallery-item {
     height: 400px; }
   .product-gallery-preview {
-    margin: 0 0 20px; }
+    margin: 10px 0 20px; }
   .home-manslizing .main-slider__item-img {
     max-width: 400px;
     bottom: 0;
@@ -343,8 +347,12 @@
     min-height: 420px; }
     .interested-card .box-text br {
       display: none; }
-  .interested-slider .slick-dots {
-    margin: 20px auto 0; }
+  .interested-slider {
+    margin: 0; }
+    .interested-slider .slick-list {
+      margin: 0 -10px; }
+    .interested-slider .slick-dots {
+      margin: 20px auto 0; }
   .callback-v3 {
     padding: 60px 0; }
     .callback-v3 .callback-wrapper:before {
@@ -497,6 +505,8 @@
     font-size: 18px; }
   .interested-slider {
     margin: 0; }
+    .interested-slider .slick-list {
+      margin: 0; }
     .interested-slider .col-12 {
       padding: 0; }
   .interested-card {
@@ -537,6 +547,10 @@
       margin: 0 0 10px; }
     .form-callback button {
       margin: 0 auto; }
+    .form-callback .checkbox {
+      -webkit-box-ordinal-group: initial;
+          -ms-flex-order: initial;
+              order: initial; }
   .callback-v2 .callback-wrapper:before {
     right: auto;
     left: 50%;
@@ -854,6 +868,10 @@
     .form-callback button {
       max-width: none;
       margin: 0 auto; }
+    .form-callback .checkbox {
+      -webkit-box-align: start;
+          -ms-flex-align: start;
+              align-items: flex-start; }
   .p-80 {
     padding: 60px 0; }
   .list-marks li {
@@ -1229,3 +1247,8 @@
     padding: 0 2px; }
   .home-manslizing h1 {
     max-width: 240px; } }
+
+@media (min-width: 768px) {
+  .product-gallery {
+    position: sticky;
+    top: 0; } }

@@ -160,6 +160,8 @@
 
   .form-callback
     justify-content: center
+    .checkbox
+      justify-content: center
 
   .list-marks
     margin: 40px 0 0
@@ -230,7 +232,7 @@
     height: 400px
 
   .product-gallery-preview
-    margin: 0 0 20px
+    margin: 10px 0 20px
 
   .home-manslizing .main-slider__item-img
     max-width: 400px
@@ -396,12 +398,11 @@
         display: none
 
   .interested-slider
+    margin: 0
+    .slick-list
+      margin: 0 -10px
     .slick-dots
       margin: 20px auto 0
-
-
-
-
 
   .callback-v3
     padding: 60px 0
@@ -555,6 +556,8 @@
 
   .interested-slider
     margin: 0
+    .slick-list
+      margin: 0
     .col-12
       padding: 0
 
@@ -600,6 +603,8 @@
       margin: 0 0 10px
     button
       margin: 0 auto
+    .checkbox
+      order: initial
 
   .callback-v2
     .callback-wrapper
@@ -698,6 +703,8 @@
           margin: 0
     .waze-link
       margin: 0 0 20px
+
+
 
   .product-gallery-preview
     padding: 0 35px
@@ -1008,6 +1015,8 @@
     button
       max-width: none
       margin: 0 auto
+    .checkbox
+      align-items: flex-start
 
   .p-80
     padding: 60px 0
@@ -1473,3 +1482,9 @@
   .home-manslizing
     h1
       max-width: 240px
+
+@media (min-width: 768px)
+  .product-gallery
+    position: sticky
+    top: 0
+
