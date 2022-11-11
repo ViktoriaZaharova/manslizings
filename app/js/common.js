@@ -194,14 +194,17 @@ $(window).on('load resize', function() {
                 }
             ]
         });
-
-        $('.product-characteristics .collapse').collapse('toggle');
+        $('.collapsed-btn').attr('data-toggle', 'collapse');
+        // $('.product-characteristics .collapse').collapse('toggle');
     } else {
         $(".category-cars-slider.slick-initialized").slick("unslick");
         $(".steps-work-images.slick-initialized").slick("unslick");
         $(".steps-work-slider.slick-initialized").slick("unslick");
         $(".interested-slider.slick-initialized").slick("unslick");
-        $('.product-characteristics .collapse').collapse('dispose');
+        // $('.product-characteristics .collapse').collapse('dispose');
+        $('.product-characteristics .collapse').collapse({
+            toggle: false
+        });
     }
 });
 // slick active

@@ -304,6 +304,11 @@
 
     .phone, .address
       margin: 0 0 20px
+  .collapse:not(.show)
+    display: block
+  .collapsing
+    height: auto
+    overflow: visible
 
 .characteristics-wrap
   width: 100%
@@ -311,6 +316,8 @@
 
 .page-product-box__item
   margin: 0 0 20px
+  &:last-child
+    margin: 0
 
 .collapsing
   height: auto

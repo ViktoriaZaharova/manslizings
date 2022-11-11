@@ -377,7 +377,9 @@
        -moz-column-count: 1;
             column-count: 1; }
   .page-product-box__item:last-child {
-    margin: 0; } }
+    margin: 0; }
+  .page-product-box .collapse:not(.show) {
+    display: none; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 870px) {
