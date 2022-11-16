@@ -174,24 +174,74 @@
 .page-contacts {
   padding: 0 0 60px; }
 
-.contacts-map {
-  border: 1px solid #DCDDE0;
-    border-radius: 20px;
+.contacts-card {
   width: 100%;
-  height: 400px;
-  overflow: hidden; }
-  .contacts-map iframe {
+  margin: 0 0 30px;
+  position: relative; }
+  .contacts-card__location {
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #8FBA44;
+    color: #fff;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    z-index: 1;
+    border-radius: 5px;
+    font-weight: bold;
+    text-transform: uppercase;
+    height: 26px;
+    min-width: 80px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    padding: 0 10px; }
+  .contacts-card__img {
     width: 100%;
-    height: 100%; }
+    height: 300px;
+    overflow: hidden;
+    border-radius: 5px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .contacts-card__img iframe {
+      width: 100%;
+      height: 100%; }
+    .contacts-card__img img {
+      width: 100%;
+      height: 100%;
+      -o-object-fit: cover;
+         object-fit: cover; }
+  .contacts-card__body {
+    width: 100%;
+    padding: 20px 0 0; }
+  .contacts-card .list-maps {
+    padding: 0; }
+  .contacts-card .list-contacts-item {
+    margin: 0 0 12px; }
+    .contacts-card .list-contacts-item:last-child {
+      margin: 0; }
 
-.page-contacts-content .list-maps {
-  padding: 0;
-  margin: 0 0 40px; }
-
-.page-contacts-content .list-contacts-item {
-  margin: 0 0 12px; }
-  .page-contacts-content .list-contacts-item:last-child {
-    margin: 0; }
+.work-address-box h3 {
+  font-weight: bold;
+  color: #8FBA44;
+  margin: 0 0 15px;
+  font-size: 20px; }
 
 .requisites-section h2 {
   margin: 0 0 40px; }

@@ -1067,14 +1067,6 @@
     padding: 60px 0 50px
     background: #196250 url("../img/question-circle.svg") no-repeat 0 center
       size: 240px
-    //.container
-    //  &:before
-    //    filter: blur(320px)
-    //    left: -100px
-    //    top: 0
-    //    width: 230px
-    //    height: 230px
-    //    transform: none
     h2
       margin: 0 0 20px
       text-align: left
@@ -1400,6 +1392,26 @@
     margin: 10px 0 0
     width: 100%
     order: 1
+
+  header
+    position: fixed
+    z-index: 4
+    width: 100%
+    left: 0
+    top: 0
+
+  .title-line
+    padding-top: 71px
+
+  .home
+    padding-top: 55px
+    .subtitle
+      max-width: 280px
+
+@media (max-width: 480px)
+  .contacts-card__img
+    height: 270px
+
 
 @media (max-width: 420px)
   .header-top

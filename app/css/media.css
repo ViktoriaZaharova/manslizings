@@ -1167,7 +1167,23 @@
     width: 100%;
     -webkit-box-ordinal-group: 2;
         -ms-flex-order: 1;
-            order: 1; } }
+            order: 1; }
+  header {
+    position: fixed;
+    z-index: 4;
+    width: 100%;
+    left: 0;
+    top: 0; }
+  .title-line {
+    padding-top: 71px; }
+  .home {
+    padding-top: 55px; }
+    .home .subtitle {
+      max-width: 280px; } }
+
+@media (max-width: 480px) {
+  .contacts-card__img {
+    height: 270px; } }
 
 @media (max-width: 420px) {
   .header-top .phone-icon {
