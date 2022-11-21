@@ -308,10 +308,7 @@
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
-          flex-direction: column;
-  overflow: hidden;
-  -webkit-transition: .3s ease;
-  transition: .3s ease; }
+          flex-direction: column; }
   .card:hover {
     border: 1px solid #8FBA44; }
 
@@ -754,8 +751,7 @@
     padding: 0 0 0 30px; }
 
 .question {
-  background: #196250 url("../img/question-circle.svg") no-repeat 0 center;
-    background-size: 1112px;
+  background: #196250;
   position: relative;
   overflow: hidden; }
   .question h2 {
@@ -763,6 +759,19 @@
   .question .container {
     position: relative;
     z-index: 1; }
+    .question .container:before {
+      content: '';
+      left: 12px;
+      top: 50%;
+      -webkit-transform: translate(0, -50%);
+              transform: translate(0, -50%);
+      -webkit-filter: blur(390px);
+              filter: blur(390px);
+      width: 344px;
+      height: 344px;
+      background: #80FF00;
+      z-index: -1;
+      position: absolute; }
 
 .question-box {
   width: 100%;

@@ -195,7 +195,9 @@ $(window).on('load resize', function() {
             ]
         });
         $('.collapsed-btn').attr('data-toggle', 'collapse');
-        // $('.product-characteristics .collapse').collapse('toggle');
+        // $('.product-characteristics .collapse').collapse({
+        //     toggle: true
+        // });
     } else {
         $(".category-cars-slider.slick-initialized").slick("unslick");
         $(".steps-work-images.slick-initialized").slick("unslick");

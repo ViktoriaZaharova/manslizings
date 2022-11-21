@@ -378,8 +378,12 @@
             column-count: 1; }
   .page-product-box__item:last-child {
     margin: 0; }
-  .page-product-box .collapse:not(.show) {
-    display: none; } }
+  .page-product-box .collapse ul {
+    margin: 15px 0 0; }
+    .page-product-box .collapse ul:last-child {
+      margin: 15px 0 0; }
+  .page-product-box h4 {
+    margin: 0; } }
 
 /* Small Devices, Tablets */
 @media only screen and (max-width: 870px) {
@@ -903,12 +907,13 @@
   .advantages h2 {
     margin: 0 0 30px; }
   .question {
-    padding: 60px 0 50px;
-    background: #196250 url("../img/question-circle.svg") no-repeat 0 center;
-      background-size: 240px; }
+    padding: 60px 0 50px; }
     .question h2 {
       margin: 0 0 20px;
       text-align: left; }
+    .question .container:before {
+      width: 240px;
+      height: 230px; }
   .question-box {
     padding: 15px 0;
     margin: 0 0 10px; }
@@ -1288,6 +1293,13 @@
     padding: 0 2px; }
   .home-manslizing h1 {
     max-width: 240px; } }
+
+@media (min-width: 992px) {
+  .page-product-box .collapse:not(.show) {
+    display: block; }
+  .page-product-box .collapsing {
+    height: auto;
+    overflow: visible; } }
 
 @media (min-width: 768px) {
   .product-gallery-wrapper {

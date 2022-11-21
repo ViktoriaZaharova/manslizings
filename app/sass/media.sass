@@ -438,8 +438,17 @@
     &__item
       &:last-child
         margin: 0
-    .collapse:not(.show)
-      display: none
+    //.collapse:not(.show)
+    //  display: none
+    .collapse
+      ul
+        margin: 15px 0 0
+        &:last-child
+          margin: 15px 0 0
+    h4
+      margin: 0
+
+
 
 /* Small Devices, Tablets
 @media only screen and (max-width: 870px)
@@ -1065,11 +1074,13 @@
 
   .question
     padding: 60px 0 50px
-    background: #196250 url("../img/question-circle.svg") no-repeat 0 center
-      size: 240px
     h2
       margin: 0 0 20px
       text-align: left
+    .container
+      &:before
+        width: 240px
+        height: 230px
 
   .question-box
     padding: 15px 0
@@ -1543,8 +1554,17 @@
     h1
       max-width: 240px
 
+@media (min-width: 992px)
+  .page-product-box
+    .collapse:not(.show)
+      display: block
+    .collapsing
+      height: auto
+      overflow: visible
+
 @media (min-width: 768px)
   .product-gallery-wrapper
     position: sticky
     top: 0
+
 

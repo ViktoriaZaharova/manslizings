@@ -342,11 +342,6 @@
     padding: 0; }
   .page-product-box .footer-box .phone, .page-product-box .footer-box .address {
     margin: 0 0 20px; }
-  .page-product-box .collapse:not(.show) {
-    display: block; }
-  .page-product-box .collapsing {
-    height: auto;
-    overflow: visible; }
 
 .characteristics-wrap {
   width: 100%;
@@ -358,10 +353,6 @@
   margin: 0 0 20px; }
   .page-product-box__item:last-child {
     margin: 0; }
-
-.collapsing {
-  height: auto;
-  overflow: visible; }
 
 .list-checked li {
   margin: 0 0 10px;

@@ -303,9 +303,8 @@
   background: #fff
   display: flex
   flex-direction: column
-  overflow: hidden
-  transition: .3s ease
-
+  //overflow: hidden
+  //transition: .3s ease
   &:hover
     border: 1px solid #8FBA44
 
@@ -662,8 +661,9 @@
 
 //.question
 .question
-  background: #196250 url("../img/question-circle.svg") no-repeat 0 center
-    size: 1112px
+  background: #196250
+  //background: #196250 url("../img/question-circle.svg") no-repeat 0 center
+  //  size: 1112px
   position: relative
   overflow: hidden
 
@@ -674,17 +674,17 @@
     position: relative
     z-index: 1
 
-    //&:before
-    //  content: ''
-    //  left: 12px
-    //  top: 50%
-    //  transform: translate(0, -50%)
-    //  filter: blur(390px)
-    //  width: 344px
-    //  height: 344px
-    //  background: #80FF00
-    //  z-index: -1
-    //  position: absolute
+    &:before
+      content: ''
+      left: 12px
+      top: 50%
+      transform: translate(0, -50%)
+      filter: blur(390px)
+      width: 344px
+      height: 344px
+      background: #80FF00
+      z-index: -1
+      position: absolute
 
 .question-box
   width: 100%
