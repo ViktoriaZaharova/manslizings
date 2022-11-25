@@ -414,12 +414,25 @@ h2
   li
     cursor: pointer
     transition: .3s ease
-    width: 8px
-    height: 8px
-    border: 1px solid #196250
-      radius: 50%
+    width: 12px
+    height: 12px
+    position: relative
+    display: flex
+    align-items: center
+    justify-content: center
+    border-radius: 50%
     margin: 0 8px 0 0
-
+    &:before
+      content: ''
+      position: absolute
+      left: 50%
+      top: 50%
+      transform: translate(-50%,-50%)
+      width: 8px
+      height: 8px
+      border: 1px solid #196250
+        radius: 50%
+      transition: .3s ease
     &:last-child
       margin: 0
 
