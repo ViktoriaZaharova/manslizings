@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="css/intlTelInput.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -41,163 +42,975 @@
 
 <body>
 
-<div class="overlay-mobile"></div>
+<div class="wrapper">
+  <div class="content">
 
-<header>
-  <div class="header-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex flex-wrap align-items-center">
-          <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+    <div class="overlay-mobile"></div>
 
-          <!--          <form method="post" class="form-search">-->
-          <!--            <label>-->
-          <!--          <span class="input-icon-search"><svg class="svg-icon">-->
-          <!--            <use xlink:href="img/sprite.svg#search"></use>-->
-          <!--          </svg></span>-->
-          <!--              <input type="text" placeholder="Поиск..." name="search">-->
-          <!--            </label>-->
-          <!--            <button type="submit" class="btn btn-accent btn-sm">Найти</button>-->
-          <!--          </form>-->
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex flex-wrap align-items-center">
+              <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
 
-          <div class="dropdown dropdown-language">
-            <a href="#" class="dropdown-toggle">Рyc</a>
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Рyc</a>
-              <a href="#" class="dropdown-item">Lat</a>
-              <a href="#" class="dropdown-item">Eng</a>
+              <!--          <form method="post" class="form-search">-->
+              <!--            <label>-->
+              <!--          <span class="input-icon-search"><svg class="svg-icon">-->
+              <!--            <use xlink:href="img/sprite.svg#search"></use>-->
+              <!--          </svg></span>-->
+              <!--              <input type="text" placeholder="Поиск..." name="search">-->
+              <!--            </label>-->
+              <!--            <button type="submit" class="btn btn-accent btn-sm">Найти</button>-->
+              <!--          </form>-->
+
+              <div class="dropdown dropdown-language">
+                <a href="#" class="dropdown-toggle">Рyc</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Рyc</a>
+                  <a href="#" class="dropdown-item">Lat</a>
+                  <a href="#" class="dropdown-item">Eng</a>
+                </div>
+              </div>
+
+              <div class="schedule-box">
+                <div class="schedule-box__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#clock"></use>
+                  </svg>
+                </div>
+                <div class="schedule-box__text">
+                  Время работы:
+                  9:00 - 22:00
+                </div>
+              </div>
+
+
+              <a href="mailto:info@manslizings.lv" class="mail">
+                <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
+                <span class="mail-text">info@manslizings.lv</span>
+              </a>
+
+              <a href="tel:+37126612612" class="phone">
+                <span class="phone-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#phone"></use></svg></span>
+                <span class="phone-text">+371 26-612-612</span>
+              </a>
+
+              <div class="btn-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
-          </div>
-
-          <div class="schedule-box">
-            <div class="schedule-box__icon">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#clock"></use>
-              </svg>
-            </div>
-            <div class="schedule-box__text">
-              Время работы:
-              9:00 - 22:00
-            </div>
-          </div>
-
-
-          <a href="mailto:info@manslizings.lv" class="mail">
-            <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
-            <span class="mail-text">info@manslizings.lv</span>
-          </a>
-
-          <a href="tel:+37126612612" class="phone">
-            <span class="phone-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
-            <span class="phone-text">+371 26-612-612</span>
-          </a>
-
-          <div class="btn-burger">
-            <span></span>
-            <span></span>
-            <span></span>
           </div>
         </div>
       </div>
+
+      <div class="header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex align-items-center flex-wrap">
+              <nav class="nav-menu">
+                <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+
+                <a href="#" class="nav-menu__close"></a>
+
+                <ul class="menu ul-my">
+                  <li class="dropdown">
+                    <a href="car-leasing.html" class="dropdown-toggle">Автолизинг</a>
+                    <div class="dropdown-menu">
+                      <div class="dropdown-menu__wrapper">
+                        <div class="dropdown-box">
+                          <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                          <ul class="list-dots dropdown-menu-list">
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="dropdown-box">
+                          <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                          <ul class="list-dots dropdown-menu-list">
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="check-possibilities">
+                          <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
+                          <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо
+                            сейчас
+                          </div>
+
+                          <a href="#" class="btn btn-orange">Проверить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a href="car-loan.html" class="dropdown-toggle">Автокредит</a>
+                    <div class="dropdown-menu">
+                      <div class="dropdown-menu__wrapper">
+                        <div class="dropdown-box">
+                          <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                          <ul class="list-dots dropdown-menu-list">
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="dropdown-box">
+                          <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                          <ul class="list-dots dropdown-menu-list">
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="check-possibilities">
+                          <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
+                          <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо
+                            сейчас
+                          </div>
+
+                          <a href="#" class="btn btn-orange">Проверить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="#">Авто партнеров</a></li>
+                  <li><a href="redemption-auto.html">Выкуп авто</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="news.html">Новости</a></li>
+                  <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+
+                <div class="header-box">
+                  <a href="tel:+37126612612" class="phone">
+                <span class="phone-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#phone"></use></svg></span>
+                    <span class="phone-text">+371 26-612-612</span>
+                  </a>
+                  <a href="mailto:info@manslizings.lv" class="mail">
+                    <span class="mail-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#mail"></use></svg></span>
+                    <span class="mail-text">info@manslizings.lv</span>
+                  </a>
+                </div>
+                <div class="schedule-box">
+                  <div class="schedule-box__icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#clock"></use>
+                    </svg>
+                  </div>
+                  <div class="schedule-box__text">
+                    <p>Время работы:</p>
+                    <p>9:00 - 22:00</p>
+                  </div>
+                </div>
+
+                <div class="language-box">
+                  <p>Язык:</p>
+                  <ul class="list-language ul-my">
+                    <li><a href="#" class="active">Рyc</a></li>
+                    <li><a href="#">Lat</a></li>
+                    <li><a href="#">Eng</a></li>
+                  </ul>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <main class="home home-manslizing">
+      <div class="main-slider w-100">
+        <div class="slide">
+          <div class="main-slider__item">
+            <div class="container">
+              <div class="row">
+                <div class="col-12 d-flex flex-wrap">
+                  <div class="main-content">
+                    <h1>Хочешь продать авто? </h1>
+                    <div class="subtitle">Быстрый выкуп авто по всей Латвии</div>
+                    <div class="box-text">
+                      <ul class="list-dots ul-my font-700">
+                        <li>На 100% официально и безопасно</li>
+                        <li>Объективно оцениваем состояние</li>
+                        <li>Покупаем любые автомобили</li>
+                        <li>Предлагаем лучшую цену</li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="main-slider__item-img"><img src="img/car10.png" alt="">
+                    <img src="img/car10-mobile.png" alt="" class="img-mobile">
+                  </div>
+
+                  <div class="main-form">
+                    <h3>Оставьте заявку
+                      на выкуп автомобиля</h3>
+                    <form method="post" class="form">
+                      <label>
+                        <input type="text" placeholder="Имя и фамилия" name="name">
+                      </label>
+                      <label>
+                        <input type="text" placeholder="Телефон" class="phone-input1" name="phone">
+                      </label>
+                      <button type="submit" class="btn btn-orange">Отправить заявку</button>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+
+    <section class="stages-work">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-25">
+            <h2>Порядок выкупа автомобилей</h2>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-sm-6 col-lg-3 mb-20">
+            <div class="stages-work-box">
+              <div class="stages-work-box__icon">
+                <div class="icon"><img src="img/stage-icon1.svg" alt=""></div>
+                <h4>1</h4>
+              </div>
+              <div class="stages-work-box__body">
+                <h3>Заявка для оценки авто</h3>
+                <div class="box-text">
+                  <p>Оставьте заявку на сайте, приложите фотографии авто и дождитесь звонка нашего авто-эксперта.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-20">
+            <div class="stages-work-box">
+              <div class="stages-work-box__icon">
+                <div class="icon"><img src="img/stage-icon2.svg" alt=""></div>
+                <h4>2</h4>
+              </div>
+              <div class="stages-work-box__body">
+                <h3>Осмотр автомобиля</h3>
+                <div class="box-text">
+                  <p>Эксперт договорится с Вами о встрече для полноценного осмотра автомобиля.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-20">
+            <div class="stages-work-box">
+              <div class="stages-work-box__icon">
+                <div class="icon"><img src="img/stage-icon3.svg" alt=""></div>
+                <h4>3</h4>
+              </div>
+              <div class="stages-work-box__body">
+                <h3>Заключение договора</h3>
+                <div class="box-text">
+                  <p>В течении часа авто-эксперт подготовит двусторонний договор купли-продажи для подписания.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-20">
+            <div class="stages-work-box">
+              <div class="stages-work-box__icon">
+                <div class="icon"><img src="img/stage-icon4.svg" alt=""></div>
+                <h4>4</h4>
+              </div>
+              <div class="stages-work-box__body">
+                <h3>Получение денежных средств</h3>
+                <div class="box-text">
+                  <p>Получите полную сумму за автомобиль на ваш банковский счёт после подписания договор</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="documents color-white p-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-7 order-lg-1">
+            <div class="documents-content">
+              <h2>Необходимые документы</h2>
+              <div class="box-text">
+                <p>Помимо наличия машины, на нее необходимо представить следующие документы:</p>
+
+                <ul class="list-checkbox ul-my">
+                  <li>Паспорт ТС</li>
+                  <li>Паспорт или ID карта владельца ТС</li>
+                  <li>Номер банковского счёта владельца ТС</li>
+                </ul>
+
+                <p>Если не Вы являетесь владельцем авто, то необходимо представить генеральную доверенность. Плюсом
+                  будет
+                  наличие диагностической карты и сведения о нюансах сервисного обслуживания авто.</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-5">
+            <div class="documents-image"><img src="img/check-image.png" alt=""></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="benefit">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Где выгоднее продать автомобиль?</h2>
+          </div>
+
+          <div class="col-12 col-lg-10 offset-lg-1">
+            <div class="benefit-table">
+              <div class="benefit-table-row col-30">
+                <ul class="ul-my benefit-table-list">
+                  <li>Скорость продажи</li>
+                  <li>Ожидаемая стоимость</li>
+                  <li>Юридическая безопасность</li>
+                  <li>Прозрачность оценки</li>
+                  <li>Комфорт сделки</li>
+                </ul>
+              </div>
+
+              <div class="benefit-table-col">
+                <div class="priority-box">
+                  <div class="benefit-table-col__head"><img class="logo-company" src="img/logo.png" alt=""></div>
+                  <div class="benefit-table-col__body">
+                    <ul class="ul-my benefit-table-list">
+                      <li>2 часа</li>
+                      <li>
+                        <ul class="list-star ul-my">
+                          <li><img src="img/star.svg" alt=""></li>
+                          <li><img src="img/star.svg" alt=""></li>
+                          <li><img src="img/star0.svg" alt=""></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="list-star ul-my">
+                          <li><img src="img/star.svg" alt=""></li>
+                          <li><img src="img/star.svg" alt=""></li>
+                          <li><img src="img/star.svg" alt=""></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="list-star ul-my">
+                          <li><img src="img/star.svg" alt=""></li>
+                          <li><img src="img/star.svg" alt=""></li>
+                          <li><img src="img/star.svg" alt=""></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="list-star ul-my">
+                          <li><img src="img/star.svg" alt=""></li>
+                          <li><img src="img/star.svg" alt=""></li>
+                          <li><img src="img/star.svg" alt=""></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="benefit-table-col">
+                <div class="no-priority-box">
+                  <div class="benefit-table-col__head"><h3>Самостоятельно</h3></div>
+                  <div class="benefit-table-col__body">
+                    <ul class="ul-my benefit-table-list">
+                      <li>бесконечно</li>
+                      <li>
+                        <ul class="list-star ul-my">
+                          <li><img src="img/star.svg" alt=""></li>
+                          <li><img src="img/star.svg" alt=""></li>
+                          <li><img src="img/star.svg" alt=""></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="list-star ul-my">
+                          <li><img src="img/star.svg" alt=""></li>
+                          <li><img src="img/star0.svg" alt=""></li>
+                          <li><img src="img/star0.svg" alt=""></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="list-star ul-my">
+                          <li><img src="img/star.svg" alt=""></li>
+                          <li><img src="img/star0.svg" alt=""></li>
+                          <li><img src="img/star0.svg" alt=""></li>
+                        </ul>
+                      </li>
+                      <li>
+                        <ul class="list-star ul-my">
+                          <li><img src="img/star.svg" alt=""></li>
+                          <li><img src="img/star0.svg" alt=""></li>
+                          <li><img src="img/star0.svg" alt=""></li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="about bg-light-blue p-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-6">
+            <div class="about-content">
+              <h2>О компании</h2>
+              <div class="box-text">
+                <p>Покупка авто это важный шаг, поэтому, чтобы не запутаться в выборе и приобрести действительно хороший
+                  автомобиль, <strong>Manslīzings.lv</strong> поможет сделать процесс покупки ещё более простым, удобным
+                  и
+                  быстрым.
+                  Сотрудничаем только с надежными и проверенными временем партнерами, которые профессионально подберут
+                  Вам
+                  автомобиль среди предложенных вариантов.</p>
+                <p><strong>Manslīzings.lv</strong> Надежная и быстрая лизинговая платформа с тщательно отобранными и
+                  проверенными автомобилями
+                  от партнеров.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="row about-advantages">
+              <div class="col-12 col-sm-6 mb-10">
+                <div class="about-box">
+                  <div class="about-box__icon"><img src="img/about-icon1.svg" alt=""></div>
+                  <div class="about-box__body">
+                    <p>Выкупаем любой автомобиль</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 mb-10">
+                <div class="about-box">
+                  <div class="about-box__icon"><img src="img/about-icon2.svg" alt=""></div>
+                  <div class="about-box__body">
+                    <p>Осмотр и оформление за 2 часа</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 mb-10">
+                <div class="about-box">
+                  <div class="about-box__icon"><img src="img/about-icon3.svg" alt=""></div>
+                  <div class="about-box__body">
+                    <p>Оцениваем авто дорого</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-12 col-sm-6 mb-10">
+                <div class="about-box">
+                  <div class="about-box__icon"><img src="img/about-icon4.svg" alt=""></div>
+                  <div class="about-box__body">
+                    <p>Работаем со сложными
+                      случаями (залог, арест)</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="callback callback-v3">
+      <div class="callback-wrapper"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h2>Оставьте заявку на выкуп автомобиля</h2>
+          </div>
+          <div class="col-12">
+            <form method="post" class="form-callback">
+              <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
+              <label><input type="text" placeholder="Телефон" name="phone"></label>
+              <button type="submit" class="btn btn-sm btn-orange">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="category-cars bg-light-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Какие авто мы выкупаем?</h2>
+          </div>
+        </div>
+
+        <div class="row category-cars-slider">
+          <div class="col-12 col-sm-6 col-lg-3 mb-20">
+            <a href="catalog.html" class="category-cars-box">
+              <span class="category-cars-box__text">Новые авто</span>
+              <span class="category-cars-box__img"><img src="img/category1.png" alt=""></span>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-20">
+            <a href="catalog.html" class="category-cars-box">
+              <span class="category-cars-box__text">Подержанные авто</span>
+              <span class="category-cars-box__img"><img src="img/category2.png" alt=""></span>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-20">
+            <a href="catalog.html" class="category-cars-box">
+              <span class="category-cars-box__text">Коммерческие авто</span>
+              <span class="category-cars-box__img"><img src="img/category3.png" alt=""></span>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-20">
+            <a href="catalog.html" class="category-cars-box">
+              <span class="category-cars-box__text">Кредитные авто</span>
+              <span class="category-cars-box__img"><img src="img/category4.png" alt=""></span>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-20">
+            <a href="catalog.html" class="category-cars-box">
+              <span class="category-cars-box__text">Нерастаможенные авто</span>
+              <span class="category-cars-box__img"><img src="img/category5.png" alt=""></span>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-20">
+            <a href="catalog.html" class="category-cars-box">
+              <span class="category-cars-box__text">Дорогие авто (люкс)</span>
+              <span class="category-cars-box__img"><img src="img/category6.png" alt=""></span>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-lg-3 mb-20">
+            <a href="catalog.html" class="category-cars-box">
+              <span class="category-cars-box__text">Ретро автомобили</span>
+              <span class="category-cars-box__img"><img src="img/category7.png" alt=""></span>
+            </a>
+          </div>
+          <div class="col-12 col-sm-6 col-md-3 mb-20">
+            <a href="catalog.html" class="category-cars-box">
+              <span class="category-cars-box__text">Битые авто</span>
+              <span class="category-cars-box__img"><img src="img/category8.png" alt=""></span>
+            </a>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-12">
+            <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
+              <div class="progress-bg"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="seo-section m-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-30">
+            <h2>Купить авто в лизинг в Риге.</h2>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="box-text">
+              <p>Хочешь купить подержанный автомобиль с минимальными вложениями и без кредита? Есть выгодная
+                альтернатива -
+                купить машину в лизинг. Купить авто в лизинг значит, взять в аренду транспортное средство на длительный
+                срок
+                (больше года) с правом его выкупа. Для физических лиц это работает так: клиент выбирает транспортное
+                средство, чтобы купить бу автомобиль в лизинг, оплачивает первоначальный взнос за него, а лизинговая
+                компания покупает его, оформляет все документы и передает машину в пользование клиенту.</p>
+              <p>Каждый месяц клиент оплачивает ежемесячный платеж за лизинг авто. По истечению срока автолизинга,
+                клиент
+                получает бу авто в собственность. Купить бу автомобиль в лизинг особенно выгодно для тех людей, кому
+                необходимо приобрести транспортное средство, но денег на полный расчет не хватает. И тем, кого не
+                устраивает
+                невыгодные условия кредитования банков.</p>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="box-text">
+              <p>Автолизинг по сравнению с кредитом, существенно выгоднее. Лизинговая компания не требует официального
+                трудоустройства, справку на справку, искать поручителей, страховать жизнь и здоровье. Еще процентная
+                ставка
+                и переплата при кредите выше, чем при автолизинге. Банки включают в платежи навязанные услуги. Например,
+                страхование жизни и здоровья заемщика. Из-за страховки, у клиента ежемесячные платежи и переплата по
+                кредиту
+                больше.</p>
+              <p>Лизинг авто с пробегом от компании manslizings в Латвии</p>
+              <p>Услуга лизинга бу авто для частных лиц есть в городах Латвии: Рига, Талси, Валмиера, Елгава, Кулдига,
+                Цесис.
+                Можно взять в лизинг бу авто в Риге без ограничения пробега, любого бренда и модели, с рук, на рынке или
+                с
+                автоплощадки .</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="question p-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center color-white">
+            <h2>Часто задаваемые вопросы</h2>
+          </div>
+
+          <div class="col-12 col-lg-6">
+            <div class="question-box">
+              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse1">
+                <h4>Как купить автомобиль максимально выгодно?</h4>
+                <span class="collapse-icon"></span>
+              </div>
+              <div class="question-box__body collapse" id="collapse1">
+                <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                  факторов,
+                  таких как его текущее состояние, способность заводиться или двигаться. </p>
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="question-box__head" data-toggle="collapse" data-target="#collapse2">
+                <h4>Как купить автомобиль максимально выгодно?</h4>
+                <span class="collapse-icon"></span>
+              </div>
+              <div class="question-box__body collapse show" id="collapse2">
+                <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                  факторов,
+                  таких как его текущее состояние, способность заводиться или двигаться. </p>
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse3">
+                <h4>Как купить автомобиль максимально выгодно?</h4>
+                <span class="collapse-icon"></span>
+              </div>
+              <div class="question-box__body collapse" id="collapse3">
+                <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                  факторов,
+                  таких как его текущее состояние, способность заводиться или двигаться. </p>
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse4">
+                <h4>Как купить автомобиль максимально выгодно?</h4>
+                <span class="collapse-icon"></span>
+              </div>
+              <div class="question-box__body collapse" id="collapse4">
+                <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                  факторов,
+                  таких как его текущее состояние, способность заводиться или двигаться. </p>
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse5">
+                <h4>Как купить автомобиль максимально выгодно?</h4>
+                <span class="collapse-icon"></span>
+              </div>
+              <div class="question-box__body collapse" id="collapse5">
+                <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                  факторов,
+                  таких как его текущее состояние, способность заводиться или двигаться. </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-lg-6">
+            <div class="question-box">
+              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse6">
+                <h4>Как купить автомобиль максимально выгодно?</h4>
+                <span class="collapse-icon"></span>
+              </div>
+              <div class="question-box__body collapse" id="collapse6">
+                <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                  факторов,
+                  таких как его текущее состояние, способность заводиться или двигаться. </p>
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse7">
+                <h4>Как купить автомобиль максимально выгодно?</h4>
+                <span class="collapse-icon"></span>
+              </div>
+              <div class="question-box__body collapse" id="collapse7">
+                <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                  факторов,
+                  таких как его текущее состояние, способность заводиться или двигаться. </p>
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse8">
+                <h4>Как купить автомобиль максимально выгодно?</h4>
+                <span class="collapse-icon"></span>
+              </div>
+              <div class="question-box__body collapse" id="collapse8">
+                <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                  факторов,
+                  таких как его текущее состояние, способность заводиться или двигаться. </p>
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse9">
+                <h4>Как купить автомобиль максимально выгодно?</h4>
+                <span class="collapse-icon"></span>
+              </div>
+              <div class="question-box__body collapse" id="collapse9">
+                <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                  факторов,
+                  таких как его текущее состояние, способность заводиться или двигаться. </p>
+              </div>
+            </div>
+            <div class="question-box">
+              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse10">
+                <h4>Как купить автомобиль максимально выгодно?</h4>
+                <span class="collapse-icon"></span>
+              </div>
+              <div class="question-box__body collapse" id="collapse10">
+                <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+                  факторов,
+                  таких как его текущее состояние, способность заводиться или двигаться. </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="reviews p-80 bg-light-blue">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2>Отзывы о нашей работе</h2>
+          </div>
+
+          <div class="col-12">
+            <div class="reviews-slider">
+              <div class="slide">
+                <div class="reviews-box">
+                  <div class="reviews-box__body">
+                    <h4>Отличные менеджеры!</h4>
+                    <p>Благодарю компанию «Manslīzings.lv», за быструю продажу моего автомобиля Toyota Sprinter -
+                      качественно, быстро, сошлись в цене! Всем советую компанию «Manslīzings.lv»!</p>
+                  </div>
+                  <div class="reviews-box__footer">
+                    <div class="reviews-box__photo">А</div>
+                    <div class="reviews-box__user">
+                      <div class="name">Алексей Иванов</div>
+                      <div class="city">Рига</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="reviews-box">
+                  <div class="reviews-box__body">
+                    <h4>Спасибо за помощь!</h4>
+                    <p>Этот автовыкуп очень удобный честный надежный. Я уезжаю заграницу нужно было срочно продать авто
+                      шевроле лачетти, ребята выручили дали хорошие деньги, еще я попросил если можно заплатить в евро
+                      выплатили в той валюте что я просил. Очень рад Спасибо Большое! </p>
+                  </div>
+                  <div class="reviews-box__footer">
+                    <div class="reviews-box__photo">Д</div>
+                    <div class="reviews-box__user">
+                      <div class="name">Дмитрий Бартков</div>
+                      <div class="city">Рига</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="reviews-box">
+                  <div class="reviews-box__body">
+                    <h4>Лучший автовыкуп.</h4>
+                    <p>Очень легко продал свой "Опель-Вектра" по обоюдно устраивающих нас условиях. Все очень
+                      профессионально, видно что человек занимается этим не ПЕРВЫЙ день. РЕКОМЕНДУЮ!</p>
+                  </div>
+                  <div class="reviews-box__footer">
+                    <div class="reviews-box__photo">В</div>
+                    <div class="reviews-box__user">
+                      <div class="name">Виктор Куценко</div>
+                      <div class="city">Рига</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="reviews-box">
+                  <div class="reviews-box__body">
+                    <h4>Отличные менеджеры!</h4>
+                    <p>Благодарю компанию «Manslīzings.lv», за быструю продажу моего автомобиля Toyota Sprinter -
+                      качественно, быстро, сошлись в цене! Всем советую компанию «Manslīzings.lv»!</p>
+                  </div>
+                  <div class="reviews-box__footer">
+                    <div class="reviews-box__photo">А</div>
+                    <div class="reviews-box__user">
+                      <div class="name">Алексей Иванов</div>
+                      <div class="city">Рига</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="slide">
+                <div class="reviews-box">
+                  <div class="reviews-box__body">
+                    <h4>Спасибо за помощь!</h4>
+                    <p>Этот автовыкуп очень удобный честный надежный. Я уезжаю заграницу нужно было срочно продать авто
+                      шевроле лачетти, ребята выручили дали хорошие деньги, еще я попросил если можно заплатить в евро
+                      выплатили в той валюте что я просил. Очень рад Спасибо Большое! </p>
+                  </div>
+                  <div class="reviews-box__footer">
+                    <div class="reviews-box__photo">Д</div>
+                    <div class="reviews-box__user">
+                      <div class="name">Дмитрий Бартков</div>
+                      <div class="city">Рига</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="callback callback-v2">
+      <div class="callback-wrapper"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-10">
+            <h2>Возникли вопросы? Давайте созвонимся!</h2>
+            <div class="box-text">
+              <p>Заполните форму и в ближайшее время наш менеджер свяжется с вами</p>
+            </div>
+
+            <form method="post" class="form-callback">
+              <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
+              <label><input type="text" placeholder="Телефон" name="phone"></label>
+              <button type="submit" class="btn btn-sm btn-orange">Отправить заявку</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="callback-image"><img src="img/car3.png" alt=""></div>
+    </section>
+
+    <div class="contacts p-45">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="contacts-box">
+              <div class="list-contacts-item">
+                <div class="list-contacts-item__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#location"></use>
+                  </svg>
+                </div>
+                <div class="list-contacts-item__text">Riga - Maskavas iela 418, LV-1063</div>
+              </div>
+
+              <ul class="list-maps ul-my">
+                <li>
+                  <a href="#" target="_blank" class="list-maps-links waze-link">
+                    <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
+                    <span class="list-maps-links__text">Проложить маршрут в Waze</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="list-maps-links google-link">
+                    <span class="list-maps-links__icon"><img src="img/google.svg" alt=""></span>
+                    <span class="list-maps-links__text">Показать на карте</span>
+                  </a>
+                </li>
+              </ul>
+
+              <a href="tel:+37126612612" class="list-contacts-item">
+            <span class="list-contacts-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#phone"></use></svg></span>
+                <span class="list-contacts-item__text">+371 26-612-612</span>
+              </a>
+              <a href="mailto:info@manslizings.lv" class="list-contacts-item">
+            <span class="list-contacts-item__icon"><svg class="svg-icon"><use
+                xlink:href="img/sprite.svg#mail"></use></svg></span>
+                <span class="list-contacts-item__text">info@manslizings.lv</span>
+              </a>
+              <a href="#" class="list-contacts-item">
+              <span class="list-contacts-item__icon telegram-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#telegram"></use></svg></span>
+                <span class="list-contacts-item__text">Написать в Telegram</span>
+              </a>
+              <a href="#" class="list-contacts-item">
+              <span class="list-contacts-item__icon whatsapp-icon"><svg class="svg-icon"><use
+                  xlink:href="img/sprite.svg#whatsapp"></use></svg></span>
+                <span class="list-contacts-item__text">Написать в WhatsApp</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="map">
+        <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2179.0674229301007!2d24.208456416014542!3d56.89623178087463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed24236c232f3%3A0xed297e4a9b831e4f!2zTWFza2F2YXMgaWVsYSA0MTgsIExhdGdhbGVzIHByaWVrxaFwaWxzxJN0YSwgUsSrZ2EsIExWLTEwNjMsINCb0LDRgtCy0LjRjw!5e0!3m2!1sru!2sua!4v1656915368560!5m2!1sru!2sua"
+            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </div>
   </div>
-
-  <div class="header-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex align-items-center flex-wrap">
-          <nav class="nav-menu">
-            <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
-
-            <a href="#" class="nav-menu__close"></a>
-
-            <ul class="menu ul-my">
-              <li class="dropdown">
-                <a href="car-leasing.html" class="dropdown-toggle">Автолизинг</a>
-                <div class="dropdown-menu">
-                  <div class="dropdown-menu__wrapper">
-                    <div class="dropdown-box">
-                      <div class="dropdown-box__title">Для физических лиц</div>
-
-
-                      <ul class="list-dots dropdown-menu-list">
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="dropdown-box">
-                      <div class="dropdown-box__title">Для физических лиц</div>
-
-
-                      <ul class="list-dots dropdown-menu-list">
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="check-possibilities">
-                      <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
-                      <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо сейчас</div>
-
-                      <a href="#" class="btn btn-orange">Проверить</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="dropdown">
-                <a href="car-loan.html" class="dropdown-toggle">Автокредит</a>
-                <div class="dropdown-menu">
-                  <div class="dropdown-menu__wrapper">
-                    <div class="dropdown-box">
-                      <div class="dropdown-box__title">Для физических лиц</div>
-
-
-                      <ul class="list-dots dropdown-menu-list">
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="dropdown-box">
-                      <div class="dropdown-box__title">Для физических лиц</div>
-
-
-                      <ul class="list-dots dropdown-menu-list">
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="check-possibilities">
-                      <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
-                      <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо сейчас</div>
-
-                      <a href="#" class="btn btn-orange">Проверить</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
+            <div class="description-company">
+              <p>Компания «Manslizing» работает на рынке автоуслуг Латвии с 2002 года! Купите автомобиль на выгодных
+                условиях.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-9 d-flex flex-wrap">
+            <ul class="footer-menu ul-my">
+              <li><a href="#">Автолизинг</a></li>
+              <li><a href="#">Автокредит</a></li>
               <li><a href="#">Авто партнеров</a></li>
               <li><a href="redemption-auto.html">Выкуп авто</a></li>
+            </ul>
+            <ul class="footer-menu ul-my">
               <li><a href="#">О нас</a></li>
               <li><a href="news.html">Новости</a></li>
               <li><a href="contacts.html">Контакты</a></li>
             </ul>
 
-            <div class="header-box">
+            <div class="footer-box">
               <a href="tel:+37126612612" class="phone">
                 <span class="phone-icon"><svg class="svg-icon"><use
                     xlink:href="img/sprite.svg#phone"></use></svg></span>
@@ -207,843 +1020,57 @@
                 <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
                 <span class="mail-text">info@manslizings.lv</span>
               </a>
-            </div>
-            <div class="schedule-box">
-              <div class="schedule-box__icon">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#clock"></use>
-                </svg>
-              </div>
-              <div class="schedule-box__text">
-                <p>Время работы:</p>
-                <p>9:00 - 22:00</p>
-              </div>
-            </div>
-
-            <div class="language-box">
-              <p>Язык:</p>
-              <ul class="list-language ul-my">
-                <li><a href="#" class="active">Рyc</a></li>
-                <li><a href="#">Lat</a></li>
-                <li><a href="#">Eng</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<main class="home home-manslizing">
-  <div class="main-slider w-100">
-    <div class="slide">
-      <div class="main-slider__item">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 d-flex flex-wrap">
-              <div class="main-content">
-                <h1>Хочешь продать авто? </h1>
-                <div class="subtitle">Быстрый выкуп авто по всей Латвии</div>
-                <div class="box-text">
-                  <ul class="list-dots ul-my font-700">
-                    <li>На 100% официально и безопасно</li>
-                    <li>Объективно оцениваем состояние</li>
-                    <li>Покупаем любые автомобили</li>
-                    <li>Предлагаем лучшую цену</li>
-                  </ul>
+              <div class="schedule-box">
+                <div class="schedule-box__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#clock"></use>
+                  </svg>
                 </div>
-              </div>
-              <div class="main-slider__item-img"><img src="img/car10.png" alt="">
-                <img src="img/car10-mobile.png" alt="" class="img-mobile">
-              </div>
-
-              <div class="main-form">
-                <h3>Оставьте заявку
-                  на выкуп автомобиля</h3>
-                <form method="post" class="form">
-                  <label>
-                    <input type="text" placeholder="Имя и фамилия" name="name">
-                  </label>
-                  <label>
-                    <input type="text" placeholder="Телефон" class="phone-input1" name="phone">
-                  </label>
-                  <button type="submit" class="btn btn-orange">Отправить заявку</button>
-                </form>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</main>
-
-<section class="stages-work">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 mb-25">
-        <h2>Порядок выкупа автомобилей</h2>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="stages-work-box">
-          <div class="stages-work-box__icon">
-            <div class="icon"><img src="img/stage-icon1.svg" alt=""></div>
-            <h4>1</h4>
-          </div>
-          <div class="stages-work-box__body">
-            <h3>Заявка для оценки авто</h3>
-            <div class="box-text">
-              <p>Оставьте заявку на сайте, приложите фотографии авто и дождитесь звонка нашего авто-эксперта.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="stages-work-box">
-          <div class="stages-work-box__icon">
-            <div class="icon"><img src="img/stage-icon2.svg" alt=""></div>
-            <h4>2</h4>
-          </div>
-          <div class="stages-work-box__body">
-            <h3>Осмотр автомобиля</h3>
-            <div class="box-text">
-              <p>Эксперт договорится с Вами о встрече для полноценного осмотра автомобиля.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="stages-work-box">
-          <div class="stages-work-box__icon">
-            <div class="icon"><img src="img/stage-icon3.svg" alt=""></div>
-            <h4>3</h4>
-          </div>
-          <div class="stages-work-box__body">
-            <h3>Заключение договора</h3>
-            <div class="box-text">
-              <p>В течении часа авто-эксперт подготовит двусторонний договор купли-продажи для подписания.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <div class="stages-work-box">
-          <div class="stages-work-box__icon">
-            <div class="icon"><img src="img/stage-icon4.svg" alt=""></div>
-            <h4>4</h4>
-          </div>
-          <div class="stages-work-box__body">
-            <h3>Получение денежных средств</h3>
-            <div class="box-text">
-              <p>Получите полную сумму за автомобиль на ваш банковский счёт после подписания договор</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="documents color-white p-80">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-7 order-lg-1">
-        <div class="documents-content">
-          <h2>Необходимые документы</h2>
-          <div class="box-text">
-            <p>Помимо наличия машины, на нее необходимо представить следующие документы:</p>
-
-            <ul class="list-checkbox ul-my">
-              <li>Паспорт ТС</li>
-              <li>Паспорт или ID карта владельца ТС</li>
-              <li>Номер банковского счёта владельца ТС</li>
-            </ul>
-
-            <p>Если не Вы являетесь владельцем авто, то необходимо представить генеральную доверенность. Плюсом будет
-              наличие диагностической карты и сведения о нюансах сервисного обслуживания авто.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-5">
-        <div class="documents-image"><img src="img/check-image.png" alt=""></div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="benefit">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center">
-        <h2>Где выгоднее продать автомобиль?</h2>
-      </div>
-
-      <div class="col-12 col-lg-10 offset-lg-1">
-        <div class="benefit-table">
-          <div class="benefit-table-row col-30">
-            <ul class="ul-my benefit-table-list">
-              <li>Скорость продажи</li>
-              <li>Ожидаемая стоимость</li>
-              <li>Юридическая безопасность</li>
-              <li>Прозрачность оценки</li>
-              <li>Комфорт сделки</li>
-            </ul>
-          </div>
-
-          <div class="benefit-table-col">
-            <div class="priority-box">
-              <div class="benefit-table-col__head"><img class="logo-company" src="img/logo.png" alt=""></div>
-              <div class="benefit-table-col__body">
-                <ul class="ul-my benefit-table-list">
-                  <li>2 часа</li>
-                  <li>
-                    <ul class="list-star ul-my">
-                      <li><img src="img/star.svg" alt=""></li>
-                      <li><img src="img/star.svg" alt=""></li>
-                      <li><img src="img/star0.svg" alt=""></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="list-star ul-my">
-                      <li><img src="img/star.svg" alt=""></li>
-                      <li><img src="img/star.svg" alt=""></li>
-                      <li><img src="img/star.svg" alt=""></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="list-star ul-my">
-                      <li><img src="img/star.svg" alt=""></li>
-                      <li><img src="img/star.svg" alt=""></li>
-                      <li><img src="img/star.svg" alt=""></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="list-star ul-my">
-                      <li><img src="img/star.svg" alt=""></li>
-                      <li><img src="img/star.svg" alt=""></li>
-                      <li><img src="img/star.svg" alt=""></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div class="benefit-table-col">
-            <div class="no-priority-box">
-              <div class="benefit-table-col__head"><h3>Самостоятельно</h3></div>
-              <div class="benefit-table-col__body">
-                <ul class="ul-my benefit-table-list">
-                  <li>бесконечно</li>
-                  <li>
-                    <ul class="list-star ul-my">
-                      <li><img src="img/star.svg" alt=""></li>
-                      <li><img src="img/star.svg" alt=""></li>
-                      <li><img src="img/star.svg" alt=""></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="list-star ul-my">
-                      <li><img src="img/star.svg" alt=""></li>
-                      <li><img src="img/star0.svg" alt=""></li>
-                      <li><img src="img/star0.svg" alt=""></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="list-star ul-my">
-                      <li><img src="img/star.svg" alt=""></li>
-                      <li><img src="img/star0.svg" alt=""></li>
-                      <li><img src="img/star0.svg" alt=""></li>
-                    </ul>
-                  </li>
-                  <li>
-                    <ul class="list-star ul-my">
-                      <li><img src="img/star.svg" alt=""></li>
-                      <li><img src="img/star0.svg" alt=""></li>
-                      <li><img src="img/star0.svg" alt=""></li>
-                    </ul>
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="about bg-light-blue p-80">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 col-lg-6">
-        <div class="about-content">
-          <h2>О компании</h2>
-          <div class="box-text">
-            <p>Покупка авто это важный шаг, поэтому, чтобы не запутаться в выборе и приобрести действительно хороший
-              автомобиль, <strong>Manslīzings.lv</strong> поможет сделать процесс покупки ещё более простым, удобным и
-              быстрым.
-              Сотрудничаем только с надежными и проверенными временем партнерами, которые профессионально подберут Вам
-              автомобиль среди предложенных вариантов.</p>
-            <p><strong>Manslīzings.lv</strong> Надежная и быстрая лизинговая платформа с тщательно отобранными и
-              проверенными автомобилями
-              от партнеров.</p>
-          </div>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="row about-advantages">
-          <div class="col-12 col-sm-6 mb-10">
-            <div class="about-box">
-              <div class="about-box__icon"><img src="img/about-icon1.svg" alt=""></div>
-              <div class="about-box__body">
-                <p>Выкупаем любой автомобиль</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 mb-10">
-            <div class="about-box">
-              <div class="about-box__icon"><img src="img/about-icon2.svg" alt=""></div>
-              <div class="about-box__body">
-                <p>Осмотр и оформление за 2 часа</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 mb-10">
-            <div class="about-box">
-              <div class="about-box__icon"><img src="img/about-icon3.svg" alt=""></div>
-              <div class="about-box__body">
-                <p>Оцениваем авто дорого</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 mb-10">
-            <div class="about-box">
-              <div class="about-box__icon"><img src="img/about-icon4.svg" alt=""></div>
-              <div class="about-box__body">
-                <p>Работаем со сложными
-                  случаями (залог, арест)</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="callback callback-v3">
-  <div class="callback-wrapper"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h2>Оставьте заявку на выкуп автомобиля</h2>
-        </div>
-        <div class="col-12">
-          <form method="post" class="form-callback">
-            <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
-            <label><input type="text" placeholder="Телефон" name="phone"></label>
-            <button type="submit" class="btn btn-sm btn-orange">Отправить заявку</button>
-          </form>
-        </div>
-      </div>
-    </div>
-</section>
-
-
-<section class="category-cars bg-light-blue">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>Какие авто мы выкупаем?</h2>
-      </div>
-    </div>
-
-    <div class="row category-cars-slider">
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <a href="catalog.html" class="category-cars-box">
-          <span class="category-cars-box__text">Новые авто</span>
-          <span class="category-cars-box__img"><img src="img/category1.png" alt=""></span>
-        </a>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <a href="catalog.html" class="category-cars-box">
-          <span class="category-cars-box__text">Подержанные авто</span>
-          <span class="category-cars-box__img"><img src="img/category2.png" alt=""></span>
-        </a>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <a href="catalog.html" class="category-cars-box">
-          <span class="category-cars-box__text">Коммерческие авто</span>
-          <span class="category-cars-box__img"><img src="img/category3.png" alt=""></span>
-        </a>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <a href="catalog.html" class="category-cars-box">
-          <span class="category-cars-box__text">Кредитные авто</span>
-          <span class="category-cars-box__img"><img src="img/category4.png" alt=""></span>
-        </a>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <a href="catalog.html" class="category-cars-box">
-          <span class="category-cars-box__text">Нерастаможенные авто</span>
-          <span class="category-cars-box__img"><img src="img/category5.png" alt=""></span>
-        </a>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <a href="catalog.html" class="category-cars-box">
-          <span class="category-cars-box__text">Дорогие авто (люкс)</span>
-          <span class="category-cars-box__img"><img src="img/category6.png" alt=""></span>
-        </a>
-      </div>
-      <div class="col-12 col-sm-6 col-lg-3 mb-20">
-        <a href="catalog.html" class="category-cars-box">
-          <span class="category-cars-box__text">Ретро автомобили</span>
-          <span class="category-cars-box__img"><img src="img/category7.png" alt=""></span>
-        </a>
-      </div>
-      <div class="col-12 col-sm-6 col-md-3 mb-20">
-        <a href="catalog.html" class="category-cars-box">
-          <span class="category-cars-box__text">Битые авто</span>
-          <span class="category-cars-box__img"><img src="img/category8.png" alt=""></span>
-        </a>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-12">
-        <div class="progress" role="progressbar" aria-valuemin="0" aria-valuemax="100">
-          <div class="progress-bg"></div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section class="seo-section m-80">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 mb-30">
-        <h2>Купить авто в лизинг в Риге.</h2>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="box-text">
-          <p>Хочешь купить подержанный автомобиль с минимальными вложениями и без кредита? Есть выгодная альтернатива -
-            купить машину в лизинг. Купить авто в лизинг значит, взять в аренду транспортное средство на длительный срок
-            (больше года) с правом его выкупа. Для физических лиц это работает так: клиент выбирает транспортное
-            средство, чтобы купить бу автомобиль в лизинг, оплачивает первоначальный взнос за него, а лизинговая
-            компания покупает его, оформляет все документы и передает машину в пользование клиенту.</p>
-          <p>Каждый месяц клиент оплачивает ежемесячный платеж за лизинг авто. По истечению срока автолизинга, клиент
-            получает бу авто в собственность. Купить бу автомобиль в лизинг особенно выгодно для тех людей, кому
-            необходимо приобрести транспортное средство, но денег на полный расчет не хватает. И тем, кого не устраивает
-            невыгодные условия кредитования банков.</p>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="box-text">
-          <p>Автолизинг по сравнению с кредитом, существенно выгоднее. Лизинговая компания не требует официального
-            трудоустройства, справку на справку, искать поручителей, страховать жизнь и здоровье. Еще процентная ставка
-            и переплата при кредите выше, чем при автолизинге. Банки включают в платежи навязанные услуги. Например,
-            страхование жизни и здоровья заемщика. Из-за страховки, у клиента ежемесячные платежи и переплата по кредиту
-            больше.</p>
-          <p>Лизинг авто с пробегом от компании manslizings в Латвии</p>
-          <p>Услуга лизинга бу авто для частных лиц есть в городах Латвии: Рига, Талси, Валмиера, Елгава, Кулдига,
-            Цесис.
-            Можно взять в лизинг бу авто в Риге без ограничения пробега, любого бренда и модели, с рук, на рынке или с
-            автоплощадки .</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="question p-80">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 text-center color-white">
-        <h2>Часто задаваемые вопросы</h2>
-      </div>
-
-      <div class="col-12 col-lg-6">
-        <div class="question-box">
-          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse1">
-            <h4>Как купить автомобиль максимально выгодно?</h4>
-            <span class="collapse-icon"></span>
-          </div>
-          <div class="question-box__body collapse" id="collapse1">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
-          </div>
-        </div>
-        <div class="question-box">
-          <div class="question-box__head" data-toggle="collapse" data-target="#collapse2">
-            <h4>Как купить автомобиль максимально выгодно?</h4>
-            <span class="collapse-icon"></span>
-          </div>
-          <div class="question-box__body collapse show" id="collapse2">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
-          </div>
-        </div>
-        <div class="question-box">
-          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse3">
-            <h4>Как купить автомобиль максимально выгодно?</h4>
-            <span class="collapse-icon"></span>
-          </div>
-          <div class="question-box__body collapse" id="collapse3">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
-          </div>
-        </div>
-        <div class="question-box">
-          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse4">
-            <h4>Как купить автомобиль максимально выгодно?</h4>
-            <span class="collapse-icon"></span>
-          </div>
-          <div class="question-box__body collapse" id="collapse4">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
-          </div>
-        </div>
-        <div class="question-box">
-          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse5">
-            <h4>Как купить автомобиль максимально выгодно?</h4>
-            <span class="collapse-icon"></span>
-          </div>
-          <div class="question-box__body collapse" id="collapse5">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
-          </div>
-        </div>
-      </div>
-      <div class="col-12 col-lg-6">
-        <div class="question-box">
-          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse6">
-            <h4>Как купить автомобиль максимально выгодно?</h4>
-            <span class="collapse-icon"></span>
-          </div>
-          <div class="question-box__body collapse" id="collapse6">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
-          </div>
-        </div>
-        <div class="question-box">
-          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse7">
-            <h4>Как купить автомобиль максимально выгодно?</h4>
-            <span class="collapse-icon"></span>
-          </div>
-          <div class="question-box__body collapse" id="collapse7">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
-          </div>
-        </div>
-        <div class="question-box">
-          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse8">
-            <h4>Как купить автомобиль максимально выгодно?</h4>
-            <span class="collapse-icon"></span>
-          </div>
-          <div class="question-box__body collapse" id="collapse8">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
-          </div>
-        </div>
-        <div class="question-box">
-          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse9">
-            <h4>Как купить автомобиль максимально выгодно?</h4>
-            <span class="collapse-icon"></span>
-          </div>
-          <div class="question-box__body collapse" id="collapse9">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
-          </div>
-        </div>
-        <div class="question-box">
-          <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse10">
-            <h4>Как купить автомобиль максимально выгодно?</h4>
-            <span class="collapse-icon"></span>
-          </div>
-          <div class="question-box__body collapse" id="collapse10">
-            <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других факторов,
-              таких как его текущее состояние, способность заводиться или двигаться. </p>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="reviews p-80 bg-light-blue">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <h2>Отзывы о нашей работе</h2>
-      </div>
-
-      <div class="col-12">
-        <div class="reviews-slider">
-          <div class="slide">
-            <div class="reviews-box">
-              <div class="reviews-box__body">
-                <h4>Отличные менеджеры!</h4>
-                <p>Благодарю компанию «Manslīzings.lv», за быструю продажу моего автомобиля Toyota Sprinter -
-                  качественно, быстро, сошлись в цене! Всем советую компанию «Manslīzings.lv»!</p>
-              </div>
-              <div class="reviews-box__footer">
-                <div class="reviews-box__photo">А</div>
-                <div class="reviews-box__user">
-                  <div class="name">Алексей Иванов</div>
-                  <div class="city">Рига</div>
+                <div class="schedule-box__text">
+                  Время работы:
+                  9:00 - 22:00
                 </div>
               </div>
             </div>
-          </div>
-          <div class="slide">
-            <div class="reviews-box">
-              <div class="reviews-box__body">
-                <h4>Спасибо за помощь!</h4>
-                <p>Этот автовыкуп очень удобный честный надежный. Я уезжаю заграницу нужно было срочно продать авто
-                  шевроле лачетти, ребята выручили дали хорошие деньги, еще я попросил если можно заплатить в евро
-                  выплатили в той валюте что я просил. Очень рад Спасибо Большое! </p>
-              </div>
-              <div class="reviews-box__footer">
-                <div class="reviews-box__photo">Д</div>
-                <div class="reviews-box__user">
-                  <div class="name">Дмитрий Бартков</div>
-                  <div class="city">Рига</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="reviews-box">
-              <div class="reviews-box__body">
-                <h4>Лучший автовыкуп.</h4>
-                <p>Очень легко продал свой "Опель-Вектра" по обоюдно устраивающих нас условиях. Все очень
-                  профессионально, видно что человек занимается этим не ПЕРВЫЙ день. РЕКОМЕНДУЮ!</p>
-              </div>
-              <div class="reviews-box__footer">
-                <div class="reviews-box__photo">В</div>
-                <div class="reviews-box__user">
-                  <div class="name">Виктор Куценко</div>
-                  <div class="city">Рига</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="reviews-box">
-              <div class="reviews-box__body">
-                <h4>Отличные менеджеры!</h4>
-                <p>Благодарю компанию «Manslīzings.lv», за быструю продажу моего автомобиля Toyota Sprinter -
-                  качественно, быстро, сошлись в цене! Всем советую компанию «Manslīzings.lv»!</p>
-              </div>
-              <div class="reviews-box__footer">
-                <div class="reviews-box__photo">А</div>
-                <div class="reviews-box__user">
-                  <div class="name">Алексей Иванов</div>
-                  <div class="city">Рига</div>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="slide">
-            <div class="reviews-box">
-              <div class="reviews-box__body">
-                <h4>Спасибо за помощь!</h4>
-                <p>Этот автовыкуп очень удобный честный надежный. Я уезжаю заграницу нужно было срочно продать авто
-                  шевроле лачетти, ребята выручили дали хорошие деньги, еще я попросил если можно заплатить в евро
-                  выплатили в той валюте что я просил. Очень рад Спасибо Большое! </p>
-              </div>
-              <div class="reviews-box__footer">
-                <div class="reviews-box__photo">Д</div>
-                <div class="reviews-box__user">
-                  <div class="name">Дмитрий Бартков</div>
-                  <div class="city">Рига</div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
 
-<section class="callback callback-v2">
-  <div class="callback-wrapper"> </div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-10">
-          <h2>Возникли вопросы? Давайте созвонимся!</h2>
-          <div class="box-text">
-            <p>Заполните форму и в ближайшее время наш менеджер свяжется с вами</p>
-          </div>
-
-          <form method="post" class="form-callback">
-            <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
-            <label><input type="text" placeholder="Телефон" name="phone"></label>
-            <button type="submit" class="btn btn-sm btn-orange">Отправить заявку</button>
-          </form>
-        </div>
-      </div>
-    </div>
-
-  <div class="callback-image"><img src="img/car3.png" alt=""></div>
-</section>
-
-
-<div class="contacts p-45">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="contacts-box">
-          <div class="list-contacts-item">
-            <div class="list-contacts-item__icon">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#location"></use>
-              </svg>
-            </div>
-            <div class="list-contacts-item__text">Riga - Maskavas iela 418, LV-1063</div>
-          </div>
-
-          <ul class="list-maps ul-my">
-            <li>
-              <a href="#" target="_blank" class="list-maps-links waze-link">
-                <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
-                <span class="list-maps-links__text">Проложить маршрут в Waze</span>
-              </a>
-            </li>
-            <li>
-              <a href="#" target="_blank" class="list-maps-links google-link">
-                <span class="list-maps-links__icon"><img src="img/google.svg" alt=""></span>
-                <span class="list-maps-links__text">Показать на карте</span>
-              </a>
-            </li>
-          </ul>
-
-          <a href="tel:+37126612612" class="list-contacts-item">
-            <span class="list-contacts-item__icon"><svg class="svg-icon"><use
-                xlink:href="img/sprite.svg#phone"></use></svg></span>
-            <span class="list-contacts-item__text">+371 26-612-612</span>
-          </a>
-          <a href="mailto:info@manslizings.lv" class="list-contacts-item">
-            <span class="list-contacts-item__icon"><svg class="svg-icon"><use
-                xlink:href="img/sprite.svg#mail"></use></svg></span>
-            <span class="list-contacts-item__text">info@manslizings.lv</span>
-          </a>
-          <a href="#" class="list-contacts-item">
-              <span class="list-contacts-item__icon telegram-icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#telegram"></use></svg></span>
-            <span class="list-contacts-item__text">Написать в Telegram</span>
-          </a>
-          <a href="#" class="list-contacts-item">
-              <span class="list-contacts-item__icon whatsapp-icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#whatsapp"></use></svg></span>
-            <span class="list-contacts-item__text">Написать в WhatsApp</span>
-          </a>
-        </div>
-      </div>
-    </div>
-  </div>
-  <div class="map">
-    <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2179.0674229301007!2d24.208456416014542!3d56.89623178087463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed24236c232f3%3A0xed297e4a9b831e4f!2zTWFza2F2YXMgaWVsYSA0MTgsIExhdGdhbGVzIHByaWVrxaFwaWxzxJN0YSwgUsSrZ2EsIExWLTEwNjMsINCb0LDRgtCy0LjRjw!5e0!3m2!1sru!2sua!4v1656915368560!5m2!1sru!2sua"
-        style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-  </div>
-</div>
-
-
-<footer>
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-3">
-          <a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
-          <div class="description-company">
-            <p>Компания «Manslizing» работает на рынке автоуслуг Латвии с 2002 года! Купите автомобиль на выгодных
-              условиях.</p>
-          </div>
-        </div>
-        <div class="col-12 col-lg-9 d-flex flex-wrap">
-          <ul class="footer-menu ul-my">
-            <li><a href="#">Автолизинг</a></li>
-            <li><a href="#">Автокредит</a></li>
-            <li><a href="#">Авто партнеров</a></li>
-            <li><a href="redemption-auto.html">Выкуп авто</a></li>
-          </ul>
-          <ul class="footer-menu ul-my">
-            <li><a href="#">О нас</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-
-          <div class="footer-box">
-            <a href="tel:+37126612612" class="phone">
-              <span class="phone-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
-              <span class="phone-text">+371 26-612-612</span>
-            </a>
-            <a href="mailto:info@manslizings.lv" class="mail">
-              <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
-              <span class="mail-text">info@manslizings.lv</span>
-            </a>
-            <div class="schedule-box">
-              <div class="schedule-box__icon">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#clock"></use>
-                </svg>
-              </div>
-              <div class="schedule-box__text">
-                Время работы:
-                9:00 - 22:00
-              </div>
-            </div>
-          </div>
-
-          <div class="footer-box">
-            <div class="address">
+            <div class="footer-box">
+              <div class="address">
               <span class="phone-icon"><svg class="svg-icon"><use
                   xlink:href="img/sprite.svg#location"></use></svg></span>
-              <span class="phone-text">Riga - Maskavas iela 418, LV-1063</span>
+                <span class="phone-text">Riga - Maskavas iela 418, LV-1063</span>
+              </div>
+              <ul class="list-maps ul-my">
+                <li>
+                  <a href="#" target="_blank" class="list-maps-links waze-link">
+                    <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
+                    <span class="list-maps-links__text">Проложить маршрут в Waze</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="list-maps-links google-link">
+                    <span class="list-maps-links__icon"><img src="img/google.svg" alt=""></span>
+                    <span class="list-maps-links__text">Показать на карте</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul class="list-maps ul-my">
-              <li>
-                <a href="#" target="_blank" class="list-maps-links waze-link">
-                  <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
-                  <span class="list-maps-links__text">Проложить маршрут в Waze</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank" class="list-maps-links google-link">
-                  <span class="list-maps-links__icon"><img src="img/google.svg" alt=""></span>
-                  <span class="list-maps-links__text">Показать на карте</span>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
-          <div class="registration-number">SIA ZEVA AUTO Reg. nr. 40103942814</div>
-          <div class="copyright">© 2021 Все права защищены</div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
+            <div class="registration-number">SIA ZEVA AUTO Reg. nr. 40103942814</div>
+            <div class="copyright">© 2021 Все права защищены</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-
+  </footer>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -1053,7 +1080,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<script src="js/jquery.MultiFile.min.js"></script>
+<script src="js/fileup.js"></script>
 <script src="js/intlTelInput.js"></script>
 <script src="js/common.js"></script>
 

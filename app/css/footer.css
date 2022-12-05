@@ -1,4 +1,8 @@
 footer {
+  -webkit-box-flex: 0;
+      -ms-flex: 0 0 auto;
+          flex: 0 0 auto;
+  position: relative;
   color: #fff;
   background: #196250; }
   footer .phone, footer .mail {

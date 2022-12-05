@@ -26,6 +26,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
   <link rel="stylesheet" href="css/intlTelInput.css">
+  <link rel="stylesheet" href="css/fileup.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/header.css">
   <link rel="stylesheet" href="css/footer.css">
@@ -41,180 +42,1627 @@
 
 <body>
 
-<div class="overlay-mobile"></div>
+<div class="wrapper">
+  <div class="content">
 
-<div class="mobile-sorting mobile-wrapper">
-  <div class="sidebar-close">
-    <svg class="svg-icon">
-      <use xlink:href="img/sprite.svg#close"></use>
-    </svg>
-  </div>
-  <div class="sidebar-title sidebar-box">
-    <h3>Сортировка</h3>
-  </div>
-  <div class="sidebar-box">
-    <a href="#" class="sorting-links ">Цена (низкая &gt; высокая)</a>
-    <a href="#" class="sorting-links ">Цена (высокая &gt; низкая)</a>
-    <a href="#" class="sorting-links ">Сначала старые</a>
-    <a href="#" class="sorting-links active">Сначала новые</a>
-  </div>
-</div>
+    <div class="overlay-mobile"></div>
 
-<header>
-  <div class="header-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex flex-wrap align-items-center">
-          <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+    <div class="mobile-sorting mobile-wrapper">
+      <div class="sidebar-close">
+        <svg class="svg-icon">
+          <use xlink:href="img/sprite.svg#close"></use>
+        </svg>
+      </div>
+      <div class="sidebar-title sidebar-box">
+        <h3>Сортировка</h3>
+      </div>
+      <div class="sidebar-box">
+        <a href="#" class="sorting-links ">Цена (низкая &gt; высокая)</a>
+        <a href="#" class="sorting-links ">Цена (высокая &gt; низкая)</a>
+        <a href="#" class="sorting-links ">Сначала старые</a>
+        <a href="#" class="sorting-links active">Сначала новые</a>
+      </div>
+    </div>
 
-          <!--          <form method="post" class="form-search">-->
-          <!--            <label>-->
-          <!--          <span class="input-icon-search"><svg class="svg-icon">-->
-          <!--            <use xlink:href="img/sprite.svg#search"></use>-->
-          <!--          </svg></span>-->
-          <!--              <input type="text" placeholder="Поиск..." name="search">-->
-          <!--            </label>-->
-          <!--            <button type="submit" class="btn btn-accent btn-sm">Найти</button>-->
-          <!--          </form>-->
+    <header>
+      <div class="header-top">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex flex-wrap align-items-center">
+              <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
 
-          <div class="dropdown dropdown-language">
-            <a href="#" class="dropdown-toggle">Рyc</a>
-            <div class="dropdown-menu">
-              <a href="#" class="dropdown-item">Рyc</a>
-              <a href="#" class="dropdown-item">Lat</a>
-              <a href="#" class="dropdown-item">Eng</a>
+              <!--          <form method="post" class="form-search">-->
+              <!--            <label>-->
+              <!--          <span class="input-icon-search"><svg class="svg-icon">-->
+              <!--            <use xlink:href="img/sprite.svg#search"></use>-->
+              <!--          </svg></span>-->
+              <!--              <input type="text" placeholder="Поиск..." name="search">-->
+              <!--            </label>-->
+              <!--            <button type="submit" class="btn btn-accent btn-sm">Найти</button>-->
+              <!--          </form>-->
+
+              <div class="dropdown dropdown-language">
+                <a href="#" class="dropdown-toggle">Рyc</a>
+                <div class="dropdown-menu">
+                  <a href="#" class="dropdown-item">Рyc</a>
+                  <a href="#" class="dropdown-item">Lat</a>
+                  <a href="#" class="dropdown-item">Eng</a>
+                </div>
+              </div>
+
+              <div class="schedule-box">
+                <div class="schedule-box__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#clock"></use>
+                  </svg>
+                </div>
+                <div class="schedule-box__text">
+                  Время работы:
+                  9:00 - 22:00
+                </div>
+              </div>
+
+
+              <a href="mailto:info@manslizings.lv" class="mail">
+                <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
+                <span class="mail-text">info@manslizings.lv</span>
+              </a>
+
+              <a href="tel:+37126612612" class="phone">
+                <span class="phone-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#phone"></use></svg></span>
+                <span class="phone-text">+371 26-612-612</span>
+              </a>
+
+              <div class="btn-burger">
+                <span></span>
+                <span></span>
+                <span></span>
+              </div>
             </div>
           </div>
+        </div>
+      </div>
 
-          <div class="schedule-box">
-            <div class="schedule-box__icon">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#clock"></use>
-              </svg>
-            </div>
-            <div class="schedule-box__text">
-              Время работы:
-              9:00 - 22:00
+      <div class="header-bottom">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 d-flex align-items-center flex-wrap">
+              <nav class="nav-menu">
+                <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+
+                <a href="#" class="nav-menu__close"></a>
+
+                <ul class="menu ul-my">
+                  <li class="dropdown">
+                    <a href="car-leasing.html" class="dropdown-toggle">Автолизинг</a>
+                    <div class="dropdown-menu">
+                      <div class="dropdown-menu__wrapper">
+                        <div class="dropdown-box">
+                          <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                          <ul class="list-dots dropdown-menu-list">
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="dropdown-box">
+                          <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                          <ul class="list-dots dropdown-menu-list">
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="check-possibilities">
+                          <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
+                          <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо
+                            сейчас
+                          </div>
+
+                          <a href="#" class="btn btn-orange">Проверить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li class="dropdown">
+                    <a href="car-loan.html" class="dropdown-toggle">Автокредит</a>
+                    <div class="dropdown-menu">
+                      <div class="dropdown-menu__wrapper">
+                        <div class="dropdown-box">
+                          <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                          <ul class="list-dots dropdown-menu-list">
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="dropdown-box">
+                          <div class="dropdown-box__title">Для физических лиц</div>
+
+
+                          <ul class="list-dots dropdown-menu-list">
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                            <li><a href="#">Лизинг без первого взноса</a></li>
+                            <li><a href="#">Лизинг без официального места работы</a></li>
+                          </ul>
+                        </div>
+
+                        <div class="check-possibilities">
+                          <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
+                          <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо
+                            сейчас
+                          </div>
+
+                          <a href="#" class="btn btn-orange">Проверить</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li><a href="#">Авто партнеров</a></li>
+                  <li><a href="redemption-auto.html">Выкуп авто</a></li>
+                  <li><a href="#">О нас</a></li>
+                  <li><a href="news.html">Новости</a></li>
+                  <li><a href="contacts.html">Контакты</a></li>
+                </ul>
+
+                <div class="header-box">
+                  <a href="tel:+37126612612" class="phone">
+                <span class="phone-icon"><svg class="svg-icon"><use
+                    xlink:href="img/sprite.svg#phone"></use></svg></span>
+                    <span class="phone-text">+371 26-612-612</span>
+                  </a>
+                  <a href="mailto:info@manslizings.lv" class="mail">
+                    <span class="mail-icon"><svg class="svg-icon"><use
+                        xlink:href="img/sprite.svg#mail"></use></svg></span>
+                    <span class="mail-text">info@manslizings.lv</span>
+                  </a>
+                </div>
+                <div class="schedule-box">
+                  <div class="schedule-box__icon">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#clock"></use>
+                    </svg>
+                  </div>
+                  <div class="schedule-box__text">
+                    <p>Время работы:</p>
+                    <p>9:00 - 22:00</p>
+                  </div>
+                </div>
+
+                <div class="language-box">
+                  <p>Язык:</p>
+                  <ul class="list-language ul-my">
+                    <li><a href="#" class="active">Рyc</a></li>
+                    <li><a href="#">Lat</a></li>
+                    <li><a href="#">Eng</a></li>
+                  </ul>
+                </div>
+              </nav>
             </div>
           </div>
+        </div>
+      </div>
+    </header>
 
-
-          <a href="mailto:info@manslizings.lv" class="mail">
-            <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
-            <span class="mail-text">info@manslizings.lv</span>
-          </a>
-
-          <a href="tel:+37126612612" class="phone">
-            <span class="phone-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
-            <span class="phone-text">+371 26-612-612</span>
-          </a>
-
-          <div class="btn-burger">
-            <span></span>
-            <span></span>
-            <span></span>
+    <div class="title-line">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="h1">Новые поступления</div>
           </div>
         </div>
       </div>
     </div>
+
+    <section class="page page-catalog bg-light-blue">
+      <div class="container">
+
+        <div class="row">
+          <div class="col-12">
+            <ul class="breadcrumbs ul-my">
+              <li><a href="index.html">Главная</a></li>
+              <li><a href="catalog.html">Каталог</a></li>
+              <li><span>Новые поступления</span></li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <div class="sidebar">
+              <div class="sidebar-close">
+                <svg class="svg-icon">
+                  <use xlink:href="img/sprite.svg#close"></use>
+                </svg>
+              </div>
+              <h2>Фильтр</h2>
+
+              <div class="sidebar-box">
+                <h4>Цена</h4>
+                <div class="range_val">
+                  <div class="form-group">
+                    <label>
+                      <input type="text" name="dec" class="dec1">
+                    </label>
+                    <label>
+                      <input type="text" name="dec" class="dec2">
+                    </label>
+                  </div>
+                  <div class="slider-range slider-range1"></div>
+                </div>
+              </div>
+
+              <div class="sidebar-box">
+                <h4>Марка</h4>
+                <label>
+                  <select name="select" class="select-my">
+                    <option value="Все">Все</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="sidebar-box">
+                <h4>Модель</h4>
+                <label>
+                  <select name="select" class="select-my">
+                    <option value="Все">Все</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="sidebar-box">
+                <h4>Год выпуска</h4>
+
+                <div class="form-group">
+                  <label>
+                    <input type="text" name="age" placeholder="1999">
+                  </label>
+                  <label>
+                    <input type="text" name="age" placeholder="2022">
+                  </label>
+                </div>
+              </div>
+
+              <div class="sidebar-box">
+                <h4>Тип топлива</h4>
+                <label>
+                  <select name="select" class="select-my">
+                    <option value="Все">Все</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="sidebar-box">
+                <h4>Пробег, км</h4>
+
+                <div class="form-group">
+                  <label>
+                    <input type="text" name="mileage" placeholder="0">
+                  </label>
+                  <label>
+                    <input type="text" name="mileage" placeholder="222 222">
+                  </label>
+                </div>
+              </div>
+
+              <div class="sidebar-box">
+                <h4>Коробка передач</h4>
+                <label>
+                  <select name="select" class="select-my">
+                    <option value="Все">Все</option>
+                  </select>
+                </label>
+              </div>
+              <div class="sidebar-box">
+                <h4>Тип кузова</h4>
+                <label>
+                  <select name="select" class="select-my">
+                    <option value="Все">Все</option>
+                  </select>
+                </label>
+              </div>
+
+              <div class="sidebar-box">
+                <h4>Ввезено из</h4>
+                <label>
+                  <select name="select" class="select-my">
+                    <option value="Все">Все</option>
+                  </select>
+                </label>
+              </div>
+
+              <a href="#" class="clear-filter">Х Сбросить фильтр</a>
+            </div>
+          </div>
+
+          <div class="col-12 col-lg-9">
+            <div class="catalog-mobile-nav">
+              <div class="btn-catalog btn-sorting">
+                <div class="btn-catalog__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#sorting"></use>
+                  </svg>
+                </div>
+                <div class="btn-catalog__text">Сортировка</div>
+              </div>
+              <div class="btn-catalog btn-filter">
+                <div class="btn-catalog__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#filter"></use>
+                  </svg>
+                </div>
+                <div class="btn-catalog__text">Фильтр</div>
+              </div>
+            </div>
+
+            <div class="catalog-top">
+              <div class="sorting-box">
+                <p>Сортировать:</p>
+                <label class="label-select">
+                  <select name="select" class="select-sorting">
+                    <option value="Сначала новые">Сначала новые</option>
+                    <option value="Сначала новые">Сначала новые</option>
+                    <option value="Сначала новые">Сначала новые</option>
+                  </select>
+                </label>
+              </div>
+              <ul class="nav nav-tabs" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link" id="catalog-tab1__link" data-toggle="tab" href="#catalog-tab1" role="tab"
+                     aria-controls="catalog-tab1"
+                     aria-selected="false">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#tab-icon1"></use>
+                    </svg>
+                  </a>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <a class="nav-link active" id="catalog-tab2__link" data-toggle="tab" href="#catalog-tab2" role="tab"
+                     aria-controls="catalog-tab2"
+                     aria-selected="true">
+                    <svg class="svg-icon">
+                      <use xlink:href="img/sprite.svg#tab-icon2"></use>
+                    </svg>
+                  </a>
+                </li>
+
+              </ul>
+              <div class="total-val-result">Всего в каталоге: 456 моделей</div>
+            </div>
+            <div class="tab-content">
+              <div class="tab-pane fade" id="catalog-tab1" role="tabpanel" aria-labelledby="catalog-tab1__link">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto1.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto2.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag2.svg" alt=""></div>
+                          </li>
+                          <li class="hot">
+                            <div class="icon"><img src="img/fire.svg" alt=""></div>
+                            <p>135 567 km</p>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto3.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto4.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto5.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card-banner">
+                      <img src="img/banner-card.jpeg" alt="" class="card-banner__bg">
+                      <div class="card-banner__content">
+                        <h3>Авто в лизинг без первого взноса</h3>
+                        <a href="#" class="btn btn-orange">
+                          <span class="btn-text">Подать заявку</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto6.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto7.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto8.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto1.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto2.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag2.svg" alt=""></div>
+                          </li>
+                          <li class="hot">
+                            <div class="icon"><img src="img/fire.svg" alt=""></div>
+                            <p>135 567 km</p>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto3.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card-banner">
+                      <img src="img/banner-card.jpeg" alt="" class="card-banner__bg">
+                      <div class="card-banner__content">
+                        <h3>Авто в лизинг без первого взноса</h3>
+                        <a href="#" class="btn btn-orange">
+                          <span class="btn-text">Подать заявку</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto4.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto5.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <nav class="nav-pagination">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link page-link-arrow" href="#" aria-label="Previous">
+                            <span aria-hidden="true"><<</span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link page-link-arrow" href="#"><</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item active" aria-current="page"><span class="page-link">3</span></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link page-link-arrow" href="#">></a></li>
+                        <li class="page-item">
+                          <a class="page-link page-link-arrow" href="#" aria-label="Next">
+                            <span aria-hidden="true">>></span></a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+              <div class="tab-pane fade show active" id="catalog-tab2" role="tabpanel"
+                   aria-labelledby="catalog-tab2__link">
+                <div class="row">
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto1.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto2.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag2.svg" alt=""></div>
+                          </li>
+                          <li class="hot">
+                            <div class="icon"><img src="img/fire.svg" alt=""></div>
+                            <p>135 567 km</p>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto3.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto4.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto5.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card-banner">
+                      <img src="img/banner-card.jpeg" alt="" class="card-banner__bg">
+                      <div class="card-banner__content">
+                        <h3>Авто в лизинг без первого взноса</h3>
+                        <a href="#" class="btn btn-orange">
+                          <span class="btn-text">Подать заявку</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto6.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto7.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto8.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto1.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto2.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag2.svg" alt=""></div>
+                          </li>
+                          <li class="hot">
+                            <div class="icon"><img src="img/fire.svg" alt=""></div>
+                            <p>135 567 km</p>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto3.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card-banner">
+                      <img src="img/banner-card.jpeg" alt="" class="card-banner__bg">
+                      <div class="card-banner__content">
+                        <h3>Авто в лизинг без первого взноса</h3>
+                        <a href="#" class="btn btn-orange">
+                          <span class="btn-text">Подать заявку</span>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto4.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-6 col-md-4 mb-20">
+                    <div class="card">
+                      <ul class="label-list">
+                        <li class="label-list__item bg-orange">-€700</li>
+                        <li class="label-list__item bg-blue">
+                          <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+                        </li>
+                      </ul>
+
+                      <a href="product.html" class="card-img"><img src="img/auto5.jpg" alt=""></a>
+
+                      <div class="card-body">
+                        <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+                        <ul class="list-characteristics ul-my">
+                          <li>
+                            <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+                          </li>
+                          <li><p>2.0 дизель</p></li>
+                          <li><p>135 567 km</p></li>
+                          <li><p>2011</p></li>
+                          <li><p>5l/100km</p></li>
+                          <li><p>механика</p></li>
+                        </ul>
+                        <div class="card-footer">
+                          <div class="card-footer__item">
+                            <p>Цена:</p>
+                            <div class="price font-700">€13 950</div>
+                          </div>
+                          <div class="card-footer__item">
+                            <p>Лизинг от:</p>
+                            <div class="price color-red font-700">€100</div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="col-12">
+                    <nav class="nav-pagination">
+                      <ul class="pagination">
+                        <li class="page-item">
+                          <a class="page-link page-link-arrow" href="#" aria-label="Previous">
+                            <span aria-hidden="true"><<</span>
+                          </a>
+                        </li>
+                        <li class="page-item"><a class="page-link page-link-arrow" href="#"><</a></li>
+                        <li class="page-item"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item active" aria-current="page"><span class="page-link">3</span></li>
+                        <li class="page-item"><a class="page-link" href="#">4</a></li>
+                        <li class="page-item"><a class="page-link" href="#">5</a></li>
+                        <li class="page-item"><a class="page-link page-link-arrow" href="#">></a></li>
+                        <li class="page-item">
+                          <a class="page-link page-link-arrow" href="#" aria-label="Next">
+                            <span aria-hidden="true">>></span></a>
+                        </li>
+                      </ul>
+                    </nav>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="callback">
+      <div class="callback-wrapper"></div>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-10">
+            <h2>Проверьте свои лизинговые возможности</h2>
+            <div class="box-text">
+              <p>Это вас ни к чему не обязывает!</p>
+            </div>
+
+            <form method="post" class="form-callback">
+              <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
+              <label><input type="text" placeholder="Телефон" class="phone-input1" name="phone"></label>
+              <button type="submit" class="btn btn-sm btn-orange">Проверить</button>
+            </form>
+          </div>
+        </div>
+      </div>
+
+      <div class="callback-image"><img src="img/car2.png" alt=""></div>
+    </section>
+
+    <section class="seo-section m-80">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 mb-30">
+            <h2>Купить авто в лизинг в Риге.</h2>
+          </div>
+
+          <div class="col-12 col-lg-11">
+            <div class="box-text">
+              <p>Хочешь купить подержанный автомобиль с минимальными вложениями и без кредита? Есть выгодная
+                альтернатива -
+                купить машину в лизинг. Купить авто в лизинг значит, взять в аренду транспортное средство на длительный
+                срок
+                (больше года) с правом его выкупа. Для физических лиц это работает так: клиент выбирает транспортное
+                средство, чтобы купить бу автомобиль в лизинг, оплачивает первоначальный взнос за него, а лизинговая
+                компания покупает его, оформляет все документы и передает машину в пользование клиенту.</p>
+
+              <p>Каждый месяц клиент оплачивает ежемесячный платеж за лизинг авто. По истечению срока автолизинга,
+                клиент
+                получает бу авто в собственность. Купить бу автомобиль в лизинг особенно выгодно для тех людей, кому
+                необходимо приобрести транспортное средство, но денег на полный расчет не хватает. И тем, кого не
+                устраивает
+                невыгодные условия кредитования банков.</p>
+
+              <p>Автолизинг по сравнению с кредитом, существенно выгоднее. Лизинговая компания не требует официального
+                трудоустройства, справку на справку, искать поручителей, страховать жизнь и здоровье. Еще процентная
+                ставка
+                и переплата при кредите выше, чем при автолизинге. Банки включают в платежи навязанные услуги. Например,
+                страхование жизни и здоровья заемщика. Из-за страховки, у клиента ежемесячные платежи и переплата по
+                кредиту
+                больше.</p>
+
+              <strong>Лизинг авто с пробегом от компании manslizings в Латвии</strong>
+              <p>
+                Взять проверенное бу авто в Риге и других городах Латвии в лизинг можно в компании manslizings. Клиент
+                сам
+                выбирает авто любой марки для покупки и обращается к нам.
+                Услуга лизинга бу авто для частных лиц есть в городах Латвии: Рига, Талси, Валмиера, Елгава, Кулдига,
+                Цесис.
+                Можно взять в лизинг бу авто в Риге без ограничения пробега, любого бренда и модели, с рук, на рынке или
+                с
+                автоплощадки.</p>
+
+              <strong>Наши преимущества:</strong>
+              <ul>
+                <li>ограничений в выборе бренда и модели авто нет;</li>
+                <li>можно приобрести б у машину от хозяина от 5000 до 50 000 долларов;</li>
+                <li>все авто с пробегом проверены с юридической стороны;</li>
+                <li>машина в лизинг для физических лиц оформляется за 1 день без лишних документов;</li>
+              </ul>
+
+              <p>Чтобы купить бу авто в лизинг в Латвии по выгодным условиям, потребуется минимальный пакет документов и
+                времени. Заявку на лизинг авто можно оставить через сайт.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
   </div>
-
-  <div class="header-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex align-items-center flex-wrap">
-          <nav class="nav-menu">
-            <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
-
-            <a href="#" class="nav-menu__close"></a>
-
-            <ul class="menu ul-my">
-              <li class="dropdown">
-                <a href="car-leasing.html" class="dropdown-toggle">Автолизинг</a>
-                <div class="dropdown-menu">
-                  <div class="dropdown-menu__wrapper">
-                    <div class="dropdown-box">
-                      <div class="dropdown-box__title">Для физических лиц</div>
-
-
-                      <ul class="list-dots dropdown-menu-list">
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="dropdown-box">
-                      <div class="dropdown-box__title">Для физических лиц</div>
-
-
-                      <ul class="list-dots dropdown-menu-list">
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="check-possibilities">
-                      <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
-                      <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо сейчас</div>
-
-                      <a href="#" class="btn btn-orange">Проверить</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
-              <li class="dropdown">
-                <a href="car-loan.html" class="dropdown-toggle">Автокредит</a>
-                <div class="dropdown-menu">
-                  <div class="dropdown-menu__wrapper">
-                    <div class="dropdown-box">
-                      <div class="dropdown-box__title">Для физических лиц</div>
-
-
-                      <ul class="list-dots dropdown-menu-list">
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="dropdown-box">
-                      <div class="dropdown-box__title">Для физических лиц</div>
-
-
-                      <ul class="list-dots dropdown-menu-list">
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                        <li><a href="#">Лизинг без первого взноса</a></li>
-                        <li><a href="#">Лизинг без официального места работы</a></li>
-                      </ul>
-                    </div>
-
-                    <div class="check-possibilities">
-                      <img src="img/possibilities-bg.jpg" alt="" class="check-possibilities__bg">
-                      <div class="check-possibilities__title">Бесплатно проверьте сови финансовые возможности прямо сейчас</div>
-
-                      <a href="#" class="btn btn-orange">Проверить</a>
-                    </div>
-                  </div>
-                </div>
-              </li>
+  <footer>
+    <div class="footer-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 col-lg-3">
+            <a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
+            <div class="description-company">
+              <p>Компания «Manslizing» работает на рынке автоуслуг Латвии с 2002 года! Купите автомобиль на выгодных
+                условиях.</p>
+            </div>
+          </div>
+          <div class="col-12 col-lg-9 d-flex flex-wrap">
+            <ul class="footer-menu ul-my">
+              <li><a href="#">Автолизинг</a></li>
+              <li><a href="#">Автокредит</a></li>
               <li><a href="#">Авто партнеров</a></li>
               <li><a href="redemption-auto.html">Выкуп авто</a></li>
+            </ul>
+            <ul class="footer-menu ul-my">
               <li><a href="#">О нас</a></li>
               <li><a href="news.html">Новости</a></li>
               <li><a href="contacts.html">Контакты</a></li>
             </ul>
 
-            <div class="header-box">
+            <div class="footer-box">
               <a href="tel:+37126612612" class="phone">
                 <span class="phone-icon"><svg class="svg-icon"><use
                     xlink:href="img/sprite.svg#phone"></use></svg></span>
@@ -224,1475 +1672,57 @@
                 <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
                 <span class="mail-text">info@manslizings.lv</span>
               </a>
-            </div>
-            <div class="schedule-box">
-              <div class="schedule-box__icon">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#clock"></use>
-                </svg>
-              </div>
-              <div class="schedule-box__text">
-                <p>Время работы:</p>
-                <p>9:00 - 22:00</p>
-              </div>
-            </div>
-
-            <div class="language-box">
-              <p>Язык:</p>
-              <ul class="list-language ul-my">
-                <li><a href="#" class="active">Рyc</a></li>
-                <li><a href="#">Lat</a></li>
-                <li><a href="#">Eng</a></li>
-              </ul>
-            </div>
-          </nav>
-        </div>
-      </div>
-    </div>
-  </div>
-</header>
-
-<div class="title-line">
-  <div class="container">
-    <div class="row">
-      <div class="col-12">
-        <div class="h1">Новые поступления</div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<section class="page page-catalog bg-light-blue">
-  <div class="container">
-
-    <div class="row">
-      <div class="col-12">
-        <ul class="breadcrumbs ul-my">
-          <li><a href="index.html">Главная</a></li>
-          <li><a href="catalog.html">Каталог</a></li>
-          <li><span>Новые поступления</span></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="row">
-      <div class="col-12 col-lg-3">
-        <div class="sidebar">
-          <div class="sidebar-close">
-            <svg class="svg-icon">
-              <use xlink:href="img/sprite.svg#close"></use>
-            </svg>
-          </div>
-          <h2>Фильтр</h2>
-
-          <div class="sidebar-box">
-            <h4>Цена</h4>
-            <div class="range_val">
-              <div class="form-group">
-                <label>
-                  <input type="text" name="dec" class="dec1">
-                </label>
-                <label>
-                  <input type="text" name="dec" class="dec2">
-                </label>
-              </div>
-              <div class="slider-range slider-range1"></div>
-            </div>
-          </div>
-
-          <div class="sidebar-box">
-            <h4>Марка</h4>
-            <label>
-              <select name="select" class="select-my">
-                <option value="Все">Все</option>
-              </select>
-            </label>
-          </div>
-
-          <div class="sidebar-box">
-            <h4>Модель</h4>
-            <label>
-              <select name="select" class="select-my">
-                <option value="Все">Все</option>
-              </select>
-            </label>
-          </div>
-
-          <div class="sidebar-box">
-            <h4>Год выпуска</h4>
-
-            <div class="form-group">
-              <label>
-                <input type="text" name="age" placeholder="1999">
-              </label>
-              <label>
-                <input type="text" name="age" placeholder="2022">
-              </label>
-            </div>
-          </div>
-
-          <div class="sidebar-box">
-            <h4>Тип топлива</h4>
-            <label>
-              <select name="select" class="select-my">
-                <option value="Все">Все</option>
-              </select>
-            </label>
-          </div>
-
-          <div class="sidebar-box">
-            <h4>Пробег, км</h4>
-
-            <div class="form-group">
-              <label>
-                <input type="text" name="mileage" placeholder="0">
-              </label>
-              <label>
-                <input type="text" name="mileage" placeholder="222 222">
-              </label>
-            </div>
-          </div>
-
-          <div class="sidebar-box">
-            <h4>Коробка передач</h4>
-            <label>
-              <select name="select" class="select-my">
-                <option value="Все">Все</option>
-              </select>
-            </label>
-          </div>
-          <div class="sidebar-box">
-            <h4>Тип кузова</h4>
-            <label>
-              <select name="select" class="select-my">
-                <option value="Все">Все</option>
-              </select>
-            </label>
-          </div>
-
-          <div class="sidebar-box">
-            <h4>Ввезено из</h4>
-            <label>
-              <select name="select" class="select-my">
-                <option value="Все">Все</option>
-              </select>
-            </label>
-          </div>
-
-          <a href="#" class="clear-filter">Х Сбросить фильтр</a>
-        </div>
-      </div>
-
-      <div class="col-12 col-lg-9">
-        <div class="catalog-mobile-nav">
-          <div class="btn-catalog btn-sorting">
-            <div class="btn-catalog__icon">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#sorting"></use>
-              </svg>
-            </div>
-            <div class="btn-catalog__text">Сортировка</div>
-          </div>
-          <div class="btn-catalog btn-filter">
-            <div class="btn-catalog__icon">
-              <svg class="svg-icon">
-                <use xlink:href="img/sprite.svg#filter"></use>
-              </svg>
-            </div>
-            <div class="btn-catalog__text">Фильтр</div>
-          </div>
-        </div>
-
-        <div class="catalog-top">
-          <div class="sorting-box">
-            <p>Сортировать:</p>
-            <label class="label-select">
-              <select name="select" class="select-sorting">
-                <option value="Сначала новые">Сначала новые</option>
-                <option value="Сначала новые">Сначала новые</option>
-                <option value="Сначала новые">Сначала новые</option>
-              </select>
-            </label>
-          </div>
-          <ul class="nav nav-tabs" role="tablist">
-            <li class="nav-item" role="presentation">
-              <a class="nav-link" id="catalog-tab1__link" data-toggle="tab" href="#catalog-tab1" role="tab" aria-controls="catalog-tab1"
-                 aria-selected="false"><svg class="svg-icon"><use xlink:href="img/sprite.svg#tab-icon1"></use></svg></a>
-            </li>
-            <li class="nav-item" role="presentation">
-              <a class="nav-link active" id="catalog-tab2__link" data-toggle="tab" href="#catalog-tab2" role="tab" aria-controls="catalog-tab2"
-                 aria-selected="true"><svg class="svg-icon"><use xlink:href="img/sprite.svg#tab-icon2"></use></svg></a>
-            </li>
-
-          </ul>
-          <div class="total-val-result">Всего в каталоге: 456 моделей</div>
-        </div>
-        <div class="tab-content">
-          <div class="tab-pane fade" id="catalog-tab1" role="tabpanel" aria-labelledby="catalog-tab1__link">
-            <div class="row">
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto1.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
+              <div class="schedule-box">
+                <div class="schedule-box__icon">
+                  <svg class="svg-icon">
+                    <use xlink:href="img/sprite.svg#clock"></use>
+                  </svg>
                 </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto2.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag2.svg" alt=""></div>
-                      </li>
-                      <li class="hot">
-                        <div class="icon"><img src="img/fire.svg" alt=""></div>
-                        <p>135 567 km</p>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
+                <div class="schedule-box__text">
+                  Время работы:
+                  9:00 - 22:00
                 </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto3.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto4.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto5.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card-banner">
-                  <img src="img/banner-card.jpeg" alt="" class="card-banner__bg">
-                  <div class="card-banner__content">
-                    <h3>Авто в лизинг без первого взноса</h3>
-                    <a href="#" class="btn btn-orange">
-                      <span class="btn-text">Подать заявку</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto6.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto7.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto8.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto1.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto2.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag2.svg" alt=""></div>
-                      </li>
-                      <li class="hot">
-                        <div class="icon"><img src="img/fire.svg" alt=""></div>
-                        <p>135 567 km</p>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto3.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card-banner">
-                  <img src="img/banner-card.jpeg" alt="" class="card-banner__bg">
-                  <div class="card-banner__content">
-                    <h3>Авто в лизинг без первого взноса</h3>
-                    <a href="#" class="btn btn-orange">
-                      <span class="btn-text">Подать заявку</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto4.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12 col-sm-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto5.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12">
-                <nav class="nav-pagination">
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a class="page-link page-link-arrow" href="#" aria-label="Previous">
-                        <span aria-hidden="true"><<</span>
-                      </a>
-                    </li>
-                    <li class="page-item"><a class="page-link page-link-arrow" href="#"><</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item active" aria-current="page"><span class="page-link">3</span></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link page-link-arrow" href="#">></a></li>
-                    <li class="page-item">
-                      <a class="page-link page-link-arrow" href="#" aria-label="Next">
-                        <span aria-hidden="true">>></span></a>
-                    </li>
-                  </ul>
-                </nav>
               </div>
             </div>
-          </div>
-          <div class="tab-pane fade show active" id="catalog-tab2" role="tabpanel" aria-labelledby="catalog-tab2__link">
-            <div class="row">
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
 
-                  <a href="product.html" class="card-img"><img src="img/auto1.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto2.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag2.svg" alt=""></div>
-                      </li>
-                      <li class="hot">
-                        <div class="icon"><img src="img/fire.svg" alt=""></div>
-                        <p>135 567 km</p>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto3.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto4.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto5.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card-banner">
-                  <img src="img/banner-card.jpeg" alt="" class="card-banner__bg">
-                  <div class="card-banner__content">
-                    <h3>Авто в лизинг без первого взноса</h3>
-                    <a href="#" class="btn btn-orange">
-                      <span class="btn-text">Подать заявку</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto6.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto7.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto8.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto1.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto2.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag2.svg" alt=""></div>
-                      </li>
-                      <li class="hot">
-                        <div class="icon"><img src="img/fire.svg" alt=""></div>
-                        <p>135 567 km</p>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto3.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card-banner">
-                  <img src="img/banner-card.jpeg" alt="" class="card-banner__bg">
-                  <div class="card-banner__content">
-                    <h3>Авто в лизинг без первого взноса</h3>
-                    <a href="#" class="btn btn-orange">
-                      <span class="btn-text">Подать заявку</span>
-                    </a>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto4.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-6 col-md-4 mb-20">
-                <div class="card">
-                  <ul class="label-list">
-                    <li class="label-list__item bg-orange">-€700</li>
-                    <li class="label-list__item bg-blue">
-                      <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                    </li>
-                  </ul>
-
-                  <a href="product.html" class="card-img"><img src="img/auto5.jpg" alt=""></a>
-
-                  <div class="card-body">
-                    <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                    <ul class="list-characteristics ul-my">
-                      <li>
-                        <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                      </li>
-                      <li><p>2.0 дизель</p></li>
-                      <li><p>135 567 km</p></li>
-                      <li><p>2011</p></li>
-                      <li><p>5l/100km</p></li>
-                      <li><p>механика</p></li>
-                    </ul>
-                    <div class="card-footer">
-                      <div class="card-footer__item">
-                        <p>Цена:</p>
-                        <div class="price font-700">€13 950</div>
-                      </div>
-                      <div class="card-footer__item">
-                        <p>Лизинг от:</p>
-                        <div class="price color-red font-700">€100</div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-              <div class="col-12">
-                <nav class="nav-pagination">
-                  <ul class="pagination">
-                    <li class="page-item">
-                      <a class="page-link page-link-arrow" href="#" aria-label="Previous">
-                        <span aria-hidden="true"><<</span>
-                      </a>
-                    </li>
-                    <li class="page-item"><a class="page-link page-link-arrow" href="#"><</a></li>
-                    <li class="page-item"><a class="page-link" href="#">1</a></li>
-                    <li class="page-item"><a class="page-link" href="#">2</a></li>
-                    <li class="page-item active" aria-current="page"><span class="page-link">3</span></li>
-                    <li class="page-item"><a class="page-link" href="#">4</a></li>
-                    <li class="page-item"><a class="page-link" href="#">5</a></li>
-                    <li class="page-item"><a class="page-link page-link-arrow" href="#">></a></li>
-                    <li class="page-item">
-                      <a class="page-link page-link-arrow" href="#" aria-label="Next">
-                        <span aria-hidden="true">>></span></a>
-                    </li>
-                  </ul>
-                </nav>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-
-<section class="callback">
-  <div class="callback-wrapper"></div>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-10">
-          <h2>Проверьте свои лизинговые возможности</h2>
-          <div class="box-text">
-            <p>Это вас ни к чему не обязывает!</p>
-          </div>
-
-          <form method="post" class="form-callback">
-            <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
-            <label><input type="text" placeholder="Телефон" class="phone-input1" name="phone"></label>
-            <button type="submit" class="btn btn-sm btn-orange">Проверить</button>
-          </form>
-        </div>
-      </div>
-    </div>
-
-  <div class="callback-image"><img src="img/car2.png" alt=""></div>
-</section>
-
-<section class="seo-section m-80">
-  <div class="container">
-    <div class="row">
-      <div class="col-12 mb-30">
-        <h2>Купить авто в лизинг в Риге.</h2>
-      </div>
-
-      <div class="col-12 col-lg-11">
-        <div class="box-text">
-          <p>Хочешь купить подержанный автомобиль с минимальными вложениями и без кредита? Есть выгодная альтернатива -
-            купить машину в лизинг. Купить авто в лизинг значит, взять в аренду транспортное средство на длительный срок
-            (больше года) с правом его выкупа. Для физических лиц это работает так: клиент выбирает транспортное
-            средство, чтобы купить бу автомобиль в лизинг, оплачивает первоначальный взнос за него, а лизинговая
-            компания покупает его, оформляет все документы и передает машину в пользование клиенту.</p>
-
-          <p>Каждый месяц клиент оплачивает ежемесячный платеж за лизинг авто. По истечению срока автолизинга, клиент
-            получает бу авто в собственность. Купить бу автомобиль в лизинг особенно выгодно для тех людей, кому
-            необходимо приобрести транспортное средство, но денег на полный расчет не хватает. И тем, кого не устраивает
-            невыгодные условия кредитования банков.</p>
-
-          <p>Автолизинг по сравнению с кредитом, существенно выгоднее. Лизинговая компания не требует официального
-            трудоустройства, справку на справку, искать поручителей, страховать жизнь и здоровье. Еще процентная ставка
-            и переплата при кредите выше, чем при автолизинге. Банки включают в платежи навязанные услуги. Например,
-            страхование жизни и здоровья заемщика. Из-за страховки, у клиента ежемесячные платежи и переплата по кредиту
-            больше.</p>
-
-          <strong>Лизинг авто с пробегом от компании manslizings в Латвии</strong>
-          <p>
-            Взять проверенное бу авто в Риге и других городах Латвии в лизинг можно в компании manslizings. Клиент сам
-            выбирает авто любой марки для покупки и обращается к нам.
-            Услуга лизинга бу авто для частных лиц есть в городах Латвии: Рига, Талси, Валмиера, Елгава, Кулдига, Цесис.
-            Можно взять в лизинг бу авто в Риге без ограничения пробега, любого бренда и модели, с рук, на рынке или с
-            автоплощадки.</p>
-
-          <strong>Наши преимущества:</strong>
-          <ul>
-            <li>ограничений в выборе бренда и модели авто нет;</li>
-            <li>можно приобрести б у машину от хозяина от 5000 до 50 000 долларов;</li>
-            <li>все авто с пробегом проверены с юридической стороны;</li>
-            <li>машина в лизинг для физических лиц оформляется за 1 день без лишних документов;</li>
-          </ul>
-
-          <p>Чтобы купить бу авто в лизинг в Латвии по выгодным условиям, потребуется минимальный пакет документов и
-            времени. Заявку на лизинг авто можно оставить через сайт.</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
-<footer>
-  <div class="footer-top">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 col-lg-3">
-          <a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
-          <div class="description-company">
-            <p>Компания «Manslizing» работает на рынке автоуслуг Латвии с 2002 года! Купите автомобиль на выгодных
-              условиях.</p>
-          </div>
-        </div>
-        <div class="col-12 col-lg-9 d-flex flex-wrap">
-          <ul class="footer-menu ul-my">
-            <li><a href="#">Автолизинг</a></li>
-            <li><a href="#">Автокредит</a></li>
-            <li><a href="#">Авто партнеров</a></li>
-            <li><a href="redemption-auto.html">Выкуп авто</a></li>
-          </ul>
-          <ul class="footer-menu ul-my">
-            <li><a href="#">О нас</a></li>
-            <li><a href="news.html">Новости</a></li>
-            <li><a href="contacts.html">Контакты</a></li>
-          </ul>
-
-          <div class="footer-box">
-            <a href="tel:+37126612612" class="phone">
-              <span class="phone-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#phone"></use></svg></span>
-              <span class="phone-text">+371 26-612-612</span>
-            </a>
-            <a href="mailto:info@manslizings.lv" class="mail">
-              <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
-              <span class="mail-text">info@manslizings.lv</span>
-            </a>
-            <div class="schedule-box">
-              <div class="schedule-box__icon">
-                <svg class="svg-icon">
-                  <use xlink:href="img/sprite.svg#clock"></use>
-                </svg>
-              </div>
-              <div class="schedule-box__text">
-                Время работы:
-                9:00 - 22:00
-              </div>
-            </div>
-          </div>
-
-          <div class="footer-box">
-            <div class="address">
+            <div class="footer-box">
+              <div class="address">
               <span class="phone-icon"><svg class="svg-icon"><use
                   xlink:href="img/sprite.svg#location"></use></svg></span>
-              <span class="phone-text">Riga - Maskavas iela 418, LV-1063</span>
+                <span class="phone-text">Riga - Maskavas iela 418, LV-1063</span>
+              </div>
+              <ul class="list-maps ul-my">
+                <li>
+                  <a href="#" target="_blank" class="list-maps-links waze-link">
+                    <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
+                    <span class="list-maps-links__text">Проложить маршрут в Waze</span>
+                  </a>
+                </li>
+                <li>
+                  <a href="#" target="_blank" class="list-maps-links google-link">
+                    <span class="list-maps-links__icon"><img src="img/google.svg" alt=""></span>
+                    <span class="list-maps-links__text">Показать на карте</span>
+                  </a>
+                </li>
+              </ul>
             </div>
-            <ul class="list-maps ul-my">
-              <li>
-                <a href="#" target="_blank" class="list-maps-links waze-link">
-                  <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
-                  <span class="list-maps-links__text">Проложить маршрут в Waze</span>
-                </a>
-              </li>
-              <li>
-                <a href="#" target="_blank" class="list-maps-links google-link">
-                  <span class="list-maps-links__icon"><img src="img/google.svg" alt=""></span>
-                  <span class="list-maps-links__text">Показать на карте</span>
-                </a>
-              </li>
-            </ul>
           </div>
         </div>
       </div>
     </div>
-  </div>
 
-  <div class="footer-bottom">
-    <div class="container">
-      <div class="row">
-        <div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
-          <div class="registration-number">SIA ZEVA AUTO Reg. nr. 40103942814</div>
-          <div class="copyright">© 2021 Все права защищены</div>
+    <div class="footer-bottom">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
+            <div class="registration-number">SIA ZEVA AUTO Reg. nr. 40103942814</div>
+            <div class="copyright">© 2021 Все права защищены</div>
+          </div>
         </div>
       </div>
     </div>
-  </div>
-</footer>
-
+  </footer>
+</div>
 
 <script src="js/jquery.min.js"></script>
 <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -1702,7 +1732,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<script src="js/jquery.MultiFile.min.js"></script>
+<script src="js/fileup.js"></script>
 <script src="js/intlTelInput.js"></script>
 <script src="js/common.js"></script>
 

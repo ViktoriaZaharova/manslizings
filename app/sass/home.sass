@@ -308,6 +308,18 @@
   &:hover
     border: 1px solid #8FBA44
 
+.sold-car
+
+  .card-img
+    filter: grayscale(100%)
+  .card-footer
+    .btn
+      margin: 0
+      font-size: 16px
+      height: 40px
+      background: #D71717
+      color: #fff
+
 .card-img
   position: relative
   width: calc(100% + 1px)
@@ -368,7 +380,10 @@
   padding: 18px 13px 15px
   margin: 0 0 auto
   position: relative
-
+  display: flex
+  flex-direction: column
+  .list-characteristics
+    margin: 0 0 auto
 
 .card-footer
   width: 100%
@@ -378,6 +393,7 @@
   background: transparent
   display: flex
   align-items: flex-start
+  justify-content: space-between
   color: #2A2D28
 
   &__item

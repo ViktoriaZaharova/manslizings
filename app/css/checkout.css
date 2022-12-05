@@ -252,7 +252,7 @@
   .label-file-result__delete:before, .label-file-result__delete:after, .fileup-file .fileup-controls .fileup-remove:before, .fileup-file .fileup-controls .fileup-remove:after {
     content: '';
     position: absolute;
-    background: #fff;
+    background: red;
     width: 1px;
     height: 100%; }
   .label-file-result__delete:before, .fileup-file .fileup-controls .fileup-remove:before {

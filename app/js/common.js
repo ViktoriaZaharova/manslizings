@@ -274,26 +274,26 @@ $('.btn-sorting').on('click', function () {
 
 
 // this is your selector
-// $.fileup({
-//     url: window.location.pathname + window.location.search,
-//     inputID: 'upload-demo',
-//     queueID: 'upload-demo-queue',
-//     dropzoneID: '',
-//     files: [],
-//     fieldName: 'filedata',
-//     extraFields: {},
-//     sizeLimit: 0,
-//     filesLimit: 0,
-//     method: 'post',
-//     timeout: null,
-//     autostart: false,
-// });
+$.fileup({
+    url: window.location.pathname + window.location.search,
+    inputID: 'upload-demo',
+    queueID: 'upload-demo-queue',
+    dropzoneID: '',
+    files: [],
+    fieldName: 'filedata',
+    extraFields: {},
+    sizeLimit: 0,
+    filesLimit: 0,
+    method: 'post',
+    timeout: null,
+    autostart: false,
+});
 
 
 // invoke plugin
-$('.inp-file').MultiFile({
-    list: '.files-list'
-});
+// $('.inp-file').MultiFile({
+//     list: '.files-list'
+// });
 
 $(document).ready(function () {
     var input = document.querySelector(".phone-input1");
