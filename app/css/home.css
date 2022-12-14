@@ -312,9 +312,11 @@
   .card:hover {
     border: 1px solid #8FBA44; }
 
-.sold-car .card-img {
+.sold-car{
   -webkit-filter: grayscale(100%);
           filter: grayscale(100%); }
+
+.sold-car .card-img { }
 
 .sold-car .card-footer .btn {
   margin: 0;
@@ -1413,7 +1415,8 @@ a.list-contacts-item:hover {
   position: relative;
   overflow: hidden;
   color: #fff;
-  background: #196250 url("../img/interested-circle.svg") no-repeat center bottom;
+  /*background: #196250 url("../img/interested-circle.svg") no-repeat center bottom;*/
+  background: #196250;
     background-size: 100%;
   border-radius: 10px;
   z-index: 1;
@@ -1601,19 +1604,20 @@ a.list-contacts-item:hover {
     font-size: 18px;
     font-weight: 700; }
   .steps-work-item:hover {
-    border: 2px solid #8FBA44; }
+    border: 1px solid #8FBA44; }
 
 .home-leasing .container {
   padding: 40px 15px; }
 
 .home-leasing .main-slider__item-img {
-  max-width: 762px;
-  bottom: -40px;
-  right: 92px; }
+  max-width: 670px;
+    bottom: -40px;
+    right: 200px; }
 
 .home-leasing .main-content {
   padding: 0; }
 
 .home-loan .main-slider__item-img {
-  max-width: 516px;
-  right: 305px; }
+  max-width: 624px;
+    bottom: 10px;
+    right: 220px; }

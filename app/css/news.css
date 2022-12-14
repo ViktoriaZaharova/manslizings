@@ -180,7 +180,7 @@
   position: relative; }
   .contacts-card__location {
     position: absolute;
-    left: 0;
+    right: 0;
     top: 0;
     background: #8FBA44;
     color: #fff;

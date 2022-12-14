@@ -253,7 +253,8 @@ header {
     .menu li > a {
       color: #303030;
       position: relative;
-      padding: 15px 0; }
+      padding: 15px 0;
+      font-weight: 600; }
       .menu li > a:hover {
         color: #8FBA44; }
   .menu .dropdown-menu {
