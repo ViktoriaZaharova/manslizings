@@ -330,6 +330,13 @@ $(document).ready(function () {
 });
 
 
+$("body").on("click", ".btn-top-scroll", function (e) {
+	e.preventDefault();
+	$("html, body").animate({
+		scrollTop: 0
+	}, "slow");
+});
+
 
 // fixed sidebar
 // $(function () {
