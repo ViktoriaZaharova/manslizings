@@ -1700,9 +1700,6 @@
     min-height: 200px;
   }
 
-  .btn-top-scroll {
-    display: flex;
-  }
 }
 
 @media (max-width: 480px) {

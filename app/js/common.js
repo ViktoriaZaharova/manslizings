@@ -338,6 +338,19 @@ $("body").on("click", ".btn-top-scroll", function (e) {
 });
 
 
+$(window).on('load resize', function () {
+	if ($(window).width() < 576) {
+		$(document).scroll(function () {
+			var y = $(this).scrollTop();
+			if (y > 200) {
+				$('.btn-top-scroll').css('right', '15px');
+			} else {
+				$('.btn-top-scroll').css('right', '-100%');
+			}
+		});
+	} 
+});
+
 // fixed sidebar
 // $(function () {
 //     var topPos = $('.product-gallery-wrapper').offset().top;

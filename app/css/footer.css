@@ -88,7 +88,7 @@ footer .schedule-box__text {
 	position: fixed;
 	z-index: 5;
 	bottom: 20px;
-	right: 20px;
+	right: -100%;
 	border-radius: 50%;
 	width: 50px;
 	height: 50px;
@@ -97,7 +97,8 @@ footer .schedule-box__text {
 	fill: #fff;
 	align-items: center;
 	justify-content: center;
-	display: none;
+	display: flex;
+	transition: .3s ease;
 }
 
 .btn-top-scroll .svg-icon {
