@@ -327,7 +327,8 @@ a.color-black:hover {
   color: #8FBA44; }
 
 .bg-light-blue {
-  background: #F4F7FB; }
+  background: #F4F7FB;
+  /*padding-top: 15px;*/ }
 
 .bg-red {
   background: #BA4444; }
@@ -1317,3 +1318,6 @@ h2 {
   background: #DC2B20;
   border-radius: 4px;
   padding: 5px 10px; }
+
+
+.myproduct{padding-top:15px;}

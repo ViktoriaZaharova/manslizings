@@ -3,7 +3,9 @@ header {
   header .form-search {
     margin: 0 auto; }
   header .mail {
-    margin: 0 auto; }
+    margin: 0 auto;
+    font-weight:700; }
+    header .phone-text{font-weight:700;}
 
 .header-top {
   padding: 10px 0; }
@@ -71,7 +73,8 @@ header {
           justify-content: center; }
 
 .dropdown-language {
-  margin: 0 auto; }
+  margin: 0 auto;
+  font-weight:700; }
 
 .schedule-box {
   display: -webkit-box;
@@ -190,7 +193,7 @@ header {
         -ms-flex-align: start;
             align-items: flex-start; }
   .nav-menu .schedule-box__text {
-    white-space: nowrap;
+    /*white-space: nowrap;*/
     max-width: none; }
   .nav-menu .schedule-box__icon {
     width: 20px;
@@ -249,12 +252,13 @@ header {
   font-size: 16px;
   position: relative; }
   .menu li {
-    position: initial; }
+    position: initial;}
     .menu li > a {
       color: #303030;
       position: relative;
       padding: 15px 0;
-      font-weight: 600; }
+      font-weight: 600;
+      text-transform: uppercase; }
       .menu li > a:hover {
         color: #8FBA44; }
   .menu .dropdown-menu {
@@ -382,6 +386,27 @@ header {
     height: 3px;
     background: #8FBA44;
     border-radius: 3px;
+		transition: .3s ease;
     display: block; }
     .btn-burger span:last-child {
       width: 80%; }
+
+.btn-burger.click span {
+	width: 100%;
+	height: 3px;
+	position: absolute;
+	top: 7px;
+}
+
+.btn-burger.click span:nth-child(2) {
+	width: 0;
+	height: 0;
+}
+
+.btn-burger.click span:first-child {
+	transform: rotate(42deg);
+}
+
+.btn-burger.click span:last-child {
+	transform: rotate(137deg);
+}			

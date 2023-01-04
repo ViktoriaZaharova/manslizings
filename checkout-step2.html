@@ -112,9 +112,9 @@
           <div class="row">
             <div class="col-12 d-flex align-items-center flex-wrap">
               <nav class="nav-menu">
-                <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+                <!-- <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
 
-                <a href="#" class="nav-menu__close"></a>
+                <a href="#" class="nav-menu__close"></a> -->
 
                 <ul class="menu ul-my">
                   <li class="dropdown">
@@ -249,7 +249,7 @@
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <div class="h1">Работа и финансы</div>
+            <div class="h1">Еще немного о вас</div>
           </div>
         </div>
       </div>
@@ -279,11 +279,11 @@
                 <div class="row">
                   <div class="col-12">
                     <div class="checkout-stages">
-                      <p>Шаг 3 из 3</p>
+                      <p>Шаг 2 из 3</p>
                       <div class="checkout-stages-lines">
                         <div class="checkout-stages-box step-ready"></div>
                         <div class="checkout-stages-box step-ready"></div>
-                        <div class="checkout-stages-box step-ready"></div>
+                        <div class="checkout-stages-box"></div>
                       </div>
                     </div>
                   </div>
@@ -292,32 +292,32 @@
                 <div class="row">
                   <div class="col-12 col-sm-6 col-lg-4">
                     <div class="label-input">
-                      <span class="input-text">Работодатель</span>
+                      <span class="input-text">Адрес</span>
                       <label>
-                        <input type="text" name="employer" placeholder="">
+                        <input type="text" name="address" placeholder="">
                       </label>
                     </div>
                   </div>
                   <div class="col-12 col-sm-6 col-lg-4">
                     <div class="label-input">
-                      <span class="input-text">Должность</span>
+                      <span class="input-text">Вид проживания</span>
                       <label>
                         <select name="select" class="select-my">
                           <option value="---">---</option>
-                          <option value="Должность">Должность</option>
-                          <option value="Должность">Должность</option>
+                          <option value="Вид проживания">Вид проживания</option>
+                          <option value="Вид проживания">Вид проживания</option>
                         </select>
                       </label>
                     </div>
                   </div>
                   <div class="col-12 col-sm-6 col-lg-4">
                     <div class="label-input">
-                      <span class="input-text">Опыт работы (мес)</span>
+                      <span class="input-text">Семейное положение</span>
                       <label>
                         <select name="select" class="select-my">
                           <option value="---">---</option>
-                          <option value="Опыт работы (мес)">Опыт работы (мес)</option>
-                          <option value="Опыт работы (мес)">Опыт работы (мес)</option>
+                          <option value="Семейное положение">Семейное положение</option>
+                          <option value="Семейное положение">Семейное положение</option>
                         </select>
                       </label>
                     </div>
@@ -325,56 +325,37 @@
 
                   <div class="col-12 col-sm-6 col-lg-4">
                     <div class="label-input">
-                      <span class="input-text">Вид доходов (зарплата и т.д)</span>
+                      <span class="input-text">Дети до 18 лет</span>
                       <label>
-                        <input type="text" name="type_sum" placeholder="">
+                        <input type="text" name="age" placeholder="">
                       </label>
                     </div>
                   </div>
 
                   <div class="col-12 col-sm-6 col-lg-4">
                     <div class="label-input">
-                      <span class="input-text">Доходы/мес</span>
+                      <span class="input-text">Платежи по другим займам</span>
                       <label>
-                        <input type="text" name="income" placeholder="">
+                        <select name="select" class="select-my">
+                          <option value="---">---</option>
+                          <option value="Вид проживания">Вид проживания</option>
+                          <option value="Вид проживания">Вид проживания</option>
+                        </select>
                       </label>
                     </div>
                   </div>
 
-                </div>
-
-                <div class="row checkout-files">
-                  <div class="col-12 col-lg-7 order-lg-1">
-                    <div class="form-description">
-                      <h3>Выписка со счёта</h3>
-                      <div class="box-text">
-                        <p>Выписка необходима, чтобы подготовить для Вас наилучшее предложение. Загрузите выписку со
-                          счета с
-                          <strong>31.12.21 по 31.12.22</strong></p>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="col-12 col-lg-5">
-                    <label class="label-file">
-                      <input type="file" name="files[]" class="inp-file" id="upload-demo" multiple>
-                      <span class="input-file-icon"><svg class="svg-icon"><use
-                          xlink:href="img/sprite.svg#camera"></use></svg></span>
-                    </label>
-                    <div class="files-list"></div>
-                  </div>
-
-                  <div class="col-12 order-1">
-                    <div class="label-file-result queue" id="upload-demo-queue"></div>
-                  </div>
                 </div>
 
                 <div class="row align-items-center checkout-footer">
                   <div class="col-12 col-sm-6 col-lg-4 order-sm-1">
-                    <a href="thanks.html" class="btn btn-accent btn-step"><span
-                        class="btn-text">Подать заявку</span></a>
+                    <a href="checkout-step3.html" class="btn btn-accent btn-step"><span
+                        class="btn-text">Следующий шаг</span><span
+                        class="btn-arrow"><svg
+                        class="svg-icon"><use xlink:href="img/sprite.svg#arrow-right"></use></svg></span></a>
                   </div>
                   <div class="col-12 col-sm-6 col-lg-4">
-                    <a href="checkout-step2.html" class="links-prev">
+                    <a href="checkout-step1.html" class="links-prev">
                     <span class="links-prev-icon"><svg class="svg-icon"><use
                         xlink:href="img/sprite.svg#arrow-left"></use></svg></span>
                       <span class="links-prev-text">Вернуться назад</span>
