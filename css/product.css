@@ -26,7 +26,7 @@
 }
 
 .calculate-box {
-  margin: 20px 0 10px;
+  margin: 10px 0;
   padding: 30px;
 }
 
@@ -39,11 +39,16 @@
   align-items: flex-end;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  margin: 10px 0 15px;
   color: #2a2d28;
-  font-size: 18px;
-  line-height: 22px;
-  margin: 0 0 0 auto;
+  font-size: 16px;
+  line-height: 20px;
+  margin: 0;
+  background: #fff;
+  border: 1px solid #e1e4e8;
+  box-shadow: 0px 4px 30px rgba(0, 49, 95, 0.11);
+  border-radius: 6px;
+  padding: 10px 5px 9px 15px;
+  width: 100%;
 }
 .price-product p {
   margin: 0 8px 0 0;
@@ -58,10 +63,10 @@
 
 .new-price {
   color: #ff0f00;
-  font-size: 39px;
+  font-size: 26px;
   font-weight: bold;
-  line-height: 48px;
-  margin: 0 0 -7px;
+  line-height: 32px;
+  margin: 0 0 -4px;
 }
 
 .calculate-box p {
@@ -149,7 +154,7 @@
 }
 .conditions h3 {
   text-align: center;
-  margin: 0 auto 10px;
+  margin: 0 auto 14px;
   font-size: 18px;
   font-weight: 900;
   color: #fff;
@@ -171,7 +176,7 @@
   height: 100%;
   z-index: 1;
   overflow: hidden;
-  padding: 30px;
+  padding: 30px 30px 16px;
   border-radius: 6px;
 }
 .conditions-wrapper:before {
@@ -192,36 +197,37 @@
 
 .conditions-wrapper .checkbox {
   margin: 12px 0 0;
+  font-size: 10px;
 }
 
 .leasing-prices {
   width: 100%;
   display: none;
   align-items: center;
-	justify-content: center;
+  justify-content: center;
   margin: 10px 0 0;
   background: #196250;
   border-radius: 6px;
-	color: #fff;
-	padding: 22px 10px;
+  color: #fff;
+  padding: 22px 10px;
 }
 
 .leasing-prices span {
-	color: #FFA800;
-	font-size: 24px;
-	font-weight: bold;
+  color: #ffa800;
+  font-size: 24px;
+  font-weight: bold;
 }
 
 .leasing-prices__text {
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	text-align: center;
-	margin: 0 15px 0 0; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  margin: 0 15px 0 0;
 }
 
 .leasing-prices .btn {
-	padding: 10px 34px;
+  padding: 10px 34px;
 }
 
 .product-gallery-item {
@@ -236,7 +242,7 @@
   -ms-flex-pack: center;
   justify-content: center;
   overflow: hidden;
-  height: 433px;
+  height: 474px;
   border-radius: 6px;
 }
 .product-gallery-item img {
@@ -271,6 +277,10 @@
 
 .link-download strong .color-orange {
   color: rgba(255, 168, 0, 1);
+}
+
+.product-gallery-wrapper .product-information {
+  padding: 15px 20px 11px;
 }
 
 .product-gallery-wrapper .list-maps-links__icon {
@@ -316,7 +326,7 @@
 
 .product-gallery-wrapper {
   width: 100%;
-  margin: 20px 0 0;
+  /* margin: 20px 0 0; */
   display: flex;
   align-items: flex-start;
   flex-wrap: wrap;
@@ -334,7 +344,7 @@
   max-width: 110px;
 }
 .product-gallery-preview .product-gallery-item {
-  height: 80px;
+  height: 88px;
   width: 100%;
   border: none;
   -webkit-transition: 0.3s ease;
@@ -353,16 +363,16 @@
 
 .slick-arrow {
   position: absolute;
-  left: 50%;
-  -webkit-transform: translate(-50%, 0);
-  transform: translate(-50%, 0);
+  top: 50%;
+  -webkit-transform: translate(0,-50%);
+  transform: translate(0,-50%);
   cursor: pointer;
   z-index: 1;
   opacity: 1;
-  width: 20px;
-  height: 20px;
-  background: #8fba44;
-  border-radius: 50%;
+  width: 40px;
+  height: 70px;
+  background: #D1D6DF;
+  border-radius: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -377,8 +387,8 @@
   display: none;
 }
 .slick-arrow svg {
-  width: 12px;
-  height: 8px;
+  width: 11px;
+  height: 16px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -390,17 +400,43 @@
   justify-content: center;
   stroke: #ffffff;
   fill: none;
-  transform: rotate(90deg);
 }
 .slick-arrow:hover {
   background: #8fba44;
 }
 
 .slick-prev {
-  top: -10px;
+  left: 0;
 }
 
 .slick-next {
+  right: 0;
+}
+
+.product-gallery-wrapper .slick-arrow {
+	top: auto;
+  left: 50%;
+  -webkit-transform: translate(-50%, 0);
+  transform: translate(-50%, 0);
+  width: 20px;
+  height: 20px;
+  background: #8fba44;
+  border-radius: 50%;
+}
+
+.product-gallery-wrapper .slick-arrow svg {
+	stroke: #ffffff;
+  fill: none;
+  transform: rotate(90deg);
+	width: 12px;
+  height: 8px;
+}
+
+.product-gallery-wrapper .slick-prev {
+  top: -10px;
+}
+
+.product-gallery-wrapper .slick-next {
   bottom: -6px;
 }
 

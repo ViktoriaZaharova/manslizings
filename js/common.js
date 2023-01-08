@@ -115,7 +115,6 @@ $('.product-gallery').slick({
 	arrows: false,
 	asNavFor: '.product-gallery-preview',
 	responsive: [
-		
 		{
 			breakpoint: 576,
 			settings: {
