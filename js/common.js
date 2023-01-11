@@ -237,6 +237,35 @@ $(window).on('load resize', function () {
 			toggle: false
 		});
 	}
+
+	if ($(window).width() > 576) {
+		$('.car-availability-slider:not(.slick-initialized)').slick({
+			dots: false,
+			slidesToShow: 4,
+			arrows: true,
+			variableWidth: false,
+			prevArrow: '<button type="button" class="slick-prev"><svg class="svg-icon"><use xlink:href="img/sprite.svg#prev"></use></svg></button>',
+			nextArrow: '<button type="button" class="slick-next"><svg class="svg-icon"><use xlink:href="img/sprite.svg#next"></use></svg></button>',
+			responsive: [
+				{
+					breakpoint: 992,
+					settings: {
+						slidesToShow: 3,
+					}
+				},
+				{
+					breakpoint: 768,
+					settings: {
+						slidesToShow: 2,
+					}
+				}
+			]
+		});
+
+	}
+	else {
+		$(".car-availability-slider.slick-initialized").slick("unslick");
+	}
 });
 // slick active
 

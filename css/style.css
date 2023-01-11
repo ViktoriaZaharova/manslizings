@@ -236,6 +236,7 @@
 
 .sold-car .page-product-seller {
   background: #ba4454;
+
   padding: 14px 33px;
 }
 
@@ -244,11 +245,14 @@
 }
 
 .list-price-old {
-  display: block;
   text-decoration: line-through;
+
   font-size: 16px;
+
   padding-left: 5px;
+
   color: #7f877a;
+
   font-weight: 600;
 }
 
@@ -355,10 +359,6 @@
   color: #fff !important;
 }
 
-.page-product-box ul:last-child {
-  margin: 0 0 30px;
-}
-
 .text-black,
 .text-black a {
   color: #000 !important;
@@ -382,4 +382,8 @@
 
 #desired_price-error {
   margin-left: 20px;
+}
+
+.mobile-sorting {
+  z-index: 999;
 }

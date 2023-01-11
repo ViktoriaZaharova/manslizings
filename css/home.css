@@ -309,7 +309,7 @@
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-          overflow: hidden; }
+          overflow: hidden;}
   .card:hover {
     border: 1px solid #8FBA44; }
 
