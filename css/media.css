@@ -639,7 +639,11 @@
   }
   .menu .dropdown-menu {
     position: relative;
+		min-width: 250px;
   }
+	.menu .dropdown-box {
+		margin: 0;
+	}
   .home .container:before {
     width: 436px;
     height: 436px;
