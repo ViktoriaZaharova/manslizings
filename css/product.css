@@ -228,6 +228,7 @@
 
 .leasing-prices .btn {
   padding: 10px 34px;
+	width: fit-content;
 }
 
 .product-gallery-item {
