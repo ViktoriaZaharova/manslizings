@@ -319,7 +319,8 @@ header .phone-text {
   left: 0 !important;
   -webkit-transform: none;
   transform: none;
-  padding: 26px 48px;
+  padding: 26px 38px;
+	min-width: 280px;
 }
 .menu .dropdown-menu__wrapper {
   width: 100%;
