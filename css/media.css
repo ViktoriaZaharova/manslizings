@@ -1782,6 +1782,14 @@
 	.product-gallery .slick-dots .slick-active {
 		background: #fff;
 	}
+
+	.banking-list li {
+		width: calc(50% - 5px);
+	}
+
+	.add-extract {
+		max-width: none;
+	}
 	
 }
 
