@@ -1784,7 +1784,7 @@
 	}
 
 	.banking-list li {
-		width: calc(50% - 5px);
+		max-width: 145px;
 	}
 
 	.add-extract {
@@ -1917,6 +1917,9 @@
   .benefit-table-col h3 {
     font-size: 10px;
   }
+	.banking-list li {
+		max-width: 117px;
+	}
 }
 
 @media (max-width: 350px) {
