@@ -2,1699 +2,1904 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>Manslizing</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="utf-8">
+	<title>Manslizing</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="img/favicon/favicon.ico"/>
-  <link rel="icon" href="img/favicon/favicon.ico" sizes="256x256"/>
-  <link rel="apple-touch-icon" href="img/favicon/favicon.ico"/>
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" />
+	<link rel="icon" href="img/favicon/favicon.ico" sizes="256x256" />
+	<link rel="apple-touch-icon" href="img/favicon/favicon.ico" />
 
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#000">
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#000"> 
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 	<meta name="format-detection" content="telephone=no">
 	<meta name="format-detection" content="date=no">
 	<meta name="format-detection" content="address=no">
 	<meta name="format-detection" content="email=no">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
-  <link rel="stylesheet" href="css/intlTelInput.css">
-  <link rel="stylesheet" href="css/fileup.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/catalog.css">
-  <link rel="stylesheet" href="css/product.css">
-  <link rel="stylesheet" href="css/checkout.css">
-  <link rel="stylesheet" href="css/news.css">
-  <link rel="stylesheet" href="css/modal.css">
-  <link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link rel="stylesheet" href="css/intlTelInput.css">
+	<link rel="stylesheet" href="css/fileup.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/catalog.css">
+	<link rel="stylesheet" href="css/product.css">
+	<link rel="stylesheet" href="css/checkout.css">
+	<link rel="stylesheet" href="css/news.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/media.css">
 
 </head>
 
 <body>
 
-<div class="wrapper">
-  <div class="content">
-
-
-    <div class="overlay-mobile"></div>
-
-    <header>
-      <div class="header-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 d-flex flex-wrap align-items-center">
-              <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
-            
-              <div class="dropdown dropdown-language">
-                <a href="#" class="dropdown-toggle">Рyc</a>
-                <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">Рyc</a>
-                  <a href="#" class="dropdown-item">Lat</a>
-                  <a href="#" class="dropdown-item">Eng</a>
-                </div>
-              </div>
-
-              <div class="schedule-box">
-                <div class="schedule-box__icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#clock"></use>
-                  </svg>
-                </div>
-                <div class="schedule-box__text">
-                  Время работы:
-                  9:00 - 22:00
-                </div>
-              </div>
-
-
-              <a href="mailto:info@manslizings.lv" class="mail">
-                <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
-                <span class="mail-text">info@manslizings.lv</span>
-              </a>
-
-              <a href="tel:+37126612612" class="phone">
-                <span class="phone-icon"><svg class="svg-icon"><use
-                    xlink:href="img/sprite.svg#phone"></use></svg></span>
-                <span class="phone-text">+371 26-612-612</span>
-              </a>
-
-              <div class="btn-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="header-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 d-flex align-items-center flex-wrap">
-              <nav class="nav-menu">
-                <!-- <a href="/" class="logo"><img src="img/logo.png" alt=""></a> -->
-
-                <!-- <a href="#" class="nav-menu__close"></a> -->
-
-                <ul class="menu ul-my">
-                  <li class="dropdown">
-                    <a href="car-leasing.html" class="dropdown-toggle">Автолизинг</a>
-                    <div class="dropdown-menu">
-                      <div class="dropdown-menu__wrapper">
-                        <div class="dropdown-box">
-                          <div class="dropdown-box__title">Для физических лиц</div>
-
-
-                          <ul class="list-dots dropdown-menu-list">
-                            <li><a href="#">Лизинг без официального места работы</a></li>
-                            <li><a href="#">Лизинг без первого взноса</a></li>
-                            <li><a href="#">Лизинг без официального места работы</a></li>
-                            <li><a href="#">Лизинг без первого взноса</a></li>
-                            <li><a href="#">Лизинг без официального места работы</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="dropdown">
-                    <a href="car-loan.html" class="dropdown-toggle">Автокредит</a>
-                    <div class="dropdown-menu">
-                      <div class="dropdown-menu__wrapper">
-                        <div class="dropdown-box">
-                          <div class="dropdown-box__title">Для физических лиц</div>
-
-
-                          <ul class="list-dots dropdown-menu-list">
-                            <li><a href="#">Лизинг без официального места работы</a></li>
-                            <li><a href="#">Лизинг без первого взноса</a></li>
-                            <li><a href="#">Лизинг без официального места работы</a></li>
-                            <li><a href="#">Лизинг без первого взноса</a></li>
-                            <li><a href="#">Лизинг без официального места работы</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li><a href="#">Авто партнеров</a></li>
-                  <li><a href="redemption-auto.html">Выкуп авто</a></li>
-                  <li><a href="#">О нас</a></li>
-                  <li><a href="news.html">Новости</a></li>
-                  <li><a href="contacts.html">Контакты</a></li>
-                </ul>
-
-                <div class="header-box">
-                  <a href="tel:+37126612612" class="phone">
-                <span class="phone-icon"><svg class="svg-icon"><use
-                    xlink:href="img/sprite.svg#phone"></use></svg></span>
-                    <span class="phone-text">+371 26-612-612</span>
-                  </a>
-                  <a href="mailto:info@manslizings.lv" class="mail">
-                    <span class="mail-icon"><svg class="svg-icon"><use
-                        xlink:href="img/sprite.svg#mail"></use></svg></span>
-                    <span class="mail-text">info@manslizings.lv</span>
-                  </a>
-                </div>
-                <div class="schedule-box">
-                  <div class="schedule-box__icon">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#clock"></use>
-                    </svg>
-                  </div>
-                  <div class="schedule-box__text">
-                    <p>Время работы:</p>
-                    <p>9:00 - 22:00</p>
-                  </div>
-                </div>
-
-                <div class="language-box">
-                  <p>Язык:</p>
-                  <ul class="list-language ul-my">
-                    <li><a href="#" class="active">Рyc</a></li>
-                    <li><a href="#">Lat</a></li>
-                    <li><a href="#">Eng</a></li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-    <main class="home">
-      <div class="main-slider w-100">
-        <div class="slide">
-          <div class="main-slider__item">
-            <div class="container">
-              <div class="row">
-                <div class="col-12 d-flex flex-wrap">
-                  <div class="main-content">
-                    <h1>Подержанные авто
-                      <strong class="color-orange">с гарантией</strong></h1>
-                    <div class="box-text">
-                      <ul class="list-dots ul-my font-700">
-                        <li>0€ первый взнос</li>
-                        <li>Полный бак</li>
-                        <li>Реальная гарантия</li>
-                        <li>Выгодный лизинг</li>
-                      </ul>
-                    </div>
-                  </div>
-                  <div class="main-slider__item-img"><img src="img/car1.png" alt="">
-                    <img src="img/car1-mobile.png" alt="" class="img-mobile">
-                  </div>
-
-                  <div class="main-form">
-                    <h3>Проверьте свои лизинговые возможности</h3>
-                    <form method="post" class="form">
-                      <label>
-                        <input type="text" placeholder="Имя и фамилия" name="name">
-                      </label>
-                      <label class="error-label">
-                        <input type="text" class="phone-input1" placeholder="Телефон" name="phone">
-                        <span class="error-form">! Необходимо указать телефон</span>
-                      </label>
-                      <label>
-                        <input type="text" placeholder="Эл.почта" name="mail">
-                      </label>
-                      <label class="checkbox">
-                        <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
-                        <span class="checkbox-custom"></span>
-                        <span class="checkbox-text">Я согласен с <a href="#"
-                                                                    class="d-inline color-white text-decoration">политикой безопасности</a> и <a
-                            href="#"
-                            class="d-inline text-decoration color-white">правилами использования персональных даных</a></span>
-                      </label>
-                      <button type="submit" class="btn btn-orange">Отправить заявку</button>
-                    </form>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </main>
-
-
-    <section class="catalog-car bg-light-blue">
-
-      <div class="container">
-        <div class="row">
-
-          <div class="col-12">
-            <div class="filter-wrapper-container">
-              <div class="btn-filter-wrapper d-flex d-sm-none">
-                <a href="#" class="btn btn-accent btn-toggle-filter">
-                  <span class="btn-text">Подобрать автомобиль</span>
-                  <span class="btn-icon"><svg class="svg-icon"><use
-                      xlink:href="img/sprite.svg#arrow-bottom-filter"></use></svg></span>
-                </a>
-              </div>
-
-              <div class="filter-wrapper">
-                <a href="#" class="btn-close__filter">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#close"></use>
-                  </svg>
-                </a>
-
-                <h2>Подобрать авто</h2>
-
-                <form method="post" class="form-filter">
-                  <div class="row">
-                    <div class="col-12 col-md-5 col-lg-3">
-                      <label>
-                        <select name="select" class="select-my">
-                          <option value="Mersedes">Mersedes</option>
-                          <option value="Mersedes">Mersedes</option>
-                          <option value="Mersedes">Mersedes</option>
-                        </select>
-                      </label>
-                      <label>
-                        <select name="select" class="select-my">
-                          <option value="Модель">Модель</option>
-                          <option value="Модель">Модель</option>
-                          <option value="Модель">Модель</option>
-                        </select>
-                      </label>
-                    </div>
-
-                    <div class="col-12 col-md-7 col-lg-6">
-                      <div class="row">
-                        <div class="col-12 col-sm-6">
-                          <label>
-                            <select name="select" class="select-my">
-                              <option value="Топливо">Топливо</option>
-                              <option value="Топливо">Топливо</option>
-                              <option value="Топливо">Топливо</option>
-                            </select>
-                          </label>
-                        </div>
-                        <div class="col-12 col-sm-6">
-                          <label>
-                            <select name="select" class="select-my">
-                              <option value="Транмиссия">Транмиссия</option>
-                              <option value="Транмиссия">Транмиссия</option>
-                              <option value="Транмиссия">Транмиссия</option>
-                            </select>
-                          </label>
-                        </div>
-                        <div class="col-6">
-                          <label>
-                            <select name="select" class="select-my">
-                              <option value="Год от">Год от</option>
-                              <option value="Год от">Год от</option>
-                              <option value="Год от">Год от</option>
-                            </select>
-                          </label>
-                        </div>
-                        <div class="col-6">
-                          <label>
-                            <select name="select" class="select-my">
-                              <option value="Год до">Год до</option>
-                              <option value="Год до">Год до</option>
-                              <option value="Год до">Год до</option>
-                            </select>
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-
-                    <div class="col-12 col-lg-3">
-                      <label class="label-range">
-                        <div class="range_val">
-                          <div class="form-group">
-                            <label>
-                              <span>от</span>
-                              <input type="text" name="dec" class="dec1">
-                            </label>
-                            <label>
-                              <span>до</span>
-                              <input type="text" name="dec" class="dec2">
-                            </label>
-                          </div>
-                          <div class="slider-range slider-range1"></div>
-                        </div>
-                        <!--                    <span class="filter-range" id="filter__range"></span>-->
-                      </label>
-
-                      <button type="submit" class="btn btn-sm btn-accent">
-                        <span class="btn-text">Подобрать авто</span>
-                      </button>
-                    </div>
-                  </div>
-
-                </form>
-
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="row mb-40 align-items-center">
-          <div class="col-12 col-sm-6">
-            <h2>Новые поступления</h2>
-          </div>
-
-          <div class="col-12 col-sm-6">
-            <div class="all-models-result">Всего в каталоге: 456 моделей</div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card sold-car">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto1.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <a href="#" class="btn btn-border-red btn-sales">продан</a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto2.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag2.svg" alt=""></div>
-                  </li>
-                  <li class="hot">
-                    <div class="icon"><img src="img/fire.svg" alt=""></div>
-                    <p>135 567 km</p>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto3.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto4.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto5.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto6.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto7.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto8.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12">
-            <a href="catalog.html" class="btn btn-accent btn-toggle">
-              <span class="btn-text">Перейти в каталог</span>
-              <span class="btn-arrow"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="callback">
-      <div class="callback-wrapper"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-10">
-            <h2>Проверьте свои лизинговые возможности</h2>
-            <div class="box-text">
-              <p>Это вас ни к чему не обязывает!</p>
-            </div>
-
-            <form method="post" class="form-callback">
-              <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
-              <label><input type="text" placeholder="Телефон" class="phone-input2" name="phone"></label>
-              <label class="checkbox">
-                <input type="checkbox" class="checkbox-inp" name="checkbox" checked>
-                <span class="checkbox-custom"></span>
-                <span class="checkbox-text">Я согласен с <a href="#" class="d-inline color-white text-decoration">политикой безопасности</a> и <a
-                    href="#"
-                    class="d-inline text-decoration color-white">правилами использования персональных даных</a></span>
-              </label>
-              <div class="w-100 order-md-1">
-                <span class="error-form">Вам нужно согласиться с политикой конфиденциальности</span>
-              </div>
-              <button type="submit" class="btn btn-sm btn-orange">Проверить</button>
-            </form>
-          </div>
-        </div>
-      </div>
-
-      <div class="callback-image"><img src="img/car2.png" alt=""></div>
-    </section>
-
-    <section class="sales bg-light-blue p-80">
-      <div class="container">
-        <div class="row mb-40 align-items-center">
-          <div class="col-12 col-md-8">
-            <h2>Акционные предложения <img src="img/fire.svg" class="icon" alt=""></h2>
-          </div>
-
-          <div class="col-12 col-md-4">
-            <div class="all-models-result">Всего в каталоге: 456 моделей</div>
-          </div>
-        </div>
-
-        <div class="row">
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto1.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto2.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag2.svg" alt=""></div>
-                  </li>
-                  <li class="hot">
-                    <div class="icon"><img src="img/fire.svg" alt=""></div>
-                    <p>135 567 km</p>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto3.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto4.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto5.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto6.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto7.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
-            <div class="card">
-              <ul class="label-list">
-                <li class="label-list__item bg-orange">-€700</li>
-                <li class="label-list__item bg-blue">
-                  <a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
-                </li>
-              </ul>
-
-              <a href="product.html" class="card-img"><img src="img/auto8.jpg" alt=""></a>
-
-              <div class="card-body">
-                <a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
-
-                <ul class="list-characteristics ul-my">
-                  <li>
-                    <div class="country-flag"><img src="img/flag1.svg" alt=""></div>
-                  </li>
-                  <li><p>2.0 дизель</p></li>
-                  <li><p>135 567 km</p></li>
-                  <li><p>2011</p></li>
-                  <li><p>5l/100km</p></li>
-                  <li><p>механика</p></li>
-                </ul>
-                <div class="card-footer">
-                  <div class="card-footer__item">
-                    <p>Цена:</p>
-                    <div class="price font-700">€13 950</div>
-                  </div>
-                  <div class="card-footer__item">
-                    <p>Лизинг от:</p>
-                    <div class="price color-red font-700">€100</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-12">
-            <a href="catalog.html" class="btn btn-accent btn-toggle">
-              <span class="btn-text">Перейти в каталог</span>
-              <span class="btn-arrow"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#arrow-right"></use></svg></span>
-            </a>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="advantages m-60">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2>Почему выбирают нас</h2>
-          </div>
-        </div>
-        <div class="row">
-          <div class="col-12 col-sm-6 col-lg-4 mb-20">
-            <div class="advantages-box">
-              <div class="advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
-              <div class="advantages-box__body">
-                <p>Бесплатная перерегистрация
-                  в CSDD</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-20">
-            <div class="advantages-box">
-              <div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
-              <div class="advantages-box__body">
-                <p>Выгодный лизинг</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-20">
-            <div class="advantages-box">
-              <div class="advantages-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
-              <div class="advantages-box__body">
-                <p>Авто с полным баком</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-20">
-            <div class="advantages-box">
-              <div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
-              <div class="advantages-box__body">
-                <p>Реальная гарантия</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-20">
-            <div class="advantages-box">
-              <div class="advantages-box__icon"><img src="img/adv-icon5.svg" alt=""></div>
-              <div class="advantages-box__body">
-                <p>€0 первый взнос</p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-sm-6 col-lg-4 mb-20">
-            <div class="advantages-box">
-              <div class="advantages-box__icon"><img src="img/adv-icon6.svg" alt=""></div>
-              <div class="advantages-box__body">
-                <p>Езжай сейчас, начинай платить через 3 месяца</p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="interested">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center">
-            <h2>Вас может заинтересовать</h2>
-          </div>
-        </div>
-
-        <div class="row interested-slider">
-          <div class="col-12 col-md-4">
-            <div class="interested-card">
-              <div class="interested-card__icon"><img src="img/interested-icon1.svg" alt=""></div>
-              <h3>Автокредит</h3>
-              <div class="box-text">
-                <p>Подходящее решение, если планируете приобрести <br>подержанный автомобиль.</p>
-              </div>
-
-              <a href="#" class="btn btn-sm btn-orange">Подробнее</a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="interested-card">
-              <div class="interested-card__icon"><img src="img/interested-icon2.svg" alt=""></div>
-              <h3>Страхование KASKO</h3>
-              <div class="box-text">
-                <p>Бесплатная техническая помощь, связанная с автомобилем, и гарантированное использование оригинальных
-                  запчастей при ремонте автомобилей, которые не старше 5 лет.</p>
-              </div>
-
-              <a href="#" class="btn btn-sm btn-orange">Подробнее</a>
-            </div>
-          </div>
-          <div class="col-12 col-md-4">
-            <div class="interested-card">
-              <div class="interested-card__icon"><img src="img/interested-icon3.svg" alt=""></div>
-              <h3>Страхование OCTA</h3>
-              <div class="box-text">
-                <p>Все договоры финансовых услуг в одном месте. Не надо беспокоиться о платежах, поскольку они будут
-                  осуществляться автоматически с вашего расчётного счёта.</p>
-              </div>
-
-              <a href="#" class="btn btn-sm btn-orange">Подробнее</a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="marks">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-4">
-            <div class="marks-content">
-              <h2>У нас вы найдете любые марки авто</h2>
-              <div class="box-text">
-                <p>Покупка авто это важный шаг, поэтому, чтобы не запутаться в выборе и приобрести действительно хороший
-                  автомобиль, <strong class="font-700">Manslīzings.lv</strong> поможет сделать процесс покупки ещё более
-                  простым, удобным и быстрым. </p>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-8">
-            <ul class="list-marks ul-my">
-              <li><a href="#"><img src="img/mark1.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark2.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark3.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark4.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark5.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark6.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark7.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark8.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark9.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark10.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark11.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark12.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark13.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark14.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark15.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark16.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark17.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark18.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark19.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark20.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark21.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark22.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark23.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark24.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark25.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark26.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark27.png" alt=""></a></li>
-              <li><a href="#"><img src="img/mark28.png" alt=""></a></li>
-            </ul>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="question p-80">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 text-center color-white">
-            <h2>Часто задаваемые вопросы</h2>
-          </div>
-
-          <div class="col-12 col-lg-6">
-            <div class="question-box">
-              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse1">
-                <h4>Как купить автомобиль максимально выгодно?</h4>
-                <span class="collapse-icon"></span>
-              </div>
-              <div class="collapse" id="collapse1">
-                <div class="question-box__body">
-                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
-                    факторов,
-                    таких как его текущее состояние, способность заводиться или двигаться. </p>
-                </div>
-              </div>
-            </div>
-            <div class="question-box">
-              <div class="question-box__head" data-toggle="collapse" data-target="#collapse2">
-                <h4>Как купить автомобиль максимально выгодно?</h4>
-                <span class="collapse-icon"></span>
-              </div>
-              <div class="collapse show" id="collapse2">
-                <div class="question-box__body">
-                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
-                    факторов,
-                    таких как его текущее состояние, способность заводиться или двигаться. </p>
-                </div>
-              </div>
-            </div>
-            <div class="question-box">
-              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse3">
-                <h4>Как купить автомобиль максимально выгодно?</h4>
-                <span class="collapse-icon"></span>
-              </div>
-              <div class="collapse" id="collapse3">
-                <div class="question-box__body">
-                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
-                    факторов,
-                    таких как его текущее состояние, способность заводиться или двигаться. </p>
-                </div>
-              </div>
-            </div>
-            <div class="question-box">
-              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse4">
-                <h4>Как купить автомобиль максимально выгодно?</h4>
-                <span class="collapse-icon"></span>
-              </div>
-              <div class="collapse" id="collapse4">
-                <div class="question-box__body">
-                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
-                    факторов,
-                    таких как его текущее состояние, способность заводиться или двигаться. </p>
-                </div>
-              </div>
-            </div>
-            <div class="question-box">
-              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse5">
-                <h4>Как купить автомобиль максимально выгодно?</h4>
-                <span class="collapse-icon"></span>
-              </div>
-              <div class="collapse" id="collapse5">
-                <div class="question-box__body">
-                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
-                    факторов,
-                    таких как его текущее состояние, способность заводиться или двигаться. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-12 col-lg-6">
-            <div class="question-box">
-              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse6">
-                <h4>Как купить автомобиль максимально выгодно?</h4>
-                <span class="collapse-icon"></span>
-              </div>
-              <div class="collapse" id="collapse6">
-                <div class="question-box__body">
-                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
-                    факторов,
-                    таких как его текущее состояние, способность заводиться или двигаться. </p>
-                </div>
-              </div>
-            </div>
-            <div class="question-box">
-              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse7">
-                <h4>Как купить автомобиль максимально выгодно?</h4>
-                <span class="collapse-icon"></span>
-              </div>
-              <div class="collapse" id="collapse7">
-                <div class="question-box__body">
-                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
-                    факторов,
-                    таких как его текущее состояние, способность заводиться или двигаться. </p>
-                </div>
-              </div>
-            </div>
-            <div class="question-box">
-              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse8">
-                <h4>Как купить автомобиль максимально выгодно?</h4>
-                <span class="collapse-icon"></span>
-              </div>
-              <div class="collapse" id="collapse8">
-                <div class="question-box__body">
-                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
-                    факторов,
-                    таких как его текущее состояние, способность заводиться или двигаться. </p>
-                </div>
-              </div>
-            </div>
-            <div class="question-box">
-              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse9">
-                <h4>Как купить автомобиль максимально выгодно?</h4>
-                <span class="collapse-icon"></span>
-              </div>
-              <div class="collapse" id="collapse9">
-                <div class="question-box__body">
-                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
-                    факторов,
-                    таких как его текущее состояние, способность заводиться или двигаться. </p>
-                </div>
-              </div>
-            </div>
-            <div class="question-box">
-              <div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse10">
-                <h4>Как купить автомобиль максимально выгодно?</h4>
-                <span class="collapse-icon"></span>
-              </div>
-              <div class="collapse" id="collapse10">
-                <div class="question-box__body">
-                  <p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
-                    факторов,
-                    таких как его текущее состояние, способность заводиться или двигаться. </p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="reviews p-80 bg-light-blue">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <h2>Отзывы о нашей работе</h2>
-          </div>
-
-          <div class="col-12">
-            <div class="reviews-slider">
-              <div class="slide">
-                <div class="reviews-box">
-                  <div class="reviews-box__body">
-                    <h4>Отличные менеджеры!</h4>
-                    <p>Благодарю компанию «Manslīzings.lv», за быструю продажу моего автомобиля Toyota Sprinter -
-                      качественно, быстро, сошлись в цене! Всем советую компанию «Manslīzings.lv»!</p>
-                  </div>
-                  <div class="reviews-box__footer">
-                    <div class="reviews-box__photo">А</div>
-                    <div class="reviews-box__user">
-                      <div class="name">Алексей Иванов</div>
-                      <div class="city">Рига</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="reviews-box">
-                  <div class="reviews-box__body">
-                    <h4>Спасибо за помощь!</h4>
-                    <p>Этот автовыкуп очень удобный честный надежный. Я уезжаю заграницу нужно было срочно продать авто
-                      шевроле лачетти, ребята выручили дали хорошие деньги, еще я попросил если можно заплатить в евро
-                      выплатили в той валюте что я просил. Очень рад Спасибо Большое! </p>
-                  </div>
-                  <div class="reviews-box__footer">
-                    <div class="reviews-box__photo">Д</div>
-                    <div class="reviews-box__user">
-                      <div class="name">Дмитрий Бартков</div>
-                      <div class="city">Рига</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="reviews-box">
-                  <div class="reviews-box__body">
-                    <h4>Лучший автовыкуп.</h4>
-                    <p>Очень легко продал свой "Опель-Вектра" по обоюдно устраивающих нас условиях. Все очень
-                      профессионально, видно что человек занимается этим не ПЕРВЫЙ день. РЕКОМЕНДУЮ!</p>
-                  </div>
-                  <div class="reviews-box__footer">
-                    <div class="reviews-box__photo">В</div>
-                    <div class="reviews-box__user">
-                      <div class="name">Виктор Куценко</div>
-                      <div class="city">Рига</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="reviews-box">
-                  <div class="reviews-box__body">
-                    <h4>Отличные менеджеры!</h4>
-                    <p>Благодарю компанию «Manslīzings.lv», за быструю продажу моего автомобиля Toyota Sprinter -
-                      качественно, быстро, сошлись в цене! Всем советую компанию «Manslīzings.lv»!</p>
-                  </div>
-                  <div class="reviews-box__footer">
-                    <div class="reviews-box__photo">А</div>
-                    <div class="reviews-box__user">
-                      <div class="name">Алексей Иванов</div>
-                      <div class="city">Рига</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="slide">
-                <div class="reviews-box">
-                  <div class="reviews-box__body">
-                    <h4>Спасибо за помощь!</h4>
-                    <p>Этот автовыкуп очень удобный честный надежный. Я уезжаю заграницу нужно было срочно продать авто
-                      шевроле лачетти, ребята выручили дали хорошие деньги, еще я попросил если можно заплатить в евро
-                      выплатили в той валюте что я просил. Очень рад Спасибо Большое! </p>
-                  </div>
-                  <div class="reviews-box__footer">
-                    <div class="reviews-box__photo">Д</div>
-                    <div class="reviews-box__user">
-                      <div class="name">Дмитрий Бартков</div>
-                      <div class="city">Рига</div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <section class="callback callback-v2">
-      <div class="callback-wrapper"></div>
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-10">
-            <h2>Возникли вопросы? Давайте созвонимся!</h2>
-            <div class="box-text">
-              <p>Заполните форму и в ближайшее время наш менеджер свяжется с вами</p>
-            </div>
-
-            <form method="post" class="form-callback">
-              <label><input type="text" placeholder="Имя и фамилия" name="name"></label>
-              <label><input type="text" placeholder="Телефон" class="phone-input3" name="phone"></label>
-              <button type="submit" class="btn btn-sm btn-orange">Отправить заявку</button>
-            </form>
-          </div>
-        </div>
-      </div>
-      <div class="callback-image"><img src="img/car3.png" alt=""></div>
-    </section>
-
-    <section class="seo-section m-80">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 mb-30">
-            <h2>Купить авто в лизинг в Риге.</h2>
-          </div>
-
-          <div class="col-12 col-lg-11">
-            <div class="box-text">
-              <p>Хочешь купить подержанный автомобиль с минимальными вложениями и без кредита? Есть выгодная
-                альтернатива -
-                купить машину в лизинг. Купить авто в лизинг значит, взять в аренду транспортное средство на длительный
-                срок
-                (больше года) с правом его выкупа. Для физических лиц это работает так: клиент выбирает транспортное
-                средство, чтобы купить бу автомобиль в лизинг, оплачивает первоначальный взнос за него, а лизинговая
-                компания покупает его, оформляет все документы и передает машину в пользование клиенту.</p>
-
-              <p>Каждый месяц клиент оплачивает ежемесячный платеж за лизинг авто. По истечению срока автолизинга,
-                клиент
-                получает бу авто в собственность. Купить бу автомобиль в лизинг особенно выгодно для тех людей, кому
-                необходимо приобрести транспортное средство, но денег на полный расчет не хватает. И тем, кого не
-                устраивает
-                невыгодные условия кредитования банков.</p>
-
-              <p>Автолизинг по сравнению с кредитом, существенно выгоднее. Лизинговая компания не требует официального
-                трудоустройства, справку на справку, искать поручителей, страховать жизнь и здоровье. Еще процентная
-                ставка
-                и переплата при кредите выше, чем при автолизинге. Банки включают в платежи навязанные услуги. Например,
-                страхование жизни и здоровья заемщика. Из-за страховки, у клиента ежемесячные платежи и переплата по
-                кредиту
-                больше.</p>
-
-              <strong>Лизинг авто с пробегом от компании manslizings в Латвии</strong>
-              <p>
-                Взять проверенное бу авто в Риге и других городах Латвии в лизинг можно в компании manslizings. Клиент
-                сам
-                выбирает авто любой марки для покупки и обращается к нам.
-                Услуга лизинга бу авто для частных лиц есть в городах Латвии: Рига, Талси, Валмиера, Елгава, Кулдига,
-                Цесис.
-                Можно взять в лизинг бу авто в Риге без ограничения пробега, любого бренда и модели, с рук, на рынке или
-                с
-                автоплощадки.</p>
-
-              <strong>Наши преимущества:</strong>
-              <ul>
-                <li>ограничений в выборе бренда и модели авто нет;</li>
-                <li>можно приобрести б у машину от хозяина от 5000 до 50 000 долларов;</li>
-                <li>все авто с пробегом проверены с юридической стороны;</li>
-                <li>машина в лизинг для физических лиц оформляется за 1 день без лишних документов;</li>
-              </ul>
-
-              <p>Чтобы купить бу авто в лизинг в Латвии по выгодным условиям, потребуется минимальный пакет документов и
-                времени. Заявку на лизинг авто можно оставить через сайт.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <div class="contacts p-45">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="contacts-box">
-              <div class="list-contacts-item">
-                <div class="list-contacts-item__icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#location"></use>
-                  </svg>
-                </div>
-                <div class="list-contacts-item__text">Riga - Maskavas iela 418, LV-1063</div>
-              </div>
-
-              <ul class="list-maps ul-my">
-                <li>
-                  <a href="#" target="_blank" class="list-maps-links waze-link">
-                    <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
-                    <span class="list-maps-links__text">Проложить маршрут в Waze</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" class="list-maps-links google-link">
-                    <span class="list-maps-links__icon"><img src="img/google.svg" alt=""></span>
-                    <span class="list-maps-links__text">Показать на карте</span>
-                  </a>
-                </li>
-              </ul>
-
-              <a href="tel:+37126612612" class="list-contacts-item">
-            <span class="list-contacts-item__icon"><svg class="svg-icon"><use
-                xlink:href="img/sprite.svg#phone"></use></svg></span>
-                <span class="list-contacts-item__text">+371 26-612-612</span>
-              </a>
-              <a href="mailto:info@manslizings.lv" class="list-contacts-item">
-            <span class="list-contacts-item__icon"><svg class="svg-icon"><use
-                xlink:href="img/sprite.svg#mail"></use></svg></span>
-                <span class="list-contacts-item__text">info@manslizings.lv</span>
-              </a>
-              <a href="#" class="list-contacts-item">
-              <span class="list-contacts-item__icon telegram-icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#telegram"></use></svg></span>
-                <span class="list-contacts-item__text">Написать в Telegram</span>
-              </a>
-              <a href="#" class="list-contacts-item">
-              <span class="list-contacts-item__icon whatsapp-icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#whatsapp"></use></svg></span>
-                <span class="list-contacts-item__text">Написать в WhatsApp</span>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="map">
-        <iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2179.0674229301007!2d24.208456416014542!3d56.89623178087463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed24236c232f3%3A0xed297e4a9b831e4f!2zTWFza2F2YXMgaWVsYSA0MTgsIExhdGdhbGVzIHByaWVrxaFwaWxzxJN0YSwgUsSrZ2EsIExWLTEwNjMsINCb0LDRgtCy0LjRjw!5e0!3m2!1sru!2sua!4v1656915368560!5m2!1sru!2sua"
-            style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
-  </div>
-
-  <footer>
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-3">
-            <a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
-            <div class="description-company">
-              <p>Компания «Manslizing» работает на рынке автоуслуг Латвии с 2002 года! Купите автомобиль на выгодных
-                условиях.</p>
-            </div>
-          </div>
-          <div class="col-12 col-lg-9 d-flex flex-wrap">
-            <ul class="footer-menu ul-my">
-              <li><a href="#">Автолизинг</a></li>
-              <li><a href="#">Автокредит</a></li>
-              <li><a href="#">Авто партнеров</a></li>
-              <li><a href="redemption-auto.html">Выкуп авто</a></li>
-            </ul>
-            <ul class="footer-menu ul-my">
-              <li><a href="#">О нас</a></li>
-              <li><a href="news.html">Новости</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-            </ul>
-
-            <div class="footer-box">
-              <a href="tel:+37126612612" class="phone">
-                <span class="phone-icon"><svg class="svg-icon"><use
-                    xlink:href="img/sprite.svg#phone"></use></svg></span>
-                <span class="phone-text">+371 26-612-612</span>
-              </a>
-              <a href="mailto:info@manslizings.lv" class="mail">
-                <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
-                <span class="mail-text">info@manslizings.lv</span>
-              </a>
-              <div class="schedule-box">
-                <div class="schedule-box__icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#clock"></use>
-                  </svg>
-                </div>
-                <div class="schedule-box__text">
-                  Время работы:
-                  9:00 - 22:00
-                </div>
-              </div>
-            </div>
-
-            <div class="footer-box">
-              <div class="address">
-              <span class="phone-icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#location"></use></svg></span>
-                <span class="phone-text">Riga - Maskavas iela 418, LV-1063</span>
-              </div>
-              <ul class="list-maps ul-my">
-                <li>
-                  <a href="#" target="_blank" class="list-maps-links waze-link">
-                    <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
-                    <span class="list-maps-links__text">Проложить маршрут в Waze</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" class="list-maps-links google-link">
-                    <span class="list-maps-links__icon"><img src="img/google.svg" alt=""></span>
-                    <span class="list-maps-links__text">Показать на карте</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
-            <div class="registration-number">SIA ZEVA AUTO Reg. nr. 40103942814</div>
-            <div class="copyright">© 2021 Все права защищены</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-</div>
-
-<a href="#" class="btn-top-scroll"><svg class="svg-icon">
-		<use xlink:href="img/sprite.svg#arrow-right"></use>
-	</svg></a>
-
-<script src="js/jquery.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<script src="js/fileup.js"></script>
-<script src="js/intlTelInput.js"></script>
-<script src="js/common.js"></script>
+	<div class="wrapper">
+		<div class="content">
+
+			<div class="overlay-mobile"></div>
+
+			<header>
+				<div class="header-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 d-flex flex-wrap align-items-center">
+								<a href="#" class="btn-search-header">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg>
+								</a>
+
+								<form method="post" class="form-search">
+									<label>
+										<input type="text" placeholder="Поиск о сайту" name="search">
+									</label>
+								</form>
+
+								<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+
+								<div class="dropdown dropdown-language">
+									<a href="#" class="dropdown-toggle">Рyc</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Рyc</a>
+										<a href="#" class="dropdown-item">Lat</a>
+										<a href="#" class="dropdown-item">Eng</a>
+									</div>
+								</div>
+
+								<div class="schedule-box">
+									<div class="schedule-box__icon">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#clock"></use>
+										</svg>
+									</div>
+									<div class="schedule-box__text">
+										Время работы:
+										9:00 - 22:00
+									</div>
+								</div>
+
+
+								<a href="mailto:info@manslizings.lv" class="mail">
+									<span class="mail-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#mail"></use>
+										</svg></span>
+									<span class="mail-text">info@manslizings.lv</span>
+								</a>
+
+								<a href="tel:+37126612612" class="phone">
+									<span class="phone-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#phone"></use>
+										</svg></span>
+									<span class="phone-text">+371 26-612-612</span>
+								</a>
+
+								<div class="btn-burger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header-bottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 d-flex align-items-center flex-wrap">
+								<nav class="nav-menu">
+									<!-- <a href="/" class="logo"><img src="img/logo.png" alt=""></a> -->
+
+									<!-- <a href="#" class="nav-menu__close"></a> -->
+
+									<ul class="menu ul-my">
+										<li class="dropdown">
+											<a href="car-leasing.html" class="dropdown-toggle">Автолизинг</a>
+											<div class="dropdown-menu">
+												<div class="dropdown-menu__wrapper">
+													<div class="dropdown-box">
+														<div class="dropdown-box__title">Для физических лиц</div>
+
+
+														<ul class="list-dots dropdown-menu-list">
+															<li><a href="#">Лизинг без официального места работы</a></li>
+															<li><a href="#">Лизинг без первого взноса</a></li>
+															<li><a href="#">Лизинг без официального места работы</a></li>
+															<li><a href="#">Лизинг без первого взноса</a></li>
+															<li><a href="#">Лизинг без официального места работы</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="dropdown">
+											<a href="car-loan.html" class="dropdown-toggle">Автокредит</a>
+											<div class="dropdown-menu">
+												<div class="dropdown-menu__wrapper">
+													<div class="dropdown-box">
+														<div class="dropdown-box__title">Для физических лиц</div>
+
+
+														<ul class="list-dots dropdown-menu-list">
+															<li><a href="#">Лизинг без официального места работы</a></li>
+															<li><a href="#">Лизинг без первого взноса</a></li>
+															<li><a href="#">Лизинг без официального места работы</a></li>
+															<li><a href="#">Лизинг без первого взноса</a></li>
+															<li><a href="#">Лизинг без официального места работы</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li><a href="#">Авто партнеров</a></li>
+										<li><a href="redemption-auto.html">Выкуп авто</a></li>
+										<li><a href="#">О нас</a></li>
+										<li><a href="news.html">Новости</a></li>
+										<li><a href="contacts.html">Контакты</a></li>
+									</ul>
+
+									<div class="header-box">
+										<a href="tel:+37126612612" class="phone">
+											<span class="phone-icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#phone"></use>
+												</svg></span>
+											<span class="phone-text">+371 26-612-612</span>
+										</a>
+										<a href="mailto:info@manslizings.lv" class="mail">
+											<span class="mail-icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#mail"></use>
+												</svg></span>
+											<span class="mail-text">info@manslizings.lv</span>
+										</a>
+
+										<div class="schedule-box">
+											<div class="schedule-box__icon">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#clock"></use>
+												</svg>
+											</div>
+											<div class="schedule-box__text">
+												<p>Работаем до 19:00</p>
+											</div>
+										</div>
+									</div>
+									
+
+									<div class="language-box">
+										<p>Язык:</p>
+										<ul class="list-language ul-my">
+											<li><a href="#" class="active">Рyc</a></li>
+											<li><a href="#">Lat</a></li>
+											<li><a href="#">Eng</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
+
+			<main class="home">
+				<div class="main-slider w-100">
+					<div class="slide">
+						<div class="main-slider__item">
+							<div class="container">
+								<div class="row">
+									<div class="col-12 d-flex flex-wrap">
+										<div class="main-content">
+											<h1>Подержанные авто
+												<strong class="color-orange">с гарантией</strong>
+											</h1>
+											<div class="box-text">
+												<ul class="list-dots ul-my font-700">
+													<li>0€ первый взнос</li>
+													<li>Полный бак</li>
+													<li>Реальная гарантия</li>
+													<li>Выгодный лизинг</li>
+												</ul>
+											</div>
+										</div>
+										<div class="main-slider__item-img"><img src="img/car1.png" alt="">
+											<img src="img/car1-mobile.png" alt="" class="img-mobile">
+										</div>
+
+										<div class="main-form">
+											<h3>Проверьте свои лизинговые возможности</h3>
+											<form method="post" class="form">
+												<label>
+													<input type="text" placeholder="Имя и фамилия" name="name">
+												</label>
+												<label class="error-label">
+													<input type="text" class="phone-input1" placeholder="Телефон" name="phone">
+													<span class="error-form">! Необходимо указать телефон</span>
+												</label>
+												<label>
+													<input type="text" placeholder="Эл.почта" name="mail">
+												</label>
+												<label class="checkbox">
+													<input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Я согласен с <a href="#"
+															class="d-inline color-white text-decoration">политикой безопасности</a> и <a href="#"
+															class="d-inline text-decoration color-white">правилами использования персональных
+															даных</a></span>
+												</label>
+												<button type="submit" class="btn btn-orange">Отправить заявку</button>
+											</form>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</main>
+
+
+			<section class="catalog-car bg-light-blue">
+
+				<div class="container">
+					<div class="row">
+
+						<div class="col-12">
+							<div class="filter-wrapper-container">
+								<div class="btn-filter-wrapper d-flex d-sm-none">
+									<a href="#" class="btn btn-accent btn-toggle-filter">
+										<span class="btn-text">Подобрать автомобиль</span>
+										<span class="btn-icon"><svg class="svg-icon">
+												<use xlink:href="img/sprite.svg#arrow-bottom-filter"></use>
+											</svg></span>
+									</a>
+								</div>
+
+								<div class="filter-wrapper">
+									<a href="#" class="btn-close__filter">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#close"></use>
+										</svg>
+									</a>
+
+									<div class="filter-wrapper__head">
+										<h2>Подобрать авто</h2>
+										<form method="post" class="form-search form-search-filter">
+											<label>
+												<input type="text" placeholder="Быстрый поиск" name="search">
+											</label>
+											<button type="submit" class="btn btn-sm"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#search"></use>
+												</svg></button>
+										</form>
+									</div>
+
+									<form method="post" class="form-filter">
+										<div class="row">
+											<div class="col-12 col-md-5 col-lg-3">
+												<label>
+													<select name="select" class="select-my">
+														<option value="Mersedes">Mersedes</option>
+														<option value="Mersedes">Mersedes</option>
+														<option value="Mersedes">Mersedes</option>
+													</select>
+												</label>
+												<label>
+													<select name="select" class="select-my">
+														<option value="Модель">Модель</option>
+														<option value="Модель">Модель</option>
+														<option value="Модель">Модель</option>
+													</select>
+												</label>
+											</div>
+
+											<div class="col-12 col-md-7 col-lg-6">
+												<div class="row">
+													<div class="col-12 col-sm-6">
+														<label>
+															<select name="select" class="select-my">
+																<option value="Топливо">Топливо</option>
+																<option value="Топливо">Топливо</option>
+																<option value="Топливо">Топливо</option>
+															</select>
+														</label>
+													</div>
+													<div class="col-12 col-sm-6">
+														<label>
+															<select name="select" class="select-my">
+																<option value="Транмиссия">Транмиссия</option>
+																<option value="Транмиссия">Транмиссия</option>
+																<option value="Транмиссия">Транмиссия</option>
+															</select>
+														</label>
+													</div>
+													<div class="col-6">
+														<label>
+															<select name="select" class="select-my">
+																<option value="Год от">Год от</option>
+																<option value="Год от">Год от</option>
+																<option value="Год от">Год от</option>
+															</select>
+														</label>
+													</div>
+													<div class="col-6">
+														<label>
+															<select name="select" class="select-my">
+																<option value="Год до">Год до</option>
+																<option value="Год до">Год до</option>
+																<option value="Год до">Год до</option>
+															</select>
+														</label>
+													</div>
+												</div>
+											</div>
+
+											<div class="col-12 col-lg-3">
+												<label class="label-range">
+													<div class="range_val">
+														<div class="form-group">
+															<label>
+																<span>от</span>
+																<input type="text" name="dec" class="dec1">
+															</label>
+															<label>
+																<span>до</span>
+																<input type="text" name="dec" class="dec2">
+															</label>
+														</div>
+														<div class="slider-range slider-range1"></div>
+													</div>
+													<!--                    <span class="filter-range" id="filter__range"></span>-->
+												</label>
+
+												<button type="submit" class="btn btn-sm btn-accent">
+													<span class="btn-text">Подобрать авто</span>
+												</button>
+											</div>
+										</div>
+
+									</form>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="row mb-40 align-items-center">
+						<div class="col-12 col-sm-6">
+							<h2>Новые поступления</h2>
+						</div>
+
+						<div class="col-12 col-sm-6">
+							<div class="all-models-result">Всего в каталоге: 456 моделей</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card sold-car">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto1.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<a href="#" class="btn btn-border-red btn-sales">продан</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto2.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag2.svg" alt=""></div>
+										</li>
+										<li class="hot">
+											<div class="icon"><img src="img/fire.svg" alt=""></div>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto3.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto4.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto5.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto6.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto7.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto8.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<a href="catalog.html" class="btn btn-accent btn-toggle">
+								<span class="btn-text">Перейти в каталог</span>
+								<span class="btn-arrow"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#arrow-right"></use>
+									</svg></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="callback">
+				<div class="callback-wrapper"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-10">
+							<h2>Проверьте свои лизинговые возможности</h2>
+							<div class="box-text">
+								<p>Это вас ни к чему не обязывает!</p>
+							</div>
+
+							<form method="post" class="form-callback">
+								<label><input type="text" placeholder="Имя и фамилия" name="name"></label>
+								<label><input type="text" placeholder="Телефон" class="phone-input2" name="phone"></label>
+								<label class="checkbox">
+									<input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+									<span class="checkbox-custom"></span>
+									<span class="checkbox-text">Я согласен с <a href="#"
+											class="d-inline color-white text-decoration">политикой безопасности</a> и <a href="#"
+											class="d-inline text-decoration color-white">правилами использования персональных даных</a></span>
+								</label>
+								<div class="w-100 order-md-1">
+									<span class="error-form">Вам нужно согласиться с политикой конфиденциальности</span>
+								</div>
+								<button type="submit" class="btn btn-sm btn-orange">Проверить</button>
+							</form>
+						</div>
+					</div>
+				</div>
+
+				<div class="callback-image"><img src="img/car2.png" alt=""></div>
+			</section>
+
+			<section class="sales bg-light-blue p-80">
+				<div class="container">
+					<div class="row mb-40 align-items-center">
+						<div class="col-12 col-md-8">
+							<h2>Акционные предложения <img src="img/fire.svg" class="icon" alt=""></h2>
+						</div>
+
+						<div class="col-12 col-md-4">
+							<div class="all-models-result">Всего в каталоге: 456 моделей</div>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto1.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto2.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag2.svg" alt=""></div>
+										</li>
+										<li class="hot">
+											<div class="icon"><img src="img/fire.svg" alt=""></div>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto3.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto4.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto5.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto6.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto7.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-6 col-md-4 col-lg-3 mb-20 card-col">
+							<div class="card">
+								<ul class="label-list">
+									<li class="label-list__item bg-orange">-€700</li>
+									<li class="label-list__item bg-blue">
+										<a href="#" class="logo-company"><img src="img/logo-company.png" alt=""></a>
+									</li>
+								</ul>
+
+								<a href="product.html" class="card-img"><img src="img/auto8.jpg" alt=""></a>
+
+								<div class="card-body">
+									<a href="product.html" class="card-title">Volkswagen Passat alltrack</a>
+
+									<ul class="list-characteristics ul-my">
+										<li>
+											<div class="country-flag"><img src="img/flag1.svg" alt=""></div>
+										</li>
+										<li>
+											<p>2.0 дизель</p>
+										</li>
+										<li>
+											<p>135 567 km</p>
+										</li>
+										<li>
+											<p>2011</p>
+										</li>
+										<li>
+											<p>5l/100km</p>
+										</li>
+										<li>
+											<p>механика</p>
+										</li>
+									</ul>
+									<div class="card-footer">
+										<div class="card-footer__item">
+											<p>Цена:</p>
+											<div class="price font-700">€13 950</div>
+										</div>
+										<div class="card-footer__item">
+											<p>Лизинг от:</p>
+											<div class="price color-red font-700">€100</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-12">
+							<a href="catalog.html" class="btn btn-accent btn-toggle">
+								<span class="btn-text">Перейти в каталог</span>
+								<span class="btn-arrow"><svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#arrow-right"></use>
+									</svg></span>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="advantages m-60">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2>Почему выбирают нас</h2>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 col-sm-6 col-lg-4 mb-20">
+							<div class="advantages-box">
+								<div class="advantages-box__icon"><img src="img/adv-icon1.svg" alt=""></div>
+								<div class="advantages-box__body">
+									<p>Бесплатная перерегистрация
+										в CSDD</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 mb-20">
+							<div class="advantages-box">
+								<div class="advantages-box__icon"><img src="img/adv-icon2.svg" alt=""></div>
+								<div class="advantages-box__body">
+									<p>Выгодный лизинг</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 mb-20">
+							<div class="advantages-box">
+								<div class="advantages-box__icon"><img src="img/adv-icon3.svg" alt=""></div>
+								<div class="advantages-box__body">
+									<p>Авто с полным баком</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 mb-20">
+							<div class="advantages-box">
+								<div class="advantages-box__icon"><img src="img/adv-icon4.svg" alt=""></div>
+								<div class="advantages-box__body">
+									<p>Реальная гарантия</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 mb-20">
+							<div class="advantages-box">
+								<div class="advantages-box__icon"><img src="img/adv-icon5.svg" alt=""></div>
+								<div class="advantages-box__body">
+									<p>€0 первый взнос</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-sm-6 col-lg-4 mb-20">
+							<div class="advantages-box">
+								<div class="advantages-box__icon"><img src="img/adv-icon6.svg" alt=""></div>
+								<div class="advantages-box__body">
+									<p>Езжай сейчас, начинай платить через 3 месяца</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="interested">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 text-center">
+							<h2>Вас может заинтересовать</h2>
+						</div>
+					</div>
+
+					<div class="row interested-slider">
+						<div class="col-12 col-md-4">
+							<div class="interested-card">
+								<div class="interested-card__icon"><img src="img/interested-icon1.svg" alt=""></div>
+								<h3>Автокредит</h3>
+								<div class="box-text">
+									<p>Подходящее решение, если планируете приобрести <br>подержанный автомобиль.</p>
+								</div>
+
+								<a href="#" class="btn btn-sm btn-orange">Подробнее</a>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="interested-card">
+								<div class="interested-card__icon"><img src="img/interested-icon2.svg" alt=""></div>
+								<h3>Страхование KASKO</h3>
+								<div class="box-text">
+									<p>Бесплатная техническая помощь, связанная с автомобилем, и гарантированное использование
+										оригинальных
+										запчастей при ремонте автомобилей, которые не старше 5 лет.</p>
+								</div>
+
+								<a href="#" class="btn btn-sm btn-orange">Подробнее</a>
+							</div>
+						</div>
+						<div class="col-12 col-md-4">
+							<div class="interested-card">
+								<div class="interested-card__icon"><img src="img/interested-icon3.svg" alt=""></div>
+								<h3>Страхование OCTA</h3>
+								<div class="box-text">
+									<p>Все договоры финансовых услуг в одном месте. Не надо беспокоиться о платежах, поскольку они будут
+										осуществляться автоматически с вашего расчётного счёта.</p>
+								</div>
+
+								<a href="#" class="btn btn-sm btn-orange">Подробнее</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="marks">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-4">
+							<div class="marks-content">
+								<h2>У нас вы найдете любые марки авто</h2>
+								<div class="box-text">
+									<p>Покупка авто это важный шаг, поэтому, чтобы не запутаться в выборе и приобрести действительно
+										хороший
+										автомобиль, <strong class="font-700">Manslīzings.lv</strong> поможет сделать процесс покупки ещё
+										более
+										простым, удобным и быстрым. </p>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-8">
+							<ul class="list-marks ul-my">
+								<li><a href="#"><img src="img/mark1.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark2.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark3.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark4.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark5.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark6.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark7.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark8.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark9.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark10.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark11.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark12.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark13.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark14.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark15.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark16.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark17.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark18.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark19.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark20.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark21.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark22.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark23.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark24.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark25.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark26.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark27.png" alt=""></a></li>
+								<li><a href="#"><img src="img/mark28.png" alt=""></a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="question p-80">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 text-center color-white">
+							<h2>Часто задаваемые вопросы</h2>
+						</div>
+
+						<div class="col-12 col-lg-6">
+							<div class="question-box">
+								<div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse1">
+									<h4>Как купить автомобиль максимально выгодно?</h4>
+									<span class="collapse-icon"></span>
+								</div>
+								<div class="collapse" id="collapse1">
+									<div class="question-box__body">
+										<p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+											факторов,
+											таких как его текущее состояние, способность заводиться или двигаться. </p>
+									</div>
+								</div>
+							</div>
+							<div class="question-box">
+								<div class="question-box__head" data-toggle="collapse" data-target="#collapse2">
+									<h4>Как купить автомобиль максимально выгодно?</h4>
+									<span class="collapse-icon"></span>
+								</div>
+								<div class="collapse show" id="collapse2">
+									<div class="question-box__body">
+										<p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+											факторов,
+											таких как его текущее состояние, способность заводиться или двигаться. </p>
+									</div>
+								</div>
+							</div>
+							<div class="question-box">
+								<div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse3">
+									<h4>Как купить автомобиль максимально выгодно?</h4>
+									<span class="collapse-icon"></span>
+								</div>
+								<div class="collapse" id="collapse3">
+									<div class="question-box__body">
+										<p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+											факторов,
+											таких как его текущее состояние, способность заводиться или двигаться. </p>
+									</div>
+								</div>
+							</div>
+							<div class="question-box">
+								<div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse4">
+									<h4>Как купить автомобиль максимально выгодно?</h4>
+									<span class="collapse-icon"></span>
+								</div>
+								<div class="collapse" id="collapse4">
+									<div class="question-box__body">
+										<p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+											факторов,
+											таких как его текущее состояние, способность заводиться или двигаться. </p>
+									</div>
+								</div>
+							</div>
+							<div class="question-box">
+								<div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse5">
+									<h4>Как купить автомобиль максимально выгодно?</h4>
+									<span class="collapse-icon"></span>
+								</div>
+								<div class="collapse" id="collapse5">
+									<div class="question-box__body">
+										<p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+											факторов,
+											таких как его текущее состояние, способность заводиться или двигаться. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-lg-6">
+							<div class="question-box">
+								<div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse6">
+									<h4>Как купить автомобиль максимально выгодно?</h4>
+									<span class="collapse-icon"></span>
+								</div>
+								<div class="collapse" id="collapse6">
+									<div class="question-box__body">
+										<p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+											факторов,
+											таких как его текущее состояние, способность заводиться или двигаться. </p>
+									</div>
+								</div>
+							</div>
+							<div class="question-box">
+								<div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse7">
+									<h4>Как купить автомобиль максимально выгодно?</h4>
+									<span class="collapse-icon"></span>
+								</div>
+								<div class="collapse" id="collapse7">
+									<div class="question-box__body">
+										<p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+											факторов,
+											таких как его текущее состояние, способность заводиться или двигаться. </p>
+									</div>
+								</div>
+							</div>
+							<div class="question-box">
+								<div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse8">
+									<h4>Как купить автомобиль максимально выгодно?</h4>
+									<span class="collapse-icon"></span>
+								</div>
+								<div class="collapse" id="collapse8">
+									<div class="question-box__body">
+										<p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+											факторов,
+											таких как его текущее состояние, способность заводиться или двигаться. </p>
+									</div>
+								</div>
+							</div>
+							<div class="question-box">
+								<div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse9">
+									<h4>Как купить автомобиль максимально выгодно?</h4>
+									<span class="collapse-icon"></span>
+								</div>
+								<div class="collapse" id="collapse9">
+									<div class="question-box__body">
+										<p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+											факторов,
+											таких как его текущее состояние, способность заводиться или двигаться. </p>
+									</div>
+								</div>
+							</div>
+							<div class="question-box">
+								<div class="question-box__head collapsed" data-toggle="collapse" data-target="#collapse10">
+									<h4>Как купить автомобиль максимально выгодно?</h4>
+									<span class="collapse-icon"></span>
+								</div>
+								<div class="collapse" id="collapse10">
+									<div class="question-box__body">
+										<p>Автомобиль будет оцениваться по-разному в зависимости от года выпуска, марки, модели и других
+											факторов,
+											таких как его текущее состояние, способность заводиться или двигаться. </p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="reviews p-80 bg-light-blue">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<h2>Отзывы о нашей работе</h2>
+						</div>
+
+						<div class="col-12">
+							<div class="reviews-slider">
+								<div class="slide">
+									<div class="reviews-box">
+										<div class="reviews-box__body">
+											<h4>Отличные менеджеры!</h4>
+											<p>Благодарю компанию «Manslīzings.lv», за быструю продажу моего автомобиля Toyota Sprinter -
+												качественно, быстро, сошлись в цене! Всем советую компанию «Manslīzings.lv»!</p>
+										</div>
+										<div class="reviews-box__footer">
+											<div class="reviews-box__photo">А</div>
+											<div class="reviews-box__user">
+												<div class="name">Алексей Иванов</div>
+												<div class="city">Рига</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="reviews-box">
+										<div class="reviews-box__body">
+											<h4>Спасибо за помощь!</h4>
+											<p>Этот автовыкуп очень удобный честный надежный. Я уезжаю заграницу нужно было срочно продать
+												авто
+												шевроле лачетти, ребята выручили дали хорошие деньги, еще я попросил если можно заплатить в евро
+												выплатили в той валюте что я просил. Очень рад Спасибо Большое! </p>
+										</div>
+										<div class="reviews-box__footer">
+											<div class="reviews-box__photo">Д</div>
+											<div class="reviews-box__user">
+												<div class="name">Дмитрий Бартков</div>
+												<div class="city">Рига</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="reviews-box">
+										<div class="reviews-box__body">
+											<h4>Лучший автовыкуп.</h4>
+											<p>Очень легко продал свой "Опель-Вектра" по обоюдно устраивающих нас условиях. Все очень
+												профессионально, видно что человек занимается этим не ПЕРВЫЙ день. РЕКОМЕНДУЮ!</p>
+										</div>
+										<div class="reviews-box__footer">
+											<div class="reviews-box__photo">В</div>
+											<div class="reviews-box__user">
+												<div class="name">Виктор Куценко</div>
+												<div class="city">Рига</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="reviews-box">
+										<div class="reviews-box__body">
+											<h4>Отличные менеджеры!</h4>
+											<p>Благодарю компанию «Manslīzings.lv», за быструю продажу моего автомобиля Toyota Sprinter -
+												качественно, быстро, сошлись в цене! Всем советую компанию «Manslīzings.lv»!</p>
+										</div>
+										<div class="reviews-box__footer">
+											<div class="reviews-box__photo">А</div>
+											<div class="reviews-box__user">
+												<div class="name">Алексей Иванов</div>
+												<div class="city">Рига</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="slide">
+									<div class="reviews-box">
+										<div class="reviews-box__body">
+											<h4>Спасибо за помощь!</h4>
+											<p>Этот автовыкуп очень удобный честный надежный. Я уезжаю заграницу нужно было срочно продать
+												авто
+												шевроле лачетти, ребята выручили дали хорошие деньги, еще я попросил если можно заплатить в евро
+												выплатили в той валюте что я просил. Очень рад Спасибо Большое! </p>
+										</div>
+										<div class="reviews-box__footer">
+											<div class="reviews-box__photo">Д</div>
+											<div class="reviews-box__user">
+												<div class="name">Дмитрий Бартков</div>
+												<div class="city">Рига</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="callback callback-v2">
+				<div class="callback-wrapper"></div>
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-10">
+							<h2>Возникли вопросы? Давайте созвонимся!</h2>
+							<div class="box-text">
+								<p>Заполните форму и в ближайшее время наш менеджер свяжется с вами</p>
+							</div>
+
+							<form method="post" class="form-callback">
+								<label><input type="text" placeholder="Имя и фамилия" name="name"></label>
+								<label><input type="text" placeholder="Телефон" class="phone-input3" name="phone"></label>
+								<button type="submit" class="btn btn-sm btn-orange">Отправить заявку</button>
+							</form>
+						</div>
+					</div>
+				</div>
+				<div class="callback-image"><img src="img/car3.png" alt=""></div>
+			</section>
+
+			<section class="seo-section m-80">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 mb-30">
+							<h2>Купить авто в лизинг в Риге.</h2>
+						</div>
+
+						<div class="col-12 col-lg-11">
+							<div class="box-text">
+								<p>Хочешь купить подержанный автомобиль с минимальными вложениями и без кредита? Есть выгодная
+									альтернатива -
+									купить машину в лизинг. Купить авто в лизинг значит, взять в аренду транспортное средство на
+									длительный
+									срок
+									(больше года) с правом его выкупа. Для физических лиц это работает так: клиент выбирает транспортное
+									средство, чтобы купить бу автомобиль в лизинг, оплачивает первоначальный взнос за него, а лизинговая
+									компания покупает его, оформляет все документы и передает машину в пользование клиенту.</p>
+
+								<p>Каждый месяц клиент оплачивает ежемесячный платеж за лизинг авто. По истечению срока автолизинга,
+									клиент
+									получает бу авто в собственность. Купить бу автомобиль в лизинг особенно выгодно для тех людей, кому
+									необходимо приобрести транспортное средство, но денег на полный расчет не хватает. И тем, кого не
+									устраивает
+									невыгодные условия кредитования банков.</p>
+
+								<p>Автолизинг по сравнению с кредитом, существенно выгоднее. Лизинговая компания не требует официального
+									трудоустройства, справку на справку, искать поручителей, страховать жизнь и здоровье. Еще процентная
+									ставка
+									и переплата при кредите выше, чем при автолизинге. Банки включают в платежи навязанные услуги.
+									Например,
+									страхование жизни и здоровья заемщика. Из-за страховки, у клиента ежемесячные платежи и переплата по
+									кредиту
+									больше.</p>
+
+								<strong>Лизинг авто с пробегом от компании manslizings в Латвии</strong>
+								<p>
+									Взять проверенное бу авто в Риге и других городах Латвии в лизинг можно в компании manslizings. Клиент
+									сам
+									выбирает авто любой марки для покупки и обращается к нам.
+									Услуга лизинга бу авто для частных лиц есть в городах Латвии: Рига, Талси, Валмиера, Елгава, Кулдига,
+									Цесис.
+									Можно взять в лизинг бу авто в Риге без ограничения пробега, любого бренда и модели, с рук, на рынке
+									или
+									с
+									автоплощадки.</p>
+
+								<strong>Наши преимущества:</strong>
+								<ul>
+									<li>ограничений в выборе бренда и модели авто нет;</li>
+									<li>можно приобрести б у машину от хозяина от 5000 до 50 000 долларов;</li>
+									<li>все авто с пробегом проверены с юридической стороны;</li>
+									<li>машина в лизинг для физических лиц оформляется за 1 день без лишних документов;</li>
+								</ul>
+
+								<p>Чтобы купить бу авто в лизинг в Латвии по выгодным условиям, потребуется минимальный пакет документов
+									и
+									времени. Заявку на лизинг авто можно оставить через сайт.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="contacts p-45">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="contacts-box">
+								<div class="list-contacts-item">
+									<div class="list-contacts-item__icon">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#location"></use>
+										</svg>
+									</div>
+									<div class="list-contacts-item__text">Riga - Maskavas iela 418, LV-1063</div>
+								</div>
+
+								<ul class="list-maps ul-my">
+									<li>
+										<a href="#" target="_blank" class="list-maps-links waze-link">
+											<span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
+											<span class="list-maps-links__text">Проложить маршрут в Waze</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" class="list-maps-links google-link">
+											<span class="list-maps-links__icon"><img src="img/google.svg" alt=""></span>
+											<span class="list-maps-links__text">Показать на карте</span>
+										</a>
+									</li>
+								</ul>
+
+								<a href="tel:+37126612612" class="list-contacts-item">
+									<span class="list-contacts-item__icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#phone"></use>
+										</svg></span>
+									<span class="list-contacts-item__text">+371 26-612-612</span>
+								</a>
+								<a href="mailto:info@manslizings.lv" class="list-contacts-item">
+									<span class="list-contacts-item__icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#mail"></use>
+										</svg></span>
+									<span class="list-contacts-item__text">info@manslizings.lv</span>
+								</a>
+								<a href="#" class="list-contacts-item">
+									<span class="list-contacts-item__icon telegram-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#telegram"></use>
+										</svg></span>
+									<span class="list-contacts-item__text">Написать в Telegram</span>
+								</a>
+								<a href="#" class="list-contacts-item">
+									<span class="list-contacts-item__icon whatsapp-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#whatsapp"></use>
+										</svg></span>
+									<span class="list-contacts-item__text">Написать в WhatsApp</span>
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="map">
+					<iframe
+						src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2179.0674229301007!2d24.208456416014542!3d56.89623178087463!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46eed24236c232f3%3A0xed297e4a9b831e4f!2zTWFza2F2YXMgaWVsYSA0MTgsIExhdGdhbGVzIHByaWVrxaFwaWxzxJN0YSwgUsSrZ2EsIExWLTEwNjMsINCb0LDRgtCy0LjRjw!5e0!3m2!1sru!2sua!4v1656915368560!5m2!1sru!2sua"
+						style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				</div>
+			</div>
+		</div>
+
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-3">
+							<a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
+							<div class="description-company">
+								<p>Компания «Manslizing» работает на рынке автоуслуг Латвии с 2002 года! Купите автомобиль на выгодных
+									условиях.</p>
+							</div>
+						</div>
+						<div class="col-12 col-lg-9 d-flex flex-wrap">
+							<ul class="footer-menu ul-my">
+								<li><a href="#">Автолизинг</a></li>
+								<li><a href="#">Автокредит</a></li>
+								<li><a href="#">Авто партнеров</a></li>
+								<li><a href="redemption-auto.html">Выкуп авто</a></li>
+							</ul>
+							<ul class="footer-menu ul-my">
+								<li><a href="#">О нас</a></li>
+								<li><a href="news.html">Новости</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+
+							<div class="footer-box">
+								<a href="tel:+37126612612" class="phone">
+									<span class="phone-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#phone"></use>
+										</svg></span>
+									<span class="phone-text">+371 26-612-612</span>
+								</a>
+								<a href="mailto:info@manslizings.lv" class="mail">
+									<span class="mail-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#mail"></use>
+										</svg></span>
+									<span class="mail-text">info@manslizings.lv</span>
+								</a>
+								<div class="schedule-box">
+									<div class="schedule-box__icon">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#clock"></use>
+										</svg>
+									</div>
+									<div class="schedule-box__text">
+										Время работы:
+										9:00 - 22:00
+									</div>
+								</div>
+							</div>
+
+							<div class="footer-box">
+								<div class="address">
+									<span class="phone-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#location"></use>
+										</svg></span>
+									<span class="phone-text">Riga - Maskavas iela 418, LV-1063</span>
+								</div>
+								<ul class="list-maps ul-my">
+									<li>
+										<a href="#" target="_blank" class="list-maps-links waze-link">
+											<span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
+											<span class="list-maps-links__text">Проложить маршрут в Waze</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" class="list-maps-links google-link">
+											<span class="list-maps-links__icon"><img src="img/google.svg" alt=""></span>
+											<span class="list-maps-links__text">Показать на карте</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
+							<div class="registration-number">SIA ZEVA AUTO Reg. nr. 40103942814</div>
+							<div class="copyright">© 2021 Все права защищены</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+
+	<a href="#" class="btn-top-scroll"><svg class="svg-icon">
+			<use xlink:href="img/sprite.svg#arrow-right"></use>
+		</svg></a>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="js/fileup.js"></script>
+	<script src="js/intlTelInput.js"></script>
+	<script src="js/common.js"></script>
 
 </body>
+
 </html>

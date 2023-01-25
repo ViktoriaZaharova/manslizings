@@ -3,6 +3,7 @@ header {
 }
 header .form-search {
   margin: 0 auto;
+	max-width: calc(100% - 60px);
 }
 header .mail {
   margin: 0 auto;
@@ -35,32 +36,39 @@ header .phone-text {
 
 .form-search {
   width: 100%;
-  position: relative;
-  max-width: 452px;
+  position: absolute;
+  max-width: 440px;
+  left: -100%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  background: #fff;
+  z-index: 2;
+	transition: 1s ease;
 }
 .form-search label {
   margin: 0;
 }
 .form-search input {
-  border: 1px solid #b0b0b0;
+  background: #ffffff;
+  border: 1px solid #c7c7c7;
   border-radius: 6px;
   background: #fff;
-  height: 40px;
-  padding: 0 110px 0 43px;
-  font-size: 16px;
+  height: 35px;
+  padding: 0 12px;
+  font-size: 14px;
   color: #2f5048;
 }
 .form-search input::-webkit-input-placeholder {
-  color: #303030;
+  color: #848484;
 }
 .form-search input::-moz-placeholder {
-  color: #303030;
+  color: #848484;
 }
 .form-search input::-ms-input-placeholder {
-  color: #303030;
+  color: #848484;
 }
 .form-search input::placeholder {
-  color: #303030;
+  color: #848484;
 }
 .form-search button {
   position: absolute;
@@ -69,6 +77,51 @@ header .phone-text {
   height: 40px;
   max-width: 110px;
   width: 100%;
+}
+
+.btn-search-header {
+  display: none;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+  fill: #8fba44;
+  position: relative;
+  margin: 0 20px 0 0;
+}
+
+.btn-search-header__close {
+	display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 26px;
+  height: 26px;
+	margin: 0 20px 0 0;  
+	position: relative;
+}
+
+.btn-search-header__close svg {
+  display: none;
+}
+
+.btn-search-header__close::before,
+.btn-search-header__close::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  background: #8fba44;
+  border-radius: 3px;
+  top: 13px;
+  left: 0;
+}
+
+.btn-search-header__close::before {
+  transform: rotate(45deg);
+}
+
+.btn-search-header__close::after {
+  transform: rotate(135deg);
 }
 
 .input-icon-search {
@@ -322,7 +375,7 @@ header .phone-text {
   -webkit-transform: none;
   transform: none;
   padding: 25px 25px;
-	min-width: 370px;
+  min-width: 370px;
 }
 .menu .dropdown-menu__wrapper {
   width: 100%;
@@ -484,3 +537,13 @@ header .phone-text {
 .btn-burger.click span:last-child {
   transform: rotate(137deg);
 }
+
+/* Potom ubratj*/
+.dropdown-language .dropdown-menu li:nth-child(3) {
+  display: none;
+}
+.list-language li:nth-child(3) {
+  display: none;
+}
+
+/* end potom ubratj */

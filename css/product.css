@@ -597,10 +597,10 @@
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
-  margin: 0 10px 0 0;
-  width: 20px;
-  height: 20px;
-  min-width: 20px;
+  margin: 3px 10px 0 0;
+  width: 15px;
+  height: 11px;
+  min-width: 15px;
   background: url("../img/check.svg") no-repeat center;
   background-size: 100%;
 }

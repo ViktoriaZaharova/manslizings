@@ -2,335 +2,358 @@
 <html lang="ru">
 
 <head>
-  <meta charset="utf-8">
-  <title>Manslizing</title>
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta charset="utf-8">
+	<title>Manslizing</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
-  <meta property="og:image" content="path/to/image.jpg">
-  <link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
-  <link rel="shortcut icon" href="img/favicon/favicon.ico"/>
-  <link rel="icon" href="img/favicon/favicon.ico" sizes="256x256"/>
-  <link rel="apple-touch-icon" href="img/favicon/favicon.ico"/>
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" />
+	<link rel="icon" href="img/favicon/favicon.ico" sizes="256x256" />
+	<link rel="apple-touch-icon" href="img/favicon/favicon.ico" />
 
-  <!-- Chrome, Firefox OS and Opera -->
-  <meta name="theme-color" content="#000">
-  <!-- Windows Phone -->
-  <meta name="msapplication-navbutton-color" content="#000">
-  <!-- iOS Safari -->
-  <meta name="apple-mobile-web-app-status-bar-style" content="#000">
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
 
 	<meta name="format-detection" content="telephone=no">
 	<meta name="format-detection" content="date=no">
 	<meta name="format-detection" content="address=no">
 	<meta name="format-detection" content="email=no">
 
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
-        integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
-  <link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
-  <link rel="stylesheet" href="css/intlTelInput.css">
-  <link rel="stylesheet" href="css/fileup.min.css">
-  <link rel="stylesheet" href="css/main.css">
-  <link rel="stylesheet" href="css/header.css">
-  <link rel="stylesheet" href="css/footer.css">
-  <link rel="stylesheet" href="css/home.css">
-  <link rel="stylesheet" href="css/catalog.css">
-  <link rel="stylesheet" href="css/product.css">
-  <link rel="stylesheet" href="css/checkout.css">
-  <link rel="stylesheet" href="css/news.css">
-  <link rel="stylesheet" href="css/modal.css">
-  <link rel="stylesheet" href="css/media.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css"
+		integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+	<link rel="stylesheet" href="https://code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link rel="stylesheet" href="css/intlTelInput.css">
+	<link rel="stylesheet" href="css/fileup.min.css">
+	<link rel="stylesheet" href="css/main.css">
+	<link rel="stylesheet" href="css/header.css">
+	<link rel="stylesheet" href="css/footer.css">
+	<link rel="stylesheet" href="css/home.css">
+	<link rel="stylesheet" href="css/catalog.css">
+	<link rel="stylesheet" href="css/product.css">
+	<link rel="stylesheet" href="css/checkout.css">
+	<link rel="stylesheet" href="css/news.css">
+	<link rel="stylesheet" href="css/modal.css">
+	<link rel="stylesheet" href="css/media.css">
 
 </head>
 
 <body>
 
-<div class="wrapper">
-  <div class="content">
+	<div class="wrapper">
+		<div class="content">
 
-    <div class="overlay-mobile"></div>
+			<div class="overlay-mobile"></div>
 
-    <header>
-      <div class="header-top">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 d-flex flex-wrap align-items-center">
-              <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
+			<header>
+				<div class="header-top">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 d-flex flex-wrap align-items-center">
+								<a href="#" class="btn-search-header">
+									<svg class="svg-icon">
+										<use xlink:href="img/sprite.svg#search"></use>
+									</svg>
+								</a>
 
-              <div class="dropdown dropdown-language">
-                <a href="#" class="dropdown-toggle">Рyc</a>
-                <div class="dropdown-menu">
-                  <a href="#" class="dropdown-item">Рyc</a>
-                  <a href="#" class="dropdown-item">Lat</a>
-                  <a href="#" class="dropdown-item">Eng</a>
-                </div>
-              </div>
+								<form method="post" class="form-search">
+									<label>
+										<input type="text" placeholder="Поиск о сайту" name="search">
+									</label>
+								</form>
 
-              <div class="schedule-box">
-                <div class="schedule-box__icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#clock"></use>
-                  </svg>
-                </div>
-                <div class="schedule-box__text">
-                  Время работы:
-                  9:00 - 22:00
-                </div>
-              </div>
+								<a href="/" class="logo"><img src="img/logo.png" alt=""></a>
 
+								<div class="dropdown dropdown-language">
+									<a href="#" class="dropdown-toggle">Рyc</a>
+									<div class="dropdown-menu">
+										<a href="#" class="dropdown-item">Рyc</a>
+										<a href="#" class="dropdown-item">Lat</a>
+										<a href="#" class="dropdown-item">Eng</a>
+									</div>
+								</div>
 
-              <a href="mailto:info@manslizings.lv" class="mail">
-                <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
-                <span class="mail-text">info@manslizings.lv</span>
-              </a>
-
-              <a href="tel:+37126612612" class="phone">
-                <span class="phone-icon"><svg class="svg-icon"><use
-                    xlink:href="img/sprite.svg#phone"></use></svg></span>
-                <span class="phone-text">+371 26-612-612</span>
-              </a>
-
-              <div class="btn-burger">
-                <span></span>
-                <span></span>
-                <span></span>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="header-bottom">
-        <div class="container">
-          <div class="row">
-            <div class="col-12 d-flex align-items-center flex-wrap">
-              <nav class="nav-menu">
-                <!-- <a href="/" class="logo"><img src="img/logo.png" alt=""></a>
-
-                <a href="#" class="nav-menu__close"></a> -->
-
-                <ul class="menu ul-my">
-                  <li class="dropdown">
-                    <a href="car-leasing.html" class="dropdown-toggle">Автолизинг</a>
-                    <div class="dropdown-menu">
-                      <div class="dropdown-menu__wrapper">
-                        <div class="dropdown-box">
-                          <div class="dropdown-box__title">Для физических лиц</div>
+								<div class="schedule-box">
+									<div class="schedule-box__icon">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#clock"></use>
+										</svg>
+									</div>
+									<div class="schedule-box__text">
+										Время работы:
+										9:00 - 22:00
+									</div>
+								</div>
 
 
-                          <ul class="list-dots dropdown-menu-list">
-                            <li><a href="#">Лизинг без официального места работы</a></li>
-                            <li><a href="#">Лизинг без первого взноса</a></li>
-                            <li><a href="#">Лизинг без официального места работы</a></li>
-                            <li><a href="#">Лизинг без первого взноса</a></li>
-                            <li><a href="#">Лизинг без официального места работы</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li class="dropdown">
-                    <a href="car-loan.html" class="dropdown-toggle">Автокредит</a>
-                    <div class="dropdown-menu">
-                      <div class="dropdown-menu__wrapper">
-                        <div class="dropdown-box">
-                          <div class="dropdown-box__title">Для физических лиц</div>
+								<a href="mailto:info@manslizings.lv" class="mail">
+									<span class="mail-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#mail"></use>
+										</svg></span>
+									<span class="mail-text">info@manslizings.lv</span>
+								</a>
+
+								<a href="tel:+37126612612" class="phone">
+									<span class="phone-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#phone"></use>
+										</svg></span>
+									<span class="phone-text">+371 26-612-612</span>
+								</a>
+
+								<div class="btn-burger">
+									<span></span>
+									<span></span>
+									<span></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="header-bottom">
+					<div class="container">
+						<div class="row">
+							<div class="col-12 d-flex align-items-center flex-wrap">
+								<nav class="nav-menu">
+									<!-- <a href="/" class="logo"><img src="img/logo.png" alt=""></a> -->
+
+									<!-- <a href="#" class="nav-menu__close"></a> -->
+
+									<ul class="menu ul-my">
+										<li class="dropdown">
+											<a href="car-leasing.html" class="dropdown-toggle">Автолизинг</a>
+											<div class="dropdown-menu">
+												<div class="dropdown-menu__wrapper">
+													<div class="dropdown-box">
+														<div class="dropdown-box__title">Для физических лиц</div>
 
 
-                          <ul class="list-dots dropdown-menu-list">
-                            <li><a href="#">Лизинг без официального места работы</a></li>
-                            <li><a href="#">Лизинг без первого взноса</a></li>
-                            <li><a href="#">Лизинг без официального места работы</a></li>
-                            <li><a href="#">Лизинг без первого взноса</a></li>
-                            <li><a href="#">Лизинг без официального места работы</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                  <li><a href="#">Авто партнеров</a></li>
-                  <li><a href="redemption-auto.html">Выкуп авто</a></li>
-                  <li><a href="#">О нас</a></li>
-                  <li><a href="news.html">Новости</a></li>
-                  <li><a href="contacts.html">Контакты</a></li>
-                </ul>
+														<ul class="list-dots dropdown-menu-list">
+															<li><a href="#">Лизинг без официального места работы</a></li>
+															<li><a href="#">Лизинг без первого взноса</a></li>
+															<li><a href="#">Лизинг без официального места работы</a></li>
+															<li><a href="#">Лизинг без первого взноса</a></li>
+															<li><a href="#">Лизинг без официального места работы</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li class="dropdown">
+											<a href="car-loan.html" class="dropdown-toggle">Автокредит</a>
+											<div class="dropdown-menu">
+												<div class="dropdown-menu__wrapper">
+													<div class="dropdown-box">
+														<div class="dropdown-box__title">Для физических лиц</div>
 
-                <div class="header-box">
-                  <a href="tel:+37126612612" class="phone">
-                <span class="phone-icon"><svg class="svg-icon"><use
-                    xlink:href="img/sprite.svg#phone"></use></svg></span>
-                    <span class="phone-text">+371 26-612-612</span>
-                  </a>
-                  <a href="mailto:info@manslizings.lv" class="mail">
-                    <span class="mail-icon"><svg class="svg-icon"><use
-                        xlink:href="img/sprite.svg#mail"></use></svg></span>
-                    <span class="mail-text">info@manslizings.lv</span>
-                  </a>
-                </div>
-                <div class="schedule-box">
-                  <div class="schedule-box__icon">
-                    <svg class="svg-icon">
-                      <use xlink:href="img/sprite.svg#clock"></use>
-                    </svg>
-                  </div>
-                  <div class="schedule-box__text">
-                    <p>Время работы:</p>
-                    <p>9:00 - 22:00</p>
-                  </div>
-                </div>
 
-                <div class="language-box">
-                  <p>Язык:</p>
-                  <ul class="list-language ul-my">
-                    <li><a href="#" class="active">Рyc</a></li>
-                    <li><a href="#">Lat</a></li>
-                    <li><a href="#">Eng</a></li>
-                  </ul>
-                </div>
-              </nav>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
+														<ul class="list-dots dropdown-menu-list">
+															<li><a href="#">Лизинг без официального места работы</a></li>
+															<li><a href="#">Лизинг без первого взноса</a></li>
+															<li><a href="#">Лизинг без официального места работы</a></li>
+															<li><a href="#">Лизинг без первого взноса</a></li>
+															<li><a href="#">Лизинг без официального места работы</a></li>
+														</ul>
+													</div>
+												</div>
+											</div>
+										</li>
+										<li><a href="#">Авто партнеров</a></li>
+										<li><a href="redemption-auto.html">Выкуп авто</a></li>
+										<li><a href="#">О нас</a></li>
+										<li><a href="news.html">Новости</a></li>
+										<li><a href="contacts.html">Контакты</a></li>
+									</ul>
 
-    <div class="title-line">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <div class="h1">Успешно!</div>
-          </div>
-        </div>
-      </div>
-    </div>
+									<div class="header-box">
+										<a href="tel:+37126612612" class="phone">
+											<span class="phone-icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#phone"></use>
+												</svg></span>
+											<span class="phone-text">+371 26-612-612</span>
+										</a>
+										<a href="mailto:info@manslizings.lv" class="mail">
+											<span class="mail-icon"><svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#mail"></use>
+												</svg></span>
+											<span class="mail-text">info@manslizings.lv</span>
+										</a>
 
-    <section class="page page-thanks page-checkout bg-light-blue">
-      <div class="container">
-        <div class="row">
-          <div class="col-12">
-            <ul class="breadcrumbs ul-my">
-              <li><a href="index.html">Главная</a></li>
-              <li><a href="#">Новые поступления</a></li>
-              <li><span>Hyundai Santa Fe</span></li>
-            </ul>
-          </div>
-        </div>
+										<div class="schedule-box">
+											<div class="schedule-box__icon">
+												<svg class="svg-icon">
+													<use xlink:href="img/sprite.svg#clock"></use>
+												</svg>
+											</div>
+											<div class="schedule-box__text">
+												<p>Работаем до 19:00</p>
+											</div>
+										</div>
+									</div>
 
-        <div class="page-thanks__item page-checkout-wrapper">
-          <div class="thanks-icon"><img src="img/checked.svg" alt=""></div>
-          <h1>Спасибо! Ваша заявка получена</h1>
-          <div class="box-text">
-            <p>В ближайшее время с Вами свяжется менеджер, чтобы уточнить все необходимые детали.</p>
-            <p>Если у Вас возникнут вопросы, звоните <a href="tel:+37126612612" class="phone-item">+371 26-612-612</a>
-            </p>
-          </div>
-          <a href="#" class="btn btn-accent"><span class="btn-text">На главную</span></a>
-        </div>
-      </div>
-    </section>
-  </div>
-  <footer>
-    <div class="footer-top">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 col-lg-3">
-            <a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
-            <div class="description-company">
-              <p>Компания «Manslizing» работает на рынке автоуслуг Латвии с 2002 года! Купите автомобиль на выгодных
-                условиях.</p>
-            </div>
-          </div>
-          <div class="col-12 col-lg-9 d-flex flex-wrap">
-            <ul class="footer-menu ul-my">
-              <li><a href="#">Автолизинг</a></li>
-              <li><a href="#">Автокредит</a></li>
-              <li><a href="#">Авто партнеров</a></li>
-              <li><a href="redemption-auto.html">Выкуп авто</a></li>
-            </ul>
-            <ul class="footer-menu ul-my">
-              <li><a href="#">О нас</a></li>
-              <li><a href="news.html">Новости</a></li>
-              <li><a href="contacts.html">Контакты</a></li>
-            </ul>
 
-            <div class="footer-box">
-              <a href="tel:+37126612612" class="phone">
-                <span class="phone-icon"><svg class="svg-icon"><use
-                    xlink:href="img/sprite.svg#phone"></use></svg></span>
-                <span class="phone-text">+371 26-612-612</span>
-              </a>
-              <a href="mailto:info@manslizings.lv" class="mail">
-                <span class="mail-icon"><svg class="svg-icon"><use xlink:href="img/sprite.svg#mail"></use></svg></span>
-                <span class="mail-text">info@manslizings.lv</span>
-              </a>
-              <div class="schedule-box">
-                <div class="schedule-box__icon">
-                  <svg class="svg-icon">
-                    <use xlink:href="img/sprite.svg#clock"></use>
-                  </svg>
-                </div>
-                <div class="schedule-box__text">
-                  Время работы:
-                  9:00 - 22:00
-                </div>
-              </div>
-            </div>
+									<div class="language-box">
+										<p>Язык:</p>
+										<ul class="list-language ul-my">
+											<li><a href="#" class="active">Рyc</a></li>
+											<li><a href="#">Lat</a></li>
+											<li><a href="#">Eng</a></li>
+										</ul>
+									</div>
+								</nav>
+							</div>
+						</div>
+					</div>
+				</div>
+			</header>
 
-            <div class="footer-box">
-              <div class="address">
-              <span class="phone-icon"><svg class="svg-icon"><use
-                  xlink:href="img/sprite.svg#location"></use></svg></span>
-                <span class="phone-text">Riga - Maskavas iela 418, LV-1063</span>
-              </div>
-              <ul class="list-maps ul-my">
-                <li>
-                  <a href="#" target="_blank" class="list-maps-links waze-link">
-                    <span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
-                    <span class="list-maps-links__text">Проложить маршрут в Waze</span>
-                  </a>
-                </li>
-                <li>
-                  <a href="#" target="_blank" class="list-maps-links google-link">
-                    <span class="list-maps-links__icon"><img src="img/google.svg" alt=""></span>
-                    <span class="list-maps-links__text">Показать на карте</span>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+			<div class="title-line">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<div class="h1">Успешно!</div>
+						</div>
+					</div>
+				</div>
+			</div>
 
-    <div class="footer-bottom">
-      <div class="container">
-        <div class="row">
-          <div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
-            <div class="registration-number">SIA ZEVA AUTO Reg. nr. 40103942814</div>
-            <div class="copyright">© 2021 Все права защищены</div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </footer>
-</div>
-<a href="#" class="btn-top-scroll"><svg class="svg-icon">
-		<use xlink:href="img/sprite.svg#arrow-right"></use>
-	</svg></a>
+			<section class="page page-thanks page-checkout bg-light-blue">
+				<div class="container">
+					<div class="row">
+						<div class="col-12">
+							<ul class="breadcrumbs ul-my">
+								<li><a href="index.html">Главная</a></li>
+								<li><a href="#">Новые поступления</a></li>
+								<li><span>Hyundai Santa Fe</span></li>
+							</ul>
+						</div>
+					</div>
 
-<script src="js/jquery.min.js"></script>
-<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
-        crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-<script src="js/fileup.js"></script>
-<script src="js/intlTelInput.js"></script>
-<script src="js/common.js"></script>
+					<div class="page-thanks__item page-checkout-wrapper">
+						<div class="thanks-icon"><img src="img/checked.svg" alt=""></div>
+						<h1>Спасибо! Ваша заявка получена</h1>
+						<div class="box-text">
+							<p>В ближайшее время с Вами свяжется менеджер, чтобы уточнить все необходимые детали.</p>
+							<p>Если у Вас возникнут вопросы, звоните <a href="tel:+37126612612" class="phone-item">+371 26-612-612</a>
+							</p>
+						</div>
+						<a href="#" class="btn btn-accent"><span class="btn-text">На главную</span></a>
+					</div>
+				</div>
+			</section>
+		</div>
+		<footer>
+			<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 col-lg-3">
+							<a href="index.html" class="logo"><img src="img/logo-footer.png" alt=""></a>
+							<div class="description-company">
+								<p>Компания «Manslizing» работает на рынке автоуслуг Латвии с 2002 года! Купите автомобиль на выгодных
+									условиях.</p>
+							</div>
+						</div>
+						<div class="col-12 col-lg-9 d-flex flex-wrap">
+							<ul class="footer-menu ul-my">
+								<li><a href="#">Автолизинг</a></li>
+								<li><a href="#">Автокредит</a></li>
+								<li><a href="#">Авто партнеров</a></li>
+								<li><a href="redemption-auto.html">Выкуп авто</a></li>
+							</ul>
+							<ul class="footer-menu ul-my">
+								<li><a href="#">О нас</a></li>
+								<li><a href="news.html">Новости</a></li>
+								<li><a href="contacts.html">Контакты</a></li>
+							</ul>
+
+							<div class="footer-box">
+								<a href="tel:+37126612612" class="phone">
+									<span class="phone-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#phone"></use>
+										</svg></span>
+									<span class="phone-text">+371 26-612-612</span>
+								</a>
+								<a href="mailto:info@manslizings.lv" class="mail">
+									<span class="mail-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#mail"></use>
+										</svg></span>
+									<span class="mail-text">info@manslizings.lv</span>
+								</a>
+								<div class="schedule-box">
+									<div class="schedule-box__icon">
+										<svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#clock"></use>
+										</svg>
+									</div>
+									<div class="schedule-box__text">
+										Время работы:
+										9:00 - 22:00
+									</div>
+								</div>
+							</div>
+
+							<div class="footer-box">
+								<div class="address">
+									<span class="phone-icon"><svg class="svg-icon">
+											<use xlink:href="img/sprite.svg#location"></use>
+										</svg></span>
+									<span class="phone-text">Riga - Maskavas iela 418, LV-1063</span>
+								</div>
+								<ul class="list-maps ul-my">
+									<li>
+										<a href="#" target="_blank" class="list-maps-links waze-link">
+											<span class="list-maps-links__icon"><img src="img/waze.svg" alt=""></span>
+											<span class="list-maps-links__text">Проложить маршрут в Waze</span>
+										</a>
+									</li>
+									<li>
+										<a href="#" target="_blank" class="list-maps-links google-link">
+											<span class="list-maps-links__icon"><img src="img/google.svg" alt=""></span>
+											<span class="list-maps-links__text">Показать на карте</span>
+										</a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="footer-bottom">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 d-flex flex-wrap align-items-center justify-content-center">
+							<div class="registration-number">SIA ZEVA AUTO Reg. nr. 40103942814</div>
+							<div class="copyright">© 2021 Все права защищены</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</footer>
+	</div>
+	<a href="#" class="btn-top-scroll"><svg class="svg-icon">
+			<use xlink:href="img/sprite.svg#arrow-right"></use>
+		</svg></a>
+
+	<script src="js/jquery.min.js"></script>
+	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF"
+		crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui-touch-punch/0.2.3/jquery.ui.touch-punch.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+	<script src="js/fileup.js"></script>
+	<script src="js/intlTelInput.js"></script>
+	<script src="js/common.js"></script>
 
 </body>
+
 </html>

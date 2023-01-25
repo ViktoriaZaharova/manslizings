@@ -422,3 +422,27 @@ $(document).scroll(function () {
 // });
 
 
+$('header .form-search input').focus(function () {
+	$('.btn-search-header').addClass('btn-search-header__close');
+	$('.btn-search-header').removeClass('btn-search-header');
+});
+
+$('.btn-search-header').on('click', function (e) {
+	e.preventDefault();
+
+	var
+		$this = $(this),
+		content = $('header .form-search');
+
+
+	if (!$this.hasClass('trigger')) {
+		$this.addClass('trigger');
+		// $this.removeClass('btn-search-header');
+		content.css('left', '50%');
+	} else {
+		$this.removeClass('btn-search-header__close');
+		$this.removeClass('trigger');
+		$this.addClass('btn-search-header');
+		content.css('left', '-100%');
+	}
+});
