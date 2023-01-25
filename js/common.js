@@ -437,7 +437,7 @@ $('.btn-search-header').on('click', function (e) {
 
 	if (!$this.hasClass('trigger')) {
 		$this.addClass('trigger');
-		// $this.removeClass('btn-search-header');
+		$this.addClass('btn-search-header__close');
 		content.css('left', '50%');
 	} else {
 		$this.removeClass('btn-search-header__close');
