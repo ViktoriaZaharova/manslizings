@@ -422,6 +422,20 @@ strong {
   color: #fff;
 }
 
+.btn-border-accent {
+  color: #8FBA44;
+  font-weight: 600;
+  font-size: 26px;
+  width: 100%;
+  height: 71px;
+  border: 2px solid #8FBA44;
+  border-radius: 6px;
+}
+.btn-border-accent:hover {
+  background: #8FBA44;
+  color: #fff;
+}
+
 .col,
 .col-1,
 .col-10,
@@ -868,6 +882,19 @@ h2 .icon {
   border-radius: 4px;
   background: #fff;
   min-height: 30px;
+}
+
+.breadcrumbs-v2 li a, .breadcrumbs-v2 li span {
+  border: none;
+  padding: 0;
+	min-height: auto;
+	background: transparent;
+}
+
+.breadcrumbs-v2 li a:after {
+	content: '>';
+	margin: 0 0 0 5px;
+	display: inline-block;
 }
 
 .pagination {
@@ -1744,7 +1771,7 @@ h2 .icon {
 }
 
 .car-availability-slider {
-	width: auto;
+  width: auto;
 }
 
 .car-availability-slider .slick-track {
@@ -1753,8 +1780,6 @@ h2 .icon {
 }
 
 .car-availability-slider .slick-slide {
-	height: auto;
-	flex: none;
+  height: auto;
+  flex: none;
 }
-
-

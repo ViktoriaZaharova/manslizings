@@ -14,7 +14,15 @@
   border: 1px solid #e1e4e8;
   border-radius: 6px;
   padding: 16px 20px;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
 }
+
+.product-information .list-characteristics {
+  width: fit-content;
+}
+
 .product-information:last-child {
   margin: 0;
 }
@@ -23,6 +31,94 @@
   font-weight: 900;
   color: #2f5048;
   margin: 0 0 15px;
+  width: 100%;
+}
+
+.view-product {
+  font-size: 14px;
+  margin: 0 0 4px auto;
+  display: flex;
+  align-items: center;
+}
+
+.view-product__icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 8px 0 0;
+  width: 20px;
+  min-width: 20px;
+  height: 12px;
+  fill: #b7beca;
+}
+
+.carvertical-logo {
+  text-transform: uppercase;
+  color: #00c0e8;
+  font-size: 18px;
+  font-weight: 900;
+  display: inline-block;
+}
+
+.carvertical-wrapper {
+  color: #fff;
+  margin: 20px 0 0;
+  background: #196250;
+  border: 1px solid #e1e4e8;
+  box-shadow: 0px 4px 30px rgba(0, 49, 95, 0.11);
+  border-radius: 6px;
+  padding: 40px 50px;
+  position: relative;
+  z-index: 1;
+}
+
+.carvertical-wrapper__decor {
+	position: absolute;
+  left: 50%;
+	bottom: 0;
+  transform: translate(-50%, 0);
+  z-index: -1;
+	overflow: hidden;
+	width: 100%;
+	height: 100%;
+	/* border-radius: 50%; */
+}
+
+.carvertical-wrapper__decor::before {
+  content: "";
+  position: absolute;
+  background: #80ff00;
+  mix-blend-mode: screen;
+  filter: blur(125px);
+	width: 509px;
+	height: 509px;
+	border-radius: 50%;
+	overflow: hidden;
+	left: 50%;
+	bottom: -450px;
+	transform: translate(-50%,0);
+}
+
+.carvertical-wrapper__title {
+  margin: 0 0 20px 0;
+  font-size: 18px;
+  font-weight: 900;
+}
+
+.carvertical-wrapper .form-callback {
+  margin: 0;
+}
+
+.carvertical-wrapper .form-callback label,
+.carvertical-wrapper .form-callback button {
+  max-width: 307px;
+  min-width: 307px;
+}
+
+.carvertical-wrapper .form-callback .checkbox {
+  max-width: none;
+  font-size: 12px;
+  margin-right: 0;
 }
 
 .calculate-box {
@@ -75,6 +171,7 @@
 
 .calculate-box .range_val {
   margin: 0 0 24px;
+  width: 100%;
 }
 .calculate-box .range_val label {
   width: 100%;
@@ -228,7 +325,7 @@
 
 .leasing-prices .btn {
   padding: 10px 34px;
-	width: fit-content;
+  width: fit-content;
 }
 
 .product-gallery-item {
@@ -258,6 +355,10 @@
   display: flex;
   align-items: center;
   font-size: 15px;
+  color: rgba(42, 45, 40, 1);
+}
+
+.link-download:hover {
   color: rgba(42, 45, 40, 1);
 }
 
@@ -365,14 +466,14 @@
 .slick-arrow {
   position: absolute;
   top: 50%;
-  -webkit-transform: translate(0,-50%);
-  transform: translate(0,-50%);
+  -webkit-transform: translate(0, -50%);
+  transform: translate(0, -50%);
   cursor: pointer;
   z-index: 1;
   opacity: 1;
   width: 40px;
   height: 70px;
-  background: #D1D6DF;
+  background: #d1d6df;
   border-radius: 6px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -415,7 +516,7 @@
 }
 
 .product-gallery-wrapper .slick-arrow {
-	top: auto;
+  top: auto;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
@@ -426,10 +527,10 @@
 }
 
 .product-gallery-wrapper .slick-arrow svg {
-	stroke: #ffffff;
+  stroke: #ffffff;
   fill: none;
   transform: rotate(90deg);
-	width: 12px;
+  width: 12px;
   height: 8px;
 }
 

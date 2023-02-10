@@ -17,6 +17,10 @@ header .phone-text {
   font-weight: 700;
 }
 
+header .schedule-box {
+	margin: 0 auto;
+}
+
 .header-top {
   padding: 10px 0;
 }
@@ -143,8 +147,17 @@ header .phone-text {
 }
 
 .dropdown-language {
-  margin: 0 auto;
+  margin: 0 0 0 auto;
   font-weight: 700;
+	order: 1;
+}
+
+.dropdown-language .dropdown-menu {
+	min-width: auto;
+}
+
+.dropdown-language .dropdown-menu .dropdown-item {
+	padding: 7px 15ox;
 }
 
 .schedule-box {
