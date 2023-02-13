@@ -9,6 +9,21 @@ header .form-search {
 	position: absolute;
   transform: translate(-50%, -50%);
 }
+
+header .form-search input {
+	padding: 0 30px 0 12px;
+}
+
+header .form-search button {
+	position: absolute;
+	top: 50%;
+	transform: translate(0,-50%);
+	right: 10px;
+	width: 20px;
+	height: 20px;
+	fill: #8fba44;
+}
+
 header .mail {
   margin: 0 auto;
   font-weight: 700;
