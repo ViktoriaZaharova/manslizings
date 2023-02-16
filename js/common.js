@@ -3,6 +3,7 @@ $('.btn-burger').on('click', function () {
 	$(this).toggleClass('click');
 	$('.overlay-mobile').fadeToggle();
 	$('.header-bottom').fadeToggle();
+	$('body').toggleClass('no-scroll');
 });
 
 $('.nav-menu__close, .overlay-mobile').on('click', function (e) {
@@ -10,6 +11,7 @@ $('.nav-menu__close, .overlay-mobile').on('click', function (e) {
 	$('.header-bottom').fadeOut();
 	$('.overlay-mobile').fadeOut();
 	$('.btn-burger').removeClass('click');
+	$('body').removeClass('no-scroll');
 });
 
 // $(function () {

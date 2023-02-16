@@ -95,6 +95,12 @@
 }
 
 /* Medium Devices, Desktops */
+@media only screen and (max-width: 1070px) {
+	.product-information .list-characteristics .list-characteristics-view {
+		margin-left: 0;
+	}
+}
+
 @media only screen and (max-width: 1050px) {
   .form-search {
     max-width: 350px;
@@ -102,12 +108,6 @@
   .header-box {
     margin: 0 0 0 auto;
   }
-
-	.view-product {
-		margin: 10px 0 0;
-		justify-content: flex-start;
-		width: 100%;
-	}
 }
 
 @media only screen and (max-width: 992px) {
@@ -1013,7 +1013,7 @@
     border-radius: 0;
   }
   .conditions h3 {
-    margin: 0 auto;
+    margin: 0 auto 10px;
     font-size: 22px;
   }
   .conditions .box-text {
@@ -1042,7 +1042,7 @@
   }
   .conditions-wrapper {
     border-radius: 0;
-    padding: 60px 15px 20px;
+    padding: 30px 15px 20px;
   }
   .benefit {
     padding: 60px 0 20px;

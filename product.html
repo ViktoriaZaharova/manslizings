@@ -231,7 +231,7 @@
 
 					<div class="row">
 						<div class="col-12">
-							<ul class="breadcrumbs ul-my">
+							<ul class="breadcrumbs breadcrumbs-v2 ul-my">
 								<li><a href="index.html"><img src="img/home-icon.svg" alt=""></a></li>
 								<li><a href="catalog.html">Новые поступления</a></li>
 								<li><span>Hyundai Santa Fe</span></li>
@@ -333,16 +333,17 @@
 										<li>
 											<p>механика</p>
 										</li>
+										<li class="list-characteristics-view">
+											<div class="view-product">
+												<div class="view-product__icon"><svg class="svg-icon">
+														<use xlink:href="img/sprite.svg#view"></use>
+													</svg></div>
+												<div class="view-product__text">
+													<p>Просмотрено: <strong>100 раз</strong></p>
+												</div>
+											</div>
+										</li>
 									</ul>
-
-									<div class="view-product">
-										<div class="view-product__icon"><svg class="svg-icon">
-											<use xlink:href="img/sprite.svg#view"></use>
-										</svg></div>
-										<div class="view-product__text">
-											<p>Просмотрено: <strong>100 раз</strong></p>
-										</div>
-									</div>
 
 								</div>
 
@@ -436,34 +437,84 @@
 							</div>
 
 							<div class="conditions" id="conditions">
-								<div class="conditions-wrapper">
-									<h3>Проверьте свои лизинговые возможности</h3>
-								
-									<form method="post" class="form">
-										<label>
-											<input type="text" name="name" placeholder="Имя и фамилия">
-										</label>
-
-										<label>
-											<input type="text" placeholder="Телефон" name="phone">
-										</label>
-
-										<button type="submit" class="btn btn-orange btn-sm">
-											Проверить
-										</button>
-
-										<label class="checkbox">
-											<input type="checkbox" class="checkbox-inp" name="checkbox" checked>
-											<span class="checkbox-custom"></span>
-											<span class="checkbox-text">Я согласен с <a href="#"
-													class="d-inline color-white text-decoration">политикой
-													безопасности</a> и <a href="#" class="d-inline text-decoration color-white">правилами
-													использования персональных
-													даных</a></span>
-										</label>
-									</form>
+								<ul class="nav nav-tabs-conditions nav-tabs-conditions-v2" role="tablist">
+									<li class="nav-item" role="presentation">
+										<a class="nav-link" id="catalog-tab1__link" data-toggle="tab" href="#catalog-tab1" role="tab"
+											aria-controls="catalog-tab1" aria-selected="false">
+											<span>Оплата наличными</span>
+										</a>
+									</li>
+									<!-- <li class="tabs-toggle"></li> -->
+									<li class="nav-item" role="presentation">
+										<a class="nav-link active" id="catalog-tab2__link" data-toggle="tab" href="#catalog-tab2" role="tab"
+											aria-controls="catalog-tab2" aria-selected="true">
+											<span>Купить <br>в лизинг</span>
+										</a>
+									</li>
+								</ul>
+								<div class="tab-content">
+									<div class="tab-pane fade" id="catalog-tab1" role="tabpanel" aria-labelledby="catalog-tab1__link">
+										<div class="conditions-wrapper">
+											<h3>Проверьте свои лизинговые возможности</h3>
+										
+											<form method="post" class="form">
+												<label>
+													<input type="text" name="name" placeholder="Имя и фамилия">
+												</label>
+										
+												<label>
+													<input type="text" placeholder="Телефон" name="phone">
+												</label>
+										
+												<label class="checkbox">
+													<input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Я согласен с <a href="#" class="d-inline color-white text-decoration">политикой
+															безопасности</a> и <a href="#" class="d-inline text-decoration color-white">правилами
+															использования персональных
+															даных</a></span>
+												</label>
+										
+												<button type="submit" class="btn btn-orange btn-sm">
+													Проверить
+												</button>
+										
+										
+											</form>
+										</div>
+									</div>
+									<div class="tab-pane fade show active" id="catalog-tab2" role="tabpanel" aria-labelledby="catalog-tab2__link">
+										<div class="conditions-wrapper">
+											<h3>Проверьте свои лизинговые возможности</h3>
+										
+											<form method="post" class="form">
+												<label>
+													<input type="text" name="name" placeholder="Имя и фамилия">
+												</label>
+										
+												<label>
+													<input type="text" placeholder="Телефон" name="phone">
+												</label>
+										
+												<label class="checkbox">
+													<input type="checkbox" class="checkbox-inp" name="checkbox" checked>
+													<span class="checkbox-custom"></span>
+													<span class="checkbox-text">Я согласен с <a href="#" class="d-inline color-white text-decoration">политикой
+															безопасности</a> и <a href="#" class="d-inline text-decoration color-white">правилами
+															использования персональных
+															даных</a></span>
+												</label>
+										
+												<button type="submit" class="btn btn-orange btn-sm">
+													Проверить
+												</button>
+										
+										
+											</form>
+										</div>
+									</div>
 								</div>
-								<!-- <div class="callback-image"><img src="img/car2.png" alt=""></div> -->
+								
 							</div>
 						</div>
 

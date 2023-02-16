@@ -20,7 +20,13 @@
 }
 
 .product-information .list-characteristics {
-  width: fit-content;
+  width: 100%;
+}
+
+.product-information .list-characteristics .list-characteristics-view {
+  margin-left: auto;
+  background: transparent;
+  height: auto;
 }
 
 .product-information:last-child {
@@ -36,7 +42,6 @@
 
 .view-product {
   font-size: 14px;
-  margin: 0 0 4px auto;
   display: flex;
   align-items: center;
 }
@@ -50,6 +55,10 @@
   min-width: 20px;
   height: 12px;
   fill: #b7beca;
+}
+
+.view-product strong {
+  margin-left: 5px;
 }
 
 .carvertical-logo {
@@ -73,15 +82,15 @@
 }
 
 .carvertical-wrapper__decor {
-	position: absolute;
+  position: absolute;
   left: 50%;
-	bottom: 0;
+  bottom: 0;
   transform: translate(-50%, 0);
   z-index: -1;
-	overflow: hidden;
-	width: 100%;
-	height: 100%;
-	/* border-radius: 50%; */
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  /* border-radius: 50%; */
 }
 
 .carvertical-wrapper__decor::before {
@@ -90,13 +99,13 @@
   background: #80ff00;
   mix-blend-mode: screen;
   filter: blur(125px);
-	width: 509px;
-	height: 509px;
-	border-radius: 50%;
-	overflow: hidden;
-	left: 50%;
-	bottom: -450px;
-	transform: translate(-50%,0);
+  width: 509px;
+  height: 509px;
+  border-radius: 50%;
+  overflow: hidden;
+  left: 50%;
+  bottom: -450px;
+  transform: translate(-50%, 0);
 }
 
 .carvertical-wrapper__title {
@@ -260,7 +269,7 @@
   max-width: 100%;
 }
 .conditions .form button {
-  margin: 5px 0 0;
+  margin: 12px 0 0;
   width: 100%;
 }
 .conditions .callback-image {
@@ -273,21 +282,21 @@
   height: 100%;
   z-index: 1;
   overflow: hidden;
-  padding: 30px 30px 16px;
+  padding: 30px;
   border-radius: 6px;
 }
 .conditions-wrapper:before {
   content: "";
   position: absolute;
   left: 50%;
-  bottom: -135px;
+  bottom: -175px;
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   background: #80ff00;
   width: 270px;
   height: 270px;
   -webkit-filter: blur(250px);
-  filter: blur(250px);
+  filter: blur(125px);
   z-index: -1;
   mix-blend-mode: screen;
 }
@@ -295,6 +304,107 @@
 .conditions-wrapper .checkbox {
   margin: 12px 0 0;
   font-size: 10px;
+}
+
+.nav-tabs-conditions {
+  width: 100%;
+  display: flex;
+  align-items: stretch;
+  background: #224039;
+  border-radius: 6px 6px 0 0;
+  font-size: 14px;
+  font-weight: 900;
+}
+
+.nav-tabs-conditions .nav-item {
+  flex: 1;
+}
+
+.nav-tabs-conditions .nav-link {
+  color: #fff;
+  padding: 13px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border-radius: 6px 6px 0 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.nav-tabs-conditions .nav-link.active {
+  background: #196250;
+}
+
+.nav-tabs-conditions-v2 {
+  border-bottom: 1px solid #217c66;
+  background: #196250;
+  position: relative;
+}
+
+.nav-tabs-conditions-v2 .nav-item:first-child .nav-link:after {
+	content: '';
+  position: absolute;
+  background: #8fba44;
+  border-radius: 50px;
+  width: 57px;
+  min-width: 57px;
+  height: 30px;
+  margin: auto 0;
+  padding: 0 3px;
+	top: 50%;
+	transform: translate(0,-50%);
+	right: -27.5px;
+}
+
+.nav-tabs-conditions-v2 .nav-item:first-child .nav-link::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  right: -23px;
+  transform: translate(0, -50%) rotate(180deg);
+  background: url("../img/toggle-arrow.svg") no-repeat center;
+  background-size: 100%;
+	z-index: 1;
+	transition: .3s ease;
+}
+
+.nav-tabs-conditions-v2 .nav-item:first-child .nav-link.active::before {
+	right: 2px;
+	transform: translate(0, -50%);
+}
+
+.nav-tabs-conditions-v2 .nav-item .nav-link {
+  border-radius: 6px 0 0 0;
+  position: relative;
+}
+
+.nav-tabs-conditions-v2 .nav-item .nav-link span {
+  max-width: 95px;
+}
+
+.nav-tabs-conditions-v2 .nav-item:last-child .nav-link {
+  border-radius: 0 6px 0 0;
+}
+
+.nav-tabs-conditions-v2 .nav-link.active {
+  background: linear-gradient(
+    90deg,
+    rgba(143, 186, 68, 0.6) 0%,
+    rgba(143, 186, 68, 0) 100%
+  );
+}
+
+.nav-tabs-conditions-v2 .nav-item:last-child .nav-link.active {
+  background: linear-gradient(
+    -90deg,
+    rgba(143, 186, 68, 0.6) 0%,
+    rgba(143, 186, 68, 0) 100%
+  );
 }
 
 .leasing-prices {

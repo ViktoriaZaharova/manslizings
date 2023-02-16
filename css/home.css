@@ -425,7 +425,7 @@ html .ui-button.ui-state-disabled:active {
 .card-sales .card-img {
   position: relative;
   overflow: hidden;
-	 color: #fff;
+  color: #fff;
 }
 
 .card-sales .card-img img {
@@ -456,20 +456,20 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .card-sales .card-footer .btn-sm {
-	height: 40px;
-	font-size: 14px;
+  height: 40px;
+  font-size: 14px;
 }
 
 .card-sales .card-footer .btn-group {
-	width: 100%;
-	justify-content: space-between;
-	display: flex;
+  width: 100%;
+  justify-content: space-between;
+  display: flex;
 }
 
 .card-sales .card-footer .btn-group .btn {
-	width: calc(50% - 3px);
-	border-radius: 6px;
-	flex: none;
+  width: calc(50% - 3px);
+  border-radius: 6px;
+  flex: none;
 }
 
 .sold-car {
@@ -842,6 +842,12 @@ html .ui-button.ui-state-disabled:active {
   -webkit-transform: translate(-50%, 0);
   transform: translate(-50%, 0);
   z-index: -1;
+}
+
+@-moz-document url-prefix() {
+  .callback-wrapper:before, .home .container::after {
+    background: #61c201;
+  }
 }
 
 .form-callback {
