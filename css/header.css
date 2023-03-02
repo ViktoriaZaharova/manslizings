@@ -606,14 +606,3 @@ header .schedule-box {
 .btn-burger.click span:last-child {
     transform: rotate(137deg);
 }
-
-/* Potom ubratj*/
-.dropdown-language .dropdown-menu li:nth-child(3) {
-    display: none;
-}
-
-.list-language li:nth-child(3) {
-    display: none;
-}
-
-/* end potom ubratj */

@@ -332,6 +332,21 @@ $('.btn-sorting').on('click', function () {
 });
 
 
+//$('input.cb-value').prop("checked", true);
+$(".cb-value").click(function () {
+	var mainParent = $(".toggle-btn");
+	if ($(mainParent).find("input.cb-value").is(":checked")) {
+		$(mainParent).addClass("active");
+		$('.conditions-v2 .tab-pane:first-child').addClass('show active');
+		$('.conditions-v2 .tab-pane:last-child').removeClass('show active');
+	} else {
+		$(mainParent).removeClass("active");
+		$('.conditions-v2 .tab-pane:first-child').removeClass('show active');
+		$('.conditions-v2 .tab-pane:last-child').addClass('show active');
+	}
+});
+
+
 
 // this is your selector
 $.fileup({

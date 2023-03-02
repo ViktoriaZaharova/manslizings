@@ -743,6 +743,11 @@ html .ui-button.ui-state-disabled:active {
   color: #fff;
   position: relative;
 }
+
+.card-banner:hover {
+	color: #fff;
+}
+
 .card-banner:before {
   content: "";
   position: absolute;

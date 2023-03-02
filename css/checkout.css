@@ -738,8 +738,8 @@
 .banking-wrapper .box-text {
   font-weight: 300;
   font-size: 16px;
-	max-width: 535px;
-	margin: 0 auto; 
+  max-width: 550px;
+  margin: 0 auto;
 }
 
 .banking-wrapper .box-text strong {
@@ -747,7 +747,7 @@
 }
 
 .banking-list {
-  max-width: 636px;
+  max-width: 700px;
   width: 100%;
   margin: 20px auto;
   display: flex;
@@ -757,8 +757,19 @@
 }
 
 .banking-list li {
-  width: calc(25% - 5px);
-  margin: 0 0 10px;
+    width: calc(20% - 5px);
+    margin: 0 0 10px;
+}
+
+@media only screen and (max-width: 576px) {
+    .banking-list {
+        display: block;
+    }
+
+    .banking-list li {
+        width: calc(100% - 10px);
+        margin: 0 0 10px 0;
+    }
 }
 
 .banking-list a {

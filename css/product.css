@@ -331,8 +331,114 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-	position: relative;
-	z-index: 1;
+  position: relative;
+  z-index: 1;
+}
+
+.toggle-btn {
+  display: flex;
+  align-items: stretch;
+  color: #fff;
+  position: relative;
+  z-index: 1;
+  font-weight: 900;
+  font-size: 14px;
+  text-align: center;
+  border-bottom: 1px solid #217c66;
+  cursor: pointer;
+}
+
+.cb-value {
+  position: absolute;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+  background: transparent;
+  left: 0;
+  top: 0;
+  border: none;
+  cursor: pointer;
+}
+
+.round-btn {
+  position: absolute;
+  background: #8fba44;
+  border-radius: 50px;
+  width: 57px;
+  height: 30px;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  transition: 0.3s ease;
+}
+
+.round-btn::before {
+  content: "";
+  position: absolute;
+  border-radius: 50%;
+  width: 24px;
+  height: 24px;
+  top: 50%;
+  right: 3px;
+  transform: translate(0, -50%) rotate(180deg);
+  background: url("../img/toggle-arrow.svg") no-repeat center;
+  background-size: 100%;
+  z-index: 1;
+  transition: .5s ease;
+}
+
+.toggle-btn.active .toggle-btn__text:first-child:before {
+  opacity: 1;
+}
+
+.toggle-btn .toggle-btn__text:first-child:before {
+  opacity: 0;
+}
+
+.toggle-btn.active .toggle-btn__text:last-child:before {
+  opacity: 0;
+}
+
+.toggle-btn.active .round-btn::before {
+  right: auto;
+  left: 3px;
+  transform: translate(0, -50%) rotate(0deg);
+}
+
+.toggle-btn__text {
+  padding: 20px;
+  width: 50%;
+  transition: 0.5s ease;
+  position: relative;
+  z-index: 1;
+}
+
+.toggle-btn__text::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  transition: 0.5s ease;
+  z-index: -1;
+}
+
+.toggle-btn .toggle-btn__text:first-child::before {
+  background: linear-gradient(
+    90deg,
+    rgba(143, 186, 68, 0.6) 0%,
+    rgba(143, 186, 68, 0) 100%
+  );
+}
+
+.toggle-btn .toggle-btn__text:last-child::before {
+  background: linear-gradient(
+    -90deg,
+    rgba(143, 186, 68, 0.6) 0%,
+    rgba(143, 186, 68, 0) 100%
+  );
 }
 
 .nav-tabs-conditions .nav-link.active {
@@ -346,7 +452,7 @@
 }
 
 .nav-tabs-conditions-v2 .nav-item:first-child .nav-link:after {
-	content: '';
+  content: "";
   position: absolute;
   background: #8fba44;
   border-radius: 50px;
@@ -355,9 +461,9 @@
   height: 30px;
   margin: auto 0;
   padding: 0 3px;
-	top: 50%;
-	transform: translate(0,-50%);
-	right: -27.5px;
+  top: 50%;
+  transform: translate(0, -50%);
+  right: -27.5px;
 }
 
 .nav-tabs-conditions-v2 .nav-item:first-child .nav-link::before {
@@ -371,13 +477,13 @@
   transform: translate(0, -50%) rotate(180deg);
   background: url("../img/toggle-arrow.svg") no-repeat center;
   background-size: 100%;
-	z-index: 1;
-	transition: .3s ease;
+  z-index: 1;
+  transition: 0.3s ease;
 }
 
 .nav-tabs-conditions-v2 .nav-item:first-child .nav-link.active::before {
-	right: 2px;
-	transform: translate(0, -50%);
+  right: 2px;
+  transform: translate(0, -50%);
 }
 
 .nav-tabs-conditions-v2 .nav-item .nav-link {
