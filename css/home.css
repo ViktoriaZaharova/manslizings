@@ -743,11 +743,6 @@ html .ui-button.ui-state-disabled:active {
   color: #fff;
   position: relative;
 }
-
-.card-banner:hover {
-	color: #fff;
-}
-
 .card-banner:before {
   content: "";
   position: absolute;
@@ -960,6 +955,30 @@ html .ui-button.ui-state-disabled:active {
   -webkit-box-pack: center;
   -ms-flex-pack: center;
   justify-content: center;
+}
+
+.popular-models {
+	margin: 0 0 50px;
+}
+
+.popular-models-wrapper {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin: 30px auto 0;
+	max-width: 900px;
+	font-size: 18px;
+}
+
+.popular-models__item {
+	padding: 0 10px;
+	margin: 0 0 20px;
+	color: #3567AE;
+}
+
+.popular-models__item:hover {
+	color: #196250;
 }
 
 .advantages h2 {
