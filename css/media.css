@@ -2056,6 +2056,10 @@
   .home-manslizing h1 {
     max-width: 240px;
   }
+
+	.header-center .phone {
+		margin: 0 auto 0 0;
+	}
 }
 
 @media (min-width: 992px) {
