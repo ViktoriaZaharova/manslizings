@@ -463,3 +463,19 @@ $('.btn-search-header').on('click', function (e) {
 		content.css('left', '-100%');
 	}
 });
+
+$('.btn-toggle-popular-models').on('click', function (e) {
+	e.preventDefault();
+
+	var
+		$this = $(this),
+		content = $('.popular-models__item');
+
+	if (!$this.hasClass('trigger')) {
+		$this.addClass('trigger');
+		content.fadeIn();
+	} else {
+		$this.removeClass('trigger');
+		content.slice(14).css('display', 'none');
+	}
+});

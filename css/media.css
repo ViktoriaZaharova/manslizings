@@ -1906,6 +1906,15 @@
 	.header-center {
 		display: block;
 	}
+
+	.popular-models-wrapper  {
+ 		font-size: 16px;
+ 	}
+
+ 	.popular-models__item {
+ 		padding: 0 5px;
+ 		margin: 0 0 10px;
+ 	}
 }
 
 @media (max-width: 480px) {
