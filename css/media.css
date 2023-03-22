@@ -530,6 +530,15 @@
   .page-product-box .collapse ul:last-child {
     margin: 15px 0 0;
   }
+
+	.page-product-box .collapse ul.list-info-product {
+		margin: 0;
+	}
+
+	.list-info-product {
+		column-count: 2
+	}
+
   .page-product-box h4 {
     margin: 0;
   }
@@ -1191,6 +1200,10 @@
 	.carvertical-wrapper {
 		padding: 40px 20px 30px;
 	}
+
+	.list-info-product {
+		column-count: 1
+	} 
 }
 
 /* Extra Small Devices, Phones */
