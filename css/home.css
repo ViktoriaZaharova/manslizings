@@ -834,7 +834,6 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .btn-toggle-popular-models {
-  width: fit-content;
   margin: 0 auto;
   fill: none;
   stroke: #196250;
