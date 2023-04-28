@@ -401,25 +401,35 @@ html .ui-button.ui-state-disabled:active {
 }
 
 .card {
-  width: 100%;
-  height: 100%;
-  position: relative;
-  border: 1px solid #e1e4e8;
-  border-radius: 6px;
-  -webkit-box-shadow: 0 4px 30px rgba(0, 49, 95, 0.11);
-  box-shadow: 0 4px 30px rgba(0, 49, 95, 0.11);
-  background: #fff;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
-  overflow: hidden;
+	width: 100%;
+	height: 100%;
+	position: relative;
+	border: 2px solid #e1e4e8;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 4px 30px rgba(0, 49, 95, 0.11);
+	box-shadow: 0 4px 30px rgba(0, 49, 95, 0.11);
+	background: #fff;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	overflow: hidden;
+	transition: .3s ease;
+	-webkit-transition: .3s ease;
+	-moz-transition: .3s ease;
+	-ms-transition: .3s ease;
+	-o-transition: .3s ease;
 }
 .card:hover {
-  border: 1px solid #8fba44;
+	border: 2px solid #8fba44;
+	transform: scale(1.05);
+	-webkit-transform: scale(1.05);
+	-moz-transform: scale(1.05);
+	-ms-transform: scale(1.05);
+	-o-transform: scale(1.05);
 }
 
 .card-sales .card-img {
@@ -427,6 +437,7 @@ html .ui-button.ui-state-disabled:active {
   overflow: hidden;
   color: #fff;
 }
+
 
 .card-sales .card-img img {
   filter: grayscale(100%);
@@ -470,6 +481,7 @@ html .ui-button.ui-state-disabled:active {
   width: calc(50% - 3px);
   border-radius: 6px;
   flex: none;
+  line-height: 1;
 }
 
 .sold-car {
@@ -804,54 +816,6 @@ html .ui-button.ui-state-disabled:active {
   width: 100%;
 }
 
-.popular-models {
-  margin: 0 0 50px;
-}
-
-.popular-models-wrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin: 30px auto 0;
-  max-width: 900px;
-  font-size: 18px;
-}
-
-.popular-models__item {
-  padding: 0 10px;
-  margin: 0 0 20px;
-  color: #3567ae;
-	display: none;
-}
-
-.popular-models__item:nth-child(-n+14) {
-	display: block;
-}
-
-.popular-models__item:hover {
-  color: #196250;
-}
-
-.btn-toggle-popular-models {
-  margin: 0 auto;
-  fill: none;
-  stroke: #196250;
-  width: 60px;
-  height: 30px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.btn-toggle-popular-models.trigger svg {
-	transform: rotate(180deg);
-	-webkit-transform: rotate(180deg);
-	-moz-transform: rotate(180deg);
-	-ms-transform: rotate(180deg);
-	-o-transform: rotate(180deg);
-}
-
 .callback {
   position: relative;
   background: #196250;
@@ -893,8 +857,7 @@ html .ui-button.ui-state-disabled:active {
 }
 
 @-moz-document url-prefix() {
-  .callback-wrapper:before,
-  .home .container::after {
+  .callback-wrapper:before, .home .container::after {
     background: #61c201;
   }
 }
@@ -1008,7 +971,10 @@ html .ui-button.ui-state-disabled:active {
 
 .advantages h2 {
   margin: 0 0 36px;
+  text-align: left;
 }
+
+.reviews-h2{text-align: left;}
 
 .advantages-box {
   width: 100%;
@@ -1053,6 +1019,7 @@ html .ui-button.ui-state-disabled:active {
 }
 .question h2 {
   margin: 0 auto 43px;
+  text-align: left;
 }
 .question .container {
   position: relative;
@@ -1790,6 +1757,7 @@ a.list-contacts-item:hover {
 
 .interested h2 {
   margin: 0 auto 30px;
+  text-align: left;
 }
 
 .interested-card {
@@ -1933,6 +1901,7 @@ a.list-contacts-item:hover {
 
 .steps-work h2 {
   margin: 0 auto 20px;
+  text-align: left;
 }
 
 .steps-work .subtitle {
@@ -1940,6 +1909,8 @@ a.list-contacts-item:hover {
   font-size: 18px;
   margin: 0 auto 47px;
 }
+
+.steps-work .subtitle p{text-align: left;}
 
 .steps-work-images {
   margin: 0 auto;
