@@ -678,12 +678,14 @@ $slider.on('beforeChange', function (event, slick, currentSlide, nextSlide) {
 $('.btn-toggle-filter').on('click', function (e) {
     e.preventDefault();
     // $('.overlay-mobile').fadeIn();
+	$(this).fadeOut();
     $('.filter-wrapper').fadeIn();
 });
 
 $('.btn-close__filter, .overlay-mobile').on('click', function (e) {
     e.preventDefault();
-    $('.filter-wrapper').fadeOut();
+	$('.filter-wrapper').fadeOut();
+	$('.btn-toggle-filter').fadeIn();
     // $('.overlay-mobile').fadeOut();
 });
 
